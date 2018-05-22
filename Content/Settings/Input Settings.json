@@ -1,0 +1,139 @@
+{
+	"ID": "bd88b99a49bc50e961ef949adde51037",
+	"TypeName": "FlaxEditor.Content.Settings.InputSettings",
+	"EngineBuild": 6154,
+	"Data": {
+	"ActionMappings": [
+		{
+			"Name": "Fire",
+			"Mode": 1,
+			"Key": 0,
+			"MouseButton": 1,
+			"GampadButton": 0,
+			"Gamepad": 0
+		},
+		{
+			"Name": "Jump",
+			"Mode": 0,
+			"Key": 32,
+			"MouseButton": 0,
+			"GampadButton": 0,
+			"Gamepad": 0
+		},
+		{
+			"Name": "Pause",
+			"Mode": 1,
+			"Key": 80,
+			"MouseButton": 0,
+			"GampadButton": 0,
+			"Gamepad": 0
+		},
+		{
+			"Name": "Interact",
+			"Mode": 1,
+			"Key": 69,
+			"MouseButton": 0,
+			"GampadButton": 0,
+			"Gamepad": 0
+		}
+	],
+	"AxisMappings": [
+		{
+			"Name": "Mouse X",
+			"Axis": 0,
+			"Gamepad": 0,
+			"PositiveButton": 0,
+			"NegativeButton": 0,
+			"DeadZone": 1.0,
+			"Sensitivity": 0.4,
+			"Gravity": 1.0,
+			"Scale": 1.0,
+			"Snap": false
+		},
+		{
+			"Name": "Mouse Y",
+			"Axis": 1,
+			"Gamepad": 0,
+			"PositiveButton": 0,
+			"NegativeButton": 0,
+			"DeadZone": 1.0,
+			"Sensitivity": 0.4,
+			"Gravity": 1.0,
+			"Scale": 1.0,
+			"Snap": false
+		},
+		{
+			"Name": "Horizontal",
+			"Axis": 9,
+			"Gamepad": 0,
+			"PositiveButton": 68,
+			"NegativeButton": 65,
+			"DeadZone": 0.01,
+			"Sensitivity": 5.0,
+			"Gravity": 5.0,
+			"Scale": 1.0,
+			"Snap": true
+		},
+		{
+			"Name": "Vertical",
+			"Axis": 9,
+			"Gamepad": 0,
+			"PositiveButton": 87,
+			"NegativeButton": 83,
+			"DeadZone": 0.01,
+			"Sensitivity": 5.0,
+			"Gravity": 5.0,
+			"Scale": 1.0,
+			"Snap": true
+		},
+		{
+			"Name": "Horizontal",
+			"Axis": 9,
+			"Gamepad": 0,
+			"PositiveButton": 39,
+			"NegativeButton": 37,
+			"DeadZone": 0.01,
+			"Sensitivity": 5.0,
+			"Gravity": 5.0,
+			"Scale": 1.0,
+			"Snap": true
+		},
+		{
+			"Name": "Vertical",
+			"Axis": 9,
+			"Gamepad": 0,
+			"PositiveButton": 38,
+			"NegativeButton": 40,
+			"DeadZone": 0.001,
+			"Sensitivity": 5.0,
+			"Gravity": 5.0,
+			"Scale": 1.0,
+			"Snap": true
+		},
+		{
+			"Name": "Time",
+			"Axis": 2,
+			"Gamepad": 0,
+			"PositiveButton": 0,
+			"NegativeButton": 0,
+			"DeadZone": 0.001,
+			"Sensitivity": 5.0,
+			"Gravity": 5.0,
+			"Scale": 1.0,
+			"Snap": false
+		},
+		{
+			"Name": "Sprint",
+			"Axis": 9,
+			"Gamepad": 0,
+			"PositiveButton": 16,
+			"NegativeButton": 0,
+			"DeadZone": 0.001,
+			"Sensitivity": 5.0,
+			"Gravity": 5.0,
+			"Scale": 1.0,
+			"Snap": false
+		}
+	]
+}
+}

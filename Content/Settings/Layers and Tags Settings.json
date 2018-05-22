@@ -1,0 +1,44 @@
+{
+	"ID": "f50a1c2047cf806b1eefc980836f90c2",
+	"TypeName": "FlaxEditor.Content.Settings.LayersAndTagsSettings",
+	"EngineBuild": 6155,
+	"Data": {
+	"Tags": [
+		"Player"
+	],
+	"Layers": [
+		"Default",
+		"Player",
+		"",
+		null,
+		null,
+		null,
+		null,
+		null,
+		null,
+		null,
+		null,
+		null,
+		null,
+		null,
+		null,
+		null,
+		null,
+		null,
+		null,
+		null,
+		null,
+		null,
+		null,
+		null,
+		null,
+		null,
+		null,
+		null,
+		null,
+		null,
+		null,
+		null
+	]
+}
+}

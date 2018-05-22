@@ -1,0 +1,93 @@
+{
+	"ID": "7b4625fc406c756c6d9c35b2e54dc805",
+	"TypeName": "FlaxEngine.SceneAsset",
+	"EngineBuild": 6155,
+	"Data": [
+		{
+			"TypeID": 9,
+			"ID": "7b4625fc406c756c6d9c35b2e54dc805",
+			"ParentID": "00000000000000000000000000000000",
+			"Name": "Scene",
+			"LightmapSettings": {
+				"GlobalObjectsScale": 0.5,
+				"ChartsPadding": 3,
+				"AtlasSize": 1024,
+				"BounceCount": 1,
+				"UseGeometryWithNoMaterials": false,
+				"Quality": 10
+			}
+		},
+		{
+			"TypeID": 10,
+			"ID": "ebc589f741a234f0786759afa5e02e56",
+			"ParentID": "7b4625fc406c756c6d9c35b2e54dc805",
+			"Name": "Sky",
+			"Transform": {
+				"Translation": {
+					"X": 40.0,
+					"Y": 150.0,
+					"Z": 0.0
+				}
+			},
+			"Sun": "6d17cca74d1a8b7081eb30bc9b3f44dd",
+			"SunDiscScale": 1.0,
+			"FogSunPower": 8.0
+		},
+		{
+			"TypeID": 4,
+			"ID": "6d17cca74d1a8b7081eb30bc9b3f44dd",
+			"ParentID": "7b4625fc406c756c6d9c35b2e54dc805",
+			"Name": "Sun",
+			"Transform": {
+				"Translation": {
+					"X": 40.0,
+					"Y": 160.0,
+					"Z": 0.0
+				},
+				"Orientation": {
+					"X": 0.3826834559440613,
+					"Y": 0.0,
+					"Z": 0.0,
+					"W": 0.9238795042037964
+				}
+			},
+			"Brightness": 5.0
+		},
+		{
+			"TypeID": 25,
+			"ID": "0e936bbb45606ff75c6c248cb05a553b",
+			"ParentID": "7b4625fc406c756c6d9c35b2e54dc805",
+			"Name": "SkyLight",
+			"Brightness": 2.0,
+			"AdditiveColor": {
+				"R": 0.0,
+				"G": 0.0,
+				"B": 0.0,
+				"A": 1.0
+			},
+			"Radius": 100000.0,
+			"SkyDistanceThreshold": 150000.0,
+			"BakedProbe": "00000000000000000000000000000000",
+			"Mode": 1,
+			"CustomTexture": "c54410104ff39427bc11e5bc761d66b0"
+		},
+		{
+			"TypeID": 2,
+			"ID": "ae1a1f4f4dea57ac66804a83356f813d",
+			"ParentID": "7b4625fc406c756c6d9c35b2e54dc805",
+			"Name": "Camera",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 150.0,
+					"Z": -300.0
+				}
+			},
+			"StaticFlags": 0,
+			"UsePerspective": true,
+			"FOV": 60.0,
+			"Near": 2.0,
+			"Far": 10000.0
+		}
+	]
+}

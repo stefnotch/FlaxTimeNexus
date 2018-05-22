@@ -1,0 +1,5604 @@
+{
+	"ID": "35fd20cd4497ea1b18cafcae1c3524ef",
+	"TypeName": "FlaxEngine.SceneAsset",
+	"EngineBuild": 6155,
+	"Data": [
+		{
+			"TypeID": 9,
+			"ID": "35fd20cd4497ea1b18cafcae1c3524ef",
+			"ParentID": "00000000000000000000000000000000",
+			"Name": "Scene",
+			"Scripts": [
+				{
+					"Name": "BasicTemplate.ExitOnEsc",
+					"ID": "1dbd22784052c163a34874903b10cda1",
+					"V": {}
+				}
+			],
+			"LightmapSettings": {
+				"GlobalObjectsScale": 0.5,
+				"ChartsPadding": 3,
+				"AtlasSize": 1024,
+				"BounceCount": 1,
+				"UseGeometryWithNoMaterials": false,
+				"Quality": 10
+			}
+		},
+		{
+			"TypeID": 10,
+			"ID": "38c4fa444ce307c52d79829f10824cf2",
+			"ParentID": "35fd20cd4497ea1b18cafcae1c3524ef",
+			"Name": "Sky",
+			"Transform": {
+				"Translation": {
+					"X": 40.0,
+					"Y": 150.0,
+					"Z": 0.0
+				}
+			},
+			"Sun": "3730d32a4c011c03aefd12896ddb35bd",
+			"SunDiscScale": 1.0,
+			"FogSunPower": 8.0
+		},
+		{
+			"TypeID": 4,
+			"ID": "3730d32a4c011c03aefd12896ddb35bd",
+			"ParentID": "35fd20cd4497ea1b18cafcae1c3524ef",
+			"Name": "Sun",
+			"Transform": {
+				"Translation": {
+					"X": 40.0,
+					"Y": 160.0,
+					"Z": 0.0
+				},
+				"Orientation": {
+					"X": 0.3826834559440613,
+					"Y": 0.0,
+					"Z": 0.0,
+					"W": 0.9238795042037964
+				}
+			},
+			"Brightness": 3.0,
+			"ShadowsDistance": 10000.0
+		},
+		{
+			"TypeID": 25,
+			"ID": "01f4114449265a0f60a06b826bc94895",
+			"ParentID": "35fd20cd4497ea1b18cafcae1c3524ef",
+			"Name": "SkyLight",
+			"Brightness": 1.100000023841858,
+			"ViewDistance": 10000.0,
+			"AdditiveColor": {
+				"R": 0.0,
+				"G": 0.0,
+				"B": 0.0,
+				"A": 1.0
+			},
+			"Radius": 100000.0,
+			"SkyDistanceThreshold": 150000.0,
+			"BakedProbe": "00000000000000000000000000000000",
+			"Mode": 1,
+			"CustomTexture": "c54410104ff39427bc11e5bc761d66b0"
+		},
+		{
+			"TypeID": 3,
+			"ID": "59d6696c48ec2cb18c6e51b9f5749f82",
+			"ParentID": "35fd20cd4497ea1b18cafcae1c3524ef",
+			"Name": "SceneActor",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 0.0,
+					"Z": -2751.83642578125
+				}
+			},
+			"StaticFlags": 0
+		},
+		{
+			"TypeID": 3,
+			"ID": "139cba88453b519006b694b808d3ce7b",
+			"ParentID": "59d6696c48ec2cb18c6e51b9f5749f82",
+			"Name": "Rocks",
+			"StaticFlags": 0
+		},
+		{
+			"TypeID": 1,
+			"ID": "56ebc4154350ec8ba4030fb2523b1f3d",
+			"ParentID": "139cba88453b519006b694b808d3ce7b",
+			"Name": "Rock",
+			"Transform": {
+				"Translation": {
+					"X": 255.76414489746095,
+					"Y": 32.738983154296878,
+					"Z": -57.096923828125
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "691c67fc4fb5410abd06239d0b5ac8bc",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"TypeID": 24,
+			"ID": "eb1da0724e2c73dc887d02b410559bba",
+			"ParentID": "56ebc4154350ec8ba4030fb2523b1f3d",
+			"Name": "Rock_coll",
+			"StaticFlags": 0,
+			"CollisionData": "7ed06b7d4bbfded0c82c3e9cee9b0932"
+		},
+		{
+			"TypeID": 1,
+			"ID": "76f04f28492b7385556f60a07b617ca7",
+			"ParentID": "139cba88453b519006b694b808d3ce7b",
+			"Name": "Rock",
+			"Transform": {
+				"Translation": {
+					"X": -135.12242126464845,
+					"Y": 532.4049682617188,
+					"Z": 305.3355712890625
+				},
+				"Orientation": {
+					"X": -0.15252263844013215,
+					"Y": -0.15461301803588868,
+					"Z": 0.06263896822929383,
+					"W": 0.9741191267967224
+				},
+				"Scale": {
+					"X": 1.536725401878357,
+					"Y": 1.536725401878357,
+					"Z": 1.536725401878357
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "691c67fc4fb5410abd06239d0b5ac8bc",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"TypeID": 24,
+			"ID": "0470664e4e617b398cc4c1b8321eedba",
+			"ParentID": "76f04f28492b7385556f60a07b617ca7",
+			"Name": "Rock_coll",
+			"StaticFlags": 0,
+			"CollisionData": "7ed06b7d4bbfded0c82c3e9cee9b0932"
+		},
+		{
+			"TypeID": 1,
+			"ID": "21b14dcc41fba5d2bf95c9bbf4bb6e69",
+			"ParentID": "139cba88453b519006b694b808d3ce7b",
+			"Name": "Rock",
+			"Transform": {
+				"Translation": {
+					"X": 159.0914764404297,
+					"Y": 326.6990661621094,
+					"Z": 66.85906982421875
+				},
+				"Orientation": {
+					"X": 0.23307952284812928,
+					"Y": 0.944034218788147,
+					"Z": -0.23313966393470765,
+					"W": -0.010929390788078308
+				},
+				"Scale": {
+					"X": 1.0742181539535523,
+					"Y": 1.0742181539535523,
+					"Z": 1.0742181539535523
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "691c67fc4fb5410abd06239d0b5ac8bc",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "d4f312b04a8872bd0bf163b3351b3546"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 24,
+			"ID": "317e4cce460f96981d2f7e9041f51e3e",
+			"ParentID": "21b14dcc41fba5d2bf95c9bbf4bb6e69",
+			"Name": "Rock_coll",
+			"StaticFlags": 0,
+			"CollisionData": "7ed06b7d4bbfded0c82c3e9cee9b0932"
+		},
+		{
+			"TypeID": 1,
+			"ID": "d54a45c34e4e1d442bec87ac30a48a46",
+			"ParentID": "139cba88453b519006b694b808d3ce7b",
+			"Name": "Rock",
+			"Transform": {
+				"Translation": {
+					"X": 260.0750427246094,
+					"Y": 171.4875030517578,
+					"Z": 16.140945434570314
+				},
+				"Orientation": {
+					"X": -0.11194390803575516,
+					"Y": -0.4387182295322418,
+					"Z": 0.19383753836154939,
+					"W": 0.8702999353408814
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "691c67fc4fb5410abd06239d0b5ac8bc",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"TypeID": 24,
+			"ID": "f702fc314c7a0e558f5ecaa798e537c0",
+			"ParentID": "d54a45c34e4e1d442bec87ac30a48a46",
+			"Name": "Rock_coll",
+			"StaticFlags": 0,
+			"CollisionData": "7ed06b7d4bbfded0c82c3e9cee9b0932"
+		},
+		{
+			"TypeID": 1,
+			"ID": "3fdf6a294db9112f267e84a84d2abaff",
+			"ParentID": "139cba88453b519006b694b808d3ce7b",
+			"Name": "Rock 7",
+			"Transform": {
+				"Translation": {
+					"X": -573.990234375,
+					"Y": 42.65996551513672,
+					"Z": -288.6953125
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "691c67fc4fb5410abd06239d0b5ac8bc",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"TypeID": 24,
+			"ID": "12be34ad431f6b5ff47e4abdf3d28704",
+			"ParentID": "3fdf6a294db9112f267e84a84d2abaff",
+			"Name": "Rock_coll",
+			"StaticFlags": 0,
+			"CollisionData": "7ed06b7d4bbfded0c82c3e9cee9b0932"
+		},
+		{
+			"TypeID": 1,
+			"ID": "e6e92443461e1b5c90ec10a82d395bb1",
+			"ParentID": "139cba88453b519006b694b808d3ce7b",
+			"Name": "Rock 3",
+			"Transform": {
+				"Translation": {
+					"X": -1183.249755859375,
+					"Y": 125.94259643554688,
+					"Z": 2389.515869140625
+				},
+				"Orientation": {
+					"X": -0.6814411282539368,
+					"Y": -0.01448170654475689,
+					"Z": 0.6857935786247253,
+					"W": 0.25517725944519045
+				},
+				"Scale": {
+					"X": 2.074052095413208,
+					"Y": 2.074052095413208,
+					"Z": 2.074052095413208
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "691c67fc4fb5410abd06239d0b5ac8bc",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"TypeID": 24,
+			"ID": "f1d6c6c84cff0512c03534a9898f1e2b",
+			"ParentID": "e6e92443461e1b5c90ec10a82d395bb1",
+			"Name": "Rock_coll",
+			"StaticFlags": 0,
+			"CollisionData": "7ed06b7d4bbfded0c82c3e9cee9b0932"
+		},
+		{
+			"TypeID": 1,
+			"ID": "9838ba0744874ecffa40fa9afd2d3727",
+			"ParentID": "139cba88453b519006b694b808d3ce7b",
+			"Name": "Rock 2",
+			"Transform": {
+				"Translation": {
+					"X": -943.249755859375,
+					"Y": 125.94259643554688,
+					"Z": 1799.8427734375
+				},
+				"Orientation": {
+					"X": -0.25286227464675906,
+					"Y": 0.09762272983789444,
+					"Z": 0.9557569026947022,
+					"W": -0.11427735537290573
+				},
+				"Scale": {
+					"X": 2.074052095413208,
+					"Y": 2.074052095413208,
+					"Z": 2.074052095413208
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "691c67fc4fb5410abd06239d0b5ac8bc",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"TypeID": 24,
+			"ID": "db4aeb384c82ef85af026c9b7d52266a",
+			"ParentID": "9838ba0744874ecffa40fa9afd2d3727",
+			"Name": "Rock_coll",
+			"StaticFlags": 0,
+			"CollisionData": "7ed06b7d4bbfded0c82c3e9cee9b0932"
+		},
+		{
+			"TypeID": 1,
+			"ID": "6b1e3d5941295625422ce18a05292d30",
+			"ParentID": "139cba88453b519006b694b808d3ce7b",
+			"Name": "Rock 4",
+			"Transform": {
+				"Translation": {
+					"X": 395.5859375,
+					"Y": 845.942626953125,
+					"Z": 579.515869140625
+				},
+				"Orientation": {
+					"X": 0.4062776565551758,
+					"Y": 0.37226754426956179,
+					"Z": 0.8267815709114075,
+					"W": 0.1130821481347084
+				},
+				"Scale": {
+					"X": 3.5807175636291506,
+					"Y": 3.5807175636291506,
+					"Z": 3.5807175636291506
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "691c67fc4fb5410abd06239d0b5ac8bc",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "875dc82043062b1a15b844ae2011dec5"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 24,
+			"ID": "eba6ab8e4a9765999fece8972756533a",
+			"ParentID": "6b1e3d5941295625422ce18a05292d30",
+			"Name": "Rock_coll",
+			"StaticFlags": 0,
+			"CollisionData": "7ed06b7d4bbfded0c82c3e9cee9b0932"
+		},
+		{
+			"TypeID": 1,
+			"ID": "8f4d646c41785df4219c6380c2e27aa1",
+			"ParentID": "139cba88453b519006b694b808d3ce7b",
+			"Name": "Rock 11",
+			"Transform": {
+				"Translation": {
+					"X": 408.64202880859377,
+					"Y": 1668.776123046875,
+					"Z": 2398.240234375
+				},
+				"Orientation": {
+					"X": 0.4628726541996002,
+					"Y": -0.11187924444675446,
+					"Z": 0.79973304271698,
+					"W": -0.3655942380428314
+				},
+				"Scale": {
+					"X": 1.8065154552459717,
+					"Y": 1.8065154552459717,
+					"Z": 1.8065154552459717
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "691c67fc4fb5410abd06239d0b5ac8bc",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "875dc82043062b1a15b844ae2011dec5"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 24,
+			"ID": "eed5f4954c7926309bbbcf8f4898babd",
+			"ParentID": "8f4d646c41785df4219c6380c2e27aa1",
+			"Name": "Rock_coll",
+			"StaticFlags": 0,
+			"CollisionData": "7ed06b7d4bbfded0c82c3e9cee9b0932"
+		},
+		{
+			"TypeID": 1,
+			"ID": "8cf4bb6d469676921c2cc6aa22e06b18",
+			"ParentID": "139cba88453b519006b694b808d3ce7b",
+			"Name": "Rock 21",
+			"Transform": {
+				"Translation": {
+					"X": -243.59814453125,
+					"Y": 1415.3408203125,
+					"Z": 2811.568115234375
+				},
+				"Orientation": {
+					"X": 0.9609242081642151,
+					"Y": -0.08664700388908386,
+					"Z": -0.14555196464061738,
+					"W": -0.21893282234668733
+				},
+				"Scale": {
+					"X": 3.8165225982666017,
+					"Y": 3.8165225982666017,
+					"Z": 3.8165225982666017
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "691c67fc4fb5410abd06239d0b5ac8bc",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "342008a0428375648bc2eba3307d9ac1"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 24,
+			"ID": "11ba349f4fac74638ca3129bf27ed3f8",
+			"ParentID": "8cf4bb6d469676921c2cc6aa22e06b18",
+			"Name": "Rock_coll",
+			"StaticFlags": 0,
+			"CollisionData": "7ed06b7d4bbfded0c82c3e9cee9b0932"
+		},
+		{
+			"TypeID": 1,
+			"ID": "1ce2b7ad443c261179d4caa9fa1e6030",
+			"ParentID": "139cba88453b519006b694b808d3ce7b",
+			"Name": "Rock 10",
+			"Transform": {
+				"Translation": {
+					"X": 836.4995727539063,
+					"Y": 1718.4029541015626,
+					"Z": 2460.2548828125
+				},
+				"Orientation": {
+					"X": 0.6817287802696228,
+					"Y": -0.216533824801445,
+					"Z": 0.623754620552063,
+					"W": -0.31510189175605776
+				},
+				"Scale": {
+					"X": 2.740718364715576,
+					"Y": 2.740718364715576,
+					"Z": 2.740718364715576
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "691c67fc4fb5410abd06239d0b5ac8bc",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "875dc82043062b1a15b844ae2011dec5"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 24,
+			"ID": "98e618ff40f53c5fc9edc2a29d67bc72",
+			"ParentID": "1ce2b7ad443c261179d4caa9fa1e6030",
+			"Name": "Rock_coll",
+			"StaticFlags": 0,
+			"CollisionData": "7ed06b7d4bbfded0c82c3e9cee9b0932"
+		},
+		{
+			"TypeID": 1,
+			"ID": "ed8bb9ad4bfc394747aa44bcb163b484",
+			"ParentID": "139cba88453b519006b694b808d3ce7b",
+			"Name": "Rock 15",
+			"Transform": {
+				"Translation": {
+					"X": 1613.6029052734376,
+					"Y": 903.845703125,
+					"Z": 1975.4073486328126
+				},
+				"Orientation": {
+					"X": 0.7392054200172424,
+					"Y": 0.5735335350036621,
+					"Z": -0.27972573041915896,
+					"W": 0.21537917852401734
+				},
+				"Scale": {
+					"X": 1.7027357816696168,
+					"Y": 1.7027357816696168,
+					"Z": 1.7027357816696168
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "691c67fc4fb5410abd06239d0b5ac8bc",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "875dc82043062b1a15b844ae2011dec5"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 24,
+			"ID": "8352361a486fdce2ca525d8fcf9f1ba6",
+			"ParentID": "ed8bb9ad4bfc394747aa44bcb163b484",
+			"Name": "Rock_coll",
+			"StaticFlags": 0,
+			"CollisionData": "7ed06b7d4bbfded0c82c3e9cee9b0932"
+		},
+		{
+			"TypeID": 1,
+			"ID": "fde8a9e6467be4ed1f104dad831c0096",
+			"ParentID": "139cba88453b519006b694b808d3ce7b",
+			"Name": "Rock 9",
+			"Transform": {
+				"Translation": {
+					"X": 1613.6029052734376,
+					"Y": 794.421142578125,
+					"Z": 1300.2327880859376
+				},
+				"Orientation": {
+					"X": 0.2567766308784485,
+					"Y": 0.8996838927268982,
+					"Z": -0.09814615547657013,
+					"W": 0.33911949396133425
+				},
+				"Scale": {
+					"X": 1.7027357816696168,
+					"Y": 1.7027357816696168,
+					"Z": 1.7027357816696168
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "691c67fc4fb5410abd06239d0b5ac8bc",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "875dc82043062b1a15b844ae2011dec5"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 24,
+			"ID": "c580467943a71b3569f5c99b1ea776c9",
+			"ParentID": "fde8a9e6467be4ed1f104dad831c0096",
+			"Name": "Rock_coll",
+			"StaticFlags": 0,
+			"CollisionData": "7ed06b7d4bbfded0c82c3e9cee9b0932"
+		},
+		{
+			"TypeID": 1,
+			"ID": "673384a24b7ab254990c5daf17465009",
+			"ParentID": "139cba88453b519006b694b808d3ce7b",
+			"Name": "Rock 8",
+			"Transform": {
+				"Translation": {
+					"X": 1520.881591796875,
+					"Y": 1346.0382080078126,
+					"Z": 1103.7388916015626
+				},
+				"Orientation": {
+					"X": -0.9086657166481018,
+					"Y": 0.3819408118724823,
+					"Z": 0.16778139770030976,
+					"W": 0.017242297530174257
+				},
+				"Scale": {
+					"X": 2.740718364715576,
+					"Y": 2.740718364715576,
+					"Z": 2.740718364715576
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "691c67fc4fb5410abd06239d0b5ac8bc",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "875dc82043062b1a15b844ae2011dec5"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 24,
+			"ID": "19e9824543e6b2bb1dcd7f84b918239b",
+			"ParentID": "673384a24b7ab254990c5daf17465009",
+			"Name": "Rock_coll",
+			"StaticFlags": 0,
+			"CollisionData": "7ed06b7d4bbfded0c82c3e9cee9b0932"
+		},
+		{
+			"TypeID": 1,
+			"ID": "42e4ea5d40c4dedb768c85b3474ec8d1",
+			"ParentID": "139cba88453b519006b694b808d3ce7b",
+			"Name": "Rock 12",
+			"Transform": {
+				"Translation": {
+					"X": 1665.4517822265626,
+					"Y": 327.40008544921877,
+					"Z": 248.59423828125
+				},
+				"Orientation": {
+					"X": 0.7738873958587647,
+					"Y": -0.2915266454219818,
+					"Z": -0.5608494281768799,
+					"W": 0.03947945311665535
+				},
+				"Scale": {
+					"X": 2.740718364715576,
+					"Y": 2.740718364715576,
+					"Z": 2.740718364715576
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "691c67fc4fb5410abd06239d0b5ac8bc",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "875dc82043062b1a15b844ae2011dec5"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 24,
+			"ID": "122481f14b0cef5e786e79af9a6effdb",
+			"ParentID": "42e4ea5d40c4dedb768c85b3474ec8d1",
+			"Name": "Rock_coll",
+			"StaticFlags": 0,
+			"CollisionData": "7ed06b7d4bbfded0c82c3e9cee9b0932"
+		},
+		{
+			"TypeID": 1,
+			"ID": "6f74531f4ba234ef6e400aaae361f2f1",
+			"ParentID": "139cba88453b519006b694b808d3ce7b",
+			"Name": "Rock 6",
+			"Transform": {
+				"Translation": {
+					"X": 1255.9351806640626,
+					"Y": 907.6206665039063,
+					"Z": 601.8471069335938
+				},
+				"Orientation": {
+					"X": -0.2807884216308594,
+					"Y": 0.10504426807165146,
+					"Z": -0.5327590703964233,
+					"W": 0.7913857698440552
+				},
+				"Scale": {
+					"X": 2.740718364715576,
+					"Y": 2.740718364715576,
+					"Z": 2.740718364715576
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "691c67fc4fb5410abd06239d0b5ac8bc",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "875dc82043062b1a15b844ae2011dec5"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 24,
+			"ID": "4ba57f5b4df409b3fc15f4afb01c6680",
+			"ParentID": "6f74531f4ba234ef6e400aaae361f2f1",
+			"Name": "Rock_coll",
+			"StaticFlags": 0,
+			"CollisionData": "7ed06b7d4bbfded0c82c3e9cee9b0932"
+		},
+		{
+			"TypeID": 1,
+			"ID": "c68d5dec4ec27f530ac93c9e1cf60a8e",
+			"ParentID": "139cba88453b519006b694b808d3ce7b",
+			"Name": "Rock 20",
+			"Transform": {
+				"Translation": {
+					"X": -1245.3668212890626,
+					"Y": 322.708984375,
+					"Z": 2706.102294921875
+				},
+				"Orientation": {
+					"X": 0.012457681819796563,
+					"Y": -0.14083918929100038,
+					"Z": -0.475296288728714,
+					"W": -0.8683907985687256
+				},
+				"Scale": {
+					"X": 1.573469638824463,
+					"Y": -1.653774619102478,
+					"Z": 1.6879115104675294
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "691c67fc4fb5410abd06239d0b5ac8bc",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "208076bd4ee70fa3e5ccd28be0d6b165"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 24,
+			"ID": "1b74256c4615747fedf2f3964dada285",
+			"ParentID": "c68d5dec4ec27f530ac93c9e1cf60a8e",
+			"Name": "Rock_coll",
+			"StaticFlags": 0,
+			"CollisionData": "7ed06b7d4bbfded0c82c3e9cee9b0932"
+		},
+		{
+			"TypeID": 1,
+			"ID": "70e72a2e4ae1f47ef6479cad43491f77",
+			"ParentID": "139cba88453b519006b694b808d3ce7b",
+			"Name": "Rock 23",
+			"Transform": {
+				"Translation": {
+					"X": -363.989013671875,
+					"Y": 1671.1053466796876,
+					"Z": 2019.01025390625
+				},
+				"Orientation": {
+					"X": -0.040839795023202899,
+					"Y": -0.13536246120929719,
+					"Z": -0.11806271970272064,
+					"W": -0.9828888177871704
+				},
+				"Scale": {
+					"X": 2.472971200942993,
+					"Y": -1.9242700338363648,
+					"Z": 2.5874130725860597
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "691c67fc4fb5410abd06239d0b5ac8bc",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "875dc82043062b1a15b844ae2011dec5"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 24,
+			"ID": "786eeb8e4ff8dc28962ad8bee1f3838b",
+			"ParentID": "70e72a2e4ae1f47ef6479cad43491f77",
+			"Name": "Rock_coll",
+			"StaticFlags": 0,
+			"CollisionData": "7ed06b7d4bbfded0c82c3e9cee9b0932"
+		},
+		{
+			"TypeID": 1,
+			"ID": "27a1aa1d4b2a04180dd513bc3d77ff92",
+			"ParentID": "139cba88453b519006b694b808d3ce7b",
+			"Name": "Rock 19",
+			"Transform": {
+				"Translation": {
+					"X": -976.9014892578125,
+					"Y": 1251.842041015625,
+					"Z": 2019.01025390625
+				},
+				"Orientation": {
+					"X": 0.012457681819796563,
+					"Y": -0.14083918929100038,
+					"Z": -0.475296288728714,
+					"W": -0.8683907985687256
+				},
+				"Scale": {
+					"X": 2.472971200942993,
+					"Y": -0.7542729377746582,
+					"Z": 2.5874130725860597
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "691c67fc4fb5410abd06239d0b5ac8bc",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "875dc82043062b1a15b844ae2011dec5"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 24,
+			"ID": "98b38e3e4fc1676cf9442f913f121be5",
+			"ParentID": "27a1aa1d4b2a04180dd513bc3d77ff92",
+			"Name": "Rock_coll",
+			"StaticFlags": 0,
+			"CollisionData": "7ed06b7d4bbfded0c82c3e9cee9b0932"
+		},
+		{
+			"TypeID": 1,
+			"ID": "eca46baa46c205604e90258e78c0ecda",
+			"ParentID": "139cba88453b519006b694b808d3ce7b",
+			"Name": "Rock 18",
+			"Transform": {
+				"Translation": {
+					"X": -1128.4149169921876,
+					"Y": 647.0039672851563,
+					"Z": 2716.449462890625
+				},
+				"Orientation": {
+					"X": 0.014526600018143654,
+					"Y": -0.43003037571907046,
+					"Z": -0.7386988997459412,
+					"W": 0.5188322067260742
+				},
+				"Scale": {
+					"X": 2.472971200942993,
+					"Y": -0.7542729377746582,
+					"Z": 2.5874130725860597
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "691c67fc4fb5410abd06239d0b5ac8bc",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "875dc82043062b1a15b844ae2011dec5"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 24,
+			"ID": "b06d8f45409534ad0687e0997bda9c84",
+			"ParentID": "eca46baa46c205604e90258e78c0ecda",
+			"Name": "Rock_coll",
+			"StaticFlags": 0,
+			"CollisionData": "7ed06b7d4bbfded0c82c3e9cee9b0932"
+		},
+		{
+			"TypeID": 1,
+			"ID": "fdbf58d34c571de3381753a0122e2cc0",
+			"ParentID": "139cba88453b519006b694b808d3ce7b",
+			"Name": "Rock 17",
+			"Transform": {
+				"Translation": {
+					"X": -1501.7860107421876,
+					"Y": 192.83944702148438,
+					"Z": 3478.468994140625
+				},
+				"Orientation": {
+					"X": -0.05861567333340645,
+					"Y": -0.3457247316837311,
+					"Z": -0.805741012096405,
+					"W": 0.47730502486228945
+				},
+				"Scale": {
+					"X": 4.969033241271973,
+					"Y": 2.0,
+					"Z": 4.969033241271973
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "691c67fc4fb5410abd06239d0b5ac8bc",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "342008a0428375648bc2eba3307d9ac1"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 24,
+			"ID": "f5b852f8418f94efe9e088a010deb419",
+			"ParentID": "fdbf58d34c571de3381753a0122e2cc0",
+			"Name": "Rock_coll",
+			"StaticFlags": 0,
+			"CollisionData": "7ed06b7d4bbfded0c82c3e9cee9b0932"
+		},
+		{
+			"TypeID": 1,
+			"ID": "a9815cff40410b4f504ec8aeaf4f9c8c",
+			"ParentID": "139cba88453b519006b694b808d3ce7b",
+			"Name": "Rock 16",
+			"Transform": {
+				"Translation": {
+					"X": 1857.1661376953126,
+					"Y": 154.21743774414063,
+					"Z": 3304.346923828125
+				},
+				"Orientation": {
+					"X": -0.016766687855124475,
+					"Y": 0.16398440301418305,
+					"Z": -0.7309209704399109,
+					"W": 0.6622557044029236
+				},
+				"Scale": {
+					"X": 4.969033241271973,
+					"Y": 2.0,
+					"Z": 4.969033241271973
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "691c67fc4fb5410abd06239d0b5ac8bc",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "342008a0428375648bc2eba3307d9ac1"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 24,
+			"ID": "659cf1f6492c2b96c70a25a8d67aaf42",
+			"ParentID": "a9815cff40410b4f504ec8aeaf4f9c8c",
+			"Name": "Rock_coll",
+			"StaticFlags": 0,
+			"CollisionData": "7ed06b7d4bbfded0c82c3e9cee9b0932"
+		},
+		{
+			"TypeID": 1,
+			"ID": "13aad7fc4fe1e1d5cbb5d6b27cf31917",
+			"ParentID": "139cba88453b519006b694b808d3ce7b",
+			"Name": "Rock 14",
+			"Transform": {
+				"Translation": {
+					"X": 1193.0206298828126,
+					"Y": 864.493896484375,
+					"Z": 2714.109130859375
+				},
+				"Orientation": {
+					"X": 0.08181215822696686,
+					"Y": -0.619503378868103,
+					"Z": -0.5037714242935181,
+					"W": 0.5964367389678955
+				},
+				"Scale": {
+					"X": 4.969033241271973,
+					"Y": 2.0,
+					"Z": 4.969033241271973
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "691c67fc4fb5410abd06239d0b5ac8bc",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "342008a0428375648bc2eba3307d9ac1"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 24,
+			"ID": "2d11506d4b6b2195a74695910ba8a073",
+			"ParentID": "13aad7fc4fe1e1d5cbb5d6b27cf31917",
+			"Name": "Rock_coll",
+			"StaticFlags": 0,
+			"CollisionData": "7ed06b7d4bbfded0c82c3e9cee9b0932"
+		},
+		{
+			"TypeID": 1,
+			"ID": "94b4bfda454fe968664adaa316c132c2",
+			"ParentID": "139cba88453b519006b694b808d3ce7b",
+			"Name": "Rock 22",
+			"Transform": {
+				"Translation": {
+					"X": -759.7267456054688,
+					"Y": 799.6805419921875,
+					"Z": 657.81201171875
+				},
+				"Orientation": {
+					"X": 0.7782720923423767,
+					"Y": 0.4080018401145935,
+					"Z": -0.18280227482318879,
+					"W": 0.4409199357032776
+				},
+				"Scale": {
+					"X": 3.5807175636291506,
+					"Y": 3.5807175636291506,
+					"Z": 3.5807175636291506
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "691c67fc4fb5410abd06239d0b5ac8bc",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "875dc82043062b1a15b844ae2011dec5"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 24,
+			"ID": "d8bfbe354d164801130f69b7644fd067",
+			"ParentID": "94b4bfda454fe968664adaa316c132c2",
+			"Name": "Rock_coll",
+			"StaticFlags": 0,
+			"CollisionData": "7ed06b7d4bbfded0c82c3e9cee9b0932"
+		},
+		{
+			"TypeID": 1,
+			"ID": "4b479ae044420b2b5ac5ee8cc537221e",
+			"ParentID": "139cba88453b519006b694b808d3ce7b",
+			"Name": "Rock 13",
+			"Transform": {
+				"Translation": {
+					"X": 1626.3597412109376,
+					"Y": 125.94259643554688,
+					"Z": 1984.74658203125
+				},
+				"Orientation": {
+					"X": 0.6157267689704895,
+					"Y": -0.6618091464042664,
+					"Z": -0.09301737695932388,
+					"W": -0.41741713881492617
+				},
+				"Scale": {
+					"X": 3.5807175636291506,
+					"Y": 3.5807175636291506,
+					"Z": 3.5807175636291506
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "691c67fc4fb5410abd06239d0b5ac8bc",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "875dc82043062b1a15b844ae2011dec5"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 24,
+			"ID": "c9e3f39f488fd7e05f4a3a98f3fc4b26",
+			"ParentID": "4b479ae044420b2b5ac5ee8cc537221e",
+			"Name": "Rock_coll",
+			"StaticFlags": 0,
+			"CollisionData": "7ed06b7d4bbfded0c82c3e9cee9b0932"
+		},
+		{
+			"TypeID": 1,
+			"ID": "8ab1146a45a63311b5c12a90caf31d28",
+			"ParentID": "139cba88453b519006b694b808d3ce7b",
+			"Name": "Rock 5",
+			"Transform": {
+				"Translation": {
+					"X": 1626.3597412109376,
+					"Y": 125.94259643554688,
+					"Z": 1023.21240234375
+				},
+				"Orientation": {
+					"X": 0.31783050298690798,
+					"Y": 0.13776645064353944,
+					"Z": 0.5354956388473511,
+					"W": -0.7702264189720154
+				},
+				"Scale": {
+					"X": 3.5807175636291506,
+					"Y": 3.5807175636291506,
+					"Z": 3.5807175636291506
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "691c67fc4fb5410abd06239d0b5ac8bc",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "875dc82043062b1a15b844ae2011dec5"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 24,
+			"ID": "ba8b830949004cb154f65eb0506aa5f9",
+			"ParentID": "8ab1146a45a63311b5c12a90caf31d28",
+			"Name": "Rock_coll",
+			"StaticFlags": 0,
+			"CollisionData": "7ed06b7d4bbfded0c82c3e9cee9b0932"
+		},
+		{
+			"TypeID": 1,
+			"ID": "7ec216a642d3ee2aed2365b13fdadb44",
+			"ParentID": "139cba88453b519006b694b808d3ce7b",
+			"Name": "Rock 1",
+			"Transform": {
+				"Translation": {
+					"X": 945.5859375,
+					"Y": 125.94259643554688,
+					"Z": 239.51593017578126
+				},
+				"Orientation": {
+					"X": -0.4782736897468567,
+					"Y": 0.12709060311317445,
+					"Z": -0.3987806439399719,
+					"W": 0.7720597982406616
+				},
+				"Scale": {
+					"X": 3.5807175636291506,
+					"Y": 3.5807175636291506,
+					"Z": 3.5807175636291506
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "691c67fc4fb5410abd06239d0b5ac8bc",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "875dc82043062b1a15b844ae2011dec5"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 24,
+			"ID": "a81b630e4a53c9582dae07b7647ba118",
+			"ParentID": "7ec216a642d3ee2aed2365b13fdadb44",
+			"Name": "Rock_coll",
+			"StaticFlags": 0,
+			"CollisionData": "7ed06b7d4bbfded0c82c3e9cee9b0932"
+		},
+		{
+			"TypeID": 1,
+			"ID": "a464028a420f5658456cc8b9e0fadd5c",
+			"ParentID": "139cba88453b519006b694b808d3ce7b",
+			"Name": "Rock 0",
+			"Transform": {
+				"Translation": {
+					"X": -943.249755859375,
+					"Y": 125.94259643554688,
+					"Z": 879.5159301757813
+				},
+				"Orientation": {
+					"X": -0.6108068227767944,
+					"Y": -0.25226542353630068,
+					"Z": -0.749393105506897,
+					"W": -0.041075702756643298
+				},
+				"Scale": {
+					"X": 2.074052095413208,
+					"Y": 2.074052095413208,
+					"Z": 2.074052095413208
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "691c67fc4fb5410abd06239d0b5ac8bc",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"TypeID": 24,
+			"ID": "62a088824a3dffacedcc56b8117fe9b7",
+			"ParentID": "a464028a420f5658456cc8b9e0fadd5c",
+			"Name": "Rock_coll",
+			"StaticFlags": 0,
+			"CollisionData": "7ed06b7d4bbfded0c82c3e9cee9b0932"
+		},
+		{
+			"TypeID": 1,
+			"ID": "be734ae74905e9a8d7094991083ca98b",
+			"ParentID": "139cba88453b519006b694b808d3ce7b",
+			"Name": "Rock",
+			"Transform": {
+				"Translation": {
+					"X": -674.546630859375,
+					"Y": 125.94259643554688,
+					"Z": 231.11929321289063
+				},
+				"Orientation": {
+					"X": -0.7854669094085693,
+					"Y": -0.2542310953140259,
+					"Z": -0.5636638402938843,
+					"W": 0.02629738859832287
+				},
+				"Scale": {
+					"X": 2.074052095413208,
+					"Y": 2.074052095413208,
+					"Z": 2.074052095413208
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "691c67fc4fb5410abd06239d0b5ac8bc",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "875dc82043062b1a15b844ae2011dec5"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 24,
+			"ID": "527212ba46b14b4231fe4687b25575c6",
+			"ParentID": "be734ae74905e9a8d7094991083ca98b",
+			"Name": "Rock_coll",
+			"StaticFlags": 0,
+			"CollisionData": "7ed06b7d4bbfded0c82c3e9cee9b0932"
+		},
+		{
+			"TypeID": 1,
+			"ID": "30bf9f004231b2ad8f3aa685b641d357",
+			"ParentID": "139cba88453b519006b694b808d3ce7b",
+			"Name": "rock_49",
+			"Transform": {
+				"Translation": {
+					"X": 1831.8570556640626,
+					"Y": 878.435546875,
+					"Z": 1496.88232421875
+				},
+				"Orientation": {
+					"X": 0.5822930932044983,
+					"Y": 0.8054798245429993,
+					"Z": -0.0508139431476593,
+					"W": 0.09774988889694214
+				},
+				"Scale": {
+					"X": 4.0,
+					"Y": 5.0,
+					"Z": 6.0
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "50573d17460b8ec3fa5b13a9eeb06523",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "875dc82043062b1a15b844ae2011dec5"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 24,
+			"ID": "f83d682149ef6aca5fc15fba64768579",
+			"ParentID": "30bf9f004231b2ad8f3aa685b641d357",
+			"Name": "rock_40_coll",
+			"StaticFlags": 0,
+			"CollisionData": "ae09b3cc45cd03a3a2b0f6a0f07caa4e"
+		},
+		{
+			"TypeID": 1,
+			"ID": "e10239f7499e0e07c8769d8c3f80ed1c",
+			"ParentID": "139cba88453b519006b694b808d3ce7b",
+			"Name": "rock_44",
+			"Transform": {
+				"Translation": {
+					"X": 1474.3582763671876,
+					"Y": 1517.6767578125,
+					"Z": 1369.531982421875
+				},
+				"Orientation": {
+					"X": 0.32813984155654909,
+					"Y": 0.9381829500198364,
+					"Z": -0.020796818658709527,
+					"W": 0.1081877201795578
+				},
+				"Scale": {
+					"X": 4.0,
+					"Y": 5.0,
+					"Z": 6.0
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "50573d17460b8ec3fa5b13a9eeb06523",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "875dc82043062b1a15b844ae2011dec5"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 24,
+			"ID": "0e9f06614c4e5fd543a38b87360d5c29",
+			"ParentID": "e10239f7499e0e07c8769d8c3f80ed1c",
+			"Name": "rock_40_coll",
+			"StaticFlags": 0,
+			"CollisionData": "ae09b3cc45cd03a3a2b0f6a0f07caa4e"
+		},
+		{
+			"TypeID": 1,
+			"ID": "d25d10054176a47f166e65b1c2703ffa",
+			"ParentID": "139cba88453b519006b694b808d3ce7b",
+			"Name": "rock_52",
+			"Transform": {
+				"Translation": {
+					"X": -1039.9185791015626,
+					"Y": 1079.120361328125,
+					"Z": 2941.276123046875
+				},
+				"Orientation": {
+					"X": 0.11665141582489014,
+					"Y": -0.19501477479934693,
+					"Z": 0.4143887460231781,
+					"W": 0.8812738656997681
+				},
+				"Scale": {
+					"X": 4.0,
+					"Y": 5.0,
+					"Z": 6.0
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "50573d17460b8ec3fa5b13a9eeb06523",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "875dc82043062b1a15b844ae2011dec5"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 24,
+			"ID": "42fe09914530cfc4901a67904465c65b",
+			"ParentID": "d25d10054176a47f166e65b1c2703ffa",
+			"Name": "rock_40_coll",
+			"StaticFlags": 0,
+			"CollisionData": "ae09b3cc45cd03a3a2b0f6a0f07caa4e"
+		},
+		{
+			"TypeID": 1,
+			"ID": "2648299c4dbb15e1e45743bc4a529c09",
+			"ParentID": "139cba88453b519006b694b808d3ce7b",
+			"Name": "rock_51",
+			"Transform": {
+				"Translation": {
+					"X": -597.3414916992188,
+					"Y": 1450.84765625,
+					"Z": 1369.531982421875
+				},
+				"Orientation": {
+					"X": 0.24424460530281068,
+					"Y": -0.13487833738327027,
+					"Z": -0.9057824611663818,
+					"W": 0.31892088055610659
+				},
+				"Scale": {
+					"X": 4.0,
+					"Y": 5.0,
+					"Z": 6.0
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "50573d17460b8ec3fa5b13a9eeb06523",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "875dc82043062b1a15b844ae2011dec5"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 24,
+			"ID": "f5f0bce544c8cee5d774da93929c6ab6",
+			"ParentID": "2648299c4dbb15e1e45743bc4a529c09",
+			"Name": "rock_40_coll",
+			"StaticFlags": 0,
+			"CollisionData": "ae09b3cc45cd03a3a2b0f6a0f07caa4e"
+		},
+		{
+			"TypeID": 1,
+			"ID": "c0e5621b4ed0aa9e775ad59fe265507a",
+			"ParentID": "139cba88453b519006b694b808d3ce7b",
+			"Name": "rock_43",
+			"Transform": {
+				"Translation": {
+					"X": 658.2927856445313,
+					"Y": 1517.6767578125,
+					"Z": 1369.531982421875
+				},
+				"Orientation": {
+					"X": 3.0696313046973958e-8,
+					"Y": 0.13269242644309998,
+					"Z": 0.9911572337150574,
+					"W": -3.961316252798497e-8
+				},
+				"Scale": {
+					"X": 4.0,
+					"Y": 5.0,
+					"Z": 6.0
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "50573d17460b8ec3fa5b13a9eeb06523",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "875dc82043062b1a15b844ae2011dec5"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 24,
+			"ID": "f9c525d34c27e317a044e7ad4f69c45d",
+			"ParentID": "c0e5621b4ed0aa9e775ad59fe265507a",
+			"Name": "rock_40_coll",
+			"StaticFlags": 0,
+			"CollisionData": "ae09b3cc45cd03a3a2b0f6a0f07caa4e"
+		},
+		{
+			"TypeID": 1,
+			"ID": "3c24c29a4697a65fbe0667ace6fe52b2",
+			"ParentID": "139cba88453b519006b694b808d3ce7b",
+			"Name": "rock_48",
+			"Transform": {
+				"Translation": {
+					"X": -151.7072296142578,
+					"Y": 697.6766967773438,
+					"Z": 241.622314453125
+				},
+				"Orientation": {
+					"X": -0.13269244134426118,
+					"Y": 0.0,
+					"Z": 0.0,
+					"W": 0.9911572933197022
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "50573d17460b8ec3fa5b13a9eeb06523",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "208076bd4ee70fa3e5ccd28be0d6b165"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 24,
+			"ID": "39ba1e8a436bdad1e9cee2badeb1a595",
+			"ParentID": "3c24c29a4697a65fbe0667ace6fe52b2",
+			"Name": "rock_40_coll",
+			"StaticFlags": 0,
+			"CollisionData": "ae09b3cc45cd03a3a2b0f6a0f07caa4e"
+		},
+		{
+			"TypeID": 1,
+			"ID": "25dfb6af41f9016f805cf0906e006d9e",
+			"ParentID": "139cba88453b519006b694b808d3ce7b",
+			"Name": "rock_42",
+			"Transform": {
+				"Translation": {
+					"X": -757.66650390625,
+					"Y": 464.148193359375,
+					"Z": 578.4970092773438
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": 0.30307137966156008,
+					"Z": 0.0,
+					"W": 0.9529678821563721
+				},
+				"Scale": {
+					"X": 2.0,
+					"Y": 2.0,
+					"Z": 2.0
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "ede37d5b44e1e833a1c742ad8c62cd16",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "208076bd4ee70fa3e5ccd28be0d6b165"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 24,
+			"ID": "a98862c6460fd2a500255ea748a76234",
+			"ParentID": "25dfb6af41f9016f805cf0906e006d9e",
+			"Name": "rock_39_coll",
+			"StaticFlags": 0,
+			"CollisionData": "ec0b8bef49f1fb7ed6095e9560b49145"
+		},
+		{
+			"TypeID": 1,
+			"ID": "f6e3c5d741e85e0cf94782aee5acf994",
+			"ParentID": "139cba88453b519006b694b808d3ce7b",
+			"Name": "rock_47",
+			"Transform": {
+				"Translation": {
+					"X": -1097.4931640625,
+					"Y": 569.974853515625,
+					"Z": 1952.39453125
+				},
+				"Orientation": {
+					"X": -0.2892884314060211,
+					"Y": 0.7295160889625549,
+					"Z": 0.31164515018463137,
+					"W": 0.5357199311256409
+				},
+				"Scale": {
+					"X": 3.317422389984131,
+					"Y": 3.317422389984131,
+					"Z": 3.317422389984131
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "ede37d5b44e1e833a1c742ad8c62cd16",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "875dc82043062b1a15b844ae2011dec5"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 24,
+			"ID": "90b9cde7428b9631d99b3fbb6a00c9f6",
+			"ParentID": "f6e3c5d741e85e0cf94782aee5acf994",
+			"Name": "rock_39_coll",
+			"StaticFlags": 0,
+			"CollisionData": "ec0b8bef49f1fb7ed6095e9560b49145"
+		},
+		{
+			"TypeID": 1,
+			"ID": "29049de849fb6b8726a513b35fd934eb",
+			"ParentID": "139cba88453b519006b694b808d3ce7b",
+			"Name": "rock_46",
+			"Transform": {
+				"Translation": {
+					"X": 107.24468994140625,
+					"Y": 1573.1099853515626,
+					"Z": 2103.8203125
+				},
+				"Orientation": {
+					"X": -0.22243982553482057,
+					"Y": 0.7163709402084351,
+					"Z": 0.35213547945022585,
+					"W": 0.5597623586654663
+				},
+				"Scale": {
+					"X": 1.9606924057006837,
+					"Y": 1.9606924057006837,
+					"Z": 1.9606924057006837
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "ede37d5b44e1e833a1c742ad8c62cd16",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "875dc82043062b1a15b844ae2011dec5"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 24,
+			"ID": "484e54b24fac6997c8a6509df6ac42d4",
+			"ParentID": "29049de849fb6b8726a513b35fd934eb",
+			"Name": "rock_39_coll",
+			"StaticFlags": 0,
+			"CollisionData": "ec0b8bef49f1fb7ed6095e9560b49145"
+		},
+		{
+			"TypeID": 1,
+			"ID": "f99195ec461a29b8f0172b8a2ba8ca61",
+			"ParentID": "139cba88453b519006b694b808d3ce7b",
+			"Name": "rock_45",
+			"Transform": {
+				"Translation": {
+					"X": 211.92105102539063,
+					"Y": 1573.1099853515626,
+					"Z": 1769.4091796875
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": 0.8340466618537903,
+					"Z": 0.0,
+					"W": 0.551693856716156
+				},
+				"Scale": {
+					"X": 1.9606924057006837,
+					"Y": 1.9606924057006837,
+					"Z": 1.9606924057006837
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "ede37d5b44e1e833a1c742ad8c62cd16",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "875dc82043062b1a15b844ae2011dec5"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 24,
+			"ID": "634c1b96449ffddd7c42048ca216918e",
+			"ParentID": "f99195ec461a29b8f0172b8a2ba8ca61",
+			"Name": "rock_39_coll",
+			"StaticFlags": 0,
+			"CollisionData": "ec0b8bef49f1fb7ed6095e9560b49145"
+		},
+		{
+			"TypeID": 1,
+			"ID": "ad0cdfe348f444140a1993bbe2496607",
+			"ParentID": "139cba88453b519006b694b808d3ce7b",
+			"Name": "rock_40",
+			"Transform": {
+				"Translation": {
+					"X": 1553.177001953125,
+					"Y": 1182.45556640625,
+					"Z": 2011.53759765625
+				},
+				"Orientation": {
+					"X": 0.028903445228934289,
+					"Y": 0.22215548157691956,
+					"Z": -0.12573793530464173,
+					"W": 0.966437578201294
+				},
+				"Scale": {
+					"X": 0.9683488607406616,
+					"Y": 1.2822455167770386,
+					"Z": 1.2944267988204957
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "ede37d5b44e1e833a1c742ad8c62cd16",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "208076bd4ee70fa3e5ccd28be0d6b165"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 24,
+			"ID": "a70f83794d771b5d1d86e687f38674e1",
+			"ParentID": "ad0cdfe348f444140a1993bbe2496607",
+			"Name": "rock_39_coll",
+			"StaticFlags": 0,
+			"CollisionData": "ec0b8bef49f1fb7ed6095e9560b49145"
+		},
+		{
+			"TypeID": 1,
+			"ID": "95dbbc014f0b279709a5dfaf9f37b0c5",
+			"ParentID": "139cba88453b519006b694b808d3ce7b",
+			"Name": "rock_50",
+			"Transform": {
+				"Translation": {
+					"X": -1040.6029052734376,
+					"Y": 347.3760986328125,
+					"Z": 2434.832275390625
+				},
+				"Orientation": {
+					"X": 0.02839275449514389,
+					"Y": 0.5259626507759094,
+					"Z": -0.244354709982872,
+					"W": 0.8141546845436096
+				},
+				"Scale": {
+					"X": 0.783226728439331,
+					"Y": 0.783226728439331,
+					"Z": 0.783226728439331
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "ede37d5b44e1e833a1c742ad8c62cd16",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "208076bd4ee70fa3e5ccd28be0d6b165"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 24,
+			"ID": "dd2361d24c3d40991d5d6ab6c8457fab",
+			"ParentID": "95dbbc014f0b279709a5dfaf9f37b0c5",
+			"Name": "rock_39_coll",
+			"StaticFlags": 0,
+			"CollisionData": "ec0b8bef49f1fb7ed6095e9560b49145"
+		},
+		{
+			"TypeID": 1,
+			"ID": "ff91ac1244efe55ec8ad319595808857",
+			"ParentID": "139cba88453b519006b694b808d3ce7b",
+			"Name": "rock_53",
+			"Transform": {
+				"Translation": {
+					"X": -210.29092407226563,
+					"Y": 1161.2890625,
+					"Z": 658.818603515625
+				},
+				"Orientation": {
+					"X": 0.14829079806804658,
+					"Y": 0.12007442861795426,
+					"Z": -0.7628906965255737,
+					"W": 0.6177296042442322
+				},
+				"Scale": {
+					"X": 0.783226728439331,
+					"Y": 0.783226728439331,
+					"Z": 0.783226728439331
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "ede37d5b44e1e833a1c742ad8c62cd16",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "208076bd4ee70fa3e5ccd28be0d6b165"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 24,
+			"ID": "0c246b3a457e80a9f9ab259d6f9f42f5",
+			"ParentID": "ff91ac1244efe55ec8ad319595808857",
+			"Name": "rock_39_coll",
+			"StaticFlags": 0,
+			"CollisionData": "ec0b8bef49f1fb7ed6095e9560b49145"
+		},
+		{
+			"TypeID": 1,
+			"ID": "d9476fb04449e398e6a1b5bc1352efe4",
+			"ParentID": "139cba88453b519006b694b808d3ce7b",
+			"Name": "rock_39",
+			"Transform": {
+				"Translation": {
+					"X": -162.92523193359376,
+					"Y": 750.27490234375,
+					"Z": 206.636962890625
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": 0.19080902636051179,
+					"Z": 0.0,
+					"W": 0.9816272854804993
+				},
+				"Scale": {
+					"X": 0.783226728439331,
+					"Y": 0.783226728439331,
+					"Z": 0.783226728439331
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "ede37d5b44e1e833a1c742ad8c62cd16",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "208076bd4ee70fa3e5ccd28be0d6b165"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 24,
+			"ID": "09c4f2d9440d417b967a4f898bf1f581",
+			"ParentID": "d9476fb04449e398e6a1b5bc1352efe4",
+			"Name": "rock_39_coll",
+			"StaticFlags": 0,
+			"CollisionData": "ec0b8bef49f1fb7ed6095e9560b49145"
+		},
+		{
+			"TypeID": 1,
+			"ID": "943c0a3743b64ac887f6ce8a4a0ed92f",
+			"ParentID": "139cba88453b519006b694b808d3ce7b",
+			"Name": "rock_41",
+			"Transform": {
+				"Translation": {
+					"X": -491.96148681640627,
+					"Y": 403.00469970703127,
+					"Z": 289.6196594238281
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": 0.7347932457923889,
+					"Z": 0.0,
+					"W": 0.6782911419868469
+				},
+				"Scale": {
+					"X": 1.1295111179351807,
+					"Y": 1.1295111179351807,
+					"Z": 1.1295111179351807
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "ede37d5b44e1e833a1c742ad8c62cd16",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "d4f312b04a8872bd0bf163b3351b3546"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 24,
+			"ID": "fd673d1c4d39b122c99a3e88ccd7e917",
+			"ParentID": "943c0a3743b64ac887f6ce8a4a0ed92f",
+			"Name": "rock_39_coll",
+			"StaticFlags": 0,
+			"CollisionData": "ec0b8bef49f1fb7ed6095e9560b49145"
+		},
+		{
+			"TypeID": 1,
+			"ID": "5515c2bd434791e971d37db05ea1eff0",
+			"ParentID": "59d6696c48ec2cb18c6e51b9f5749f82",
+			"Name": "Bench",
+			"Transform": {
+				"Translation": {
+					"X": -1007.7952270507813,
+					"Y": 293.860107421875,
+					"Z": 1390.6868896484376
+				},
+				"Orientation": {
+					"X": -0.10347864776849747,
+					"Y": 0.10347860306501389,
+					"Z": -0.6994943618774414,
+					"W": 0.6994941830635071
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "97164d4340a82961bb1094939f8e13ac",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"TypeID": 14,
+			"ID": "07986f924d20267c422d35b9871a1757",
+			"ParentID": "5515c2bd434791e971d37db05ea1eff0",
+			"Name": "BoxCollider",
+			"Transform": {
+				"Translation": {
+					"X": 29.183191299438478,
+					"Y": 75.96993255615235,
+					"Z": -44.242218017578128
+				},
+				"Scale": {
+					"X": 4.418680191040039,
+					"Y": 0.5301849842071533,
+					"Z": 2.079429864883423
+				}
+			},
+			"StaticFlags": 0,
+			"Size": {
+				"X": 100.0,
+				"Y": 100.0,
+				"Z": 100.0
+			}
+		},
+		{
+			"TypeID": 4,
+			"ID": "895b8b354f860b69eddbddb8b6385f1a",
+			"ParentID": "59d6696c48ec2cb18c6e51b9f5749f82",
+			"Name": "DirectionalLight",
+			"Transform": {
+				"Translation": {
+					"X": -97.30938720703125,
+					"Y": 368.6381530761719,
+					"Z": -504.1533203125
+				},
+				"Orientation": {
+					"X": -0.21033360064029694,
+					"Y": -0.12986047565937043,
+					"Z": -0.028200769796967508,
+					"W": -0.9685560464859009
+				}
+			},
+			"StaticFlags": 0,
+			"ShadowsDistance": 10000.0
+		},
+		{
+			"TypeID": 1,
+			"ID": "53319fdf4987f9598c03d788df384910",
+			"ParentID": "59d6696c48ec2cb18c6e51b9f5749f82",
+			"Name": "bridge",
+			"Transform": {
+				"Translation": {
+					"X": -66.57275390625,
+					"Y": -265.0000305175781,
+					"Z": 7574.7646484375
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "3b5b242a453dbbbdfa88e1ab875f8736",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "3d34b341419fdf866b81469909936898"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 3,
+			"ID": "196182fa4169659dc2b29a9e88f0e475",
+			"ParentID": "53319fdf4987f9598c03d788df384910",
+			"Name": "Floor",
+			"Transform": {
+				"Translation": {
+					"X": -90.0,
+					"Y": 210.0,
+					"Z": 50.0
+				},
+				"Orientation": {
+					"X": -0.03055129386484623,
+					"Y": 0.0,
+					"Z": 0.0,
+					"W": 0.9995331764221191
+				},
+				"Scale": {
+					"X": 3.2399985790252687,
+					"Y": 0.07999995350837708,
+					"Z": 1.0
+				}
+			},
+			"StaticFlags": 0
+		},
+		{
+			"TypeID": 14,
+			"ID": "4a595f624980158ee64e64916d306f2d",
+			"ParentID": "196182fa4169659dc2b29a9e88f0e475",
+			"Name": "BoxCollider 2",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": -714.0507202148438,
+					"Z": -2219.712646484375
+				},
+				"Orientation": {
+					"X": 0.02075793221592903,
+					"Y": 0.0,
+					"Z": 0.0,
+					"W": 0.9997844696044922
+				},
+				"Scale": {
+					"X": 0.9599999785423279,
+					"Y": 4.279998302459717,
+					"Z": 12.639992713928223
+				}
+			},
+			"StaticFlags": 0,
+			"Size": {
+				"X": 100.0,
+				"Y": 100.0,
+				"Z": 100.0
+			}
+		},
+		{
+			"TypeID": 14,
+			"ID": "28d7878140af7015549d449171641a4c",
+			"ParentID": "196182fa4169659dc2b29a9e88f0e475",
+			"Name": "BoxCollider 5",
+			"Transform": {
+				"Translation": {
+					"X": 0.0002448942686896771,
+					"Y": 410.9579772949219,
+					"Z": -3142.142822265625
+				},
+				"Orientation": {
+					"X": -6.131926966190804e-9,
+					"Y": 0.9967259764671326,
+					"Z": 0.08085402846336365,
+					"W": 1.27112699033205e-7
+				},
+				"Scale": {
+					"X": 0.9599999785423279,
+					"Y": 4.199998378753662,
+					"Z": 7.03999662399292
+				}
+			},
+			"StaticFlags": 0,
+			"Size": {
+				"X": 100.0,
+				"Y": 100.0,
+				"Z": 100.0
+			}
+		},
+		{
+			"TypeID": 14,
+			"ID": "4930d53b413bad72865fbc91dfc9551f",
+			"ParentID": "196182fa4169659dc2b29a9e88f0e475",
+			"Name": "BoxCollider 1",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": -1208.8125,
+					"Z": -1310.189453125
+				},
+				"Orientation": {
+					"X": -0.005452098324894905,
+					"Y": 0.0,
+					"Z": 0.0,
+					"W": 0.9999851584434509
+				},
+				"Scale": {
+					"X": 0.9599999785423279,
+					"Y": 4.199998378753662,
+					"Z": 6.7599968910217289
+				}
+			},
+			"StaticFlags": 0,
+			"Size": {
+				"X": 100.0,
+				"Y": 100.0,
+				"Z": 100.0
+			}
+		},
+		{
+			"TypeID": 14,
+			"ID": "a92293b94e4e2ad542f866bd6cc9b308",
+			"ParentID": "196182fa4169659dc2b29a9e88f0e475",
+			"Name": "BoxCollider 0",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": -878.5848388671875,
+					"Z": -662.833740234375
+				},
+				"Orientation": {
+					"X": -0.04859062284231186,
+					"Y": 0.0,
+					"Z": 0.0,
+					"W": 0.9988188147544861
+				},
+				"Scale": {
+					"X": 0.9599999785423279,
+					"Y": 3.699998140335083,
+					"Z": 6.919996738433838
+				}
+			},
+			"StaticFlags": 0,
+			"Size": {
+				"X": 100.0,
+				"Y": 100.0,
+				"Z": 100.0
+			}
+		},
+		{
+			"TypeID": 14,
+			"ID": "4bb09db94e130d890e78f7930a91ba40",
+			"ParentID": "196182fa4169659dc2b29a9e88f0e475",
+			"Name": "BoxCollider 4",
+			"Transform": {
+				"Translation": {
+					"X": 0.0003249558503739536,
+					"Y": 1749.13623046875,
+					"Z": -3768.68310546875
+				},
+				"Orientation": {
+					"X": -2.77686451610748e-9,
+					"Y": 0.9938995242118836,
+					"Z": 0.11028921604156494,
+					"W": 3.5285697919107409e-8
+				},
+				"Scale": {
+					"X": 0.9599999785423279,
+					"Y": 4.199998378753662,
+					"Z": 6.7599968910217289
+				}
+			},
+			"StaticFlags": 0,
+			"Size": {
+				"X": 100.0,
+				"Y": 100.0,
+				"Z": 100.0
+			}
+		},
+		{
+			"TypeID": 14,
+			"ID": "ad2ba0ec41c5bae6da6f9f8d9c7f1d4c",
+			"ParentID": "196182fa4169659dc2b29a9e88f0e475",
+			"Name": "BoxCollider 6",
+			"Transform": {
+				"Translation": {
+					"X": 0.00036734138848260045,
+					"Y": 3356.123779296875,
+					"Z": -4733.8701171875
+				},
+				"Orientation": {
+					"X": -2.2614475625459819e-8,
+					"Y": 0.9380753636360169,
+					"Z": -0.3464312255382538,
+					"W": 3.021520456059079e-8
+				},
+				"Scale": {
+					"X": 0.9599999785423279,
+					"Y": 4.699998378753662,
+					"Z": 2.663677930831909
+				}
+			},
+			"StaticFlags": 0,
+			"Size": {
+				"X": 100.0,
+				"Y": 100.0,
+				"Z": 100.0
+			}
+		},
+		{
+			"TypeID": 14,
+			"ID": "227b1e4a4848b8e45109a884e2d2dcca",
+			"ParentID": "196182fa4169659dc2b29a9e88f0e475",
+			"Name": "BoxCollider 3",
+			"Transform": {
+				"Translation": {
+					"X": 0.00036734138848260045,
+					"Y": 3304.833740234375,
+					"Z": -4348.849609375
+				},
+				"Orientation": {
+					"X": -6.218694004189729e-9,
+					"Y": 0.9924188852310181,
+					"Z": 0.12290184199810028,
+					"W": 3.722485431012501e-8
+				},
+				"Scale": {
+					"X": 0.9599999785423279,
+					"Y": 4.699998378753662,
+					"Z": 6.350607395172119
+				}
+			},
+			"StaticFlags": 0,
+			"Size": {
+				"X": 100.0,
+				"Y": 100.0,
+				"Z": 100.0
+			}
+		},
+		{
+			"TypeID": 14,
+			"ID": "5de67da7490f6ef986f202aa01f76d91",
+			"ParentID": "196182fa4169659dc2b29a9e88f0e475",
+			"Name": "BoxCollider",
+			"Transform": {
+				"Orientation": {
+					"X": -0.08776029944419861,
+					"Y": 0.0,
+					"Z": 0.0,
+					"W": 0.9961416125297546
+				},
+				"Scale": {
+					"X": 0.9599999785423279,
+					"Y": 4.199998378753662,
+					"Z": 6.959996700286865
+				}
+			},
+			"StaticFlags": 0,
+			"Size": {
+				"X": 100.0,
+				"Y": 100.0,
+				"Z": 100.0
+			}
+		},
+		{
+			"TypeID": 3,
+			"ID": "f68142894357d9d293531b88d03f5c94",
+			"ParentID": "53319fdf4987f9598c03d788df384910",
+			"Name": "RightSide",
+			"Transform": {
+				"Translation": {
+					"X": -250.0,
+					"Y": 370.0,
+					"Z": 50.0
+				},
+				"Orientation": {
+					"X": -0.03055129386484623,
+					"Y": 0.0,
+					"Z": 0.0,
+					"W": 0.9995331764221191
+				}
+			},
+			"StaticFlags": 0
+		},
+		{
+			"TypeID": 14,
+			"ID": "a3623ead4f1501b0f3a5a19556f2e6b9",
+			"ParentID": "f68142894357d9d293531b88d03f5c94",
+			"Name": "BoxCollider 2",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": -214.9842529296875,
+					"Z": -2217.26904296875
+				},
+				"Orientation": {
+					"X": 0.02075790986418724,
+					"Y": 0.0,
+					"Z": 0.0,
+					"W": 0.9997844696044922
+				},
+				"Scale": {
+					"X": 0.9599999785423279,
+					"Y": 4.279998302459717,
+					"Z": 12.639992713928223
+				}
+			},
+			"StaticFlags": 0,
+			"Size": {
+				"X": 100.0,
+				"Y": 100.0,
+				"Z": 100.0
+			}
+		},
+		{
+			"TypeID": 14,
+			"ID": "4e33ffc641b265e86ba0309c6a4f67e9",
+			"ParentID": "f68142894357d9d293531b88d03f5c94",
+			"Name": "BoxCollider 5",
+			"Transform": {
+				"Translation": {
+					"X": 0.000244140625,
+					"Y": -88.11228942871094,
+					"Z": -3144.585693359375
+				},
+				"Orientation": {
+					"X": -2.2579027536551168e-9,
+					"Y": 0.9938011765480042,
+					"Z": 0.11117162555456162,
+					"W": 1.2724071041247954e-7
+				},
+				"Scale": {
+					"X": 0.9599999785423279,
+					"Y": 4.199998378753662,
+					"Z": 6.7599968910217289
+				}
+			},
+			"StaticFlags": 0,
+			"Size": {
+				"X": 100.0,
+				"Y": 100.0,
+				"Z": 100.0
+			}
+		},
+		{
+			"TypeID": 14,
+			"ID": "27b299b14cb2a335203cfa8dbb64ea04",
+			"ParentID": "f68142894357d9d293531b88d03f5c94",
+			"Name": "BoxCollider 1",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": -210.6731414794922,
+					"Z": -1305.3033447265626
+				},
+				"Orientation": {
+					"X": -0.05026921629905701,
+					"Y": 0.0,
+					"Z": 0.0,
+					"W": 0.9987357258796692
+				},
+				"Scale": {
+					"X": 0.9599999785423279,
+					"Y": 4.199998378753662,
+					"Z": 6.7599968910217289
+				}
+			},
+			"StaticFlags": 0,
+			"Size": {
+				"X": 100.0,
+				"Y": 100.0,
+				"Z": 100.0
+			}
+		},
+		{
+			"TypeID": 14,
+			"ID": "0c28a1104a393972b9e696a42d1f7815",
+			"ParentID": "f68142894357d9d293531b88d03f5c94",
+			"Name": "BoxCollider 0",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": -129.98452758789063,
+					"Z": -659.169189453125
+				},
+				"Orientation": {
+					"X": -0.0720381960272789,
+					"Y": 0.0,
+					"Z": 0.0,
+					"W": 0.9974018931388855
+				},
+				"Scale": {
+					"X": 0.9599999785423279,
+					"Y": 4.199998378753662,
+					"Z": 6.7599968910217289
+				}
+			},
+			"StaticFlags": 0,
+			"Size": {
+				"X": 100.0,
+				"Y": 100.0,
+				"Z": 100.0
+			}
+		},
+		{
+			"TypeID": 14,
+			"ID": "7a26747547f88c5d463a0c8b31a5327a",
+			"ParentID": "f68142894357d9d293531b88d03f5c94",
+			"Name": "BoxCollider 4",
+			"Transform": {
+				"Translation": {
+					"X": 0.00032520294189453125,
+					"Y": 70.75152587890625,
+					"Z": -3776.0615234375
+				},
+				"Orientation": {
+					"X": -1.975280383703648e-9,
+					"Y": 0.9911402463912964,
+					"Z": 0.13281910121440888,
+					"W": 3.5339631665465279e-8
+				},
+				"Scale": {
+					"X": 0.9599999785423279,
+					"Y": 4.199998378753662,
+					"Z": 6.7599968910217289
+				}
+			},
+			"StaticFlags": 0,
+			"Size": {
+				"X": 100.0,
+				"Y": 100.0,
+				"Z": 100.0
+			}
+		},
+		{
+			"TypeID": 14,
+			"ID": "54fb06f04e80de10f9253da2b22a9ebf",
+			"ParentID": "f68142894357d9d293531b88d03f5c94",
+			"Name": "BoxCollider 3",
+			"Transform": {
+				"Translation": {
+					"X": 0.0003662109375,
+					"Y": 280.1324157714844,
+					"Z": -4414.46923828125
+				},
+				"Orientation": {
+					"X": -3.6449590012921364e-9,
+					"Y": 0.9816220998764038,
+					"Z": 0.19083505868911744,
+					"W": 3.756418820444196e-8
+				},
+				"Scale": {
+					"X": 0.9599999785423279,
+					"Y": 4.199998378753662,
+					"Z": 6.7599968910217289
+				}
+			},
+			"StaticFlags": 0,
+			"Size": {
+				"X": 100.0,
+				"Y": 100.0,
+				"Z": 100.0
+			}
+		},
+		{
+			"TypeID": 14,
+			"ID": "f24bde8e4161bea8d58f20bb4b97e76c",
+			"ParentID": "f68142894357d9d293531b88d03f5c94",
+			"Name": "BoxCollider",
+			"Transform": {
+				"Orientation": {
+					"X": -0.13052621483802796,
+					"Y": 0.0,
+					"Z": 0.0,
+					"W": 0.9914448857307434
+				},
+				"Scale": {
+					"X": 0.9599999785423279,
+					"Y": 4.199998378753662,
+					"Z": 6.7599968910217289
+				}
+			},
+			"StaticFlags": 0,
+			"Size": {
+				"X": 100.0,
+				"Y": 100.0,
+				"Z": 100.0
+			}
+		},
+		{
+			"TypeID": 3,
+			"ID": "2ea1d42f472208aed6e3889218633d84",
+			"ParentID": "53319fdf4987f9598c03d788df384910",
+			"Name": "LeftSide",
+			"Transform": {
+				"Translation": {
+					"X": 60.0,
+					"Y": 370.0,
+					"Z": 50.0
+				},
+				"Orientation": {
+					"X": -0.03055129386484623,
+					"Y": 0.0,
+					"Z": 0.0,
+					"W": 0.9995331764221191
+				}
+			},
+			"StaticFlags": 0
+		},
+		{
+			"TypeID": 14,
+			"ID": "443a607b402be7e832756ea1ae2a471a",
+			"ParentID": "2ea1d42f472208aed6e3889218633d84",
+			"Name": "BoxCollider 2",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": -214.9842529296875,
+					"Z": -2217.26904296875
+				},
+				"Orientation": {
+					"X": 0.02075790986418724,
+					"Y": 0.0,
+					"Z": 0.0,
+					"W": 0.9997844696044922
+				},
+				"Scale": {
+					"X": 0.9599999785423279,
+					"Y": 4.279998302459717,
+					"Z": 12.639992713928223
+				}
+			},
+			"StaticFlags": 0,
+			"Size": {
+				"X": 100.0,
+				"Y": 100.0,
+				"Z": 100.0
+			}
+		},
+		{
+			"TypeID": 14,
+			"ID": "ec25ad014aba6650a643b2a11f34aaa5",
+			"ParentID": "2ea1d42f472208aed6e3889218633d84",
+			"Name": "BoxCollider 5",
+			"Transform": {
+				"Translation": {
+					"X": 0.000244140625,
+					"Y": -88.11228942871094,
+					"Z": -3144.585693359375
+				},
+				"Orientation": {
+					"X": -2.2579027536551168e-9,
+					"Y": 0.9938011765480042,
+					"Z": 0.11117162555456162,
+					"W": 1.2724071041247954e-7
+				},
+				"Scale": {
+					"X": 0.9599999785423279,
+					"Y": 4.199998378753662,
+					"Z": 6.7599968910217289
+				}
+			},
+			"StaticFlags": 0,
+			"Size": {
+				"X": 100.0,
+				"Y": 100.0,
+				"Z": 100.0
+			}
+		},
+		{
+			"TypeID": 14,
+			"ID": "f1bdd18246ed60ca8a204cb6db4a9e37",
+			"ParentID": "2ea1d42f472208aed6e3889218633d84",
+			"Name": "BoxCollider 1",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": -210.6731414794922,
+					"Z": -1305.3033447265626
+				},
+				"Orientation": {
+					"X": -0.05026921629905701,
+					"Y": 0.0,
+					"Z": 0.0,
+					"W": 0.9987357258796692
+				},
+				"Scale": {
+					"X": 0.9599999785423279,
+					"Y": 4.199998378753662,
+					"Z": 6.7599968910217289
+				}
+			},
+			"StaticFlags": 0,
+			"Size": {
+				"X": 100.0,
+				"Y": 100.0,
+				"Z": 100.0
+			}
+		},
+		{
+			"TypeID": 14,
+			"ID": "55ca7be9475acc695b81ff86e7282c1a",
+			"ParentID": "2ea1d42f472208aed6e3889218633d84",
+			"Name": "BoxCollider 4",
+			"Transform": {
+				"Translation": {
+					"X": 0.00032520294189453125,
+					"Y": 70.75152587890625,
+					"Z": -3776.0615234375
+				},
+				"Orientation": {
+					"X": -1.975280383703648e-9,
+					"Y": 0.9911402463912964,
+					"Z": 0.13281910121440888,
+					"W": 3.5339631665465279e-8
+				},
+				"Scale": {
+					"X": 0.9599999785423279,
+					"Y": 4.199998378753662,
+					"Z": 6.7599968910217289
+				}
+			},
+			"StaticFlags": 0,
+			"Size": {
+				"X": 100.0,
+				"Y": 100.0,
+				"Z": 100.0
+			}
+		},
+		{
+			"TypeID": 14,
+			"ID": "b6e722a14e32ba3cadf11b890301a112",
+			"ParentID": "2ea1d42f472208aed6e3889218633d84",
+			"Name": "BoxCollider 0",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": -129.98452758789063,
+					"Z": -659.169189453125
+				},
+				"Orientation": {
+					"X": -0.0720381960272789,
+					"Y": 0.0,
+					"Z": 0.0,
+					"W": 0.9974018931388855
+				},
+				"Scale": {
+					"X": 0.9599999785423279,
+					"Y": 4.199998378753662,
+					"Z": 6.7599968910217289
+				}
+			},
+			"StaticFlags": 0,
+			"Size": {
+				"X": 100.0,
+				"Y": 100.0,
+				"Z": 100.0
+			}
+		},
+		{
+			"TypeID": 14,
+			"ID": "f4cff39c4425328b5dbff48702589004",
+			"ParentID": "2ea1d42f472208aed6e3889218633d84",
+			"Name": "BoxCollider 3",
+			"Transform": {
+				"Translation": {
+					"X": 0.0003662109375,
+					"Y": 280.1324157714844,
+					"Z": -4414.46923828125
+				},
+				"Orientation": {
+					"X": -3.6449590012921364e-9,
+					"Y": 0.9816220998764038,
+					"Z": 0.19083505868911744,
+					"W": 3.756418820444196e-8
+				},
+				"Scale": {
+					"X": 0.9599999785423279,
+					"Y": 4.199998378753662,
+					"Z": 6.7599968910217289
+				}
+			},
+			"StaticFlags": 0,
+			"Size": {
+				"X": 100.0,
+				"Y": 100.0,
+				"Z": 100.0
+			}
+		},
+		{
+			"TypeID": 14,
+			"ID": "ed3acf76449aea924ed92cb8519a2561",
+			"ParentID": "2ea1d42f472208aed6e3889218633d84",
+			"Name": "BoxCollider",
+			"Transform": {
+				"Orientation": {
+					"X": -0.13052621483802796,
+					"Y": 0.0,
+					"Z": 0.0,
+					"W": 0.9914448857307434
+				},
+				"Scale": {
+					"X": 0.9599999785423279,
+					"Y": 4.199998378753662,
+					"Z": 6.7599968910217289
+				}
+			},
+			"StaticFlags": 0,
+			"Size": {
+				"X": 100.0,
+				"Y": 100.0,
+				"Z": 100.0
+			}
+		},
+		{
+			"TypeID": 3,
+			"ID": "519c5fec44922a74f651538a33a3060b",
+			"ParentID": "59d6696c48ec2cb18c6e51b9f5749f82",
+			"Name": "torches",
+			"StaticFlags": 0
+		},
+		{
+			"TypeID": 1,
+			"ID": "e6a5754b4f2bbadf5b6b1ebcf5dd354d",
+			"ParentID": "519c5fec44922a74f651538a33a3060b",
+			"Name": "torch 0",
+			"Transform": {
+				"Translation": {
+					"X": 621.839599609375,
+					"Y": 243.8466796875,
+					"Z": 459.62646484375
+				},
+				"Orientation": {
+					"X": 0.17520788311958314,
+					"Y": -0.4675796627998352,
+					"Z": 0.09513016045093537,
+					"W": 0.8611746430397034
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "5e5c46f345772f868e8294a9e3eec18f",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "636d27c840a6e680461ce2af513b3db8",
+			"ParentID": "e6a5754b4f2bbadf5b6b1ebcf5dd354d",
+			"Name": "Cone",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 87.6550064086914,
+					"Z": 0.0
+				},
+				"Scale": {
+					"X": 0.20000000298023225,
+					"Y": 0.25,
+					"Z": 0.20000000298023225
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "9ae7e799468f8034629d4baed4acfe6c"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 5,
+			"ID": "a064cd954852bfd818ac03acbdba492f",
+			"ParentID": "e6a5754b4f2bbadf5b6b1ebcf5dd354d",
+			"Name": "PointLight",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 66.57888793945313,
+					"Z": 0.0
+				}
+			},
+			"StaticFlags": 0,
+			"Color": {
+				"R": 1.0,
+				"G": 0.43510696291923525,
+				"B": 0.13127028942108155,
+				"A": 1.0
+			},
+			"Radius": 400.0,
+			"FallOffExponent": 2.0
+		},
+		{
+			"TypeID": 1,
+			"ID": "f8555e604e3d868ad5a7c59da84cbe03",
+			"ParentID": "519c5fec44922a74f651538a33a3060b",
+			"Name": "torch 11",
+			"Transform": {
+				"Translation": {
+					"X": -0.8863711357116699,
+					"Y": 351.10247802734377,
+					"Z": 7627.8603515625
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": -1.0,
+					"Z": 0.0,
+					"W": 9.099629210140847e-7
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "5e5c46f345772f868e8294a9e3eec18f",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "8d919d754b426817f5b299b07f40c075",
+			"ParentID": "f8555e604e3d868ad5a7c59da84cbe03",
+			"Name": "Cone",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 87.6550064086914,
+					"Z": 0.0
+				},
+				"Scale": {
+					"X": 0.20000000298023225,
+					"Y": 0.25,
+					"Z": 0.20000000298023225
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "9ae7e799468f8034629d4baed4acfe6c"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 5,
+			"ID": "aee30f914b6573ede897309d3f101814",
+			"ParentID": "f8555e604e3d868ad5a7c59da84cbe03",
+			"Name": "PointLight",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 66.57888793945313,
+					"Z": 0.0
+				}
+			},
+			"StaticFlags": 0,
+			"Color": {
+				"R": 1.0,
+				"G": 0.43510696291923525,
+				"B": 0.13127028942108155,
+				"A": 1.0
+			},
+			"Radius": 400.0,
+			"FallOffExponent": 2.0
+		},
+		{
+			"TypeID": 1,
+			"ID": "b9dc2c5c47c2d7996425ef95ee9eae37",
+			"ParentID": "519c5fec44922a74f651538a33a3060b",
+			"Name": "torch 10",
+			"Transform": {
+				"Translation": {
+					"X": -23.272323608398439,
+					"Y": 71.48133850097656,
+					"Z": 6527.2001953125
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": -1.0,
+					"Z": 0.0,
+					"W": 9.099629210140847e-7
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "5e5c46f345772f868e8294a9e3eec18f",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "8088685b490038024e41879372c0ddb9",
+			"ParentID": "b9dc2c5c47c2d7996425ef95ee9eae37",
+			"Name": "Cone",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 87.6550064086914,
+					"Z": 0.0
+				},
+				"Scale": {
+					"X": 0.20000000298023225,
+					"Y": 0.25,
+					"Z": 0.20000000298023225
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "9ae7e799468f8034629d4baed4acfe6c"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 5,
+			"ID": "dc7205e1425eeba6f96e0cb56a9cdee7",
+			"ParentID": "b9dc2c5c47c2d7996425ef95ee9eae37",
+			"Name": "PointLight",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 66.57888793945313,
+					"Z": 0.0
+				}
+			},
+			"StaticFlags": 0,
+			"Color": {
+				"R": 1.0,
+				"G": 0.43510696291923525,
+				"B": 0.13127028942108155,
+				"A": 1.0
+			},
+			"Radius": 400.0,
+			"FallOffExponent": 2.0
+		},
+		{
+			"TypeID": 1,
+			"ID": "a5fdbbc14abb3a5cabd58a83a5e996d3",
+			"ParentID": "519c5fec44922a74f651538a33a3060b",
+			"Name": "torch 9",
+			"Transform": {
+				"Translation": {
+					"X": -30.24761199951172,
+					"Y": -5.009773254394531,
+					"Z": 5783.63671875
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": -1.0,
+					"Z": 0.0,
+					"W": 9.099629210140847e-7
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "5e5c46f345772f868e8294a9e3eec18f",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "90cf5c27476cad9f363ae680e7c7b150",
+			"ParentID": "a5fdbbc14abb3a5cabd58a83a5e996d3",
+			"Name": "Cone",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 87.6550064086914,
+					"Z": 0.0
+				},
+				"Scale": {
+					"X": 0.20000000298023225,
+					"Y": 0.25,
+					"Z": 0.20000000298023225
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "9ae7e799468f8034629d4baed4acfe6c"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 5,
+			"ID": "edc4ad5a4c92471c78708198e0c9c020",
+			"ParentID": "a5fdbbc14abb3a5cabd58a83a5e996d3",
+			"Name": "PointLight",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 66.57888793945313,
+					"Z": 0.0
+				}
+			},
+			"StaticFlags": 0,
+			"Color": {
+				"R": 1.0,
+				"G": 0.43510696291923525,
+				"B": 0.13127028942108155,
+				"A": 1.0
+			},
+			"Radius": 400.0,
+			"FallOffExponent": 2.0
+		},
+		{
+			"TypeID": 1,
+			"ID": "bbeabb6b4c720c2d7e81caacede32860",
+			"ParentID": "519c5fec44922a74f651538a33a3060b",
+			"Name": "torch 8",
+			"Transform": {
+				"Translation": {
+					"X": -30.248775482177736,
+					"Y": -16.37281036376953,
+					"Z": 5143.10302734375
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": -1.0,
+					"Z": 0.0,
+					"W": 9.099629210140847e-7
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "5e5c46f345772f868e8294a9e3eec18f",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "117544af4a824b6fc496aa8b515d2ef5",
+			"ParentID": "bbeabb6b4c720c2d7e81caacede32860",
+			"Name": "Cone",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 87.6550064086914,
+					"Z": 0.0
+				},
+				"Scale": {
+					"X": 0.20000000298023225,
+					"Y": 0.25,
+					"Z": 0.20000000298023225
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "9ae7e799468f8034629d4baed4acfe6c"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 5,
+			"ID": "180ed9d446fd3bc0072d81be98975766",
+			"ParentID": "bbeabb6b4c720c2d7e81caacede32860",
+			"Name": "PointLight",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 66.57888793945313,
+					"Z": 0.0
+				}
+			},
+			"StaticFlags": 0,
+			"Color": {
+				"R": 1.0,
+				"G": 0.43510696291923525,
+				"B": 0.13127028942108155,
+				"A": 1.0
+			},
+			"Radius": 400.0,
+			"FallOffExponent": 2.0
+		},
+		{
+			"TypeID": 1,
+			"ID": "16f71e82478a517265dca19fd7e12a01",
+			"ParentID": "519c5fec44922a74f651538a33a3060b",
+			"Name": "torch 7",
+			"Transform": {
+				"Translation": {
+					"X": -30.250764846801759,
+					"Y": 138.32081604003907,
+					"Z": 4050.62158203125
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": -1.0,
+					"Z": 0.0,
+					"W": 9.099629210140847e-7
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "5e5c46f345772f868e8294a9e3eec18f",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "2cf93ae84f2d5aa89778bb93621857c0",
+			"ParentID": "16f71e82478a517265dca19fd7e12a01",
+			"Name": "Cone",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 87.6550064086914,
+					"Z": 0.0
+				},
+				"Scale": {
+					"X": 0.20000000298023225,
+					"Y": 0.25,
+					"Z": 0.20000000298023225
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "9ae7e799468f8034629d4baed4acfe6c"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 5,
+			"ID": "ede39b644e30b431ba59daa3146af1de",
+			"ParentID": "16f71e82478a517265dca19fd7e12a01",
+			"Name": "PointLight",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 66.57888793945313,
+					"Z": 0.0
+				}
+			},
+			"StaticFlags": 0,
+			"Color": {
+				"R": 1.0,
+				"G": 0.43510696291923525,
+				"B": 0.13127028942108155,
+				"A": 1.0
+			},
+			"Radius": 400.0,
+			"FallOffExponent": 2.0
+		},
+		{
+			"TypeID": 1,
+			"ID": "c9ef3b844b5a99b6888da2a1d8558658",
+			"ParentID": "519c5fec44922a74f651538a33a3060b",
+			"Name": "torch 17",
+			"Transform": {
+				"Translation": {
+					"X": -284.54583740234377,
+					"Y": 262.53533935546877,
+					"Z": 7331.302734375
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": -1.0,
+					"Z": 0.0,
+					"W": 9.099629210140847e-7
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "5e5c46f345772f868e8294a9e3eec18f",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "06b3e7bb4759a76a38e09cb5e19336a1",
+			"ParentID": "c9ef3b844b5a99b6888da2a1d8558658",
+			"Name": "Cone",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 87.6550064086914,
+					"Z": 0.0
+				},
+				"Scale": {
+					"X": 0.20000000298023225,
+					"Y": 0.25,
+					"Z": 0.20000000298023225
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "9ae7e799468f8034629d4baed4acfe6c"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 5,
+			"ID": "d19510f44c097b43d27667a0b39215d6",
+			"ParentID": "c9ef3b844b5a99b6888da2a1d8558658",
+			"Name": "PointLight 0",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 66.57888793945313,
+					"Z": -0.0
+				}
+			},
+			"StaticFlags": 0,
+			"Color": {
+				"R": 1.0,
+				"G": 0.43510696291923525,
+				"B": 0.13127028942108155,
+				"A": 1.0
+			},
+			"Radius": 400.0,
+			"FallOffExponent": 2.0
+		},
+		{
+			"TypeID": 1,
+			"ID": "ec3dfbbc4c919d5c7b2e02be2d80870f",
+			"ParentID": "519c5fec44922a74f651538a33a3060b",
+			"Name": "torch 16",
+			"Transform": {
+				"Translation": {
+					"X": -268.2908935546875,
+					"Y": 84.69609069824219,
+					"Z": 6578.0947265625
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": -1.0,
+					"Z": 0.0,
+					"W": 9.099629210140847e-7
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "5e5c46f345772f868e8294a9e3eec18f",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "7bb4100943aa48bdca882ca70fc9e594",
+			"ParentID": "ec3dfbbc4c919d5c7b2e02be2d80870f",
+			"Name": "Cone",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 87.6550064086914,
+					"Z": 0.0
+				},
+				"Scale": {
+					"X": 0.20000000298023225,
+					"Y": 0.25,
+					"Z": 0.20000000298023225
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "9ae7e799468f8034629d4baed4acfe6c"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 5,
+			"ID": "8cc2c8af4ad397280a04d8a30fd6358f",
+			"ParentID": "ec3dfbbc4c919d5c7b2e02be2d80870f",
+			"Name": "PointLight 0",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 66.57888793945313,
+					"Z": -0.0
+				}
+			},
+			"StaticFlags": 0,
+			"Color": {
+				"R": 1.0,
+				"G": 0.43510696291923525,
+				"B": 0.13127028942108155,
+				"A": 1.0
+			},
+			"Radius": 400.0,
+			"FallOffExponent": 2.0
+		},
+		{
+			"TypeID": 1,
+			"ID": "1d74e2db45b1a4e96d36e1a59428876c",
+			"ParentID": "519c5fec44922a74f651538a33a3060b",
+			"Name": "torch 15",
+			"Transform": {
+				"Translation": {
+					"X": -262.2342834472656,
+					"Y": -22.09368133544922,
+					"Z": 5623.8203125
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": -1.0,
+					"Z": 0.0,
+					"W": 9.099629210140847e-7
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "5e5c46f345772f868e8294a9e3eec18f",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "0a4df93949f7ccf3eb03f094eadae3a9",
+			"ParentID": "1d74e2db45b1a4e96d36e1a59428876c",
+			"Name": "Cone",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 87.6550064086914,
+					"Z": 0.0
+				},
+				"Scale": {
+					"X": 0.20000000298023225,
+					"Y": 0.25,
+					"Z": 0.20000000298023225
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "9ae7e799468f8034629d4baed4acfe6c"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 5,
+			"ID": "167fbee9437e39ca83e5d88aaaad444d",
+			"ParentID": "1d74e2db45b1a4e96d36e1a59428876c",
+			"Name": "PointLight 0",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 66.57888793945313,
+					"Z": -0.0
+				}
+			},
+			"StaticFlags": 0,
+			"Color": {
+				"R": 1.0,
+				"G": 0.43510696291923525,
+				"B": 0.13127028942108155,
+				"A": 1.0
+			},
+			"Radius": 400.0,
+			"FallOffExponent": 2.0
+		},
+		{
+			"TypeID": 1,
+			"ID": "12f807c04a0175948a8b4d84581d54fd",
+			"ParentID": "519c5fec44922a74f651538a33a3060b",
+			"Name": "torch 14",
+			"Transform": {
+				"Translation": {
+					"X": -266.1101379394531,
+					"Y": 37.585044860839847,
+					"Z": 4654.8037109375
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": -1.0,
+					"Z": 0.0,
+					"W": 9.099629210140847e-7
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "5e5c46f345772f868e8294a9e3eec18f",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "37e2904b4f9d1e6640f42daf489e2558",
+			"ParentID": "12f807c04a0175948a8b4d84581d54fd",
+			"Name": "Cone",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 87.6550064086914,
+					"Z": 0.0
+				},
+				"Scale": {
+					"X": 0.20000000298023225,
+					"Y": 0.25,
+					"Z": 0.20000000298023225
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "9ae7e799468f8034629d4baed4acfe6c"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 5,
+			"ID": "d1ec38e3447738a8509465a0cff8e4f3",
+			"ParentID": "12f807c04a0175948a8b4d84581d54fd",
+			"Name": "PointLight 0",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 66.57888793945313,
+					"Z": -0.0
+				}
+			},
+			"StaticFlags": 0,
+			"Color": {
+				"R": 1.0,
+				"G": 0.43510696291923525,
+				"B": 0.13127028942108155,
+				"A": 1.0
+			},
+			"Radius": 400.0,
+			"FallOffExponent": 2.0
+		},
+		{
+			"TypeID": 1,
+			"ID": "b0d885bb40cc3cfe95556882555bd679",
+			"ParentID": "519c5fec44922a74f651538a33a3060b",
+			"Name": "torch 13",
+			"Transform": {
+				"Translation": {
+					"X": -268.47796630859377,
+					"Y": 167.36495971679688,
+					"Z": 3910.1513671875
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": -1.0,
+					"Z": 0.0,
+					"W": 9.099629210140847e-7
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "5e5c46f345772f868e8294a9e3eec18f",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "db44b66a450d940c7b2c53833ce26759",
+			"ParentID": "b0d885bb40cc3cfe95556882555bd679",
+			"Name": "Cone",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 87.6550064086914,
+					"Z": 0.0
+				},
+				"Scale": {
+					"X": 0.20000000298023225,
+					"Y": 0.25,
+					"Z": 0.20000000298023225
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "9ae7e799468f8034629d4baed4acfe6c"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 5,
+			"ID": "9c4482f24b2aa43014d408923ac6c229",
+			"ParentID": "b0d885bb40cc3cfe95556882555bd679",
+			"Name": "PointLight 0",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 66.57888793945313,
+					"Z": -0.0
+				}
+			},
+			"StaticFlags": 0,
+			"Color": {
+				"R": 1.0,
+				"G": 0.43510696291923525,
+				"B": 0.13127028942108155,
+				"A": 1.0
+			},
+			"Radius": 400.0,
+			"FallOffExponent": 2.0
+		},
+		{
+			"TypeID": 1,
+			"ID": "f5e7299f4e1dff79d08683aa5e342ee0",
+			"ParentID": "519c5fec44922a74f651538a33a3060b",
+			"Name": "torch 12",
+			"Transform": {
+				"Translation": {
+					"X": -294.4374084472656,
+					"Y": 374.46832275390627,
+					"Z": 3216.56005859375
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": -1.0,
+					"Z": 0.0,
+					"W": 9.099629210140847e-7
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "5e5c46f345772f868e8294a9e3eec18f",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "d7e9fe81449e0e3cd872809b0267eed9",
+			"ParentID": "f5e7299f4e1dff79d08683aa5e342ee0",
+			"Name": "Cone",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 87.6550064086914,
+					"Z": 0.0
+				},
+				"Scale": {
+					"X": 0.20000000298023225,
+					"Y": 0.25,
+					"Z": 0.20000000298023225
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "9ae7e799468f8034629d4baed4acfe6c"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 5,
+			"ID": "871358264acf6b530f2d919efd189010",
+			"ParentID": "f5e7299f4e1dff79d08683aa5e342ee0",
+			"Name": "PointLight 0",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 66.57888793945313,
+					"Z": -0.0
+				}
+			},
+			"StaticFlags": 0,
+			"Color": {
+				"R": 1.0,
+				"G": 0.43510696291923525,
+				"B": 0.13127028942108155,
+				"A": 1.0
+			},
+			"Radius": 400.0,
+			"FallOffExponent": 2.0
+		},
+		{
+			"TypeID": 1,
+			"ID": "e5f25e8b4b906d1072949a892ea43559",
+			"ParentID": "519c5fec44922a74f651538a33a3060b",
+			"Name": "torch 6",
+			"Transform": {
+				"Translation": {
+					"X": 2.550734281539917,
+					"Y": 374.46832275390627,
+					"Z": 3182.587890625
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": -1.0,
+					"Z": 0.0,
+					"W": 9.099629210140847e-7
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "5e5c46f345772f868e8294a9e3eec18f",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "aa9b47ef4cbb93b93439ad8e3b879f62",
+			"ParentID": "e5f25e8b4b906d1072949a892ea43559",
+			"Name": "Cone",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 87.6550064086914,
+					"Z": 0.0
+				},
+				"Scale": {
+					"X": 0.20000000298023225,
+					"Y": 0.25,
+					"Z": 0.20000000298023225
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "9ae7e799468f8034629d4baed4acfe6c"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 5,
+			"ID": "08715bb641ee07397740f783446fcc25",
+			"ParentID": "e5f25e8b4b906d1072949a892ea43559",
+			"Name": "PointLight",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 66.57888793945313,
+					"Z": 0.0
+				}
+			},
+			"StaticFlags": 0,
+			"Color": {
+				"R": 1.0,
+				"G": 0.43510696291923525,
+				"B": 0.13127028942108155,
+				"A": 1.0
+			},
+			"Radius": 400.0,
+			"FallOffExponent": 2.0
+		},
+		{
+			"TypeID": 1,
+			"ID": "5a4be16e4c1df092e68a74bda5dc89c9",
+			"ParentID": "519c5fec44922a74f651538a33a3060b",
+			"Name": "torch 5",
+			"Transform": {
+				"Translation": {
+					"X": 127.43074798583985,
+					"Y": -62.32613754272461,
+					"Z": 2935.6376953125
+				},
+				"Orientation": {
+					"X": 0.07845912128686905,
+					"Y": 0.9969174265861511,
+					"Z": -3.429557304812647e-9,
+					"W": -4.357664451504206e-8
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "5e5c46f345772f868e8294a9e3eec18f",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "e8e8d1bf4bb43e35052614b69a6a8b4b",
+			"ParentID": "5a4be16e4c1df092e68a74bda5dc89c9",
+			"Name": "Cone",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 87.6550064086914,
+					"Z": 0.0
+				},
+				"Scale": {
+					"X": 0.20000000298023225,
+					"Y": 0.25,
+					"Z": 0.20000000298023225
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "9ae7e799468f8034629d4baed4acfe6c"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 5,
+			"ID": "764b954142e71b1867d1719b57847bc8",
+			"ParentID": "5a4be16e4c1df092e68a74bda5dc89c9",
+			"Name": "PointLight",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 66.57888793945313,
+					"Z": 0.0
+				}
+			},
+			"StaticFlags": 0,
+			"Color": {
+				"R": 1.0,
+				"G": 0.43510696291923525,
+				"B": 0.13127028942108155,
+				"A": 1.0
+			},
+			"Radius": 400.0,
+			"FallOffExponent": 2.0
+		},
+		{
+			"TypeID": 1,
+			"ID": "ce960e9444d15242764e7d9da3366fa5",
+			"ParentID": "519c5fec44922a74f651538a33a3060b",
+			"Name": "torch 4",
+			"Transform": {
+				"Translation": {
+					"X": -430.7207336425781,
+					"Y": -65.2452392578125,
+					"Z": 2935.6376953125
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": 0.0,
+					"Z": 0.07845910638570786,
+					"W": 0.9969174265861511
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "5e5c46f345772f868e8294a9e3eec18f",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "fd85b0f64dcb3ebec6374baff3cd92e4",
+			"ParentID": "ce960e9444d15242764e7d9da3366fa5",
+			"Name": "Cone",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 87.6550064086914,
+					"Z": 0.0
+				},
+				"Scale": {
+					"X": 0.20000000298023225,
+					"Y": 0.25,
+					"Z": 0.20000000298023225
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "9ae7e799468f8034629d4baed4acfe6c"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 5,
+			"ID": "f249551445586f5af5cec78c4e25bd23",
+			"ParentID": "ce960e9444d15242764e7d9da3366fa5",
+			"Name": "PointLight",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 66.57888793945313,
+					"Z": 0.0
+				}
+			},
+			"StaticFlags": 0,
+			"Color": {
+				"R": 1.0,
+				"G": 0.43510696291923525,
+				"B": 0.13127028942108155,
+				"A": 1.0
+			},
+			"Radius": 400.0,
+			"FallOffExponent": 2.0
+		},
+		{
+			"TypeID": 1,
+			"ID": "c28fd56a4d7c897e00c813a09d152411",
+			"ParentID": "519c5fec44922a74f651538a33a3060b",
+			"Name": "torch 2",
+			"Transform": {
+				"Translation": {
+					"X": -775.6885375976563,
+					"Y": 204.33071899414063,
+					"Z": 1539.158203125
+				},
+				"Orientation": {
+					"X": -0.08217586576938629,
+					"Y": 0.33262860774993899,
+					"Z": 0.0023962531704455616,
+					"W": 0.93946772813797
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "5e5c46f345772f868e8294a9e3eec18f",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "92126eee49d5195e3f299e87f16ba05f",
+			"ParentID": "c28fd56a4d7c897e00c813a09d152411",
+			"Name": "Cone",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 87.6550064086914,
+					"Z": 0.0
+				},
+				"Scale": {
+					"X": 0.20000000298023225,
+					"Y": 0.25,
+					"Z": 0.20000000298023225
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "9ae7e799468f8034629d4baed4acfe6c"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 5,
+			"ID": "20fbee1943012d0260be35a142e57b31",
+			"ParentID": "c28fd56a4d7c897e00c813a09d152411",
+			"Name": "PointLight",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 66.57888793945313,
+					"Z": 0.0
+				}
+			},
+			"StaticFlags": 0,
+			"Color": {
+				"R": 1.0,
+				"G": 0.43510696291923525,
+				"B": 0.13127028942108155,
+				"A": 1.0
+			},
+			"Radius": 400.0,
+			"FallOffExponent": 2.0
+		},
+		{
+			"TypeID": 1,
+			"ID": "003388fa4d6739dc69b2699aea82071f",
+			"ParentID": "519c5fec44922a74f651538a33a3060b",
+			"Name": "torch 3",
+			"Transform": {
+				"Translation": {
+					"X": 1329.23291015625,
+					"Y": 204.33071899414063,
+					"Z": 2849.6953125
+				},
+				"Orientation": {
+					"X": -0.29834067821502688,
+					"Y": 0.859701931476593,
+					"Z": -0.28124719858169558,
+					"W": 0.3046400845050812
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "5e5c46f345772f868e8294a9e3eec18f",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "458492a2493d5f8adb28e79181a043b7",
+			"ParentID": "003388fa4d6739dc69b2699aea82071f",
+			"Name": "Cone",
+			"Transform": {
+				"Translation": {
+					"X": -2.964435577392578,
+					"Y": 86.40780639648438,
+					"Z": -2.9233436584472658
+				},
+				"Orientation": {
+					"X": -0.09931444376707077,
+					"Y": -0.05331212654709816,
+					"Z": 0.10793554782867432,
+					"W": 0.9877471327781677
+				},
+				"Scale": {
+					"X": 0.20000000298023225,
+					"Y": 0.25,
+					"Z": 0.20000000298023225
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "9ae7e799468f8034629d4baed4acfe6c"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 5,
+			"ID": "c4aef37f453c83f02aee569dfe57ef40",
+			"ParentID": "003388fa4d6739dc69b2699aea82071f",
+			"Name": "PointLight",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 66.57888793945313,
+					"Z": 0.0
+				}
+			},
+			"StaticFlags": 0,
+			"Color": {
+				"R": 1.0,
+				"G": 0.43510696291923525,
+				"B": 0.13127028942108155,
+				"A": 1.0
+			},
+			"Radius": 400.0,
+			"FallOffExponent": 2.0
+		},
+		{
+			"TypeID": 1,
+			"ID": "b979a14f4454748fb208b298db47f980",
+			"ParentID": "519c5fec44922a74f651538a33a3060b",
+			"Name": "torch 1",
+			"Transform": {
+				"Translation": {
+					"X": -830.7670288085938,
+					"Y": 204.33071899414063,
+					"Z": 1199.6951904296876
+				},
+				"Orientation": {
+					"X": 0.087558813393116,
+					"Y": -0.4303649663925171,
+					"Z": -0.17911194264888764,
+					"W": 0.8803626894950867
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "5e5c46f345772f868e8294a9e3eec18f",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "6d997c5b47ac96c77cf285a1945aa97a",
+			"ParentID": "b979a14f4454748fb208b298db47f980",
+			"Name": "Cone",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 87.6550064086914,
+					"Z": 0.0
+				},
+				"Scale": {
+					"X": 0.20000000298023225,
+					"Y": 0.25,
+					"Z": 0.20000000298023225
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "9ae7e799468f8034629d4baed4acfe6c"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 5,
+			"ID": "691f56e04a6481c9c4f44aae050ee7bf",
+			"ParentID": "b979a14f4454748fb208b298db47f980",
+			"Name": "PointLight",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 66.57888793945313,
+					"Z": 0.0
+				}
+			},
+			"StaticFlags": 0,
+			"Color": {
+				"R": 1.0,
+				"G": 0.43510696291923525,
+				"B": 0.13127028942108155,
+				"A": 1.0
+			},
+			"Radius": 400.0,
+			"FallOffExponent": 2.0
+		},
+		{
+			"TypeID": 1,
+			"ID": "3d7083154240ef4a276b75940aebb5e4",
+			"ParentID": "519c5fec44922a74f651538a33a3060b",
+			"Name": "torch",
+			"Transform": {
+				"Translation": {
+					"X": -407.1860656738281,
+					"Y": 204.33071899414063,
+					"Z": 441.70849609375
+				},
+				"Orientation": {
+					"X": 0.02946845255792141,
+					"Y": -0.1448420286178589,
+					"Z": -0.19717811048030854,
+					"W": 0.9691610932350159
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "5e5c46f345772f868e8294a9e3eec18f",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "0508de274bf38944558497ba31b4206d",
+			"ParentID": "3d7083154240ef4a276b75940aebb5e4",
+			"Name": "Cone",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 87.6550064086914,
+					"Z": 0.0
+				},
+				"Scale": {
+					"X": 0.20000000298023225,
+					"Y": 0.25,
+					"Z": 0.20000000298023225
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "9ae7e799468f8034629d4baed4acfe6c"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 5,
+			"ID": "1c0b391e4f738120ced693acd849d08c",
+			"ParentID": "3d7083154240ef4a276b75940aebb5e4",
+			"Name": "PointLight",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 66.57888793945313,
+					"Z": 0.0
+				}
+			},
+			"StaticFlags": 0,
+			"Color": {
+				"R": 1.0,
+				"G": 0.43510696291923525,
+				"B": 0.13127028942108155,
+				"A": 1.0
+			},
+			"Radius": 400.0,
+			"FallOffExponent": 2.0
+		},
+		{
+			"TypeID": 1,
+			"ID": "2b986232452ee528735b338464e2b89b",
+			"ParentID": "59d6696c48ec2cb18c6e51b9f5749f82",
+			"Name": "depths",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 0.0,
+					"Z": 3820.595703125
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": 0.7071068286895752,
+					"Z": 0.0,
+					"W": 0.7071067094802856
+				},
+				"Scale": {
+					"X": 2.0,
+					"Y": 1.0,
+					"Z": 1.0
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "56c12e1c40be155acec7e58bf7c61428",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "cc8c89e34b2ee2422914e3a84b94f3cb",
+						"ShadowsMode": 0
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 3,
+			"ID": "9d33c754499dfff2e590a781d5a25361",
+			"ParentID": "59d6696c48ec2cb18c6e51b9f5749f82",
+			"Name": "Floor Rocks",
+			"StaticFlags": 0
+		},
+		{
+			"TypeID": 1,
+			"ID": "8975d1224c07397122a0199b188be504",
+			"ParentID": "9d33c754499dfff2e590a781d5a25361",
+			"Name": "rock_51",
+			"Transform": {
+				"Translation": {
+					"X": -400.2379455566406,
+					"Y": 37.29981994628906,
+					"Z": 1769.70166015625
+				},
+				"Orientation": {
+					"X": 0.6809076070785523,
+					"Y": -0.015128104947507382,
+					"Z": -0.7315627336502075,
+					"W": -0.030856003984808923
+				},
+				"Scale": {
+					"X": 1.5683844089508057,
+					"Y": 1.5683844089508057,
+					"Z": 4.568386554718018
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "50573d17460b8ec3fa5b13a9eeb06523",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "875dc82043062b1a15b844ae2011dec5"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 24,
+			"ID": "e36079c4426bd1cd8fbc96bae39df444",
+			"ParentID": "8975d1224c07397122a0199b188be504",
+			"Name": "rock_40_coll",
+			"Transform": {
+				"Orientation": {
+					"X": 0.009113475680351258,
+					"Y": 0.0010108238784596325,
+					"Z": 0.012232029810547829,
+					"W": 0.9998831748962402
+				}
+			},
+			"StaticFlags": 0,
+			"CollisionData": "ae09b3cc45cd03a3a2b0f6a0f07caa4e"
+		},
+		{
+			"TypeID": 1,
+			"ID": "b66d1d714b2b0a9a8c4564a77b53455a",
+			"ParentID": "9d33c754499dfff2e590a781d5a25361",
+			"Name": "rock_50",
+			"Transform": {
+				"Translation": {
+					"X": 299.73260498046877,
+					"Y": -43.02589416503906,
+					"Z": -443.879638671875
+				},
+				"Orientation": {
+					"X": 0.8930497169494629,
+					"Y": 0.02538095973432064,
+					"Z": 0.44864386320114138,
+					"W": -0.023168057203292848
+				},
+				"Scale": {
+					"X": 2.0,
+					"Y": 2.0,
+					"Z": 5.0
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "50573d17460b8ec3fa5b13a9eeb06523",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "875dc82043062b1a15b844ae2011dec5"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 24,
+			"ID": "06e20e654697a711efa5c7b0bc0d574b",
+			"ParentID": "b66d1d714b2b0a9a8c4564a77b53455a",
+			"Name": "rock_40_coll",
+			"Transform": {
+				"Orientation": {
+					"X": 0.009113475680351258,
+					"Y": 0.0010108238784596325,
+					"Z": 0.012232029810547829,
+					"W": 0.9998831748962402
+				}
+			},
+			"StaticFlags": 0,
+			"CollisionData": "ae09b3cc45cd03a3a2b0f6a0f07caa4e"
+		},
+		{
+			"TypeID": 1,
+			"ID": "0361c4144a7e03e302a23dae20fc2247",
+			"ParentID": "9d33c754499dfff2e590a781d5a25361",
+			"Name": "rock_49",
+			"Transform": {
+				"Translation": {
+					"X": -210.6985321044922,
+					"Y": -55.56025695800781,
+					"Z": -242.114013671875
+				},
+				"Orientation": {
+					"X": -0.01851949654519558,
+					"Y": 0.8925911784172058,
+					"Z": 0.03681759908795357,
+					"W": 0.44897931814193728
+				},
+				"Scale": {
+					"X": 2.0,
+					"Y": 2.0,
+					"Z": 5.0
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "50573d17460b8ec3fa5b13a9eeb06523",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "875dc82043062b1a15b844ae2011dec5"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 24,
+			"ID": "d550d71b4906c45958686690e98d02f2",
+			"ParentID": "0361c4144a7e03e302a23dae20fc2247",
+			"Name": "rock_40_coll",
+			"StaticFlags": 0,
+			"CollisionData": "ae09b3cc45cd03a3a2b0f6a0f07caa4e"
+		},
+		{
+			"TypeID": 1,
+			"ID": "ffdff2d04490b3f9b5e886a11f9aa79b",
+			"ParentID": "9d33c754499dfff2e590a781d5a25361",
+			"Name": "rock_46",
+			"Transform": {
+				"Translation": {
+					"X": 212.58763122558595,
+					"Y": -23.74163246154785,
+					"Z": 1609.90478515625
+				},
+				"Orientation": {
+					"X": 0.6925860047340393,
+					"Y": 0.018824970349669458,
+					"Z": -0.7204965949058533,
+					"W": -0.029239023104310037
+				},
+				"Scale": {
+					"X": 2.0,
+					"Y": 2.0,
+					"Z": 5.0
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "50573d17460b8ec3fa5b13a9eeb06523",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "875dc82043062b1a15b844ae2011dec5"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 24,
+			"ID": "71cdf2fc4dbe76045998a999b84c9e98",
+			"ParentID": "ffdff2d04490b3f9b5e886a11f9aa79b",
+			"Name": "rock_40_coll",
+			"StaticFlags": 0,
+			"CollisionData": "ae09b3cc45cd03a3a2b0f6a0f07caa4e"
+		},
+		{
+			"TypeID": 1,
+			"ID": "1300f4d74705fbddbd857eabb8e06f36",
+			"ParentID": "9d33c754499dfff2e590a781d5a25361",
+			"Name": "rock_48",
+			"Transform": {
+				"Translation": {
+					"X": -785.5718383789063,
+					"Y": -96.23291015625,
+					"Z": 2794.44921875
+				},
+				"Orientation": {
+					"X": 0.8887090682983398,
+					"Y": -0.11669757217168808,
+					"Z": -0.40893158316612246,
+					"W": -0.1713266521692276
+				},
+				"Scale": {
+					"X": 1.7999999523162842,
+					"Y": 2.5,
+					"Z": 4.0
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "50573d17460b8ec3fa5b13a9eeb06523",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "875dc82043062b1a15b844ae2011dec5"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 24,
+			"ID": "df8427e54269c34535b1ef92744503ee",
+			"ParentID": "1300f4d74705fbddbd857eabb8e06f36",
+			"Name": "rock_40_coll",
+			"StaticFlags": 0,
+			"CollisionData": "ae09b3cc45cd03a3a2b0f6a0f07caa4e"
+		},
+		{
+			"TypeID": 1,
+			"ID": "b72e48d64508364b50c2fca3b5a633b1",
+			"ParentID": "9d33c754499dfff2e590a781d5a25361",
+			"Name": "rock_47",
+			"Transform": {
+				"Translation": {
+					"X": -186.06349182128907,
+					"Y": -129.54296875,
+					"Z": 2794.44921875
+				},
+				"Orientation": {
+					"X": 0.6918994784355164,
+					"Y": -0.03612339496612549,
+					"Z": -0.7205475568771362,
+					"W": 0.027954068034887315
+				},
+				"Scale": {
+					"X": 2.0,
+					"Y": 2.0,
+					"Z": 5.0
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "50573d17460b8ec3fa5b13a9eeb06523",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "875dc82043062b1a15b844ae2011dec5"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 24,
+			"ID": "187daed94a2c01e527766fb059256c93",
+			"ParentID": "b72e48d64508364b50c2fca3b5a633b1",
+			"Name": "rock_40_coll",
+			"StaticFlags": 0,
+			"CollisionData": "ae09b3cc45cd03a3a2b0f6a0f07caa4e"
+		},
+		{
+			"TypeID": 1,
+			"ID": "fc2afed34a5d31ec3f20d98a0ed1c3d6",
+			"ParentID": "9d33c754499dfff2e590a781d5a25361",
+			"Name": "rock_42",
+			"Transform": {
+				"Translation": {
+					"X": 182.2892303466797,
+					"Y": -7.3535308837890629,
+					"Z": 846.5008544921875
+				},
+				"Orientation": {
+					"X": 0.6903196573257446,
+					"Y": -0.05906474590301514,
+					"Z": -0.7192230224609375,
+					"W": 0.05185062065720558
+				},
+				"Scale": {
+					"X": 2.0,
+					"Y": 2.0,
+					"Z": 5.0
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "50573d17460b8ec3fa5b13a9eeb06523",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "875dc82043062b1a15b844ae2011dec5"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 24,
+			"ID": "98a50edd43dcd1f966a27a9c1ac7435a",
+			"ParentID": "fc2afed34a5d31ec3f20d98a0ed1c3d6",
+			"Name": "rock_40_coll",
+			"StaticFlags": 0,
+			"CollisionData": "ae09b3cc45cd03a3a2b0f6a0f07caa4e"
+		},
+		{
+			"TypeID": 1,
+			"ID": "2ee1c16846a10d1855be85b25f5a1aa8",
+			"ParentID": "9d33c754499dfff2e590a781d5a25361",
+			"Name": "rock_41",
+			"Transform": {
+				"Translation": {
+					"X": -452.212646484375,
+					"Y": -7.3535308837890629,
+					"Z": 846.5008544921875
+				},
+				"Orientation": {
+					"X": -0.6875317096710205,
+					"Y": -0.02928401716053486,
+					"Z": -0.7250320315361023,
+					"W": 0.02777063101530075
+				},
+				"Scale": {
+					"X": 2.0,
+					"Y": 2.0,
+					"Z": 5.0
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "50573d17460b8ec3fa5b13a9eeb06523",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "342008a0428375648bc2eba3307d9ac1"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 24,
+			"ID": "68d88c474f34b0ef496419bed64c836b",
+			"ParentID": "2ee1c16846a10d1855be85b25f5a1aa8",
+			"Name": "rock_40_coll",
+			"StaticFlags": 0,
+			"CollisionData": "ae09b3cc45cd03a3a2b0f6a0f07caa4e"
+		},
+		{
+			"TypeID": 1,
+			"ID": "9eb8d8ad4c517ffef784aa9623262739",
+			"ParentID": "9d33c754499dfff2e590a781d5a25361",
+			"Name": "rock_43",
+			"Transform": {
+				"Translation": {
+					"X": 501.2266540527344,
+					"Y": -55.56025695800781,
+					"Z": 348.893310546875
+				},
+				"Orientation": {
+					"X": -0.01551474817097187,
+					"Y": 0.9256483316421509,
+					"Z": 0.038181137293577197,
+					"W": 0.37613385915756228
+				},
+				"Scale": {
+					"X": 1.7000000476837159,
+					"Y": 2.0,
+					"Z": 3.0
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "50573d17460b8ec3fa5b13a9eeb06523",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "208076bd4ee70fa3e5ccd28be0d6b165"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 24,
+			"ID": "c53e75d8466519950b80598d9b6e8229",
+			"ParentID": "9eb8d8ad4c517ffef784aa9623262739",
+			"Name": "rock_40_coll",
+			"StaticFlags": 0,
+			"CollisionData": "ae09b3cc45cd03a3a2b0f6a0f07caa4e"
+		},
+		{
+			"TypeID": 1,
+			"ID": "3ee633874c71233cb9ef07a760554af9",
+			"ParentID": "9d33c754499dfff2e590a781d5a25361",
+			"Name": "rock_40",
+			"Transform": {
+				"Translation": {
+					"X": -210.6985321044922,
+					"Y": -55.56025695800781,
+					"Z": 234.90087890625
+				},
+				"Orientation": {
+					"X": -0.04121297225356102,
+					"Y": 0.0,
+					"Z": 0.0,
+					"W": 0.9991504549980164
+				},
+				"Scale": {
+					"X": 2.0,
+					"Y": 2.0,
+					"Z": 5.0
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "50573d17460b8ec3fa5b13a9eeb06523",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "875dc82043062b1a15b844ae2011dec5"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 24,
+			"ID": "211acd464b9afe5683fb29a7a780bf29",
+			"ParentID": "3ee633874c71233cb9ef07a760554af9",
+			"Name": "rock_40_coll",
+			"StaticFlags": 0,
+			"CollisionData": "ae09b3cc45cd03a3a2b0f6a0f07caa4e"
+		},
+		{
+			"TypeID": 1,
+			"ID": "e7cd9bc546012a71a0d127b86b99de8b",
+			"ParentID": "9d33c754499dfff2e590a781d5a25361",
+			"Name": "Rock 15",
+			"Transform": {
+				"Translation": {
+					"X": 1206.2403564453126,
+					"Y": -12.707809448242188,
+					"Z": 1243.616943359375
+				},
+				"Orientation": {
+					"X": -0.9726158976554871,
+					"Y": -0.04993528872728348,
+					"Z": -0.20825831592082978,
+					"W": 0.09029574692249298
+				},
+				"Scale": {
+					"X": 4.074049949645996,
+					"Y": 1.0,
+					"Z": 4.074049949645996
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "691c67fc4fb5410abd06239d0b5ac8bc",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "342008a0428375648bc2eba3307d9ac1"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 24,
+			"ID": "498a2a3646f60676bc1540a89c8d1639",
+			"ParentID": "e7cd9bc546012a71a0d127b86b99de8b",
+			"Name": "Rock_coll",
+			"StaticFlags": 0,
+			"CollisionData": "7ed06b7d4bbfded0c82c3e9cee9b0932"
+		},
+		{
+			"TypeID": 1,
+			"ID": "20ce0f424e5a27ed445517b52e130fa7",
+			"ParentID": "9d33c754499dfff2e590a781d5a25361",
+			"Name": "Rock 14",
+			"Transform": {
+				"Translation": {
+					"X": 784.7196655273438,
+					"Y": -169.43603515625,
+					"Z": 2214.68701171875
+				},
+				"Orientation": {
+					"X": -0.9756408333778381,
+					"Y": -0.04486033320426941,
+					"Z": -0.21051648259162904,
+					"W": 0.04237332195043564
+				},
+				"Scale": {
+					"X": 4.293066024780273,
+					"Y": 2.0,
+					"Z": 4.293066024780273
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "691c67fc4fb5410abd06239d0b5ac8bc",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "342008a0428375648bc2eba3307d9ac1"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 24,
+			"ID": "8065d46446242bcaaede39b279a6fb7e",
+			"ParentID": "20ce0f424e5a27ed445517b52e130fa7",
+			"Name": "Rock_coll",
+			"StaticFlags": 0,
+			"CollisionData": "7ed06b7d4bbfded0c82c3e9cee9b0932"
+		},
+		{
+			"TypeID": 1,
+			"ID": "e3d404d54410b09faa87d68525bb832e",
+			"ParentID": "9d33c754499dfff2e590a781d5a25361",
+			"Name": "Rock 13",
+			"Transform": {
+				"Translation": {
+					"X": -82.03707885742188,
+					"Y": -12.707809448242188,
+					"Z": 1579.6036376953126
+				},
+				"Orientation": {
+					"X": -0.8163717985153198,
+					"Y": -0.031118448823690416,
+					"Z": -0.5765984654426575,
+					"W": -0.010145340114831925
+				},
+				"Scale": {
+					"X": 2.074052095413208,
+					"Y": 1.0,
+					"Z": 2.074052095413208
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "691c67fc4fb5410abd06239d0b5ac8bc",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "875dc82043062b1a15b844ae2011dec5"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 24,
+			"ID": "5255b740443168f1c10ba7b5f4ffb3d5",
+			"ParentID": "e3d404d54410b09faa87d68525bb832e",
+			"Name": "Rock_coll",
+			"StaticFlags": 0,
+			"CollisionData": "7ed06b7d4bbfded0c82c3e9cee9b0932"
+		},
+		{
+			"TypeID": 1,
+			"ID": "5475899541901a9a6ffff7a0eae0311e",
+			"ParentID": "9d33c754499dfff2e590a781d5a25361",
+			"Name": "rock_45",
+			"Transform": {
+				"Translation": {
+					"X": -766.7549438476563,
+					"Y": -31.070417404174806,
+					"Z": 1164.19775390625
+				},
+				"Orientation": {
+					"X": -0.19080907106399537,
+					"Y": 3.7151895782017166e-8,
+					"Z": -0.9816271662712097,
+					"W": 1.9112985683022999e-7
+				},
+				"Scale": {
+					"X": 2.0,
+					"Y": 1.0,
+					"Z": 2.0
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "ede37d5b44e1e833a1c742ad8c62cd16",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "208076bd4ee70fa3e5ccd28be0d6b165"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 24,
+			"ID": "c592b13040ad2aae39c10f9dfa821681",
+			"ParentID": "5475899541901a9a6ffff7a0eae0311e",
+			"Name": "rock_39_coll",
+			"StaticFlags": 0,
+			"CollisionData": "ec0b8bef49f1fb7ed6095e9560b49145"
+		},
+		{
+			"TypeID": 1,
+			"ID": "e21b464f48aa40706e6289afd41bd8e1",
+			"ParentID": "9d33c754499dfff2e590a781d5a25361",
+			"Name": "rock_44",
+			"Transform": {
+				"Translation": {
+					"X": -650.4652709960938,
+					"Y": -7.5770721435546879,
+					"Z": 1452.024658203125
+				},
+				"Orientation": {
+					"X": -0.176515132188797,
+					"Y": 0.18769878149032594,
+					"Z": 0.03431108221411705,
+					"W": 0.9656264781951904
+				},
+				"Scale": {
+					"X": 2.0,
+					"Y": 1.0,
+					"Z": 2.0
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "ede37d5b44e1e833a1c742ad8c62cd16",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "208076bd4ee70fa3e5ccd28be0d6b165"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 24,
+			"ID": "61569e5e448e4db1492abb855dbfc389",
+			"ParentID": "e21b464f48aa40706e6289afd41bd8e1",
+			"Name": "rock_39_coll",
+			"StaticFlags": 0,
+			"CollisionData": "ec0b8bef49f1fb7ed6095e9560b49145"
+		},
+		{
+			"TypeID": 1,
+			"ID": "0221e213476a44c6c6cb82924511da14",
+			"ParentID": "9d33c754499dfff2e590a781d5a25361",
+			"Name": "rock_40",
+			"Transform": {
+				"Translation": {
+					"X": -256.03759765625,
+					"Y": -49.18370056152344,
+					"Z": 1195.931396484375
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": 0.1908089965581894,
+					"Z": 0.0,
+					"W": 0.9816271662712097
+				},
+				"Scale": {
+					"X": 0.783226728439331,
+					"Y": 0.783226728439331,
+					"Z": 0.783226728439331
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "ede37d5b44e1e833a1c742ad8c62cd16",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "208076bd4ee70fa3e5ccd28be0d6b165"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 24,
+			"ID": "5c5eb45a4c69bb75072fe6a6ea68c308",
+			"ParentID": "0221e213476a44c6c6cb82924511da14",
+			"Name": "rock_39_coll",
+			"StaticFlags": 0,
+			"CollisionData": "ec0b8bef49f1fb7ed6095e9560b49145"
+		},
+		{
+			"TypeID": 1,
+			"ID": "da554029424f03552f2363a290f264b0",
+			"ParentID": "9d33c754499dfff2e590a781d5a25361",
+			"Name": "Rock 16",
+			"Transform": {
+				"Translation": {
+					"X": -487.8154602050781,
+					"Y": -30.41888427734375,
+					"Z": 2207.839111328125
+				},
+				"Orientation": {
+					"X": 0.018571965396404268,
+					"Y": -0.1536535620689392,
+					"Z": -0.0738738626241684,
+					"W": 0.9851844906806946
+				},
+				"Scale": {
+					"X": 3.5690958499908449,
+					"Y": 1.0,
+					"Z": 2.5418050289154054
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "691c67fc4fb5410abd06239d0b5ac8bc",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "875dc82043062b1a15b844ae2011dec5"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 24,
+			"ID": "23d44e364b4de8ff3572fd9f7eb27ea7",
+			"ParentID": "da554029424f03552f2363a290f264b0",
+			"Name": "Rock_coll",
+			"StaticFlags": 0,
+			"CollisionData": "7ed06b7d4bbfded0c82c3e9cee9b0932"
+		},
+		{
+			"TypeID": 3,
+			"ID": "336d01f24f6918f56ec592a3654e2901",
+			"ParentID": "59d6696c48ec2cb18c6e51b9f5749f82",
+			"Name": "cave roof",
+			"Transform": {
+				"Translation": {
+					"X": 193.16387939453126,
+					"Y": -17.78436279296875,
+					"Z": 1830.4793701171876
+				},
+				"Scale": {
+					"X": 0.6162963509559631,
+					"Y": 1.2911940813064576,
+					"Z": 1.1708348989486695
+				}
+			},
+			"StaticFlags": 0
+		},
+		{
+			"TypeID": 1,
+			"ID": "86b2b44a4cb5915609021493ad54329a",
+			"ParentID": "336d01f24f6918f56ec592a3654e2901",
+			"Name": "cave roof 1",
+			"Transform": {
+				"Translation": {
+					"X": -2406.524169921875,
+					"Y": 801.8575439453125,
+					"Z": 3084.230712890625
+				},
+				"Scale": {
+					"X": -1.0,
+					"Y": 1.0,
+					"Z": 1.0
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "00e13adb4a526c9da405b0b65ef9cd7b",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "9805578e4730a6bace243bb2fe0a6d92"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "bb0ee441418ab898194ee6a917c1301a",
+			"ParentID": "336d01f24f6918f56ec592a3654e2901",
+			"Name": "cave roof 2",
+			"Transform": {
+				"Translation": {
+					"X": 1577.9041748046876,
+					"Y": 801.8575439453125,
+					"Z": 3084.230712890625
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "00e13adb4a526c9da405b0b65ef9cd7b",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "9805578e4730a6bace243bb2fe0a6d92"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "c6ee213247cc0a4c761533b2d60bf27b",
+			"ParentID": "336d01f24f6918f56ec592a3654e2901",
+			"Name": "cave roof 0",
+			"Transform": {
+				"Translation": {
+					"X": -2406.524169921875,
+					"Y": 707.3419189453125,
+					"Z": 3084.230712890625
+				},
+				"Scale": {
+					"X": -1.0,
+					"Y": 1.0,
+					"Z": 1.0
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "00e13adb4a526c9da405b0b65ef9cd7b",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "9805578e4730a6bace243bb2fe0a6d92"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "2123e60541ca86263af3328e36b131af",
+			"ParentID": "336d01f24f6918f56ec592a3654e2901",
+			"Name": "cave roof",
+			"Transform": {
+				"Translation": {
+					"X": 1577.9041748046876,
+					"Y": 707.3419189453125,
+					"Z": 3084.230712890625
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "00e13adb4a526c9da405b0b65ef9cd7b",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "9805578e4730a6bace243bb2fe0a6d92"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "ca8bdd164bedc5317df04cb39a50654a",
+			"ParentID": "336d01f24f6918f56ec592a3654e2901",
+			"Name": "Rock 31",
+			"Transform": {
+				"Translation": {
+					"X": -3156.69091796875,
+					"Y": 181.8006134033203,
+					"Z": -336.5131530761719
+				},
+				"Orientation": {
+					"X": 0.34788021445274355,
+					"Y": 0.8996809124946594,
+					"Z": 0.261564165353775,
+					"W": 0.03373292461037636
+				},
+				"Scale": {
+					"X": 11.978395462036133,
+					"Y": 0.8813397288322449,
+					"Z": 6.437241077423096
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "691c67fc4fb5410abd06239d0b5ac8bc",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "b57670824ce45b272c19c197e1511d45"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "1d875ebc434f6ab33c4d1fa2d82c84a6",
+			"ParentID": "336d01f24f6918f56ec592a3654e2901",
+			"Name": "Rock 30",
+			"Transform": {
+				"Translation": {
+					"X": -3156.69091796875,
+					"Y": 181.8006134033203,
+					"Z": -40.43453598022461
+				},
+				"Orientation": {
+					"X": 0.45956963300704958,
+					"Y": 0.8542236089706421,
+					"Z": 0.1329582780599594,
+					"W": -0.20351918041706086
+				},
+				"Scale": {
+					"X": 11.978395462036133,
+					"Y": 0.8813397288322449,
+					"Z": 6.437241077423096
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "691c67fc4fb5410abd06239d0b5ac8bc",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "b57670824ce45b272c19c197e1511d45"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "6195f7f7469b40374b89a2a88cf9d674",
+			"ParentID": "336d01f24f6918f56ec592a3654e2901",
+			"Name": "Rock 29",
+			"Transform": {
+				"Translation": {
+					"X": -3156.69091796875,
+					"Y": 326.2242431640625,
+					"Z": -40.43453598022461
+				},
+				"Orientation": {
+					"X": 0.7158862352371216,
+					"Y": 0.6543532013893127,
+					"Z": 0.24349284172058106,
+					"W": 0.006325593218207359
+				},
+				"Scale": {
+					"X": 11.978395462036133,
+					"Y": 0.8813397288322449,
+					"Z": 6.437241077423096
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "691c67fc4fb5410abd06239d0b5ac8bc",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "b57670824ce45b272c19c197e1511d45"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "56c69d2145295d41963f33a01871d4f9",
+			"ParentID": "336d01f24f6918f56ec592a3654e2901",
+			"Name": "Rock 26",
+			"Transform": {
+				"Translation": {
+					"X": -3395.470458984375,
+					"Y": 434.5282897949219,
+					"Z": 1311.300537109375
+				},
+				"Orientation": {
+					"X": 0.8436567783355713,
+					"Y": 0.5231441855430603,
+					"Z": 0.07811545580625534,
+					"W": -0.09198647737503052
+				},
+				"Scale": {
+					"X": 7.7583136558532719,
+					"Y": 0.8813397288322449,
+					"Z": 6.437241077423096
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "691c67fc4fb5410abd06239d0b5ac8bc",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "9805578e4730a6bace243bb2fe0a6d92"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "c2a7e45e4d783a1138a9049fc4d30b90",
+			"ParentID": "336d01f24f6918f56ec592a3654e2901",
+			"Name": "Rock 27",
+			"Transform": {
+				"Translation": {
+					"X": -2788.260986328125,
+					"Y": 760.3943481445313,
+					"Z": 4145.43505859375
+				},
+				"Orientation": {
+					"X": -0.5431824326515198,
+					"Y": -0.47978389263153078,
+					"Z": 0.6137177348136902,
+					"W": -0.3132263422012329
+				},
+				"Scale": {
+					"X": 9.650888442993164,
+					"Y": 1.7846777439117432,
+					"Z": 7.433443546295166
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "691c67fc4fb5410abd06239d0b5ac8bc",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "9805578e4730a6bace243bb2fe0a6d92"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "7aaf82134e876ccc05bc918aa93a46d8",
+			"ParentID": "336d01f24f6918f56ec592a3654e2901",
+			"Name": "Rock 33",
+			"Transform": {
+				"Translation": {
+					"X": -2491.86376953125,
+					"Y": 856.6204223632813,
+					"Z": 1980.4703369140626
+				},
+				"Orientation": {
+					"X": -0.054543666541576388,
+					"Y": -0.06046323850750923,
+					"Z": 0.9175338745117188,
+					"W": -0.3892308473587036
+				},
+				"Scale": {
+					"X": 1.5499999523162842,
+					"Y": 1.2200000286102296,
+					"Z": 2.9600000381469728
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "691c67fc4fb5410abd06239d0b5ac8bc",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "9805578e4730a6bace243bb2fe0a6d92"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "47c233474a26bcdb87b927b9380ab631",
+			"ParentID": "336d01f24f6918f56ec592a3654e2901",
+			"Name": "Rock 28",
+			"Transform": {
+				"Translation": {
+					"X": -3219.87353515625,
+					"Y": 434.5282897949219,
+					"Z": 2795.355224609375
+				},
+				"Orientation": {
+					"X": 0.007806945126503706,
+					"Y": -0.08379026502370835,
+					"Z": 0.8884069919586182,
+					"W": -0.45127737522125246
+				},
+				"Scale": {
+					"X": 9.650888442993164,
+					"Y": 1.7846777439117432,
+					"Z": 7.433443546295166
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "691c67fc4fb5410abd06239d0b5ac8bc",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "9805578e4730a6bace243bb2fe0a6d92"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "6da7ff394730beb5076acd9f0576e662",
+			"ParentID": "336d01f24f6918f56ec592a3654e2901",
+			"Name": "Rock 24",
+			"Transform": {
+				"Translation": {
+					"X": 2026.7674560546876,
+					"Y": 434.5282897949219,
+					"Z": 4192.923828125
+				},
+				"Orientation": {
+					"X": -0.1480889767408371,
+					"Y": 0.04810887202620506,
+					"Z": 0.8342227935791016,
+					"W": 0.5289872884750366
+				},
+				"Scale": {
+					"X": 7.7583136558532719,
+					"Y": 0.8813397288322449,
+					"Z": 6.437241077423096
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "691c67fc4fb5410abd06239d0b5ac8bc",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "9805578e4730a6bace243bb2fe0a6d92"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "5c2433fd4f5ed39ffd746994f41f9c7a",
+			"ParentID": "336d01f24f6918f56ec592a3654e2901",
+			"Name": "Rock 25",
+			"Transform": {
+				"Translation": {
+					"X": 2321.4765625,
+					"Y": 760.3943481445313,
+					"Z": 1345.0484619140626
+				},
+				"Orientation": {
+					"X": -0.5663596391677856,
+					"Y": 0.3520870804786682,
+					"Z": -0.5923954844474793,
+					"W": -0.45203888416290285
+				},
+				"Scale": {
+					"X": 9.650888442993164,
+					"Y": 1.7846777439117432,
+					"Z": 7.433443546295166
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "691c67fc4fb5410abd06239d0b5ac8bc",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "9805578e4730a6bace243bb2fe0a6d92"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "b56031f54fb8c0fb1d872782939fd932",
+			"ParentID": "336d01f24f6918f56ec592a3654e2901",
+			"Name": "Rock 23",
+			"Transform": {
+				"Translation": {
+					"X": 2321.4765625,
+					"Y": 434.5282897949219,
+					"Z": 2714.10888671875
+				},
+				"Orientation": {
+					"X": -0.8859722018241882,
+					"Y": 0.4566870629787445,
+					"Z": -0.06619098037481308,
+					"W": -0.04592490196228027
+				},
+				"Scale": {
+					"X": 9.650888442993164,
+					"Y": 1.7846777439117432,
+					"Z": 7.433443546295166
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "691c67fc4fb5410abd06239d0b5ac8bc",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "9805578e4730a6bace243bb2fe0a6d92"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 13,
+			"ID": "6a41cb0c41925a5a274ff388a149d463",
+			"ParentID": "59d6696c48ec2cb18c6e51b9f5749f82",
+			"IsActive": false,
+			"Name": "PostFxVolume",
+			"Transform": {
+				"Translation": {
+					"X": 826.8843383789063,
+					"Y": 214.3873291015625,
+					"Z": 618.637939453125
+				}
+			},
+			"StaticFlags": 0,
+			"Size": {
+				"X": 1000.0,
+				"Y": 1000.0,
+				"Z": 1000.0
+			},
+			"Priority": 0,
+			"BlendRadius": 10.0,
+			"BlendWeight": 1.0,
+			"IsBounded": true,
+			"Settings": {
+				"AO": {},
+				"Bloom": {},
+				"ToneMapping": {},
+				"ColorGrading": {},
+				"EyeAdaptation": {
+					"SpeedUp": 1.0,
+					"MinLuminance": 0.05000000074505806,
+					"OverrideFlags": 34
+				},
+				"CameraArtifacts": {},
+				"LensFlares": {},
+				"DepthOfField": {},
+				"SSR": {}
+			}
+		},
+		{
+			"TypeID": 13,
+			"ID": "000d7d2746397da6d69d15bd4e6488ed",
+			"ParentID": "59d6696c48ec2cb18c6e51b9f5749f82",
+			"IsActive": false,
+			"Name": "PostFxVolume",
+			"Transform": {
+				"Translation": {
+					"X": -117.78201293945313,
+					"Y": 100.0,
+					"Z": 4572.03076171875
+				},
+				"Scale": {
+					"X": 4.0,
+					"Y": 2.0,
+					"Z": 8.0
+				}
+			},
+			"StaticFlags": 0,
+			"Size": {
+				"X": 1000.0,
+				"Y": 1000.0,
+				"Z": 1000.0
+			},
+			"Priority": 0,
+			"BlendRadius": 10.0,
+			"BlendWeight": 1.0,
+			"IsBounded": true,
+			"Settings": {
+				"AO": {},
+				"Bloom": {},
+				"ToneMapping": {},
+				"ColorGrading": {
+					"ColorSaturation": {
+						"X": 1.0,
+						"Y": 0.2210535705089569,
+						"Z": 0.0,
+						"W": 1.0
+					}
+				},
+				"EyeAdaptation": {
+					"SpeedUp": 1.0,
+					"MinLuminance": 0.05000000074505806,
+					"OverrideFlags": 34
+				},
+				"CameraArtifacts": {},
+				"LensFlares": {},
+				"DepthOfField": {},
+				"SSR": {}
+			}
+		},
+		{
+			"TypeID": 12,
+			"ID": "10f298e24afa72330aae40be930b3aba",
+			"ParentID": "59d6696c48ec2cb18c6e51b9f5749f82",
+			"Name": "SunTopRays",
+			"Transform": {
+				"Translation": {
+					"X": 648.5121459960938,
+					"Y": 2966.90380859375,
+					"Z": 1272.78173828125
+				},
+				"Orientation": {
+					"X": 0.5150213837623596,
+					"Y": 0.007478366140276194,
+					"Z": -0.004493489861488342,
+					"W": 0.8571330308914185
+				}
+			},
+			"StaticFlags": 0,
+			"Color": {
+				"R": 0.7777777910232544,
+				"G": 0.8032217621803284,
+				"B": 1.0,
+				"A": 1.0
+			},
+			"Brightness": 2.0,
+			"ShadowsDistance": 10000.0,
+			"Radius": 10000.0,
+			"OuterAngle": 19.699996948242189,
+			"InnerAngle": 3.0
+		},
+		{
+			"TypeID": 3,
+			"ID": "c0ce158b471d9e22d91f0baf25e2a99c",
+			"ParentID": "59d6696c48ec2cb18c6e51b9f5749f82",
+			"Name": "Blockade",
+			"StaticFlags": 0
+		},
+		{
+			"TypeID": 1,
+			"ID": "c1cabe7c4e68baacc22759b10de7d652",
+			"ParentID": "c0ce158b471d9e22d91f0baf25e2a99c",
+			"Name": "Rock 32",
+			"Transform": {
+				"Translation": {
+					"X": -162.26541137695313,
+					"Y": 213.37744140625,
+					"Z": 6359.9267578125
+				},
+				"Orientation": {
+					"X": 0.4977419078350067,
+					"Y": 0.5108509063720703,
+					"Z": 0.4757351875305176,
+					"W": 0.5147432088851929
+				},
+				"Scale": {
+					"X": -8.398579597473145,
+					"Y": 1.917980670928955,
+					"Z": 13.526946067810059
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "691c67fc4fb5410abd06239d0b5ac8bc",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "9805578e4730a6bace243bb2fe0a6d92"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 17,
+			"ID": "cfabfa564c380fd244ee2085c529b3c4",
+			"ParentID": "35fd20cd4497ea1b18cafcae1c3524ef",
+			"Name": "Player",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 194.50282287597657,
+					"Z": -3261.939697265625
+				}
+			},
+			"Tag": "Player",
+			"Scripts": [
+				{
+					"Name": "BasicTemplate.FPSCamera",
+					"ID": "fdbe3903474f35063ef031bb5aa4ea0d",
+					"V": {
+	"Acceleration": 10000.0,
+	"Friction": 0.1,
+	"Speed": 700.0,
+	"SprintSpeedIncrease": 1.0,
+	"JumpForce": 500.0,
+	"Player": "cfabfa564c380fd244ee2085c529b3c4",
+	"Camera": "a96d89ec44bc67b354a644acd2f02d32",
+	"CameraSmoothing": 20.0
+}
+				},
+				{
+					"Name": "BasicTemplate.Player",
+					"ID": "cd847729453ab4e4b72192a72b1d3ebe",
+					"V": {
+	"DefaultHealth": 100.0,
+	"Health": 100.0
+}
+				},
+				{
+					"Name": "BasicTemplate.PlayerLookat",
+					"ID": "05db748541e112aa3956b7b81697c133",
+					"V": {
+	"Camera": "a96d89ec44bc67b354a644acd2f02d32",
+	"MaxDistance": 3000.0
+}
+				}
+			],
+			"ContactOffset": 0.10000000149011612,
+			"StepOffset": 30.0,
+			"SlopeLimit": 45.0,
+			"Radius": 50.0,
+			"Height": 150.0
+		},
+		{
+			"TypeID": 2,
+			"ID": "a96d89ec44bc67b354a644acd2f02d32",
+			"ParentID": "cfabfa564c380fd244ee2085c529b3c4",
+			"Name": "Camera",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 80.0,
+					"Z": 0.0
+				}
+			},
+			"StaticFlags": 0,
+			"Tag": "Player",
+			"UsePerspective": true,
+			"FOV": 60.0,
+			"Near": 2.0,
+			"Far": 10000.0
+		},
+		{
+			"TypeID": 1,
+			"ID": "546e693948293c41bf0947ad01719db3",
+			"ParentID": "a96d89ec44bc67b354a644acd2f02d32",
+			"Name": "Gun",
+			"Transform": {
+				"Translation": {
+					"X": 31.156957626342775,
+					"Y": -17.1380615234375,
+					"Z": 21.202392578125
+				},
+				"Orientation": {
+					"X": 0.390277624130249,
+					"Y": -0.5896474123001099,
+					"Z": 0.4867437779903412,
+					"W": 0.5129129886627197
+				},
+				"Scale": {
+					"X": 0.07999999821186066,
+					"Y": 0.07999999821186066,
+					"Z": 0.07999999821186066
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "d1eebe63439e18608f1efca6baee6b8c",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "de39dcd94598221ade8262ac84c1658e"
+					},
+					{
+						"ShadowsMode": 1
+					},
+					{
+						"Material": "7abc723e4f52766e3fa922a96d5a676c",
+						"ShadowsMode": 1
+					},
+					{
+						"ShadowsMode": 1
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 3,
+			"ID": "e95331d84ce7f4b205627aab5a16b5ba",
+			"ParentID": "546e693948293c41bf0947ad01719db3",
+			"Name": "GunBeamStart",
+			"Transform": {
+				"Translation": {
+					"X": 493.395751953125,
+					"Y": 47.808135986328128,
+					"Z": -51.110618591308597
+				}
+			},
+			"StaticFlags": 0,
+			"Scripts": [
+				{
+					"Name": "BasicTemplate.TimeGun",
+					"ID": "2d7ceea246e309ac9790af9b60ebc492",
+					"V": {
+	"TimeIncrement": 1,
+	"GunBeamModel": "34efdf4147961b910d6996b5b14cfbd3",
+	"FadeTime": 1.0
+}
+				}
+			]
+		}
+	]
+}

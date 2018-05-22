@@ -1,0 +1,18 @@
+{
+	"ID": "bae075ed4419f402afb54e9afb5829b5",
+	"TypeName": "FlaxEditor.Content.Settings.GameSettings",
+	"EngineBuild": 6155,
+	"Data": {
+	"ProductName": "Time Nexus",
+	"CompanyName": "",
+	"Version": "0.0.0",
+	"FirstScene": "35fd20cd4497ea1b18cafcae1c3524ef",
+	"Defines": [],
+	"Time": "7f8bd4b94405683451e15896a6377e9a",
+	"Audio": "1ee733334093f31cdbaabe8f5b3f3cc8",
+	"LayersAndTags": "f50a1c2047cf806b1eefc980836f90c2",
+	"Physics": "114123f24c3d7f7f50e9809e747ee925",
+	"Input": "bd88b99a49bc50e961ef949adde51037",
+	"Graphics": "77d62db547567a5e138e56876a9df094"
+}
+}
