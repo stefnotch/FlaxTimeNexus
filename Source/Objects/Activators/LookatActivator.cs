@@ -5,16 +5,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BasicTemplate
+namespace FlaxTimeNexus
 {
 	/// <summary>
 	/// Activates an actor while this actor is being looked at
 	/// </summary>
-	public class LookatActivator : Script, ILookatTrigger
+	public class LookatActivator : Script, ILookatTrigger, IActivator
 	{
-		public Actor ToActivate;
+		public Actor ToActivate { get; set; }
 
-		public void OnLookatEnter(RayCastHit hitResult)
+		public virtual void OnLookatEnter(RayCastHit hitResult)
 		{
 			if(ToActivate)
 			{
@@ -22,7 +22,7 @@ namespace BasicTemplate
 			}
 		}
 
-		public void OnLookatExit(RayCastHit hitResult)
+		public virtual void OnLookatExit(RayCastHit hitResult)
 		{
 			if (ToActivate)
 			{
@@ -30,7 +30,7 @@ namespace BasicTemplate
 			}
 		}
 
-		public void OnLookatStay(RayCastHit hitResult)
+		public virtual void OnLookatStay(RayCastHit hitResult)
 		{
 			// /ignore
 		}

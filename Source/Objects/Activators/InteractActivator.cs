@@ -5,15 +5,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BasicTemplate
+namespace FlaxTimeNexus
 {
 	/// <summary>
 	/// Activates an actor when the interact key gets pressed
 	/// Does NOT deactivate it afterwards
 	/// </summary>
-	public class InteractActivator : Script, ILookatTrigger
+	public class InteractActivator : Script, ILookatTrigger, IActivator
 	{
-		public Actor ToActivate;
+		public Actor ToActivate { get; set; }
 		/// <summary>
 		/// How close the player needs to be to interact with an object
 		/// Note: Limited by the PlayerLookat MaxDistance 
@@ -24,17 +24,17 @@ namespace BasicTemplate
 
 		public void OnLookatEnter(RayCastHit hitResult)
 		{
-			
+
 		}
 
 		public void OnLookatExit(RayCastHit hitResult)
 		{
-			
+
 		}
 
 		public void OnLookatStay(RayCastHit hitResult)
 		{
-			if(Interact.Active)
+			if (Interact.Active)
 			{
 				ToActivate.IsActive = true;
 			}

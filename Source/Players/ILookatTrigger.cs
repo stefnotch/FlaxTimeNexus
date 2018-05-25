@@ -1,6 +1,6 @@
 ﻿using FlaxEngine;
 
-namespace BasicTemplate
+namespace FlaxTimeNexus
 {
 	public interface ILookatTrigger
 	{

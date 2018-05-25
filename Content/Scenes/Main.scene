@@ -8,6 +8,13 @@
 			"ID": "7b4625fc406c756c6d9c35b2e54dc805",
 			"ParentID": "00000000000000000000000000000000",
 			"Name": "Scene",
+			"Scripts": [
+				{
+					"Name": "FlaxTimeNexus.ExitOnEsc",
+					"ID": "125f87d249be91586ae66e9bdb7a1cf0",
+					"V": {}
+				}
+			],
 			"LightmapSettings": {
 				"GlobalObjectsScale": 0.5,
 				"ChartsPadding": 3,
@@ -84,10 +91,69 @@
 				}
 			},
 			"StaticFlags": 0,
+			"Scripts": [
+				{
+					"Name": "FlaxTimeNexus.FreeCamera",
+					"ID": "d1692f404a62d8de02882f9ff18ac35b",
+					"V": {
+	"MoveSpeed": 10.0
+}
+				}
+			],
 			"UsePerspective": true,
 			"FOV": 60.0,
 			"Near": 2.0,
 			"Far": 10000.0
+		},
+		{
+			"TypeID": 1,
+			"ID": "0011cc9e45265e8bc668d8a61bf2b7e6",
+			"ParentID": "7b4625fc406c756c6d9c35b2e54dc805",
+			"Name": "Cube",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 100.0,
+					"Z": 0.0
+				},
+				"Scale": {
+					"X": 3.0,
+					"Y": 3.0,
+					"Z": 0.10000000149011612
+				}
+			},
+			"Scripts": [
+				{
+					"Name": "FlaxTimeNexus.UIDisplayer",
+					"ID": "f180e4bb4e3884b26114048a4253448f",
+					"V": {
+	"RenderMat": "66849a47490951e361c1ce9434c62774",
+	"Resolution": {
+		"X": 640.0,
+		"Y": 640.0
+	}
+}
+				}
+			],
+			"Model": "b43f0f8f4aaba3f3156896a5a22ba493",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "66849a47490951e361c1ce9434c62774"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 14,
+			"ID": "125e050a4226837e9ed53c879acea7a2",
+			"ParentID": "0011cc9e45265e8bc668d8a61bf2b7e6",
+			"Name": "BoxCollider",
+			"Size": {
+				"X": 100.0,
+				"Y": 100.0,
+				"Z": 100.0
+			}
 		}
 	]
 }

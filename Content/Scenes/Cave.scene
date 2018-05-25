@@ -10,9 +10,23 @@
 			"Name": "Scene",
 			"Scripts": [
 				{
-					"Name": "BasicTemplate.ExitOnEsc",
+					"Name": "FlaxTimeNexus.ExitOnEsc",
 					"ID": "1dbd22784052c163a34874903b10cda1",
 					"V": {}
+				},
+				{
+					"Name": "FlaxTimeNexus.EnableActivator",
+					"ID": "c00089d449f0e0f9a99e1ebc694b5400",
+					"V": {
+	"ToActivate": "6a41cb0c41925a5a274ff388a149d463"
+}
+				},
+				{
+					"Name": "FlaxTimeNexus.EnableActivator",
+					"ID": "ab7768a046eb8cb6b676b4b95c4bf8fe",
+					"V": {
+	"ToActivate": "000d7d2746397da6d69d15bd4e6488ed"
+}
 				}
 			],
 			"LightmapSettings": {
@@ -1858,56 +1872,6 @@
 			"Name": "rock_39_coll",
 			"StaticFlags": 0,
 			"CollisionData": "ec0b8bef49f1fb7ed6095e9560b49145"
-		},
-		{
-			"TypeID": 1,
-			"ID": "5515c2bd434791e971d37db05ea1eff0",
-			"ParentID": "59d6696c48ec2cb18c6e51b9f5749f82",
-			"Name": "Bench",
-			"Transform": {
-				"Translation": {
-					"X": -1007.7952270507813,
-					"Y": 293.860107421875,
-					"Z": 1390.6868896484376
-				},
-				"Orientation": {
-					"X": -0.10347864776849747,
-					"Y": 0.10347860306501389,
-					"Z": -0.6994943618774414,
-					"W": 0.6994941830635071
-				}
-			},
-			"StaticFlags": 0,
-			"Model": "97164d4340a82961bb1094939f8e13ac",
-			"Buffer": {
-				"Entries": [
-					{}
-				]
-			}
-		},
-		{
-			"TypeID": 14,
-			"ID": "07986f924d20267c422d35b9871a1757",
-			"ParentID": "5515c2bd434791e971d37db05ea1eff0",
-			"Name": "BoxCollider",
-			"Transform": {
-				"Translation": {
-					"X": 29.183191299438478,
-					"Y": 75.96993255615235,
-					"Z": -44.242218017578128
-				},
-				"Scale": {
-					"X": 4.418680191040039,
-					"Y": 0.5301849842071533,
-					"Z": 2.079429864883423
-				}
-			},
-			"StaticFlags": 0,
-			"Size": {
-				"X": 100.0,
-				"Y": 100.0,
-				"Z": 100.0
-			}
 		},
 		{
 			"TypeID": 4,
@@ -5306,7 +5270,7 @@
 			"ID": "6a41cb0c41925a5a274ff388a149d463",
 			"ParentID": "59d6696c48ec2cb18c6e51b9f5749f82",
 			"IsActive": false,
-			"Name": "PostFxVolume",
+			"Name": "PostFxVolume1",
 			"Transform": {
 				"Translation": {
 					"X": 826.8843383789063,
@@ -5336,7 +5300,9 @@
 				},
 				"CameraArtifacts": {},
 				"LensFlares": {},
-				"DepthOfField": {},
+				"DepthOfField": {
+					"Enabled": true
+				},
 				"SSR": {}
 			}
 		},
@@ -5345,7 +5311,7 @@
 			"ID": "000d7d2746397da6d69d15bd4e6488ed",
 			"ParentID": "59d6696c48ec2cb18c6e51b9f5749f82",
 			"IsActive": false,
-			"Name": "PostFxVolume",
+			"Name": "PostFxVolume2",
 			"Transform": {
 				"Translation": {
 					"X": -117.78201293945313,
@@ -5387,7 +5353,9 @@
 				},
 				"CameraArtifacts": {},
 				"LensFlares": {},
-				"DepthOfField": {},
+				"DepthOfField": {
+					"Enabled": true
+				},
 				"SSR": {}
 			}
 		},
@@ -5427,7 +5395,14 @@
 			"ID": "c0ce158b471d9e22d91f0baf25e2a99c",
 			"ParentID": "59d6696c48ec2cb18c6e51b9f5749f82",
 			"Name": "Blockade",
-			"StaticFlags": 0
+			"StaticFlags": 0,
+			"Scripts": [
+				{
+					"Name": "FlaxTimeNexus.TimeContainer",
+					"ID": "b905c2d1444a5345bbb9e0a24c6e7a99",
+					"V": {}
+				}
+			]
 		},
 		{
 			"TypeID": 1,
@@ -5453,6 +5428,15 @@
 				}
 			},
 			"StaticFlags": 0,
+			"Scripts": [
+				{
+					"Name": "FlaxTimeNexus.ActorTime",
+					"ID": "9267e10845063d305c42e88597cd1be9",
+					"V": {
+	"EditorTime": "0001-01-01T00:00:00"
+}
+				}
+			],
 			"Model": "691c67fc4fb5410abd06239d0b5ac8bc",
 			"Buffer": {
 				"Entries": [
@@ -5461,6 +5445,366 @@
 					}
 				]
 			}
+		},
+		{
+			"TypeID": 24,
+			"ID": "c6701560429746480d4b2ba3ea8eb774",
+			"ParentID": "c1cabe7c4e68baacc22759b10de7d652",
+			"Name": "Rock_coll",
+			"StaticFlags": 0,
+			"CollisionData": "7ed06b7d4bbfded0c82c3e9cee9b0932"
+		},
+		{
+			"TypeID": 3,
+			"ID": "a60d4ca74243aa1e2bb3c39b164bbffd",
+			"ParentID": "c0ce158b471d9e22d91f0baf25e2a99c",
+			"Name": "EmptyActor",
+			"StaticFlags": 0,
+			"Scripts": [
+				{
+					"Name": "FlaxTimeNexus.ActorTime",
+					"ID": "07ba5e104938bafa9077bc9128fb5c54",
+					"V": {
+	"EditorTime": "0010-01-01T00:00:00"
+}
+				}
+			]
+		},
+		{
+			"TypeID": 3,
+			"ID": "b05a1c784b6e8ceae419f399543e1956",
+			"ParentID": "59d6696c48ec2cb18c6e51b9f5749f82",
+			"IsActive": false,
+			"Name": "Mushrooms",
+			"Transform": {
+				"Translation": {
+					"X": 1046.5760498046876,
+					"Y": 103.82559967041016,
+					"Z": 899.2366943359375
+				},
+				"Scale": {
+					"X": 2.0,
+					"Y": 2.0,
+					"Z": 2.0
+				}
+			},
+			"StaticFlags": 0
+		},
+		{
+			"TypeID": 1,
+			"ID": "a665631b40ebd6b0cc8a3c9b7c3c6cc9",
+			"ParentID": "b05a1c784b6e8ceae419f399543e1956",
+			"Name": "skinny_shroom_1",
+			"StaticFlags": 0,
+			"Model": "3cf77b6e4455367f53268c9268edd78b",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "6fe09b2145a91bea668b76bb4c472df5",
+			"ParentID": "b05a1c784b6e8ceae419f399543e1956",
+			"Name": "skinny_shroom_1",
+			"Transform": {
+				"Translation": {
+					"X": 5.04296875,
+					"Y": 0.0,
+					"Z": 4.2618408203125
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": -0.9681476354598999,
+					"Z": 0.0,
+					"W": 0.2503799498081207
+				},
+				"Scale": {
+					"X": 0.8999999761581421,
+					"Y": 0.8999999761581421,
+					"Z": 0.8999999761581421
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "3cf77b6e4455367f53268c9268edd78b",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "2fcde84b4af5821ff79762bccc9af358",
+			"ParentID": "b05a1c784b6e8ceae419f399543e1956",
+			"Name": "skinny_shroom_1",
+			"Transform": {
+				"Translation": {
+					"X": -0.5533447265625,
+					"Y": 0.0,
+					"Z": 5.6094970703125
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": 0.9238796234130859,
+					"Z": 0.0,
+					"W": 0.38268348574638369
+				},
+				"Scale": {
+					"X": 1.1200000047683716,
+					"Y": 1.100000023841858,
+					"Z": 1.0
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "3cf77b6e4455367f53268c9268edd78b",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"TypeID": 3,
+			"ID": "11186b414d0f4c82fc621eb6039982b9",
+			"ParentID": "59d6696c48ec2cb18c6e51b9f5749f82",
+			"Name": "Bench",
+			"StaticFlags": 0,
+			"Scripts": [
+				{
+					"Name": "FlaxTimeNexus.TimeContainer",
+					"ID": "79e939e34eb08837ff5133905a9c084a",
+					"V": {}
+				}
+			]
+		},
+		{
+			"TypeID": 1,
+			"ID": "5515c2bd434791e971d37db05ea1eff0",
+			"ParentID": "11186b414d0f4c82fc621eb6039982b9",
+			"IsActive": false,
+			"Name": "LoadingBench",
+			"Transform": {
+				"Translation": {
+					"X": -1007.7952270507813,
+					"Y": 293.860107421875,
+					"Z": 1390.6868896484376
+				},
+				"Orientation": {
+					"X": -0.10347864776849747,
+					"Y": 0.10347860306501389,
+					"Z": -0.6994943618774414,
+					"W": 0.6994941830635071
+				}
+			},
+			"StaticFlags": 0,
+			"Scripts": [
+				{
+					"Name": "FlaxTimeNexus.ActorTime",
+					"ID": "fcd2e0474bcff814056a1087e2984ea1",
+					"V": {
+	"EditorTime": "0001-01-01T00:00:00"
+}
+				}
+			],
+			"Model": "97164d4340a82961bb1094939f8e13ac",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"TypeID": 14,
+			"ID": "07986f924d20267c422d35b9871a1757",
+			"ParentID": "5515c2bd434791e971d37db05ea1eff0",
+			"Name": "BoxCollider",
+			"Transform": {
+				"Translation": {
+					"X": 29.183191299438478,
+					"Y": 75.96993255615235,
+					"Z": -44.242218017578128
+				},
+				"Scale": {
+					"X": 4.418680191040039,
+					"Y": 0.5301849842071533,
+					"Z": 2.079429864883423
+				}
+			},
+			"StaticFlags": 0,
+			"Scripts": [
+				{
+					"Name": "FlaxTimeNexus.LookatGUIActivator",
+					"ID": "09da925847bc88f5019ac5ac91d94cd0",
+					"V": {
+	"MinDistance": 400.0,
+	"ToActivate": "b9980e5543490eed7e3d34adf3d0c009"
+}
+				},
+				{
+					"Name": "FlaxTimeNexus.InteractActivator",
+					"ID": "c9c378be43ec0eb7f8ecb2b3bde04247",
+					"V": {
+	"InteractionRadius": 100.0,
+	"ToActivate": "0200809846b3b9128cdb8d95e615a46b"
+}
+				}
+			],
+			"Size": {
+				"X": 100.0,
+				"Y": 100.0,
+				"Z": 100.0
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "0200809846b3b9128cdb8d95e615a46b",
+			"ParentID": "5515c2bd434791e971d37db05ea1eff0",
+			"IsActive": false,
+			"Name": "Loading",
+			"Transform": {
+				"Translation": {
+					"X": 41.38296890258789,
+					"Y": 97.2859878540039,
+					"Z": -19.637819290161134
+				},
+				"Orientation": {
+					"X": -1.4901161193847657e-8,
+					"Y": -1.0638675718155355e-8,
+					"Z": -0.7071067690849304,
+					"W": 0.7071067094802856
+				},
+				"Scale": {
+					"X": 0.20000000298023225,
+					"Y": 0.20000000298023225,
+					"Z": 0.20000000298023225
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "54a1ff4a42af9f018234f7b39b1366b3",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "dafa2f004b3dfdab753a7381a829de83"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "d55443c848c1724f9423d1afab6511d9",
+			"ParentID": "11186b414d0f4c82fc621eb6039982b9",
+			"Name": "WorkingBench",
+			"Transform": {
+				"Translation": {
+					"X": -1007.7952270507813,
+					"Y": 293.860107421875,
+					"Z": 1390.6868896484376
+				},
+				"Orientation": {
+					"X": -0.10347864776849747,
+					"Y": 0.10347860306501389,
+					"Z": -0.6994943618774414,
+					"W": 0.6994941830635071
+				}
+			},
+			"StaticFlags": 0,
+			"Scripts": [
+				{
+					"Name": "FlaxTimeNexus.ActorTime",
+					"ID": "452d2639468543c5fa4b8dabcee4058f",
+					"V": {
+	"EditorTime": "0010-01-01T00:00:00"
+}
+				}
+			],
+			"Model": "97164d4340a82961bb1094939f8e13ac",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"TypeID": 14,
+			"ID": "b5d97ac345c8df2d3413008529fae9d1",
+			"ParentID": "d55443c848c1724f9423d1afab6511d9",
+			"Name": "BoxCollider",
+			"Transform": {
+				"Translation": {
+					"X": 29.183191299438478,
+					"Y": 75.96993255615235,
+					"Z": -44.242218017578128
+				},
+				"Scale": {
+					"X": 4.418680191040039,
+					"Y": 0.5301849842071533,
+					"Z": 2.079429864883423
+				}
+			},
+			"StaticFlags": 0,
+			"Scripts": [
+				{
+					"Name": "FlaxTimeNexus.LookatGUIActivator",
+					"ID": "a25893bc4f265c5253d6c2ada1985eb3",
+					"V": {
+	"MinDistance": 400.0,
+	"ToActivate": "b9980e5543490eed7e3d34adf3d0c009"
+}
+				}
+			],
+			"Size": {
+				"X": 100.0,
+				"Y": 100.0,
+				"Z": 100.0
+			}
+		},
+		{
+			"TypeID": 27,
+			"ID": "b9980e5543490eed7e3d34adf3d0c009",
+			"ParentID": "11186b414d0f4c82fc621eb6039982b9",
+			"IsActive": false,
+			"Name": "GUI",
+			"Transform": {
+				"Translation": {
+					"X": -897.1901245117188,
+					"Y": 218.75399780273438,
+					"Z": 1388.10693359375
+				},
+				"Orientation": {
+					"X": 0.0000025331974029541017,
+					"Y": 0.8029729127883911,
+					"Z": 0.0000017173588275909424,
+					"W": 0.5960156321525574
+				}
+			},
+			"StaticFlags": 0,
+			"Text": "Press E\n",
+			"Color": {
+				"R": 0.534333348274231,
+				"G": 0.534333348274231,
+				"B": 0.534333348274231,
+				"A": 1.0
+			},
+			"Size": 20,
+			"Material": "e72782bd4d898e2f236ca3be780438af",
+			"Font": "ea9f671a4de39f19bf2a5082ac86e97c",
+			"ShadowsMode": 3,
+			"Bounds": {
+				"Location": {
+					"X": -100.0,
+					"Y": -100.0
+				},
+				"Size": {
+					"X": 200.0,
+					"Y": 200.0
+				}
+			},
+			"HAlignment": 1,
+			"VAlignment": 1,
+			"Wrapping": 0,
+			"GapScale": 1.0
 		},
 		{
 			"TypeID": 17,
@@ -5477,7 +5821,7 @@
 			"Tag": "Player",
 			"Scripts": [
 				{
-					"Name": "BasicTemplate.FPSCamera",
+					"Name": "FlaxTimeNexus.FPSCamera",
 					"ID": "fdbe3903474f35063ef031bb5aa4ea0d",
 					"V": {
 	"Acceleration": 10000.0,
@@ -5491,15 +5835,7 @@
 }
 				},
 				{
-					"Name": "BasicTemplate.Player",
-					"ID": "cd847729453ab4e4b72192a72b1d3ebe",
-					"V": {
-	"DefaultHealth": 100.0,
-	"Health": 100.0
-}
-				},
-				{
-					"Name": "BasicTemplate.PlayerLookat",
+					"Name": "FlaxTimeNexus.PlayerLookat",
 					"ID": "05db748541e112aa3956b7b81697c133",
 					"V": {
 	"Camera": "a96d89ec44bc67b354a644acd2f02d32",
@@ -5590,7 +5926,7 @@
 			"StaticFlags": 0,
 			"Scripts": [
 				{
-					"Name": "BasicTemplate.TimeGun",
+					"Name": "FlaxTimeNexus.TimeGun",
 					"ID": "2d7ceea246e309ac9790af9b60ebc492",
 					"V": {
 	"TimeIncrement": 1,

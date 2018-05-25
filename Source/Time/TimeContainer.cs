@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BasicTemplate
+namespace FlaxTimeNexus
 {
 	/// <summary>
 	/// Used to change the time of an object
@@ -36,21 +36,10 @@ namespace BasicTemplate
 			}
 		}
 
-		/*
-		---------------------------
-Error
----------------------------
-Exception has been thrown during FastMonoJson::Deserialize.
-Specified cast is not valid.
----------------------------
-OK
----------------------------
-*/
 		public void OnEnable()
 		{
 			if (Actor.HasChildren)
 			{
-				//Apparently, I'm not supposed to do that?
 				_previousActor = Actor.GetChildren().First();
 			}
 		}

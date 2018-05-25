@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BasicTemplate
+namespace FlaxTimeNexus
 {
 	/// <summary>
 	/// Cascading settings

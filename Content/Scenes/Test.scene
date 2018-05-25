@@ -1,0 +1,330 @@
+{
+	"ID": "457cae21433ed1410a669aa61b056c12",
+	"TypeName": "FlaxEngine.SceneAsset",
+	"EngineBuild": 6155,
+	"Data": [
+		{
+			"TypeID": 9,
+			"ID": "457cae21433ed1410a669aa61b056c12",
+			"ParentID": "00000000000000000000000000000000",
+			"Name": "Scene",
+			"LightmapSettings": {
+				"GlobalObjectsScale": 0.5,
+				"ChartsPadding": 3,
+				"AtlasSize": 1024,
+				"BounceCount": 1,
+				"UseGeometryWithNoMaterials": false,
+				"Quality": 10
+			}
+		},
+		{
+			"TypeID": 10,
+			"ID": "f95d54f9442af23fe31be9a85032b65a",
+			"ParentID": "457cae21433ed1410a669aa61b056c12",
+			"Name": "Sky",
+			"Transform": {
+				"Translation": {
+					"X": 40.0,
+					"Y": 150.0,
+					"Z": 0.0
+				}
+			},
+			"Sun": "8c8e8fac43acf123d9a38c945ca7e915",
+			"SunDiscScale": 1.0,
+			"FogSunPower": 8.0
+		},
+		{
+			"TypeID": 4,
+			"ID": "8c8e8fac43acf123d9a38c945ca7e915",
+			"ParentID": "457cae21433ed1410a669aa61b056c12",
+			"Name": "Sun",
+			"Transform": {
+				"Translation": {
+					"X": 40.0,
+					"Y": 160.0,
+					"Z": 0.0
+				},
+				"Orientation": {
+					"X": 0.3826834559440613,
+					"Y": 0.0,
+					"Z": 0.0,
+					"W": 0.9238795042037964
+				}
+			}
+		},
+		{
+			"TypeID": 25,
+			"ID": "5fef3e6d478a6ab418b23aa5bd94dfef",
+			"ParentID": "457cae21433ed1410a669aa61b056c12",
+			"Name": "SkyLight",
+			"Brightness": 1.7999999523162842,
+			"AdditiveColor": {
+				"R": 0.0,
+				"G": 0.0,
+				"B": 0.0,
+				"A": 1.0
+			},
+			"Radius": 100000.0,
+			"SkyDistanceThreshold": 150000.0,
+			"BakedProbe": "00000000000000000000000000000000",
+			"Mode": 1,
+			"CustomTexture": "c54410104ff39427bc11e5bc761d66b0"
+		},
+		{
+			"TypeID": 1,
+			"ID": "4c214586446697e9577f80bf6f1b84a1",
+			"ParentID": "457cae21433ed1410a669aa61b056c12",
+			"Name": "Floor",
+			"Transform": {
+				"Scale": {
+					"X": 4.0,
+					"Y": 0.5,
+					"Z": 4.0
+				}
+			},
+			"Model": "b43f0f8f4aaba3f3156896a5a22ba493",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "1771b53343d461faacdf2c8581b1fdbb"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 2,
+			"ID": "bbcfacb24e66c566111c78a3c098e8f7",
+			"ParentID": "457cae21433ed1410a669aa61b056c12",
+			"Name": "Camera",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 150.0,
+					"Z": -300.0
+				}
+			},
+			"StaticFlags": 0,
+			"Scripts": [
+				{
+					"Name": "FlaxTimeNexus.FreeCamera",
+					"ID": "77f60f77470e0337587c4caf69ba834a",
+					"V": {
+	"MoveSpeed": 1.0
+}
+				}
+			],
+			"UsePerspective": true,
+			"FOV": 60.0,
+			"Near": 2.0,
+			"Far": 10000.0
+		},
+		{
+			"TypeID": 15,
+			"ID": "fdc57fe74d4bb7972cb72b8a1c35714d",
+			"ParentID": "bbcfacb24e66c566111c78a3c098e8f7",
+			"Name": "SphereCollider",
+			"StaticFlags": 0,
+			"Radius": 50.0
+		},
+		{
+			"TypeID": 1,
+			"ID": "d3f22acd4e0ae6947063bdb3b0f72d47",
+			"ParentID": "457cae21433ed1410a669aa61b056c12",
+			"Name": "skinny_shroom_1",
+			"Transform": {
+				"Translation": {
+					"X": 69.66438293457031,
+					"Y": 66.50810241699219,
+					"Z": 72.27932739257813
+				}
+			},
+			"StaticFlags": 0,
+			"Scripts": [
+				{
+					"Name": "FlaxTimeNexus.TriggerActivator",
+					"ID": "b73dd1ae41049375b207fd90a91889c4",
+					"V": {
+	"ToActivate": "149a2d964de6871f6af4b199f36d801f"
+}
+				}
+			],
+			"Model": "3cf77b6e4455367f53268c9268edd78b",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"TypeID": 14,
+			"ID": "ec0007824c70208c296d4fa4524679ee",
+			"ParentID": "d3f22acd4e0ae6947063bdb3b0f72d47",
+			"Name": "BoxCollider",
+			"StaticFlags": 0,
+			"Scripts": [
+				{
+					"Name": "FlaxTimeNexus.TriggerActivator",
+					"ID": "bdc83b4544faa08bf93790908493a6a9",
+					"V": {
+	"ToActivate": "5c774b70423c8d02e5fe92a4b0f59b75"
+}
+				}
+			],
+			"IsTrigger": true,
+			"Size": {
+				"X": 100.0,
+				"Y": 100.0,
+				"Z": 100.0
+			}
+		},
+		{
+			"TypeID": 14,
+			"ID": "ab7f07da403469121782dca845c0a7a3",
+			"ParentID": "ec0007824c70208c296d4fa4524679ee",
+			"Name": "BoxCollider",
+			"Transform": {
+				"Scale": {
+					"X": 3.0,
+					"Y": 3.0,
+					"Z": 3.0
+				}
+			},
+			"StaticFlags": 0,
+			"Scripts": [
+				{
+					"Name": "FlaxTimeNexus.TriggerActivator",
+					"ID": "49ea99e94db44a53dfd489a95e957fb0",
+					"V": {
+	"ToActivate": "142e42cf4c499116d99363bc25f9fee6"
+}
+				}
+			],
+			"IsTrigger": true,
+			"Size": {
+				"X": 100.0,
+				"Y": 100.0,
+				"Z": 100.0
+			}
+		},
+		{
+			"TypeID": 27,
+			"ID": "149a2d964de6871f6af4b199f36d801f",
+			"ParentID": "457cae21433ed1410a669aa61b056c12",
+			"IsActive": false,
+			"Name": "Mushroom",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 173.81886291503907,
+					"Z": 0.0
+				}
+			},
+			"StaticFlags": 0,
+			"Text": "Mushroom\n",
+			"Color": {
+				"R": 0.0,
+				"G": 0.0,
+				"B": 0.0,
+				"A": 0.0
+			},
+			"Size": 32,
+			"Material": "e72782bd4d898e2f236ca3be780438af",
+			"Font": "ea9f671a4de39f19bf2a5082ac86e97c",
+			"ShadowsMode": 3,
+			"Bounds": {
+				"Location": {
+					"X": -100.0,
+					"Y": -100.0
+				},
+				"Size": {
+					"X": 200.0,
+					"Y": 200.0
+				}
+			},
+			"HAlignment": 1,
+			"VAlignment": 1,
+			"Wrapping": 0,
+			"GapScale": 1.0
+		},
+		{
+			"TypeID": 27,
+			"ID": "142e42cf4c499116d99363bc25f9fee6",
+			"ParentID": "457cae21433ed1410a669aa61b056c12",
+			"IsActive": false,
+			"Name": "Large box",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 121.01228332519531,
+					"Z": 0.0
+				}
+			},
+			"StaticFlags": 0,
+			"Text": "Large Box\n",
+			"Color": {
+				"R": 8.253647954873173e-43,
+				"G": -1.1801047628997627e-38,
+				"B": 1.1717636739207156e-38,
+				"A": -1.0893872345711347e29
+			},
+			"Size": 32,
+			"Material": "e72782bd4d898e2f236ca3be780438af",
+			"Font": "ea9f671a4de39f19bf2a5082ac86e97c",
+			"ShadowsMode": 3,
+			"Bounds": {
+				"Location": {
+					"X": -100.0,
+					"Y": -100.0
+				},
+				"Size": {
+					"X": 200.0,
+					"Y": 200.0
+				}
+			},
+			"HAlignment": 1,
+			"VAlignment": 1,
+			"Wrapping": 0,
+			"GapScale": 1.0
+		},
+		{
+			"TypeID": 27,
+			"ID": "5c774b70423c8d02e5fe92a4b0f59b75",
+			"ParentID": "457cae21433ed1410a669aa61b056c12",
+			"IsActive": false,
+			"Name": "smol box",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 65.29400634765625,
+					"Z": 0.0
+				}
+			},
+			"StaticFlags": 0,
+			"Text": "small box\n",
+			"Color": {
+				"R": 8.253647954873173e-43,
+				"G": -1.1801047628997627e-38,
+				"B": 1.1717636739207156e-38,
+				"A": -3.8942226439011209e34
+			},
+			"Size": 32,
+			"Material": "e72782bd4d898e2f236ca3be780438af",
+			"Font": "ea9f671a4de39f19bf2a5082ac86e97c",
+			"ShadowsMode": 3,
+			"Bounds": {
+				"Location": {
+					"X": -100.0,
+					"Y": -100.0
+				},
+				"Size": {
+					"X": 200.0,
+					"Y": 200.0
+				}
+			},
+			"HAlignment": 1,
+			"VAlignment": 1,
+			"Wrapping": 0,
+			"GapScale": 1.0
+		}
+	]
+}

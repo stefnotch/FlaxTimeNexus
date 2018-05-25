@@ -7,8 +7,8 @@ using System.Threading.Tasks;
 
 namespace FlaxTimeNexus
 {
-	public class Checkpoint
+	public interface IActivator
 	{
-		public Transform PlayerTransform;
+		Actor ToActivate { get; set; }
 	}
 }

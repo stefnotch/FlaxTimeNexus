@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BasicTemplate
+namespace FlaxTimeNexus
 {
 	public class PlayerLookat : Script
 	{
@@ -16,13 +16,14 @@ namespace BasicTemplate
 		void Update()
 		{
 			//TODO: How to deal with children???? (capturing, bubbling,...)
-			RayCastHit[] hits = Physics.RayCastAll(Camera.Position, Camera.Direction, MaxDistance, this.Actor.Layer);
+			RayCastHit[] hits = Physics.RayCastAll(Camera.MainCamera.Position, Camera.MainCamera.Direction, MaxDistance/*, this.Actor.Layer*/);
 
 			Array.Sort(hits, (a, b) => (int)((a.Distance - b.Distance) * 10));
 
-			if (hits.Length > 0)
+			if (hits.Length > 1)
 			{
-				RayCastHit hit = hits[0];
+				RayCastHit hit = hits[0].Collider.Tag == "Player" ? hits[1] : hits[0];
+
 				bool newCollider = _lastHit.Collider != hit.Collider;
 
 				if (newCollider)

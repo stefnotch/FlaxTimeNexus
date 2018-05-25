@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BasicTemplate.Source
+namespace FlaxTimeNexus.Source
 {
 	public class leveldupe : Script
 	{

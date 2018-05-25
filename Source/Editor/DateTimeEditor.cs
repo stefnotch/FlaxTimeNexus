@@ -9,7 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BasicTemplate.Source.Editor
+namespace FlaxTimeNexus.Source.Editor
 {
 	[CustomEditor(typeof(DateTime))]
 	public class DateTimeEditor : GenericEditor

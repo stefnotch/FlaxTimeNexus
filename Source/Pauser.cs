@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using FlaxEngine;
 
-namespace BasicTemplate
+namespace FlaxTimeNexus
 {
 	public class Pauser : Script
 	{

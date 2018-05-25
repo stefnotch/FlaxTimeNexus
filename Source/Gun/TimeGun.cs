@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BasicTemplate
+namespace FlaxTimeNexus
 {
 	public class TimeGun : Script
 	{
@@ -26,6 +26,7 @@ namespace BasicTemplate
 
 		float _lastFireTime;
 		MaterialParameter _materialLength;
+		MaterialParameter _materialDirection;
 		RayCastHit _lastTarget;
 
 		void Start()
@@ -56,6 +57,7 @@ namespace BasicTemplate
 			_lastFireTime = -FadeTime - 1;
 
 			_materialLength = GunBeam.GetMaterial(0).GetParam("Length");
+			_materialDirection = GunBeam.GetMaterial(0).GetParam("Direction");
 		}
 
 		void Update()
@@ -102,7 +104,7 @@ namespace BasicTemplate
 					TimeSpan test = TimeSpan.FromDays(365.242 * scroll * TimeIncrement);
 					timeContainer.Time = SafeAdd(timeContainer.Time, TimeSpan.FromDays(365.242 * scroll * TimeIncrement));
 
-					UpdateBeam(hit);
+					UpdateBeam(hit, scroll);
 				}
 				else
 				{
@@ -129,7 +131,7 @@ namespace BasicTemplate
 			return (min <= timeSpan && timeSpan <= max) ? dateTime.Add(timeSpan) : dateTime;
 		}
 
-		private void UpdateBeam(RayCastHit target = default(RayCastHit))
+		private void UpdateBeam(RayCastHit target = default(RayCastHit), float timeScroll = 1)
 		{
 			if (target.Collider)
 			{
@@ -143,6 +145,7 @@ namespace BasicTemplate
 				if (target.Collider)
 				{
 					SetBeamLength(target.Distance);
+					_materialDirection.Value = timeScroll;
 					GunBeamContainer.LookAt(target.Point);
 				}
 				else
