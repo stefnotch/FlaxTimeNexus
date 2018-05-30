@@ -4,7 +4,7 @@ using FlaxEngine;
 
 namespace FlaxTimeNexus
 {
-	public class TriggerActivator : Script, IActivator
+	public class TriggerToggler : Script, IIsActiveChanger
 	{
 		public Actor ToActivate { get; set; }
 

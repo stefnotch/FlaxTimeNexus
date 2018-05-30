@@ -139,71 +139,11 @@
 				}
 			},
 			"StaticFlags": 0,
-			"Scripts": [
-				{
-					"Name": "FlaxTimeNexus.TriggerActivator",
-					"ID": "b73dd1ae41049375b207fd90a91889c4",
-					"V": {
-	"ToActivate": "149a2d964de6871f6af4b199f36d801f"
-}
-				}
-			],
 			"Model": "3cf77b6e4455367f53268c9268edd78b",
 			"Buffer": {
 				"Entries": [
 					{}
 				]
-			}
-		},
-		{
-			"TypeID": 14,
-			"ID": "ec0007824c70208c296d4fa4524679ee",
-			"ParentID": "d3f22acd4e0ae6947063bdb3b0f72d47",
-			"Name": "BoxCollider",
-			"StaticFlags": 0,
-			"Scripts": [
-				{
-					"Name": "FlaxTimeNexus.TriggerActivator",
-					"ID": "bdc83b4544faa08bf93790908493a6a9",
-					"V": {
-	"ToActivate": "5c774b70423c8d02e5fe92a4b0f59b75"
-}
-				}
-			],
-			"IsTrigger": true,
-			"Size": {
-				"X": 100.0,
-				"Y": 100.0,
-				"Z": 100.0
-			}
-		},
-		{
-			"TypeID": 14,
-			"ID": "ab7f07da403469121782dca845c0a7a3",
-			"ParentID": "ec0007824c70208c296d4fa4524679ee",
-			"Name": "BoxCollider",
-			"Transform": {
-				"Scale": {
-					"X": 3.0,
-					"Y": 3.0,
-					"Z": 3.0
-				}
-			},
-			"StaticFlags": 0,
-			"Scripts": [
-				{
-					"Name": "FlaxTimeNexus.TriggerActivator",
-					"ID": "49ea99e94db44a53dfd489a95e957fb0",
-					"V": {
-	"ToActivate": "142e42cf4c499116d99363bc25f9fee6"
-}
-				}
-			],
-			"IsTrigger": true,
-			"Size": {
-				"X": 100.0,
-				"Y": 100.0,
-				"Z": 100.0
 			}
 		},
 		{

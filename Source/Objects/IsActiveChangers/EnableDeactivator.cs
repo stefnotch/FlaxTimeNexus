@@ -7,15 +7,15 @@ using FlaxEngine;
 
 namespace FlaxTimeNexus
 {
-	public class EnableDeactivator : Script, IDeactivator
+	public class EnableDeactivator : Script, IIsActiveChanger
 	{
-		public Actor ToDeactivate { get; set; }
+		public Actor ToActivate { get; set; }
 
 		//TODO: Ask about this vvv
 		//[ExecuteInEditMode]
 		void OnEnable()
 		{
-			ToDeactivate.IsActive = false;
+			ToActivate.IsActive = false;
 		}
 	}
 }

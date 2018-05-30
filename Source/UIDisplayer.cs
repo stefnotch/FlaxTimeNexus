@@ -8,8 +8,10 @@ namespace FlaxTimeNexus
 {
 	public class UIDisplayer : Script
 	{
-		//Create a new material like in this tutorial: https://docs.flaxengine.com/manual/graphics/cameras/render-camera-to-texture.html
+
 		public Material RenderMat;
+
+		public Camera Camera;
 
 		[Limit(1, 2000)]
 		public Vector2 Resolution
@@ -30,9 +32,12 @@ namespace FlaxTimeNexus
 		}
 
 		private Vector2 resolution = new Vector2(640, 374);
-		private RenderTarget output;
-		private CustomRenderTask task;
 
+		[NoSerialize]
+		private RenderTarget output;
+		[NoSerialize]
+		private CustomRenderTask task;
+		[NoSerialize]
 		private ContainerControl guiRoot;
 
 		private void Start()
@@ -72,51 +77,65 @@ namespace FlaxTimeNexus
 
 		private void Update()
 		{
-			
 			DebugDraw.DrawSphere(Vector3.Zero, 33, Color.Red);
 
 			task.Enabled = true;
 			if (RenderMat) RenderMat.GetParam("Image").Value = output;
 
 			//Well, there is a physics bug right now...so...yeah
-			if (Input.GetMouseButtonDown(MouseButton.Left) || Input.GetMouseButtonUp(MouseButton.Left))
+			Vector3 origin;
+			Vector3 direction;
+			if (Screen.CursorLock == CursorLockMode.None)
 			{
-				RayCastHit[] hits = Physics.RayCastAll(Camera.MainCamera.Position, Camera.MainCamera.Direction);
+				Ray r = ConvertMouseToRay(Input.MousePosition, Camera);
+				origin = r.Position;
+				direction = r.Direction;
+			}
+			else
+			{
+				origin = Camera.Position;
+				direction = Camera.Direction;
+			}
+			RayCastHit[] hits = Physics.RayCastAll(origin, direction);
 
-				Array.Sort(hits, (a, b) => (int)((a.Distance - b.Distance) * 10));
+			Array.Sort(hits, (a, b) => (int)((a.Distance - b.Distance) * 10));
 
-				RayCastHit hit = default(RayCastHit);
-				foreach (RayCastHit h in hits)
+			RayCastHit hit = default(RayCastHit);
+			foreach (RayCastHit h in hits)
+			{
+				if (h.Collider && h.Collider.Parent == this)
 				{
-					if (h.Collider && h.Collider.Parent == this)
-					{
-						hit = h;
-					}
+					hit = h;
 				}
+			}
 
 
-				if (hit.Collider != null)
+			if (hit.Collider != null)
+			{
+				Vector3 hitPos = hit.Point;
+
+				if (Input.GetMouseButtonDown(MouseButton.Left) || Input.GetMouseButtonUp(MouseButton.Left))
 				{
+
 					//Or some other point (world coordinates)
-					Vector3 hitPos = hit.Point;
-					
-					
+
+
 					//Transform it to a local point & rotate it so that it's on a 2D plane
 					Vector3 localHitPos = this.Actor.Transform.WorldToLocal(hitPos);
 					Vector3 onPlanePos = Vector3.Transform(localHitPos, this.Actor.Orientation);
 
-					
+
 
 					Vector2 onPlanePos2D = new Vector2(onPlanePos.X, onPlanePos.Y);
 
 					//Normalized device coordinates
-					onPlanePos2D /= new Vector2(50); 
+					onPlanePos2D /= new Vector2(50);
 
 					//To GUI-coordinates
 					onPlanePos2D += new Vector2(1, -1);
 					onPlanePos2D /= new Vector2(2, -2);
 					onPlanePos2D *= new Vector2(guiRoot.Width, guiRoot.Height);
-					
+
 					//Click
 					if (Input.GetMouseButtonDown(MouseButton.Left))
 					{
@@ -137,10 +156,30 @@ namespace FlaxTimeNexus
 
 		private void OnDisable()
 		{
+			guiRoot.OnDestroy();
 			RenderMat.GetParam("Image").Value = null;
 			// Cleanup
 			Destroy(ref task);
 			Destroy(ref output);
+		}
+
+
+		private Ray ConvertMouseToRay(Vector2 mouse, Camera camera)
+		{
+			Vector4 ndc = new Vector4(
+				mouse.X * 2f / MainRenderTask.Instance.Buffers.Size.X - 1f,
+				1f - mouse.Y * 2f / MainRenderTask.Instance.Buffers.Size.Y,
+				-camera.NearPlane,
+				1
+			);
+
+			Vector4 dir = ndc;
+
+			dir *= new Vector4(MainRenderTask.Instance.Buffers.Size.X / MainRenderTask.Instance.Buffers.Size.Y, 1, 1, 1);
+			dir = Vector4.Transform(dir, Matrix.Invert(camera.View * camera.Projection));
+
+			Vector3 d3 = new Vector3(dir.X, dir.Y, dir.Z) / dir.W;
+			return new Ray(camera.Position, (d3 - camera.Position).Normalized);
 		}
 	}
 }

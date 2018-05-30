@@ -7,7 +7,7 @@ using FlaxEngine;
 
 namespace FlaxTimeNexus
 {
-	public class LookatGUIActivator : LookatActivator
+	public class LookatGUIToggler : LookatToggler
 	{
 		/// <summary>
 		/// How close does the player have to be to activate an actor

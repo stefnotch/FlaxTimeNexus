@@ -11,7 +11,7 @@ namespace FlaxTimeNexus
 	/// Activates an actor when the interact key gets pressed
 	/// Does NOT deactivate it afterwards
 	/// </summary>
-	public class InteractActivator : Script, ILookatTrigger, IActivator
+	public class InteractActivator : Script, ILookatTrigger, IIsActiveChanger
 	{
 		public Actor ToActivate { get; set; }
 		/// <summary>

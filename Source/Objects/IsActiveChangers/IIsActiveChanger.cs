@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace FlaxTimeNexus
 {
-	public interface IActivator
+	public interface IIsActiveChanger
 	{
 		Actor ToActivate { get; set; }
 	}

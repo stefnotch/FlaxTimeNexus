@@ -10,7 +10,7 @@ namespace FlaxTimeNexus
 	/// <summary>
 	/// Activates an actor while this actor is being looked at
 	/// </summary>
-	public class LookatActivator : Script, ILookatTrigger, IActivator
+	public class LookatToggler : Script, ILookatTrigger, IIsActiveChanger
 	{
 		public Actor ToActivate { get; set; }
 

@@ -7,7 +7,7 @@ using FlaxEngine;
 
 namespace FlaxTimeNexus
 {
-	public class EnableActivator : Script, IActivator
+	public class EnableActivator : Script, IIsActiveChanger
 	{
 		public Actor ToActivate { get; set; }
 

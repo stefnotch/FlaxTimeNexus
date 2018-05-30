@@ -2705,8 +2705,8 @@
 				"B": 0.13127028942108155,
 				"A": 1.0
 			},
-			"Radius": 400.0,
-			"FallOffExponent": 2.0
+			"Radius": 700.0,
+			"FallOffExponent": 4.0
 		},
 		{
 			"TypeID": 1,
@@ -2780,8 +2780,8 @@
 				"B": 0.13127028942108155,
 				"A": 1.0
 			},
-			"Radius": 400.0,
-			"FallOffExponent": 2.0
+			"Radius": 700.0,
+			"FallOffExponent": 4.0
 		},
 		{
 			"TypeID": 1,
@@ -2855,8 +2855,8 @@
 				"B": 0.13127028942108155,
 				"A": 1.0
 			},
-			"Radius": 400.0,
-			"FallOffExponent": 2.0
+			"Radius": 700.0,
+			"FallOffExponent": 4.0
 		},
 		{
 			"TypeID": 1,
@@ -2930,8 +2930,8 @@
 				"B": 0.13127028942108155,
 				"A": 1.0
 			},
-			"Radius": 400.0,
-			"FallOffExponent": 2.0
+			"Radius": 700.0,
+			"FallOffExponent": 4.0
 		},
 		{
 			"TypeID": 1,
@@ -3005,8 +3005,8 @@
 				"B": 0.13127028942108155,
 				"A": 1.0
 			},
-			"Radius": 400.0,
-			"FallOffExponent": 2.0
+			"Radius": 700.0,
+			"FallOffExponent": 4.0
 		},
 		{
 			"TypeID": 1,
@@ -3080,8 +3080,8 @@
 				"B": 0.13127028942108155,
 				"A": 1.0
 			},
-			"Radius": 400.0,
-			"FallOffExponent": 2.0
+			"Radius": 700.0,
+			"FallOffExponent": 4.0
 		},
 		{
 			"TypeID": 1,
@@ -3155,8 +3155,8 @@
 				"B": 0.13127028942108155,
 				"A": 1.0
 			},
-			"Radius": 400.0,
-			"FallOffExponent": 2.0
+			"Radius": 700.0,
+			"FallOffExponent": 4.0
 		},
 		{
 			"TypeID": 1,
@@ -3230,8 +3230,8 @@
 				"B": 0.13127028942108155,
 				"A": 1.0
 			},
-			"Radius": 400.0,
-			"FallOffExponent": 2.0
+			"Radius": 700.0,
+			"FallOffExponent": 4.0
 		},
 		{
 			"TypeID": 1,
@@ -3305,8 +3305,8 @@
 				"B": 0.13127028942108155,
 				"A": 1.0
 			},
-			"Radius": 400.0,
-			"FallOffExponent": 2.0
+			"Radius": 700.0,
+			"FallOffExponent": 4.0
 		},
 		{
 			"TypeID": 1,
@@ -3380,8 +3380,8 @@
 				"B": 0.13127028942108155,
 				"A": 1.0
 			},
-			"Radius": 400.0,
-			"FallOffExponent": 2.0
+			"Radius": 700.0,
+			"FallOffExponent": 4.0
 		},
 		{
 			"TypeID": 1,
@@ -3455,8 +3455,8 @@
 				"B": 0.13127028942108155,
 				"A": 1.0
 			},
-			"Radius": 400.0,
-			"FallOffExponent": 2.0
+			"Radius": 700.0,
+			"FallOffExponent": 4.0
 		},
 		{
 			"TypeID": 1,
@@ -3530,8 +3530,8 @@
 				"B": 0.13127028942108155,
 				"A": 1.0
 			},
-			"Radius": 400.0,
-			"FallOffExponent": 2.0
+			"Radius": 700.0,
+			"FallOffExponent": 4.0
 		},
 		{
 			"TypeID": 1,
@@ -3605,8 +3605,8 @@
 				"B": 0.13127028942108155,
 				"A": 1.0
 			},
-			"Radius": 400.0,
-			"FallOffExponent": 2.0
+			"Radius": 700.0,
+			"FallOffExponent": 4.0
 		},
 		{
 			"TypeID": 1,
@@ -3680,8 +3680,8 @@
 				"B": 0.13127028942108155,
 				"A": 1.0
 			},
-			"Radius": 400.0,
-			"FallOffExponent": 2.0
+			"Radius": 700.0,
+			"FallOffExponent": 4.0
 		},
 		{
 			"TypeID": 1,
@@ -3755,8 +3755,8 @@
 				"B": 0.13127028942108155,
 				"A": 1.0
 			},
-			"Radius": 400.0,
-			"FallOffExponent": 2.0
+			"Radius": 700.0,
+			"FallOffExponent": 4.0
 		},
 		{
 			"TypeID": 1,
@@ -3830,8 +3830,8 @@
 				"B": 0.13127028942108155,
 				"A": 1.0
 			},
-			"Radius": 400.0,
-			"FallOffExponent": 2.0
+			"Radius": 700.0,
+			"FallOffExponent": 4.0
 		},
 		{
 			"TypeID": 1,
@@ -3911,8 +3911,8 @@
 				"B": 0.13127028942108155,
 				"A": 1.0
 			},
-			"Radius": 400.0,
-			"FallOffExponent": 2.0
+			"Radius": 700.0,
+			"FallOffExponent": 4.0
 		},
 		{
 			"TypeID": 1,
@@ -3986,8 +3986,8 @@
 				"B": 0.13127028942108155,
 				"A": 1.0
 			},
-			"Radius": 400.0,
-			"FallOffExponent": 2.0
+			"Radius": 700.0,
+			"FallOffExponent": 4.0
 		},
 		{
 			"TypeID": 1,
@@ -5406,6 +5406,210 @@
 		},
 		{
 			"TypeID": 1,
+			"ID": "6bee50e24d0723bc21f76285e900586e",
+			"ParentID": "c0ce158b471d9e22d91f0baf25e2a99c",
+			"IsActive": false,
+			"Name": "Rock 36",
+			"Transform": {
+				"Translation": {
+					"X": -162.26541137695313,
+					"Y": 2271.122314453125,
+					"Z": 6359.9267578125
+				},
+				"Orientation": {
+					"X": 0.4977419078350067,
+					"Y": 0.5108509063720703,
+					"Z": 0.4757351875305176,
+					"W": 0.5147432088851929
+				},
+				"Scale": {
+					"X": -8.398579597473145,
+					"Y": 1.917980670928955,
+					"Z": 13.526946067810059
+				}
+			},
+			"StaticFlags": 0,
+			"Scripts": [
+				{
+					"Name": "FlaxTimeNexus.ActorTime",
+					"ID": "47db8c1a44f3d53d1e7c1ab20b20cf27",
+					"V": {
+	"EditorTime": "0020-01-01T00:00:00"
+}
+				}
+			],
+			"Model": "691c67fc4fb5410abd06239d0b5ac8bc",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "9805578e4730a6bace243bb2fe0a6d92"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 24,
+			"ID": "2e03353b4e319e2ad0ae20b0344b1a5e",
+			"ParentID": "6bee50e24d0723bc21f76285e900586e",
+			"Name": "Rock_coll",
+			"StaticFlags": 0,
+			"CollisionData": "7ed06b7d4bbfded0c82c3e9cee9b0932"
+		},
+		{
+			"TypeID": 1,
+			"ID": "19e6ae064eeab67e583be58663f294b8",
+			"ParentID": "c0ce158b471d9e22d91f0baf25e2a99c",
+			"IsActive": false,
+			"Name": "Rock 35",
+			"Transform": {
+				"Translation": {
+					"X": -162.26541137695313,
+					"Y": 1739.8343505859376,
+					"Z": 6359.9267578125
+				},
+				"Orientation": {
+					"X": 0.4977419078350067,
+					"Y": 0.5108509063720703,
+					"Z": 0.4757351875305176,
+					"W": 0.5147432088851929
+				},
+				"Scale": {
+					"X": -8.398579597473145,
+					"Y": 1.917980670928955,
+					"Z": 13.526946067810059
+				}
+			},
+			"StaticFlags": 0,
+			"Scripts": [
+				{
+					"Name": "FlaxTimeNexus.ActorTime",
+					"ID": "a2fb71804ef5a2daee869f9dce2aacc6",
+					"V": {
+	"EditorTime": "0015-01-01T00:00:00"
+}
+				}
+			],
+			"Model": "691c67fc4fb5410abd06239d0b5ac8bc",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "9805578e4730a6bace243bb2fe0a6d92"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 24,
+			"ID": "6e27cb7a44e3d219dbdecfb110f50118",
+			"ParentID": "19e6ae064eeab67e583be58663f294b8",
+			"Name": "Rock_coll",
+			"StaticFlags": 0,
+			"CollisionData": "7ed06b7d4bbfded0c82c3e9cee9b0932"
+		},
+		{
+			"TypeID": 1,
+			"ID": "6c946d4c46f43b2b417066bc3cbdd4cb",
+			"ParentID": "c0ce158b471d9e22d91f0baf25e2a99c",
+			"IsActive": false,
+			"Name": "Rock 34",
+			"Transform": {
+				"Translation": {
+					"X": -162.26541137695313,
+					"Y": 923.6202392578125,
+					"Z": 6359.9267578125
+				},
+				"Orientation": {
+					"X": 0.4977419078350067,
+					"Y": 0.5108509063720703,
+					"Z": 0.4757351875305176,
+					"W": 0.5147432088851929
+				},
+				"Scale": {
+					"X": -8.398579597473145,
+					"Y": 1.917980670928955,
+					"Z": 13.526946067810059
+				}
+			},
+			"StaticFlags": 0,
+			"Scripts": [
+				{
+					"Name": "FlaxTimeNexus.ActorTime",
+					"ID": "9402ac224d3ffd99aad6cf9cd29433ed",
+					"V": {
+	"EditorTime": "0010-01-01T00:00:00"
+}
+				}
+			],
+			"Model": "691c67fc4fb5410abd06239d0b5ac8bc",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "9805578e4730a6bace243bb2fe0a6d92"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 24,
+			"ID": "65c9b3b3490ace9530735799824b560f",
+			"ParentID": "6c946d4c46f43b2b417066bc3cbdd4cb",
+			"Name": "Rock_coll",
+			"StaticFlags": 0,
+			"CollisionData": "7ed06b7d4bbfded0c82c3e9cee9b0932"
+		},
+		{
+			"TypeID": 1,
+			"ID": "b536466e4bc4eeaca79a2a9c406ff0f2",
+			"ParentID": "c0ce158b471d9e22d91f0baf25e2a99c",
+			"IsActive": false,
+			"Name": "Rock 33",
+			"Transform": {
+				"Translation": {
+					"X": -162.26541137695313,
+					"Y": 523.6572265625,
+					"Z": 6359.9267578125
+				},
+				"Orientation": {
+					"X": 0.4977419078350067,
+					"Y": 0.5108509063720703,
+					"Z": 0.4757351875305176,
+					"W": 0.5147432088851929
+				},
+				"Scale": {
+					"X": -8.398579597473145,
+					"Y": 1.917980670928955,
+					"Z": 13.526946067810059
+				}
+			},
+			"StaticFlags": 0,
+			"Scripts": [
+				{
+					"Name": "FlaxTimeNexus.ActorTime",
+					"ID": "61f6bb1847e30efc1b8a6f93d1331bc8",
+					"V": {
+	"EditorTime": "0005-01-01T00:00:00"
+}
+				}
+			],
+			"Model": "691c67fc4fb5410abd06239d0b5ac8bc",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "9805578e4730a6bace243bb2fe0a6d92"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 24,
+			"ID": "383b48894caad97438e6168a80434164",
+			"ParentID": "b536466e4bc4eeaca79a2a9c406ff0f2",
+			"Name": "Rock_coll",
+			"StaticFlags": 0,
+			"CollisionData": "7ed06b7d4bbfded0c82c3e9cee9b0932"
+		},
+		{
+			"TypeID": 1,
 			"ID": "c1cabe7c4e68baacc22759b10de7d652",
 			"ParentID": "c0ce158b471d9e22d91f0baf25e2a99c",
 			"Name": "Rock 32",
@@ -5458,6 +5662,7 @@
 			"TypeID": 3,
 			"ID": "a60d4ca74243aa1e2bb3c39b164bbffd",
 			"ParentID": "c0ce158b471d9e22d91f0baf25e2a99c",
+			"IsActive": false,
 			"Name": "EmptyActor",
 			"StaticFlags": 0,
 			"Scripts": [
@@ -5465,7 +5670,7 @@
 					"Name": "FlaxTimeNexus.ActorTime",
 					"ID": "07ba5e104938bafa9077bc9128fb5c54",
 					"V": {
-	"EditorTime": "0010-01-01T00:00:00"
+	"EditorTime": "0025-01-01T00:00:00"
 }
 				}
 			]
@@ -5583,7 +5788,6 @@
 			"TypeID": 1,
 			"ID": "5515c2bd434791e971d37db05ea1eff0",
 			"ParentID": "11186b414d0f4c82fc621eb6039982b9",
-			"IsActive": false,
 			"Name": "LoadingBench",
 			"Transform": {
 				"Translation": {
@@ -5635,19 +5839,19 @@
 			"StaticFlags": 0,
 			"Scripts": [
 				{
-					"Name": "FlaxTimeNexus.LookatGUIActivator",
-					"ID": "09da925847bc88f5019ac5ac91d94cd0",
-					"V": {
-	"MinDistance": 400.0,
-	"ToActivate": "b9980e5543490eed7e3d34adf3d0c009"
-}
-				},
-				{
 					"Name": "FlaxTimeNexus.InteractActivator",
 					"ID": "c9c378be43ec0eb7f8ecb2b3bde04247",
 					"V": {
 	"InteractionRadius": 100.0,
 	"ToActivate": "0200809846b3b9128cdb8d95e615a46b"
+}
+				},
+				{
+					"Name": "FlaxTimeNexus.LookatGUIToggler",
+					"ID": "8731db7a4734a11f25723d86e14ed652",
+					"V": {
+	"MinDistance": 100.0,
+	"ToActivate": "b9980e5543490eed7e3d34adf3d0c009"
 }
 				}
 			],
@@ -5695,6 +5899,7 @@
 			"TypeID": 1,
 			"ID": "d55443c848c1724f9423d1afab6511d9",
 			"ParentID": "11186b414d0f4c82fc621eb6039982b9",
+			"IsActive": false,
 			"Name": "WorkingBench",
 			"Transform": {
 				"Translation": {
@@ -5746,10 +5951,10 @@
 			"StaticFlags": 0,
 			"Scripts": [
 				{
-					"Name": "FlaxTimeNexus.LookatGUIActivator",
-					"ID": "a25893bc4f265c5253d6c2ada1985eb3",
+					"Name": "FlaxTimeNexus.LookatGUIToggler",
+					"ID": "093b822e44629d80b3bf5797a1f08403",
 					"V": {
-	"MinDistance": 400.0,
+	"MinDistance": 100.0,
 	"ToActivate": "b9980e5543490eed7e3d34adf3d0c009"
 }
 				}
@@ -5935,6 +6140,36 @@
 }
 				}
 			]
+		},
+		{
+			"TypeID": 1,
+			"ID": "14032d8e49fbd530a231fb8345c4694b",
+			"ParentID": "35fd20cd4497ea1b18cafcae1c3524ef",
+			"Name": "UI",
+			"Transform": {
+				"Scale": {
+					"X": 1.0,
+					"Y": 1.0,
+					"Z": 0.10000000149011612
+				}
+			},
+			"Model": "b43f0f8f4aaba3f3156896a5a22ba493",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"TypeID": 14,
+			"ID": "b471e67c4fdee22b6041cebd2ec5c8e5",
+			"ParentID": "14032d8e49fbd530a231fb8345c4694b",
+			"Name": "BoxCollider",
+			"Size": {
+				"X": 100.0,
+				"Y": 100.0,
+				"Z": 100.0
+			}
 		}
 	]
 }
