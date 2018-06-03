@@ -5439,7 +5439,7 @@
 					"Name": "FlaxTimeNexus.ActorTime",
 					"ID": "47db8c1a44f3d53d1e7c1ab20b20cf27",
 					"V": {
-	"EditorTime": "0020-01-01T00:00:00"
+	"EditorTime": {"Ticks": 0}
 }
 				}
 			],
@@ -5490,7 +5490,7 @@
 					"Name": "FlaxTimeNexus.ActorTime",
 					"ID": "a2fb71804ef5a2daee869f9dce2aacc6",
 					"V": {
-	"EditorTime": "0015-01-01T00:00:00"
+	"EditorTime": {"Ticks": 0}
 }
 				}
 			],
@@ -5541,7 +5541,7 @@
 					"Name": "FlaxTimeNexus.ActorTime",
 					"ID": "9402ac224d3ffd99aad6cf9cd29433ed",
 					"V": {
-	"EditorTime": "0010-01-01T00:00:00"
+	"EditorTime": {"Ticks": 0}
 }
 				}
 			],
@@ -5592,7 +5592,7 @@
 					"Name": "FlaxTimeNexus.ActorTime",
 					"ID": "61f6bb1847e30efc1b8a6f93d1331bc8",
 					"V": {
-	"EditorTime": "0005-01-01T00:00:00"
+	"EditorTime": {"Ticks": 0}
 }
 				}
 			],
@@ -5642,7 +5642,7 @@
 					"Name": "FlaxTimeNexus.ActorTime",
 					"ID": "9267e10845063d305c42e88597cd1be9",
 					"V": {
-	"EditorTime": "0001-01-01T00:00:00"
+	"EditorTime": {"Ticks": 0}
 }
 				}
 			],
@@ -5675,7 +5675,7 @@
 					"Name": "FlaxTimeNexus.ActorTime",
 					"ID": "07ba5e104938bafa9077bc9128fb5c54",
 					"V": {
-	"EditorTime": "0025-01-01T00:00:00"
+	"EditorTime": {"Ticks": 0}
 }
 				}
 			]
@@ -5813,7 +5813,7 @@
 					"Name": "FlaxTimeNexus.ActorTime",
 					"ID": "fcd2e0474bcff814056a1087e2984ea1",
 					"V": {
-	"EditorTime": "0001-01-01T00:00:00"
+	"EditorTime": {"Ticks": 0}
 }
 				}
 			],
@@ -5925,7 +5925,7 @@
 					"Name": "FlaxTimeNexus.ActorTime",
 					"ID": "452d2639468543c5fa4b8dabcee4058f",
 					"V": {
-	"EditorTime": "0010-01-01T00:00:00"
+	"EditorTime": {"Ticks": 0}
 }
 				}
 			],
@@ -6189,7 +6189,7 @@
 					"Name": "FlaxTimeNexus.TimeGun",
 					"ID": "2d7ceea246e309ac9790af9b60ebc492",
 					"V": {
-	"TimeIncrement": 1,
+	"TimeIncrement": { "Ticks" : 1 },
 	"GunBeamModel": "34efdf4147961b910d6996b5b14cfbd3",
 	"FadeTime": 1.0
 }

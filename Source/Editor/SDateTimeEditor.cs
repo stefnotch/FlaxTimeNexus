@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 namespace FlaxTimeNexus.Source.Editor
 {
 	[CustomEditor(typeof(SDateTime))]
-	public class DateTimeEditor : GenericEditor
+	public class SDateTimeEditor : GenericEditor
 	{
 		/*public override DisplayStyle Style
 		{
@@ -33,6 +33,9 @@ namespace FlaxTimeNexus.Source.Editor
 
 			base.Initialize(layout);
 			((FlaxEngine.GUI.DropPanel)(layout.Control)).Open(false);
+
+			//TODO: Change the null handling?
+			if (Values[0] == null) return;
 
 			year = layout.IntegerValue("Year");
 
@@ -70,7 +73,7 @@ namespace FlaxTimeNexus.Source.Editor
 			this.SetValue(new SDateTime(year.Value, day.Value, hour.Value, minute.Value, second.Value));
 		}
 
-		~DateTimeEditor()
+		~SDateTimeEditor()
 		{
 			if (year != null)
 			{

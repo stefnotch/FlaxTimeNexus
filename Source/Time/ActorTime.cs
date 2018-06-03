@@ -14,7 +14,7 @@ namespace FlaxTimeNexus
 		/// </summary>
 		[Serialize]
 		//[EditorDisplay("Time", "__inline__")]
-		public SDateTime EditorTime { get; set; }
+		public SDateTime EditorTime { get; set; } = SDateTime.Zero;
 
 		/// <summary>
 		/// The time of the actor

@@ -11,6 +11,7 @@ namespace FlaxTimeNexus
 	/// An overly simplified DateTime and TimeSpan
 	/// (Ignores time zones, leap years, DST, calendars,  etc.)
 	/// </summary>
+	[Serializable]
 	public class SDateTime
 	{
 		//Constants
@@ -24,6 +25,7 @@ namespace FlaxTimeNexus
 		/// 1 tick = 1 second
 		/// </summary>
 		[Serialize]
+		[HideInEditor]
 		public long Ticks { get; protected set; }
 
 		[NoSerialize]
