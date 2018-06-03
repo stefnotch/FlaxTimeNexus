@@ -25,22 +25,20 @@ namespace FlaxTimeNexus
 			set
 			{
 				_defaultTime = value;
-				/*if (Actor)
+				/*if (this.Actor)
 				{
-					Actor.DepthFirst((actor) =>
+					foreach (Actor actor in this.Actor.DepthFirst((actor) => actor.GetScript<Settings>() == null))
 					{
+
 						var timeContainer = actor.GetScript<TimeContainer>();
 						if (timeContainer)
 						{
 							timeContainer.Time = value;
 						}
-					},
-					(actor) => actor.GetScript<Settings>() == null);
+
+					}
 				}*/
 			}
 		}
-
-
-
 	}
 }

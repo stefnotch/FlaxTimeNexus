@@ -25,9 +25,9 @@ namespace FlaxTimeNexus.Source
 			//Scene.
 		}
 
-		Actor CloneActor(Actor actor)
+		private Actor CloneActor(Actor actor)
 		{
-			if (actor is Scene) throw new ArgumentException("Scenes can't be cloned that easily, please use SceneToEmptyActor first");
+			if (actor is Scene) throw new ArgumentException("Scenes can't be cloned that easily");
 
 			List<Actor> actorsToClone = new List<Actor>();
 			actorsToClone.AddRange(actor.DepthFirst());

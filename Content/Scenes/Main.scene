@@ -1,7 +1,7 @@
 {
 	"ID": "7b4625fc406c756c6d9c35b2e54dc805",
 	"TypeName": "FlaxEngine.SceneAsset",
-	"EngineBuild": 6155,
+	"EngineBuild": 6156,
 	"Data": [
 		{
 			"TypeID": 9,
@@ -57,15 +57,13 @@
 					"Z": 0.0,
 					"W": 0.9238795042037964
 				}
-			},
-			"Brightness": 5.0
+			}
 		},
 		{
 			"TypeID": 25,
 			"ID": "0e936bbb45606ff75c6c248cb05a553b",
 			"ParentID": "7b4625fc406c756c6d9c35b2e54dc805",
 			"Name": "SkyLight",
-			"Brightness": 2.0,
 			"AdditiveColor": {
 				"R": 0.0,
 				"G": 0.0,
@@ -127,21 +125,25 @@
 					"Name": "FlaxTimeNexus.UIDisplayer",
 					"ID": "f180e4bb4e3884b26114048a4253448f",
 					"V": {
-	"RenderMat": "66849a47490951e361c1ce9434c62774",
+	"RenderMaterial": "66849a47490951e361c1ce9434c62774",
 	"Camera": "ae1a1f4f4dea57ac66804a83356f813d",
+	"UICreator": "afb02aac4c17efe14e23068e4a6431e5",
 	"Resolution": {
 		"X": 640.0,
 		"Y": 640.0
 	}
 }
+				},
+				{
+					"Name": "FlaxTimeNexus.Source.UI.PauseUICreator",
+					"ID": "afb02aac4c17efe14e23068e4a6431e5",
+					"V": {}
 				}
 			],
 			"Model": "b43f0f8f4aaba3f3156896a5a22ba493",
 			"Buffer": {
 				"Entries": [
-					{
-						"Material": "66849a47490951e361c1ce9434c62774"
-					}
+					{}
 				]
 			}
 		},

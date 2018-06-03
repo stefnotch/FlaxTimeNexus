@@ -10,7 +10,15 @@ namespace FlaxTimeNexus
 {
 	public class TimeGun : Script
 	{
+		/// <summary>
+		/// By how many years should the time get incremented
+		/// TODO: Years, months, days, hours, ... (Use noda-time?)
+		/// </summary>
 		public int TimeIncrement = 1;
+
+		/// <summary>
+		/// The model
+		/// </summary>
 		public Model GunBeamModel;
 
 		/// <summary>
@@ -18,93 +26,68 @@ namespace FlaxTimeNexus
 		/// </summary>
 		public float FadeTime = 1f;
 
-		EmptyActor GunBeamContainer;
-		ModelActor GunBeam;
-
 		readonly InputAxis TimeScroll = new InputAxis("Time");
 		readonly float MaxDistance = 100 * 100;
+		readonly string GunBeamName = "GunBeam";
+
+		EmptyActor _gunBeamContainer;
+		ModelActor _gunBeam;
 
 		float _lastFireTime;
 		MaterialParameter _materialLength;
 		MaterialParameter _materialDirection;
 		RayCastHit _lastTarget;
 
+
+
+		TimeSpan _toAdd = TimeSpan.Zero;
+
 		void Start()
 		{
-			if (this.Actor.GetChild("GunBeam"))
+			if (this.Actor.GetChild(GunBeamName))
 			{
-				Destroy(this.Actor.GetChild("GunBeam"));
+				Destroy(this.Actor.GetChild(GunBeamName));
 			}
 			//Create a gun beam (container)
-			GunBeamContainer = EmptyActor.New();
-			GunBeamContainer.Name = "GunBeam";
-			GunBeamContainer.IsActive = false;
+			_gunBeamContainer = EmptyActor.New();
+			_gunBeamContainer.Name = GunBeamName;
+			_gunBeamContainer.IsActive = false;
 			//Create the actual gun beam
-			GunBeam = ModelActor.New();
-			GunBeam.Model = GunBeamModel;
-			GunBeam.Scale = Vector3.One * 0.1f;
+			_gunBeam = ModelActor.New();
+			_gunBeam.Model = GunBeamModel;
+			_gunBeam.Scale = Vector3.One * 0.1f;
 
 			//Attach them to the gun
-			GunBeamContainer.AddChild(GunBeam, false);
-			this.Actor.AddChild(GunBeamContainer, false);
+			_gunBeamContainer.AddChild(_gunBeam, false);
+			this.Actor.AddChild(_gunBeamContainer, false);
 
 			//Rotate the actual gun beam!
-			GunBeam.LocalOrientation = Quaternion.Euler(90, 0, 0);
-			GunBeam.LocalPosition = Vector3.Zero;
+			_gunBeam.LocalOrientation = Quaternion.Euler(90, 0, 0);
+			_gunBeam.LocalPosition = Vector3.Zero;
 
-			GunBeamContainer.LocalPosition = Vector3.Zero;
+			_gunBeamContainer.LocalPosition = Vector3.Zero;
 
 			_lastFireTime = -FadeTime - 1;
 
-			_materialLength = GunBeam.GetMaterial(0).GetParam("Length");
-			_materialDirection = GunBeam.GetMaterial(0).GetParam("Direction");
+			_materialLength = _gunBeam.GetMaterial(0).GetParam("Length");
+			_materialDirection = _gunBeam.GetMaterial(0).GetParam("Direction");
 		}
 
 		void Update()
 		{
-			RayCastHit[] hits = Physics.RayCastAll(Camera.MainCamera.Position, Camera.MainCamera.Direction, MaxDistance/*, this.Actor.Layer*/);
-
-			Array.Sort(hits, (a, b) => (int)((a.Distance - b.Distance) * 10));
-
-			if (hits.Length > 1)
+			//TODO: Change to a camera that has to be set (property)
+			if (Physics.RayCast(Camera.MainCamera.Position, Camera.MainCamera.Direction, out RayCastHit hit, MaxDistance, this.Actor.Layer))
 			{
-				RayCastHit hit = hits[0].Collider.Tag == "Player"? hits[1] : hits[0];
+				TimeContainer timeContainer = GetTimeContainer(hit.Collider);
 
-				DebugDraw.DrawSphere(hit.Point, 33, Color.Red);
+				//TODO: Little effect when something is scrollable
 
-				Collider collider = hit.Collider;
-				//TODO: How far up in the hierarchy should we look?
-				TimeContainer timeContainer = hit.Collider.GetScript<TimeContainer>();
-				if (timeContainer == null)
-				{
-					if (hit.Collider.Parent)
-					{
-						timeContainer = hit.Collider.Parent.GetScript<TimeContainer>();
-					}
-				}
-
-				if (timeContainer == null)
-				{
-					if (hit.Collider.Parent.Parent)
-					{
-						timeContainer = hit.Collider.Parent.Parent.GetScript<TimeContainer>();
-					}
-				}
 				if (timeContainer && TimeScroll.Value != 0)
 				{
-					int scroll = 0;
-					if (TimeScroll.Value > 0)
-					{
-						scroll = Mathf.CeilToInt(TimeScroll.Value);
-					}
-					else
-					{
-						scroll = Mathf.FloorToInt(TimeScroll.Value);
-					}
-					TimeSpan test = TimeSpan.FromDays(365.242 * scroll * TimeIncrement);
-					timeContainer.Time = SafeAdd(timeContainer.Time, TimeSpan.FromDays(365.242 * scroll * TimeIncrement));
+					_toAdd = TimeSpan.FromDays(365.242 * TimeScroll.Value * TimeIncrement);
+					timeContainer.Time = SafeAdd(timeContainer.Time, _toAdd);
 
-					UpdateBeam(hit, scroll);
+					UpdateBeam(hit, TimeScroll.Value);
 				}
 				else
 				{
@@ -118,10 +101,18 @@ namespace FlaxTimeNexus
 			}
 		}
 
+		private TimeContainer GetTimeContainer(Actor actor)
+		{
+			//TODO: How far up the hierarchy should we look??
+			return actor.GetScript<TimeContainer>() ??
+				actor.Parent.GetScript<TimeContainer>() ??
+				actor.Parent.Parent.GetScript<TimeContainer>(); //TimeContainer --> Model --> Collider (ILookatTrigger)
+		}
+
 		void OnDestroy()
 		{
-			Destroy(GunBeam);
-			Destroy(GunBeamContainer);
+			Destroy(_gunBeam);
+			Destroy(_gunBeamContainer);
 		}
 
 		private DateTime SafeAdd(DateTime dateTime, TimeSpan timeSpan)
@@ -133,40 +124,61 @@ namespace FlaxTimeNexus
 
 		private void UpdateBeam(RayCastHit target = default(RayCastHit), float timeScroll = 1)
 		{
-			if (target.Collider)
+			bool hitTarget = (target.Collider != null);
+			if (hitTarget)
 			{
-				GunBeamContainer.IsActive = true;
+				_gunBeamContainer.IsActive = true;
 				_lastFireTime = Time.GameTime;
 				_lastTarget = target;
 			}
 
 			if ((Time.GameTime - _lastFireTime) < FadeTime)
 			{
-				if (target.Collider)
+				if (hitTarget)
 				{
 					SetBeamLength(target.Distance);
 					_materialDirection.Value = timeScroll;
-					GunBeamContainer.LookAt(target.Point);
+					_gunBeamContainer.LookAt(target.Point);
 				}
 				else
 				{
-					SetBeamLength(Mathf.Abs((Camera.MainCamera.Position - _lastTarget.Point).Length));
-					GunBeamContainer.LookAt(_lastTarget.Point);
+					SetBeamLength(Mathf.Abs((_gunBeamContainer.Position - _lastTarget.Point).Length));
+					_gunBeamContainer.LookAt(_lastTarget.Point);
 				}
 			}
 			else
 			{
-				GunBeamContainer.IsActive = false;
+				_gunBeamContainer.IsActive = false;
 			}
 		}
 
 		private void SetBeamLength(float beamLength)
 		{
-			float scaleFactor = GunBeam.Model.Box.Size.Y;
+			float scaleFactor = _gunBeam.Model.Box.Size.Y;
 
-			GunBeam.LocalScale = new Vector3(GunBeam.LocalScale.X, beamLength / scaleFactor, GunBeam.LocalScale.Z);
-			GunBeam.LocalPosition = new Vector3(0, 0, beamLength / 2f);
+			_gunBeam.LocalScale = new Vector3(_gunBeam.LocalScale.X, beamLength / scaleFactor, _gunBeam.LocalScale.Z);
+			_gunBeam.LocalPosition = new Vector3(0, 0, beamLength / 2f);
 			_materialLength.Value = beamLength / scaleFactor;
+		}
+
+
+
+
+		/// <summary>
+		/// A nice lerping effect between 2 actors
+		/// </summary>
+		/// <param name="start"></param>
+		/// <param name="end"></param>
+		/// <param name="t">between 0 and 1</param>
+		private void LerpBetweenActors(Transform start, Transform end, float t)
+		{
+			//RigidBody.New().Sleep();
+			//Transform.Lerp()
+			/*if(t > 0.5)
+			{
+				start.IsActive = false;
+				end.IsActive = true;
+			}*/
 		}
 	}
 }

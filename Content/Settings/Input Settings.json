@@ -1,7 +1,7 @@
 {
 	"ID": "bd88b99a49bc50e961ef949adde51037",
 	"TypeName": "FlaxEditor.Content.Settings.InputSettings",
-	"EngineBuild": 6154,
+	"EngineBuild": 6156,
 	"Data": {
 	"ActionMappings": [
 		{
@@ -44,7 +44,7 @@
 			"Gamepad": 0,
 			"PositiveButton": 0,
 			"NegativeButton": 0,
-			"DeadZone": 1.0,
+			"DeadZone": 0.5,
 			"Sensitivity": 0.4,
 			"Gravity": 1.0,
 			"Scale": 1.0,
@@ -56,7 +56,7 @@
 			"Gamepad": 0,
 			"PositiveButton": 0,
 			"NegativeButton": 0,
-			"DeadZone": 1.0,
+			"DeadZone": 0.5,
 			"Sensitivity": 0.4,
 			"Gravity": 1.0,
 			"Scale": 1.0,
@@ -116,7 +116,7 @@
 			"Gamepad": 0,
 			"PositiveButton": 0,
 			"NegativeButton": 0,
-			"DeadZone": 0.001,
+			"DeadZone": 0.1,
 			"Sensitivity": 5.0,
 			"Gravity": 5.0,
 			"Scale": 1.0,
@@ -128,7 +128,7 @@
 			"Gamepad": 0,
 			"PositiveButton": 16,
 			"NegativeButton": 0,
-			"DeadZone": 0.001,
+			"DeadZone": 0.01,
 			"Sensitivity": 5.0,
 			"Gravity": 5.0,
 			"Scale": 1.0,

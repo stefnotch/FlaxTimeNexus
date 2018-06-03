@@ -13,7 +13,7 @@ namespace FlaxTimeNexus
 
 		public float Health;
 
-		List<Checkpoint> _checkpoints = new List<Checkpoint>();
+		readonly List<Checkpoint> _checkpoints = new List<Checkpoint>();
 
 		void Start()
 		{

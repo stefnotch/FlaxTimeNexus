@@ -25,9 +25,9 @@ namespace FlaxTimeNexus
 				{
 					yield return actor;
 
-					foreach (Actor child in actor.GetChildren())
+					for(int i = 0; i < actor.ChildCount; i++)
 					{
-						s.Push(child);
+						s.Push(actor.GetChild(i));
 					}
 				}
 			}

@@ -22,31 +22,31 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
-    <DefineConstants>DEBUG;FLAX_ASSERTIONS;TRACE;FLAX_0;FLAX_0_1;FLAX_EDITOR;FLAX_WINDOWS;FLAX_EDITOR_WIN</DefineConstants>
-	<UseVSHostingProcess>false</UseVSHostingProcess>
+    <DefineConstants>DEBUG;FLAX_ASSERTIONS;TRACE;FLAX_0;FLAX_0_1;FLAX_0_1_6156;FLAX_EDITOR;FLAX_WINDOWS;FLAX_EDITOR_WIN</DefineConstants>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <DebugType>pdbonly</DebugType>
+    <DebugType>portable</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>Cache\bin\</OutputPath>
     <IntermediateOutputPath>Cache\obj\Release\</IntermediateOutputPath>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
-    <DefineConstants>TRACE;FLAX_0;FLAX_0_1;FLAX_EDITOR;FLAX_WINDOWS;FLAX_EDITOR_WIN</DefineConstants>
-	<UseVSHostingProcess>false</UseVSHostingProcess>
+    <DefineConstants>TRACE;FLAX_0;FLAX_0_1;FLAX_0_1_6156;FLAX_EDITOR;FLAX_WINDOWS;FLAX_EDITOR_WIN</DefineConstants>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="mscorlib" />
     <Reference Include="System" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
-	<Reference Include="FlaxEngine">
-	  <HintPath>Cache\Assemblies\Release\FlaxEngine.dll</HintPath>
-	</Reference>
-	<Reference Include="FlaxEditor">
-	  <HintPath>Cache\Assemblies\Release\FlaxEditor.dll</HintPath>
-	</Reference>
+    <Reference Include="FlaxEngine">
+      <HintPath>Cache\Assemblies\Release\FlaxEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="FlaxEditor">
+      <HintPath>Cache\Assemblies\Release\FlaxEditor.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="FlaxTimeNexus.csproj">

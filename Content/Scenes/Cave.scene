@@ -1,7 +1,7 @@
 {
 	"ID": "35fd20cd4497ea1b18cafcae1c3524ef",
 	"TypeName": "FlaxEngine.SceneAsset",
-	"EngineBuild": 6155,
+	"EngineBuild": 6156,
 	"Data": [
 		{
 			"TypeID": 9,
@@ -27,6 +27,11 @@
 					"V": {
 	"ToActivate": "000d7d2746397da6d69d15bd4e6488ed"
 }
+				},
+				{
+					"Name": "FlaxTimeNexus.Pauser",
+					"ID": "2707a3e34339b787339385b88a7fb032",
+					"V": {}
 				}
 			],
 			"LightmapSettings": {
@@ -5842,7 +5847,7 @@
 					"Name": "FlaxTimeNexus.InteractActivator",
 					"ID": "c9c378be43ec0eb7f8ecb2b3bde04247",
 					"V": {
-	"InteractionRadius": 100.0,
+	"InteractionRadius": 450.0,
 	"ToActivate": "0200809846b3b9128cdb8d95e615a46b"
 }
 				},
@@ -5850,7 +5855,7 @@
 					"Name": "FlaxTimeNexus.LookatGUIToggler",
 					"ID": "8731db7a4734a11f25723d86e14ed652",
 					"V": {
-	"MinDistance": 100.0,
+	"MinDistance": 450.0,
 	"ToActivate": "b9980e5543490eed7e3d34adf3d0c009"
 }
 				}
@@ -5954,8 +5959,8 @@
 					"Name": "FlaxTimeNexus.LookatGUIToggler",
 					"ID": "093b822e44629d80b3bf5797a1f08403",
 					"V": {
-	"MinDistance": 100.0,
-	"ToActivate": "b9980e5543490eed7e3d34adf3d0c009"
+	"MinDistance": 400.0,
+	"ToActivate": "04e9e8964047359ec43acc9b0f2303d7"
 }
 				}
 			],
@@ -5964,6 +5969,52 @@
 				"Y": 100.0,
 				"Z": 100.0
 			}
+		},
+		{
+			"TypeID": 27,
+			"ID": "04e9e8964047359ec43acc9b0f2303d7",
+			"ParentID": "d55443c848c1724f9423d1afab6511d9",
+			"IsActive": false,
+			"Name": "GUI 0",
+			"Transform": {
+				"Translation": {
+					"X": 75.1060791015625,
+					"Y": 106.61473083496094,
+					"Z": 29.554121017456056
+				},
+				"Orientation": {
+					"X": -0.4999984800815582,
+					"Y": 0.5000015497207642,
+					"Z": 0.5000015497207642,
+					"W": 0.4999984800815582
+				}
+			},
+			"StaticFlags": 0,
+			"Text": "Broken Door\n",
+			"Color": {
+				"R": 0.534333348274231,
+				"G": 0.534333348274231,
+				"B": 0.534333348274231,
+				"A": 1.0
+			},
+			"Size": 20,
+			"Material": "e72782bd4d898e2f236ca3be780438af",
+			"Font": "ea9f671a4de39f19bf2a5082ac86e97c",
+			"ShadowsMode": 3,
+			"Bounds": {
+				"Location": {
+					"X": -100.0,
+					"Y": -100.0
+				},
+				"Size": {
+					"X": 200.0,
+					"Y": 200.0
+				}
+			},
+			"HAlignment": 1,
+			"VAlignment": 1,
+			"Wrapping": 0,
+			"GapScale": 1.0
 		},
 		{
 			"TypeID": 27,
@@ -6023,6 +6074,7 @@
 					"Z": -3261.939697265625
 				}
 			},
+			"Layer": 1,
 			"Tag": "Player",
 			"Scripts": [
 				{
@@ -6067,6 +6119,7 @@
 				}
 			},
 			"StaticFlags": 0,
+			"Layer": 1,
 			"Tag": "Player",
 			"UsePerspective": true,
 			"FOV": 60.0,
@@ -6097,6 +6150,7 @@
 				}
 			},
 			"StaticFlags": 0,
+			"Layer": 1,
 			"Model": "d1eebe63439e18608f1efca6baee6b8c",
 			"Buffer": {
 				"Entries": [
@@ -6129,6 +6183,7 @@
 				}
 			},
 			"StaticFlags": 0,
+			"Layer": 1,
 			"Scripts": [
 				{
 					"Name": "FlaxTimeNexus.TimeGun",
@@ -6143,20 +6198,86 @@
 		},
 		{
 			"TypeID": 1,
+			"ID": "5a8cc35d4c5c442230de66a7d039f521",
+			"ParentID": "a96d89ec44bc67b354a644acd2f02d32",
+			"Name": "Plane",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 0.0,
+					"Z": 35.0
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": -0.7071068286895752,
+					"Z": 0.0,
+					"W": 0.7071067094802856
+				},
+				"Scale": {
+					"X": 1.0,
+					"Y": 0.009999999776482582,
+					"Z": 0.009999999776482582
+				}
+			},
+			"Layer": 1,
+			"Scripts": [
+				{
+					"Name": "FlaxTimeNexus.AdjustToResolution",
+					"ID": "38487f3e458058b5d7f191be55383812",
+					"V": {
+	"Camera": "a96d89ec44bc67b354a644acd2f02d32"
+}
+				}
+			],
+			"Model": "54a1ff4a42af9f018234f7b39b1366b3",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "9a5f939749c6da49ba61bab25061004c"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
 			"ID": "14032d8e49fbd530a231fb8345c4694b",
 			"ParentID": "35fd20cd4497ea1b18cafcae1c3524ef",
 			"Name": "UI",
 			"Transform": {
 				"Scale": {
-					"X": 1.0,
-					"Y": 1.0,
+					"X": 10.0,
+					"Y": 10.0,
 					"Z": 0.10000000149011612
 				}
 			},
+			"Scripts": [
+				{
+					"Name": "FlaxTimeNexus.UIDisplayer",
+					"ID": "96d30c3b4536cfe07db9708a85d68b40",
+					"V": {
+	"RenderMaterial": "66849a47490951e361c1ce9434c62774",
+	"Camera": "a96d89ec44bc67b354a644acd2f02d32",
+	"UICreator": "2883466040e869821db71fac5b8af99b",
+	"Resolution": {
+		"X": 640.0,
+		"Y": 640.0
+	}
+}
+				},
+				{
+					"Name": "FlaxTimeNexus.Source.UI.PauseUICreator",
+					"ID": "2883466040e869821db71fac5b8af99b",
+					"V": {
+	"Pauser": "2707a3e34339b787339385b88a7fb032"
+}
+				}
+			],
 			"Model": "b43f0f8f4aaba3f3156896a5a22ba493",
 			"Buffer": {
 				"Entries": [
-					{}
+					{
+						"Material": "66849a47490951e361c1ce9434c62774"
+					}
 				]
 			}
 		},
@@ -6165,6 +6286,84 @@
 			"ID": "b471e67c4fdee22b6041cebd2ec5c8e5",
 			"ParentID": "14032d8e49fbd530a231fb8345c4694b",
 			"Name": "BoxCollider",
+			"Size": {
+				"X": 100.0,
+				"Y": 100.0,
+				"Z": 100.0
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "86c8ea40444b7f3a85829090b83440e6",
+			"ParentID": "35fd20cd4497ea1b18cafcae1c3524ef",
+			"Name": "Signpost",
+			"Transform": {
+				"Translation": {
+					"X": 739.816650390625,
+					"Y": 22.965675354003908,
+					"Z": 17.35162353515625
+				},
+				"Orientation": {
+					"X": 0.15198206901550294,
+					"Y": 0.24629850685596467,
+					"Z": 0.030790919438004495,
+					"W": 0.9567081332206726
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "f0ed18b44344b42a31a9bf8d83e67f09",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "07a51b824033c4ed55d75e897a6b6dab"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 32,
+			"ID": "6bc53532437dd90abfe5f692d623adb9",
+			"ParentID": "86c8ea40444b7f3a85829090b83440e6",
+			"Name": "Decal",
+			"Transform": {
+				"Translation": {
+					"X": 5.167300701141357,
+					"Y": 114.01795196533203,
+					"Z": -22.55765724182129
+				},
+				"Orientation": {
+					"X": 0.7071068286895752,
+					"Y": 0.0,
+					"Z": 0.0,
+					"W": 0.7071068286895752
+				}
+			},
+			"StaticFlags": 0,
+			"Material": "2eb0230d4c13c0d15f874fb325e41869",
+			"Size": {
+				"X": 80.0,
+				"Y": 40.0,
+				"Z": 60.0
+			}
+		},
+		{
+			"TypeID": 14,
+			"ID": "41364e9544d7afc1b80677a432d86972",
+			"ParentID": "86c8ea40444b7f3a85829090b83440e6",
+			"Name": "BoxCollider",
+			"Transform": {
+				"Translation": {
+					"X": 0.00006008148193359375,
+					"Y": 33.230506896972659,
+					"Z": 0.000019073486328125
+				},
+				"Scale": {
+					"X": 1.0,
+					"Y": 2.5,
+					"Z": 0.5
+				}
+			},
+			"StaticFlags": 0,
 			"Size": {
 				"X": 100.0,
 				"Y": 100.0,

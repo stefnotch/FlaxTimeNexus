@@ -6,7 +6,38 @@ namespace FlaxTimeNexus
 {
 	public class Pauser : Script
 	{
+		[NoSerialize]
+		public bool Paused
+		{
+			get
+			{
+				return _isPaused;
+			}
+			set
+			{
+				_isPaused = value;
+				if (_isPaused)
+				{
+					Time.TimeScale = 0;
+
+					//Screen.CursorLock = CursorLockMode.None;
+					//Screen.CursorVisible = true;
+				}
+				else
+				{
+					Time.TimeScale = 1;
+
+					//Screen.CursorLock = CursorLockMode.Locked;
+					//Screen.CursorVisible = false;
+				}
+			}
+
+		}
+
+		[NoSerialize]
 		InputEvent Pause = new InputEvent("Pause");
+
+		[NoSerialize]
 		bool _isPaused;
 		private void Start()
 		{
@@ -14,21 +45,20 @@ namespace FlaxTimeNexus
 			{
 				Pause.Triggered += Pause_Triggered;
 			}
+
+			//Paused = false;
 		}
 
 		private void Pause_Triggered()
 		{
-			_isPaused = !_isPaused;
-			if (_isPaused)
-			{
-				Time.TimeScale = 0;
+			Paused = !Paused;
+		}
 
-				Screen.CursorLock = CursorLockMode.None;
-				Screen.CursorVisible = true;
-			}
-			else
+		private void OnDisable()
+		{
+			if (Pause != null)
 			{
-				Time.TimeScale = 1;
+				Pause.Triggered -= Pause_Triggered;
 			}
 		}
 

@@ -10,11 +10,11 @@ namespace FlaxTimeNexus
 	public class EdgeTilt
 	{
 		const int RayCount = 16;
-		float _radius = 100.0f;
-		Vector3[] _offsets = new Vector3[RayCount];
+		readonly float _radius = 100.0f;
+		readonly Vector3[] _offsets = new Vector3[RayCount];
 
-		CharacterController _player;
-		Vector3 _feetOffset;
+		readonly CharacterController _player;
+		readonly Vector3 _feetOffset;
 
 		public EdgeTilt(CharacterController player, Vector3 feetOffset)
 		{
@@ -48,9 +48,8 @@ namespace FlaxTimeNexus
 				Vector3 rayStart = feetPosition + (_offsets[i] * _player.Orientation);
 				Vector3 direction = (rayStart - feetPosition);
 				direction.Normalize();
-				
-				RayCastHit hit;
-				if (Physics.RayCast(rayStart, /*10f, */direction, out hit, _radius, _player.Layer, false))
+
+				if (Physics.RayCast(rayStart, direction, out RayCastHit hit, _radius, _player.Layer, false))
 				{
 					DebugDraw.DrawSphere(hit.Point, 30f, Color.Red);
 					averageDirection += _offsets[i] * hit.Distance;
@@ -61,8 +60,6 @@ namespace FlaxTimeNexus
 				}
 
 			}
-
-
 
 			return averageDirection / _radius * 0f;
 		}

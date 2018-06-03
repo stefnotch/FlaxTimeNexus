@@ -15,15 +15,9 @@ namespace FlaxTimeNexus
 		RayCastHit _lastHit;
 		void Update()
 		{
-			//TODO: How to deal with children???? (capturing, bubbling,...)
-			RayCastHit[] hits = Physics.RayCastAll(Camera.MainCamera.Position, Camera.MainCamera.Direction, MaxDistance/*, this.Actor.Layer*/);
-
-			Array.Sort(hits, (a, b) => (int)((a.Distance - b.Distance) * 10));
-
-			if (hits.Length > 1)
+			//TODO: How to deal with children/parents???? (capturing, bubbling,...)
+			if (Physics.RayCast(Camera.MainCamera.Position, Camera.MainCamera.Direction, out RayCastHit hit, MaxDistance, this.Actor.Layer))
 			{
-				RayCastHit hit = hits[0].Collider.Tag == "Player" ? hits[1] : hits[0];
-
 				bool newCollider = _lastHit.Collider != hit.Collider;
 
 				if (newCollider)
@@ -60,8 +54,7 @@ namespace FlaxTimeNexus
 
 			foreach (Script s in c.GetScripts<Script>())
 			{
-				ILookatTrigger lookatTrigger = s as ILookatTrigger;
-				if (lookatTrigger != null)
+				if (s is ILookatTrigger lookatTrigger)
 				{
 					yield return lookatTrigger;
 				}
