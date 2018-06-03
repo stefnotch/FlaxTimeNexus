@@ -14,14 +14,14 @@ namespace FlaxTimeNexus
 		/// </summary>
 		[Serialize]
 		//[EditorDisplay("Time", "__inline__")]
-		public DateTime EditorTime { get; set; }
+		public SDateTime EditorTime { get; set; }
 
 		/// <summary>
 		/// The time of the actor
 		/// </summary>
 		[HideInEditor]
 		[NoSerialize]
-		public DateTime Time
+		public SDateTime Time
 		{
 			get
 			{

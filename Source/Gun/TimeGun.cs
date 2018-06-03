@@ -11,10 +11,9 @@ namespace FlaxTimeNexus
 	public class TimeGun : Script
 	{
 		/// <summary>
-		/// By how many years should the time get incremented
-		/// TODO: Years, months, days, hours, ... (Use noda-time?)
+		/// By how much should the time get incremented
 		/// </summary>
-		public int TimeIncrement = 1;
+		public SDateTime TimeIncrement = SDateTime.Zero;
 
 		/// <summary>
 		/// The model
@@ -40,7 +39,7 @@ namespace FlaxTimeNexus
 
 
 
-		TimeSpan _toAdd = TimeSpan.Zero;
+		SDateTime _toAdd = SDateTime.Zero;
 
 		void Start()
 		{
@@ -84,8 +83,8 @@ namespace FlaxTimeNexus
 
 				if (timeContainer && TimeScroll.Value != 0)
 				{
-					_toAdd = TimeSpan.FromDays(365.242 * TimeScroll.Value * TimeIncrement);
-					timeContainer.Time = SafeAdd(timeContainer.Time, _toAdd);
+					_toAdd = (TimeScroll.Value) * TimeIncrement;
+					timeContainer.Time = timeContainer.Time + _toAdd;
 
 					UpdateBeam(hit, TimeScroll.Value);
 				}
@@ -113,13 +112,6 @@ namespace FlaxTimeNexus
 		{
 			Destroy(_gunBeam);
 			Destroy(_gunBeamContainer);
-		}
-
-		private DateTime SafeAdd(DateTime dateTime, TimeSpan timeSpan)
-		{
-			TimeSpan max = (DateTime.MaxValue - dateTime);
-			TimeSpan min = (DateTime.MinValue - dateTime);
-			return (min <= timeSpan && timeSpan <= max) ? dateTime.Add(timeSpan) : dateTime;
 		}
 
 		private void UpdateBeam(RayCastHit target = default(RayCastHit), float timeScroll = 1)

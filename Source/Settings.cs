@@ -13,10 +13,10 @@ namespace FlaxTimeNexus
 	public class Settings : Script
 	{
 		[Serialize]
-		private DateTime _defaultTime;
+		private SDateTime _defaultTime;
 
 		[NoSerialize]
-		public DateTime DefaultTime
+		public SDateTime DefaultTime
 		{
 			get
 			{

@@ -57,6 +57,8 @@ namespace FlaxTimeNexus
 			get => (int)(Ticks / MinuteToSeconds / HourToMinutes / DayToHours / YearToDays);
 		}
 
+		public static SDateTime Zero { get; } = new SDateTime();
+
 		public SDateTime()
 		{
 
@@ -145,6 +147,16 @@ namespace FlaxTimeNexus
 		public static SDateTime operator -(SDateTime a, SDateTime b)
 		{
 			return FromTicks(a.Ticks - b.Ticks);
+		}
+
+		public static SDateTime operator *(SDateTime a, double b)
+		{
+			return FromTicks((long)(a.Ticks * b));
+		}
+
+		public static SDateTime operator *(double b, SDateTime a)
+		{
+			return FromTicks((long)(b * a.Ticks));
 		}
 
 		public static bool operator ==(SDateTime a, SDateTime b)

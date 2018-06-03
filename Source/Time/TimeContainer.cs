@@ -14,15 +14,14 @@ namespace FlaxTimeNexus
 	public class TimeContainer : Script
 	{
 		[NoSerialize]
-		private DateTime _time = new DateTime();
+		private SDateTime _time = SDateTime.Zero;
 
 		[NoSerialize]
 		private Actor _previousActor;
 
-		//TODO: Switch to https://nodatime.org/
 		[HideInEditor]
 		[NoSerialize]
-		public DateTime Time
+		public SDateTime Time
 		{
 			get
 			{
@@ -54,7 +53,7 @@ namespace FlaxTimeNexus
 			}
 			else
 			{
-				Time = new DateTime();
+				Time = SDateTime.Zero;
 			}*/
 		}
 
@@ -71,35 +70,41 @@ namespace FlaxTimeNexus
 			return null;
 		}
 
-		private void TimeChanged(DateTime time)
+		private void TimeChanged(SDateTime time)
 		{
 			//Can be removed
 			if (!SceneManager.IsGameLogicRunning || Actor == null) return;
 
+			if (Actor.ChildCount <= 0) return;
+
 			Actor toActivate = null;
-			TimeSpan minDuration = TimeSpan.MaxValue;
-			foreach (Actor actor in Actor.GetChildren())
+			long shortestDuration = long.MaxValue;
+			for (int i = 0; i < Actor.ChildCount; i++)
 			{
-				ActorTime actorTime = actor.GetScript<ActorTime>();
+				ActorTime actorTime = Actor.GetChild(i).GetScript<ActorTime>();
 				if (actorTime)
 				{
-					TimeSpan duration = (time - actorTime.Time).Duration();
-					if (duration < minDuration)
+					long duration = Math.Abs(time.Ticks - actorTime.Time.Ticks);
+					if (duration < shortestDuration)
 					{
-						toActivate = actor;
-						minDuration = duration;
+						shortestDuration = duration;
+						toActivate = Actor.GetChild(i);
+					}
+
+					//Special case: duration can be long.MaxValue which means that it wouldn't be smaller than shortestDuration 
+					if (duration == shortestDuration && toActivate == null)
+					{
+						toActivate = Actor.GetChild(i);
 					}
 				}
 			}
-			if (_previousActor == toActivate) return;
 
-			if (_previousActor)
-			{
-				_previousActor.IsActive = false;
-			}
+			if (_previousActor == toActivate) return;
 
 			if (toActivate)
 			{
+				if (_previousActor) _previousActor.IsActive = false;
+
 				toActivate.IsActive = true;
 			}
 			_previousActor = toActivate;
