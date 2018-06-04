@@ -1,7 +1,7 @@
 {
 	"ID": "457cae21433ed1410a669aa61b056c12",
 	"TypeName": "FlaxEngine.SceneAsset",
-	"EngineBuild": 6155,
+	"EngineBuild": 6156,
 	"Data": [
 		{
 			"TypeID": 9,
@@ -265,6 +265,26 @@
 			"VAlignment": 1,
 			"Wrapping": 0,
 			"GapScale": 1.0
+		},
+		{
+			"TypeID": 1,
+			"ID": "9136859148e1ca2c9d50aabed70adc58",
+			"ParentID": "457cae21433ed1410a669aa61b056c12",
+			"Name": "Plane",
+			"Transform": {
+				"Translation": {
+					"X": -358.9253234863281,
+					"Y": 35.60609436035156,
+					"Z": -707.7281494140625
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "54a1ff4a42af9f018234f7b39b1366b3",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
 		}
 	]
 }

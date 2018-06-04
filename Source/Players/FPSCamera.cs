@@ -48,14 +48,17 @@ namespace FlaxTimeNexus
 
 		void Update()
 		{
-			if (Time.TimeScale == 0) return;
-
+			//The camera may move while the player is paused
 			Screen.CursorVisible = false;
 			Screen.CursorLock = CursorLockMode.Locked;
 
 			Vector2 mouseDelta = new Vector2(MouseX.Value, MouseY.Value);
 			_pitch = Mathf.Clamp(_pitch + mouseDelta.Y, -88, 88);
 			_yaw += mouseDelta.X;
+
+
+			//However, the player shouldn't be able to run around
+			if (Time.TimeScale == 0) return;
 
 			// Jump
 			if (Input.GetAction("Jump"))
@@ -67,9 +70,9 @@ namespace FlaxTimeNexus
 		void FixedUpdate()
 		{
 			// Camera update
-			var camFactor = Mathf.Clamp01(CameraSmoothing * Time.DeltaTime);
+			var camFactor = Mathf.Clamp01(CameraSmoothing * Time.UnscaledDeltaTime);
 			Vector3 angleOffsets = _edgeTilt.GetAngles() * 0.1f;
-			_smoothEdgeTilt = Vector3.SmoothStep(_smoothEdgeTilt, angleOffsets, _edgeTiltSmoothing * Time.DeltaTime);
+			_smoothEdgeTilt = Vector3.SmoothStep(_smoothEdgeTilt, angleOffsets, _edgeTiltSmoothing * Time.UnscaledDeltaTime);
 			Player.LocalOrientation = Quaternion.Lerp(Player.LocalOrientation, Quaternion.Euler(0, _yaw, 0), camFactor);
 			Camera.LocalOrientation = Quaternion.Lerp(Camera.LocalOrientation, Quaternion.Euler(_pitch - angleOffsets.X, 0, angleOffsets.Z), camFactor);
 

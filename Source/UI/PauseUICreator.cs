@@ -20,19 +20,20 @@ namespace FlaxTimeNexus.Source.UI
 				Size = size
 			};
 
-			VerticalPanel buttonContainer = new VerticalPanel
+			UniformGridPanel buttonContainer = new UniformGridPanel
 			{
-				Size = size
+				SlotsHorizontally = 1,
+				SlotsVertically = 2,
+				SlotPadding = new Margin(0, 0, size.AvgValue * 0.1f, size.AvgValue * 0.1f)
 			};
-			buttonContainer.SetLocation(0, 0);
-			buttonContainer.BackgroundColor = Color.Green;
 
-			Button resumeButton = new Button();
-			resumeButton.Text = "Resume";
-			resumeButton.BackgroundColor = Color.Gray;
+			Button resumeButton = new Button
+			{
+				Text = "Resume",
+				BackgroundColor = Color.Gray
+			};
 			resumeButton.Clicked += () =>
 			{
-
 				if (Pauser)
 				{
 					Pauser.Paused = false;
@@ -51,9 +52,18 @@ namespace FlaxTimeNexus.Source.UI
 			};
 			buttonContainer.AddChild(exitButton);
 
-			//buttonContainer.PerformLayout(true);
+			GridPanel centeringGrid = new GridPanel()
+			{
+				DockStyle = DockStyle.Fill,
+				ColumnFill = new float[] { 0.15f, 0.7f, 0.15f }
+			};
+			centeringGrid.RowFill[0] = 1f;
 
-			uiRoot.AddChild(buttonContainer);
+			centeringGrid.AddChild(new Spacer(0, 0));
+			centeringGrid.AddChild(buttonContainer);
+			centeringGrid.AddChild(new Spacer(0, 0));
+
+			uiRoot.AddChild(centeringGrid);
 
 			uiRoot.PerformLayout(true);
 			return uiRoot;
