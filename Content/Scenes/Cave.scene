@@ -31,7 +31,17 @@
 				{
 					"Name": "FlaxTimeNexus.Pauser",
 					"ID": "2707a3e34339b787339385b88a7fb032",
-					"V": {}
+					"V": {
+	"Player": "cfabfa564c380fd244ee2085c529b3c4",
+	"PauseRoom": "616b6a8748cf0242854b51a8babafc3e"
+}
+				},
+				{
+					"Name": "FlaxTimeNexus.Source.ShowMainMenu",
+					"ID": "e8b1f58a4568a2eb34cfca9079018204",
+					"V": {
+	"MainMenu": "c98e8ab44c7cc860082f3dbf5156e151"
+}
 				}
 			],
 			"LightmapSettings": {
@@ -5440,7 +5450,7 @@
 					"ID": "47db8c1a44f3d53d1e7c1ab20b20cf27",
 					"V": {
 	"EditorTime": {
-		"Ticks": 1
+		"Ticks": 615168000
 	}
 }
 				}
@@ -5493,7 +5503,7 @@
 					"ID": "a2fb71804ef5a2daee869f9dce2aacc6",
 					"V": {
 	"EditorTime": {
-		"Ticks": 1
+		"Ticks": 461376000
 	}
 }
 				}
@@ -5546,7 +5556,7 @@
 					"ID": "9402ac224d3ffd99aad6cf9cd29433ed",
 					"V": {
 	"EditorTime": {
-		"Ticks": 1
+		"Ticks": 307584000
 	}
 }
 				}
@@ -5599,7 +5609,7 @@
 					"ID": "61f6bb1847e30efc1b8a6f93d1331bc8",
 					"V": {
 	"EditorTime": {
-		"Ticks": 1
+		"Ticks": 153792000
 	}
 }
 				}
@@ -5651,7 +5661,7 @@
 					"ID": "9267e10845063d305c42e88597cd1be9",
 					"V": {
 	"EditorTime": {
-		"Ticks": 1
+		"Ticks": 0
 	}
 }
 				}
@@ -5686,7 +5696,7 @@
 					"ID": "07ba5e104938bafa9077bc9128fb5c54",
 					"V": {
 	"EditorTime": {
-		"Ticks": 1
+		"Ticks": 768960000
 	}
 }
 				}
@@ -5826,7 +5836,7 @@
 					"ID": "fcd2e0474bcff814056a1087e2984ea1",
 					"V": {
 	"EditorTime": {
-		"Ticks": 1
+		"Ticks": 0
 	}
 }
 				}
@@ -5940,7 +5950,7 @@
 					"ID": "452d2639468543c5fa4b8dabcee4058f",
 					"V": {
 	"EditorTime": {
-		"Ticks": 1
+		"Ticks": 153792000
 	}
 }
 				}
@@ -6079,6 +6089,84 @@
 			"GapScale": 1.0
 		},
 		{
+			"TypeID": 1,
+			"ID": "86c8ea40444b7f3a85829090b83440e6",
+			"ParentID": "59d6696c48ec2cb18c6e51b9f5749f82",
+			"Name": "Signpost",
+			"Transform": {
+				"Translation": {
+					"X": 739.816650390625,
+					"Y": 22.965675354003908,
+					"Z": 2769.18798828125
+				},
+				"Orientation": {
+					"X": 0.15198206901550294,
+					"Y": 0.24629850685596467,
+					"Z": 0.030790919438004495,
+					"W": 0.9567081332206726
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "f0ed18b44344b42a31a9bf8d83e67f09",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "07a51b824033c4ed55d75e897a6b6dab"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 32,
+			"ID": "6bc53532437dd90abfe5f692d623adb9",
+			"ParentID": "86c8ea40444b7f3a85829090b83440e6",
+			"Name": "Decal",
+			"Transform": {
+				"Translation": {
+					"X": 5.167300701141357,
+					"Y": 114.01795196533203,
+					"Z": -22.55765724182129
+				},
+				"Orientation": {
+					"X": 0.7071068286895752,
+					"Y": 0.0,
+					"Z": 0.0,
+					"W": 0.7071068286895752
+				}
+			},
+			"StaticFlags": 0,
+			"Material": "2eb0230d4c13c0d15f874fb325e41869",
+			"Size": {
+				"X": 80.0,
+				"Y": 40.0,
+				"Z": 60.0
+			}
+		},
+		{
+			"TypeID": 14,
+			"ID": "41364e9544d7afc1b80677a432d86972",
+			"ParentID": "86c8ea40444b7f3a85829090b83440e6",
+			"Name": "BoxCollider",
+			"Transform": {
+				"Translation": {
+					"X": 0.00006008148193359375,
+					"Y": 33.230506896972659,
+					"Z": 0.000019073486328125
+				},
+				"Scale": {
+					"X": 1.0,
+					"Y": 2.5,
+					"Z": 0.5
+				}
+			},
+			"StaticFlags": 0,
+			"Size": {
+				"X": 100.0,
+				"Y": 100.0,
+				"Z": 100.0
+			}
+		},
+		{
 			"TypeID": 17,
 			"ID": "cfabfa564c380fd244ee2085c529b3c4",
 			"ParentID": "35fd20cd4497ea1b18cafcae1c3524ef",
@@ -6113,6 +6201,14 @@
 					"V": {
 	"Camera": "a96d89ec44bc67b354a644acd2f02d32",
 	"MaxDistance": 3000.0
+}
+				},
+				{
+					"Name": "FlaxTimeNexus.Player",
+					"ID": "4d48bf9b4a529af3768f09a0afb4f426",
+					"V": {
+	"DefaultHealth": 100.0,
+	"Health": 100.0
 }
 				}
 			],
@@ -6206,7 +6302,7 @@
 					"ID": "2d7ceea246e309ac9790af9b60ebc492",
 					"V": {
 	"TimeIncrement": {
-		"Ticks": 1
+		"Ticks": 153792001
 	},
 	"GunBeamModel": "34efdf4147961b910d6996b5b14cfbd3",
 	"FadeTime": 1.0
@@ -6259,19 +6355,27 @@
 			}
 		},
 		{
+			"TypeID": 3,
+			"ID": "616b6a8748cf0242854b51a8babafc3e",
+			"ParentID": "35fd20cd4497ea1b18cafcae1c3524ef",
+			"IsActive": false,
+			"Name": "PauseRoom",
+			"StaticFlags": 0
+		},
+		{
 			"TypeID": 1,
 			"ID": "14032d8e49fbd530a231fb8345c4694b",
-			"ParentID": "35fd20cd4497ea1b18cafcae1c3524ef",
+			"ParentID": "616b6a8748cf0242854b51a8babafc3e",
 			"Name": "UI",
 			"Transform": {
 				"Translation": {
 					"X": 0.0,
-					"Y": 298.3284606933594,
-					"Z": -2984.01611328125
+					"Y": 80.0,
+					"Z": 300.0
 				},
 				"Scale": {
-					"X": 6.0,
-					"Y": 6.0,
+					"X": 5.0,
+					"Y": 3.0,
 					"Z": 0.10000000149011612
 				}
 			},
@@ -6284,8 +6388,8 @@
 	"Camera": "a96d89ec44bc67b354a644acd2f02d32",
 	"UICreator": "2883466040e869821db71fac5b8af99b",
 	"Resolution": {
-		"X": 640.0,
-		"Y": 640.0
+		"X": 533.33,
+		"Y": 320.0
 	}
 }
 				},
@@ -6293,7 +6397,8 @@
 					"Name": "FlaxTimeNexus.Source.UI.PauseUICreator",
 					"ID": "2883466040e869821db71fac5b8af99b",
 					"V": {
-	"Pauser": "2707a3e34339b787339385b88a7fb032"
+	"Pauser": "2707a3e34339b787339385b88a7fb032",
+	"Player": "4d48bf9b4a529af3768f09a0afb4f426"
 }
 				}
 			],
@@ -6318,77 +6423,73 @@
 			}
 		},
 		{
-			"TypeID": 1,
-			"ID": "86c8ea40444b7f3a85829090b83440e6",
+			"TypeID": 3,
+			"ID": "c98e8ab44c7cc860082f3dbf5156e151",
 			"ParentID": "35fd20cd4497ea1b18cafcae1c3524ef",
-			"Name": "Signpost",
+			"Name": "MainMenu",
 			"Transform": {
 				"Translation": {
-					"X": 739.816650390625,
-					"Y": 22.965675354003908,
-					"Z": 17.35162353515625
-				},
-				"Orientation": {
-					"X": 0.15198206901550294,
-					"Y": 0.24629850685596467,
-					"Z": 0.030790919438004495,
-					"W": 0.9567081332206726
+					"X": 0.0,
+					"Y": 232.05299377441407,
+					"Z": -2978.30517578125
 				}
 			},
-			"StaticFlags": 0,
-			"Model": "f0ed18b44344b42a31a9bf8d83e67f09",
+			"StaticFlags": 0
+		},
+		{
+			"TypeID": 1,
+			"ID": "89cc3992470623999e0c8cbd5145559f",
+			"ParentID": "c98e8ab44c7cc860082f3dbf5156e151",
+			"Name": "UI 0",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 45.392852783203128,
+					"Z": 62.0244140625
+				},
+				"Scale": {
+					"X": 5.0,
+					"Y": 3.0,
+					"Z": 0.10000000149011612
+				}
+			},
+			"Scripts": [
+				{
+					"Name": "FlaxTimeNexus.UIDisplayer",
+					"ID": "24e3d6ce4ca8d03a3b3788ab8c9fb539",
+					"V": {
+	"RenderMaterial": "66849a47490951e361c1ce9434c62774",
+	"Camera": "a96d89ec44bc67b354a644acd2f02d32",
+	"UICreator": "aed324214453617c3a96b799a4c62008",
+	"Resolution": {
+		"X": 533.33,
+		"Y": 320.0
+	}
+}
+				},
+				{
+					"Name": "FlaxTimeNexus.MainMenuUICreator",
+					"ID": "aed324214453617c3a96b799a4c62008",
+					"V": {
+	"Pauser": "2707a3e34339b787339385b88a7fb032",
+	"MainMenu": "c98e8ab44c7cc860082f3dbf5156e151"
+}
+				}
+			],
+			"Model": "b43f0f8f4aaba3f3156896a5a22ba493",
 			"Buffer": {
 				"Entries": [
 					{
-						"Material": "07a51b824033c4ed55d75e897a6b6dab"
+						"Material": "66849a47490951e361c1ce9434c62774"
 					}
 				]
 			}
 		},
 		{
-			"TypeID": 32,
-			"ID": "6bc53532437dd90abfe5f692d623adb9",
-			"ParentID": "86c8ea40444b7f3a85829090b83440e6",
-			"Name": "Decal",
-			"Transform": {
-				"Translation": {
-					"X": 5.167300701141357,
-					"Y": 114.01795196533203,
-					"Z": -22.55765724182129
-				},
-				"Orientation": {
-					"X": 0.7071068286895752,
-					"Y": 0.0,
-					"Z": 0.0,
-					"W": 0.7071068286895752
-				}
-			},
-			"StaticFlags": 0,
-			"Material": "2eb0230d4c13c0d15f874fb325e41869",
-			"Size": {
-				"X": 80.0,
-				"Y": 40.0,
-				"Z": 60.0
-			}
-		},
-		{
 			"TypeID": 14,
-			"ID": "41364e9544d7afc1b80677a432d86972",
-			"ParentID": "86c8ea40444b7f3a85829090b83440e6",
+			"ID": "8f5bad424d466c5c572d17b12ef94818",
+			"ParentID": "89cc3992470623999e0c8cbd5145559f",
 			"Name": "BoxCollider",
-			"Transform": {
-				"Translation": {
-					"X": 0.00006008148193359375,
-					"Y": 33.230506896972659,
-					"Z": 0.000019073486328125
-				},
-				"Scale": {
-					"X": 1.0,
-					"Y": 2.5,
-					"Z": 0.5
-				}
-			},
-			"StaticFlags": 0,
 			"Size": {
 				"X": 100.0,
 				"Y": 100.0,

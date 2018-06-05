@@ -6,6 +6,9 @@ namespace FlaxTimeNexus
 {
 	public class Pauser : Script
 	{
+		public Actor Player;
+		public Actor PauseRoom;
+
 		[NoSerialize]
 		public bool Paused
 		{
@@ -19,14 +22,22 @@ namespace FlaxTimeNexus
 				if (_isPaused)
 				{
 					Time.TimeScale = 0;
-
+					if(PauseRoom && Player)
+					{
+						PauseRoom.Position = Player.Position;
+						PauseRoom.Orientation = Player.Orientation;
+						PauseRoom.IsActive = true;
+					}
 					//Screen.CursorLock = CursorLockMode.None;
 					//Screen.CursorVisible = true;
 				}
 				else
 				{
 					Time.TimeScale = 1;
-
+					if (PauseRoom && Player)
+					{
+						PauseRoom.IsActive = false;
+					}
 					//Screen.CursorLock = CursorLockMode.Locked;
 					//Screen.CursorVisible = false;
 				}

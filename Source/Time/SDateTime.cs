@@ -59,7 +59,8 @@ namespace FlaxTimeNexus
 			get => (int)(Ticks / MinuteToSeconds / HourToMinutes / DayToHours / YearToDays);
 		}
 
-		public static SDateTime Zero { get; } = new SDateTime();
+		[NoSerialize]
+		public static SDateTime Zero => new SDateTime();
 
 		public SDateTime()
 		{

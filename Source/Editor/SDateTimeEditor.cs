@@ -14,14 +14,6 @@ namespace FlaxTimeNexus.Source.Editor
 	[CustomEditor(typeof(SDateTime))]
 	public class SDateTimeEditor : GenericEditor
 	{
-		/*public override DisplayStyle Style
-		{
-			get
-			{
-				return DisplayStyle.InlineIntoParent;
-			}
-		}*/
-
 
 		IntegerValueElement year;
 		IntegerValueElement day;
@@ -33,9 +25,6 @@ namespace FlaxTimeNexus.Source.Editor
 
 			base.Initialize(layout);
 			((FlaxEngine.GUI.DropPanel)(layout.Control)).Open(false);
-
-			//TODO: Change the null handling?
-			if (Values[0] == null) return;
 
 			year = layout.IntegerValue("Year");
 
@@ -51,15 +40,6 @@ namespace FlaxTimeNexus.Source.Editor
 			second = layout.IntegerValue("Second");
 			second.SetLimits(new LimitAttribute(0, SDateTime.MinuteToSeconds - 1));
 
-			if (Values.IsSingleObject && Values.Type == typeof(SDateTime))
-			{
-				((SDateTime)Values[0]).Decompose(out int years, out int days, out int hours, out int minutes, out int seconds);
-				year.Value = years;
-				day.Value = days;
-				hour.Value = hours;
-				minute.Value = minutes;
-				second.Value = seconds;
-			}
 			year.IntValue.EditEnd += EditEnd;
 			day.IntValue.EditEnd += EditEnd;
 			hour.IntValue.EditEnd += EditEnd;
@@ -69,32 +49,33 @@ namespace FlaxTimeNexus.Source.Editor
 
 		private void EditEnd()
 		{
-
-			this.SetValue(new SDateTime(year.Value, day.Value, hour.Value, minute.Value, second.Value));
+			//Takes the user input
+			SetValue(new SDateTime(year.Value, day.Value, hour.Value, minute.Value, second.Value));
 		}
 
-		~SDateTimeEditor()
+		public override void Refresh()
 		{
-			if (year != null)
+			base.Refresh();
+			//Displays the value
+			if (!HasDifferentValues)
 			{
-				year.IntValue.EditEnd -= EditEnd;
+				if (Values[0] is SDateTime dateTime)
+				{
+					dateTime.Decompose(out int years, out int days, out int hours, out int minutes, out int seconds);
+					year.Value = years;
+					day.Value = days;
+					hour.Value = hours;
+					minute.Value = minutes;
+					second.Value = seconds;
+				}
 			}
-			if (day != null)
+			else
 			{
-				day.IntValue.EditEnd -= EditEnd;
+
+				//TODO:
+				//HasDifferentValues
 			}
-			if (hour != null)
-			{
-				hour.IntValue.EditEnd -= EditEnd;
-			}
-			if (minute != null)
-			{
-				minute.IntValue.EditEnd -= EditEnd;
-			}
-			if (second != null)
-			{
-				second.IntValue.EditEnd -= EditEnd;
-			}
+
 		}
 	}
 }

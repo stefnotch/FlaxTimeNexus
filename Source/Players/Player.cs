@@ -22,15 +22,12 @@ namespace FlaxTimeNexus
 
 		void Update()
 		{
-			if (Input.GetKey(Keys.Control) && Input.GetKeyDown(Keys.S))
-			{
-				_checkpoints.Add(new Checkpoint() { PlayerTransform = this.Actor.Transform });
-			}
+			
+		}
 
-			if (Input.GetKey(Keys.Control) && Input.GetKeyDown(Keys.R))
-			{
-				Respawn();
-			}
+		public void Save()
+		{
+			_checkpoints.Add(new Checkpoint() { PlayerTransform = this.Actor.Transform });
 		}
 
 		public void Respawn()

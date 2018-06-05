@@ -55,7 +55,7 @@ namespace FlaxTimeNexus
 
 		[NoSerialize]
 		private bool _lookingAtUI;
-		private void Start()
+		private void OnEnable()
 		{
 			if (UICreator)
 			{
@@ -79,7 +79,6 @@ namespace FlaxTimeNexus
 				_output = RenderTarget.New();
 			}
 			_output.Init(PixelFormat.R8G8B8A8_UNorm, Resolution);
-
 			// Create rendering task
 			if (_task == null)
 			{
@@ -129,9 +128,10 @@ namespace FlaxTimeNexus
 
 				//Transform it to a local point & rotate it so that it's on a 2D plane
 				Vector3 localHitPos = this.Actor.Transform.WorldToLocal(hitPos);
-				Vector3 onPlanePos = Vector3.Transform(localHitPos, this.Actor.Orientation);
-
+				Vector3 onPlanePos = Vector3.Transform(localHitPos, this.Actor.LocalOrientation);
 				Vector2 onPlanePos2D = new Vector2(onPlanePos.X, onPlanePos.Y);
+
+				//I messed up somewhere. IDK where though. :/
 
 				//Normalized device coordinates
 				onPlanePos2D /= new Vector2(50);
@@ -140,6 +140,7 @@ namespace FlaxTimeNexus
 				onPlanePos2D += new Vector2(1, -1);
 				onPlanePos2D /= new Vector2(2, -2);
 				onPlanePos2D *= new Vector2(_uiRoot.Width, _uiRoot.Height);
+
 				if (!_lookingAtUI)
 				{
 					_uiRoot.OnMouseEnter(onPlanePos2D);

@@ -117,8 +117,8 @@
 			"PositiveButton": 0,
 			"NegativeButton": 0,
 			"DeadZone": 0.1,
-			"Sensitivity": 5.0,
-			"Gravity": 5.0,
+			"Sensitivity": 1.0,
+			"Gravity": 1.0,
 			"Scale": 1.0,
 			"Snap": false
 		},

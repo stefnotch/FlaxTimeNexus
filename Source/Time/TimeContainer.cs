@@ -39,7 +39,7 @@ namespace FlaxTimeNexus
 		{
 			if (Actor.HasChildren)
 			{
-				_previousActor = Actor.GetChildren().First(actor => actor.IsActive && actor.GetScript<ActorTime>() != null);
+				_previousActor = Actor.GetChildren().DefaultIfEmpty(null).First(actor => actor.IsActive && actor.GetScript<ActorTime>() != null);
 			}
 			/*foreach (Actor actor in Actor.GetChildren())
 			{

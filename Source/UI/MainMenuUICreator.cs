@@ -6,21 +6,15 @@ using System.Threading.Tasks;
 using FlaxEngine;
 using FlaxEngine.GUI;
 
-namespace FlaxTimeNexus.Source.UI
+namespace FlaxTimeNexus
 {
-	public class PauseUICreator : UICreator
+	public class MainMenuUICreator : UICreator
 	{
 		public Pauser Pauser;
-
-		public Player Player;
+		public Actor MainMenu;
 
 		public override ContainerControl CreateUI(Vector2 size)
 		{
-			/*
-			var fontAsset = Content.LoadInternal<FontAsset>("Editor/Segoe Media Center Regular");
-			var largerFont = fontAsset.CreateFont(40);
-			*/
-
 			ContainerControl uiRoot = new ContainerControl
 			{
 				BackgroundColor = Color.White,
@@ -30,56 +24,23 @@ namespace FlaxTimeNexus.Source.UI
 			UniformGridPanel buttonContainer = new UniformGridPanel
 			{
 				SlotsHorizontally = 1,
-				SlotPadding = new Margin(0, 0, size.AvgValue * 0.01f, size.AvgValue * 0.01f)
+				SlotPadding = new Margin(0, 0, size.AvgValue * 0.05f, size.AvgValue * 0.05f)
 			};
 			//Resume
-			Button resumeButton = new Button
+			Button startButton = new Button
 			{
-				Text = "Resume",
+				Text = "Start",
 				BackgroundColor = Color.Gray
 			};
-			resumeButton.Clicked += () =>
+			startButton.Clicked += () =>
 			{
 				if (Pauser)
 				{
 					Pauser.Paused = false;
+					MainMenu.IsActive = false;
 				}
 			};
-			buttonContainer.AddChild(resumeButton);
-
-			//Save
-			Button saveButton = new Button
-			{
-				Text = "Save",
-				BackgroundColor = Color.Gray
-			};
-			saveButton.Clicked += () => Player?.Save();
-			buttonContainer.AddChild(saveButton);
-
-			//Load
-			Button loadButton = new Button
-			{
-				Text = "Load",
-				BackgroundColor = Color.Gray
-			};
-			loadButton.Clicked += () =>
-			{
-				Player?.Respawn();
-				Pauser.Paused = false;
-			};
-			buttonContainer.AddChild(loadButton);
-
-			//Settings
-			Button settingsButton = new Button
-			{
-				Text = "Settings",
-				BackgroundColor = Color.Gray
-			};
-			settingsButton.Clicked += () =>
-			{
-				Debug.Log("Not implemented");
-			};
-			buttonContainer.AddChild(settingsButton);
+			buttonContainer.AddChild(startButton);
 
 			//Exit
 			Button exitButton = new Button
