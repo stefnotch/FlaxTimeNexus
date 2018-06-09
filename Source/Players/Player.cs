@@ -11,7 +11,14 @@ namespace FlaxTimeNexus
 	{
 		public float DefaultHealth = 100;
 
-		public float Health;
+		private float _health;
+		public float Health { get => _health;
+			set
+			{
+				_health = value;
+				if (_health <= 0) Respawn();
+			}
+		}
 
 		readonly List<Checkpoint> _checkpoints = new List<Checkpoint>();
 

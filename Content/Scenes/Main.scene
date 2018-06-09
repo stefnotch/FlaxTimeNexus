@@ -1,7 +1,7 @@
 {
 	"ID": "7b4625fc406c756c6d9c35b2e54dc805",
 	"TypeName": "FlaxEngine.SceneAsset",
-	"EngineBuild": 6156,
+	"EngineBuild": 6157,
 	"Data": [
 		{
 			"TypeID": 9,
@@ -156,6 +156,479 @@
 				"X": 100.0,
 				"Y": 100.0,
 				"Z": 100.0
+			}
+		},
+		{
+			"TypeID": 3,
+			"ID": "d93c0be546efbd73cca3bd800bce492c",
+			"ParentID": "7b4625fc406c756c6d9c35b2e54dc805",
+			"Name": "Spikes",
+			"Transform": {
+				"Scale": {
+					"X": 0.39232775568962099,
+					"Y": 0.39232775568962099,
+					"Z": 0.39232775568962099
+				}
+			},
+			"StaticFlags": 0
+		},
+		{
+			"TypeID": 1,
+			"ID": "37c5d76d44adee3d1beeebb7644570f3",
+			"ParentID": "d93c0be546efbd73cca3bd800bce492c",
+			"Name": "Cone 12",
+			"Transform": {
+				"Translation": {
+					"X": 702.115966796875,
+					"Y": 0.0,
+					"Z": -445.89227294921877
+				},
+				"Scale": {
+					"X": 1.0,
+					"Y": 2.509999990463257,
+					"Z": 1.0
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "7d4ae7734010e10bcf5b08ad30bb59ac",
+			"ParentID": "d93c0be546efbd73cca3bd800bce492c",
+			"Name": "Cone 13",
+			"Transform": {
+				"Translation": {
+					"X": 798.4266967773438,
+					"Y": 0.0,
+					"Z": -445.89227294921877
+				},
+				"Scale": {
+					"X": 1.0,
+					"Y": 2.509999990463257,
+					"Z": 1.0
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "f4782fdc42a330d5507b0394ba3787c2",
+			"ParentID": "d93c0be546efbd73cca3bd800bce492c",
+			"Name": "Cone 14",
+			"Transform": {
+				"Translation": {
+					"X": 805.8709106445313,
+					"Y": 0.0,
+					"Z": -333.8553466796875
+				},
+				"Scale": {
+					"X": 1.0,
+					"Y": 2.509999990463257,
+					"Z": 1.0
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "9e9d6bd045df88d50c904c998e880797",
+			"ParentID": "d93c0be546efbd73cca3bd800bce492c",
+			"Name": "Cone 15",
+			"Transform": {
+				"Translation": {
+					"X": 702.115966796875,
+					"Y": 0.0,
+					"Z": -337.7440185546875
+				},
+				"Scale": {
+					"X": 1.0,
+					"Y": 2.509999990463257,
+					"Z": 1.0
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "75f681e0462b331d47e042a767bd6bf1",
+			"ParentID": "d93c0be546efbd73cca3bd800bce492c",
+			"Name": "Cone 8",
+			"Transform": {
+				"Translation": {
+					"X": 702.115966796875,
+					"Y": 0.0,
+					"Z": -248.0697021484375
+				},
+				"Scale": {
+					"X": 1.0,
+					"Y": 2.509999990463257,
+					"Z": 1.0
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "0936cb0f48f88ea2041583bd64903612",
+			"ParentID": "d93c0be546efbd73cca3bd800bce492c",
+			"Name": "Cone 9",
+			"Transform": {
+				"Translation": {
+					"X": 798.4266967773438,
+					"Y": 0.0,
+					"Z": -248.0697021484375
+				},
+				"Scale": {
+					"X": 1.0,
+					"Y": 2.509999990463257,
+					"Z": 1.0
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "b9893a5049296c92d0011b9673ddf881",
+			"ParentID": "d93c0be546efbd73cca3bd800bce492c",
+			"Name": "Cone 10",
+			"Transform": {
+				"Translation": {
+					"X": 805.8709106445313,
+					"Y": 0.0,
+					"Z": -136.0327606201172
+				},
+				"Scale": {
+					"X": 1.0,
+					"Y": 2.509999990463257,
+					"Z": 1.0
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "9acc6ddf428293e8262489b4a73222f3",
+			"ParentID": "d93c0be546efbd73cca3bd800bce492c",
+			"Name": "Cone 11",
+			"Transform": {
+				"Translation": {
+					"X": 702.115966796875,
+					"Y": 0.0,
+					"Z": -139.92149353027345
+				},
+				"Scale": {
+					"X": 1.0,
+					"Y": 2.509999990463257,
+					"Z": 1.0
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "5877f1fd40735fdfd6d388801338ed89",
+			"ParentID": "d93c0be546efbd73cca3bd800bce492c",
+			"Name": "Cone 4",
+			"Transform": {
+				"Translation": {
+					"X": 514.414306640625,
+					"Y": 0.0,
+					"Z": -248.0697021484375
+				},
+				"Scale": {
+					"X": 1.0,
+					"Y": 2.509999990463257,
+					"Z": 1.0
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "31fa6e8649e706bcdd9de2aee63763ed",
+			"ParentID": "d93c0be546efbd73cca3bd800bce492c",
+			"Name": "Cone 5",
+			"Transform": {
+				"Translation": {
+					"X": 610.7250366210938,
+					"Y": 0.0,
+					"Z": -248.0697021484375
+				},
+				"Scale": {
+					"X": 1.0,
+					"Y": 2.509999990463257,
+					"Z": 1.0
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "294291ee43a109bea91989be692d5629",
+			"ParentID": "d93c0be546efbd73cca3bd800bce492c",
+			"Name": "Cone 6",
+			"Transform": {
+				"Translation": {
+					"X": 618.16943359375,
+					"Y": 0.0,
+					"Z": -136.0327606201172
+				},
+				"Scale": {
+					"X": 1.0,
+					"Y": 2.509999990463257,
+					"Z": 1.0
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "bb07258e4736e1df57c318aa43e9c181",
+			"ParentID": "d93c0be546efbd73cca3bd800bce492c",
+			"Name": "Cone 7",
+			"Transform": {
+				"Translation": {
+					"X": 514.414306640625,
+					"Y": 0.0,
+					"Z": -139.92149353027345
+				},
+				"Scale": {
+					"X": 1.0,
+					"Y": 2.509999990463257,
+					"Z": 1.0
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "0e7be60b4479d83aaedc92b55c925ba8",
+			"ParentID": "d93c0be546efbd73cca3bd800bce492c",
+			"Name": "Cone 0",
+			"Transform": {
+				"Translation": {
+					"X": 514.414306640625,
+					"Y": 0.0,
+					"Z": -457.6205139160156
+				},
+				"Scale": {
+					"X": 1.0,
+					"Y": 2.509999990463257,
+					"Z": 1.0
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "0d1d83b4436b2ae3558af889a191f344"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "f954f8f5450e730de714d0a3b2b9e2e5",
+			"ParentID": "d93c0be546efbd73cca3bd800bce492c",
+			"Name": "Cone 1",
+			"Transform": {
+				"Translation": {
+					"X": 610.7250366210938,
+					"Y": 0.0,
+					"Z": -457.6205139160156
+				},
+				"Scale": {
+					"X": 1.0,
+					"Y": 2.509999990463257,
+					"Z": 1.0
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "243190e34af27aa8205f169c36fa689f",
+			"ParentID": "d93c0be546efbd73cca3bd800bce492c",
+			"Name": "Cone 2",
+			"Transform": {
+				"Translation": {
+					"X": 618.16943359375,
+					"Y": 0.0,
+					"Z": -345.58355712890627
+				},
+				"Scale": {
+					"X": 1.0,
+					"Y": 2.509999990463257,
+					"Z": 1.0
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "2f002c2d4720b0f2acb40e9c4eada9a3",
+			"ParentID": "d93c0be546efbd73cca3bd800bce492c",
+			"Name": "Cone 3",
+			"Transform": {
+				"Translation": {
+					"X": 514.414306640625,
+					"Y": 0.0,
+					"Z": -349.47235107421877
+				},
+				"Scale": {
+					"X": 1.0,
+					"Y": 2.509999990463257,
+					"Z": 1.0
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"TypeID": 30,
+			"ID": "ababb86b413244bcaa0fbf85f259fc06",
+			"ParentID": "7b4625fc406c756c6d9c35b2e54dc805",
+			"IsActive": false,
+			"Name": "SingleBone",
+			"Transform": {
+				"Translation": {
+					"X": -94.40788269042969,
+					"Y": 1.0162382125854493,
+					"Z": 153.47300720214845
+				}
+			},
+			"StaticFlags": 0,
+			"SkinnedModel": "f31227704c376818520ef2bcc211ab1b",
+			"AnimationGraph": "e0f62660429a0dfaf2127bb32a44534a",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"TypeID": 31,
+			"ID": "af90a479469c5c525b133db32a0552a6",
+			"ParentID": "ababb86b413244bcaa0fbf85f259fc06",
+			"Name": "BoneSocket",
+			"Transform": {
+				"Scale": {
+					"X": 100.0,
+					"Y": 99.99998474121094,
+					"Z": 99.99998474121094
+				}
+			},
+			"StaticFlags": 0,
+			"Bone": 0
+		},
+		{
+			"TypeID": 1,
+			"ID": "8aeb1a92470d0cc6fc9c91bdb701c700",
+			"ParentID": "af90a479469c5c525b133db32a0552a6",
+			"Name": "Cube",
+			"Transform": {
+				"Scale": {
+					"X": 0.009999999776482582,
+					"Y": 0.009999999776482582,
+					"Z": 0.009999999776482582
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "b43f0f8f4aaba3f3156896a5a22ba493",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
 			}
 		}
 	]

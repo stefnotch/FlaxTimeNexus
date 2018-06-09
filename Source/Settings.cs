@@ -10,6 +10,8 @@ namespace FlaxTimeNexus
 	/// <summary>
 	/// Cascading settings
 	/// </summary>
+	/// 
+	//[Obsolete("The default time isn't used anywhere, it depends on which actor (TimeContainer --> children) is activated.")]
 	public class Settings : Script
 	{
 		[Serialize]

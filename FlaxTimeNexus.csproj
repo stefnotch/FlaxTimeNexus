@@ -15,14 +15,14 @@
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
-    <DebugType>full</DebugType>
+    <DebugType>portable</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>Cache\bin\</OutputPath>
     <IntermediateOutputPath>Cache\obj\Debug\</IntermediateOutputPath>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
-    <DefineConstants>DEBUG;FLAX_ASSERTIONS;TRACE;FLAX_0;FLAX_0_1;FLAX_0_1_6156;FLAX_EDITOR;FLAX_WINDOWS;FLAX_EDITOR_WIN</DefineConstants>
+    <DefineConstants>DEBUG;FLAX_ASSERTIONS;TRACE;FLAX_0;FLAX_0_1;FLAX_0_1_6159;FLAX_EDITOR;FLAX_WINDOWS;FLAX_EDITOR_WIN</DefineConstants>
 	<UseVSHostingProcess>false</UseVSHostingProcess>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -33,7 +33,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
-    <DefineConstants>TRACE;FLAX_0;FLAX_0_1;FLAX_0_1_6156;FLAX_EDITOR;FLAX_WINDOWS;FLAX_EDITOR_WIN</DefineConstants>
+    <DefineConstants>TRACE;FLAX_0;FLAX_0_1;FLAX_0_1_6159;FLAX_EDITOR;FLAX_WINDOWS;FLAX_EDITOR_WIN</DefineConstants>
 	<UseVSHostingProcess>false</UseVSHostingProcess>
   </PropertyGroup>
   <ItemGroup>
@@ -50,16 +50,19 @@
     <Compile Include="Source\CamRay.cs" />
     <Compile Include="Source\FreeCamera.cs" />
     <Compile Include="Source\leveldupe.cs" />
+    <Compile Include="Source\MatrixSetter.cs" />
     <Compile Include="Source\Pauser.cs" />
     <Compile Include="Source\Settings.cs" />
     <Compile Include="Source\ShowMainMenu.cs" />
     <Compile Include="Source\Gun\TimeGun.cs" />
+    <Compile Include="Source\Objects\Billboard.cs" />
     <Compile Include="Source\Objects\OpenDoor.cs" />
-    <Compile Include="Source\Objects\Projectile.cs" />
+    <Compile Include="Source\Objects\Health Affecting\Damager.cs" />
+    <Compile Include="Source\Objects\Health Affecting\ProjectileMove.cs" />
     <Compile Include="Source\Objects\IsActiveChangers\EnableActivator.cs" />
     <Compile Include="Source\Objects\IsActiveChangers\EnableDeactivator.cs" />
     <Compile Include="Source\Objects\IsActiveChangers\IIsActiveChanger.cs" />
-    <Compile Include="Source\Objects\IsActiveChangers\InteractActivator.cs" />
+    <Compile Include="Source\Objects\IsActiveChangers\InteractToggler.cs" />
     <Compile Include="Source\Objects\IsActiveChangers\LookatGUIToggler.cs" />
     <Compile Include="Source\Objects\IsActiveChangers\LookatToggler.cs" />
     <Compile Include="Source\Objects\IsActiveChangers\TriggerToggler.cs" />

@@ -1,7 +1,7 @@
 {
 	"ID": "35fd20cd4497ea1b18cafcae1c3524ef",
 	"TypeName": "FlaxEngine.SceneAsset",
-	"EngineBuild": 6156,
+	"EngineBuild": 6159,
 	"Data": [
 		{
 			"TypeID": 9,
@@ -1918,16 +1918,14 @@
 				"Translation": {
 					"X": -66.57275390625,
 					"Y": -265.0000305175781,
-					"Z": 7574.7646484375
+					"Z": 3205.156005859375
 				}
 			},
 			"StaticFlags": 0,
 			"Model": "3b5b242a453dbbbdfa88e1ab875f8736",
 			"Buffer": {
 				"Entries": [
-					{
-						"Material": "3d34b341419fdf866b81469909936898"
-					}
+					{}
 				]
 			}
 		},
@@ -1940,7 +1938,7 @@
 				"Translation": {
 					"X": -90.0,
 					"Y": 210.0,
-					"Z": 50.0
+					"Z": 4307.56201171875
 				},
 				"Orientation": {
 					"X": -0.03055129386484623,
@@ -2200,7 +2198,7 @@
 				"Translation": {
 					"X": -250.0,
 					"Y": 370.0,
-					"Z": 50.0
+					"Z": 4307.56201171875
 				},
 				"Orientation": {
 					"X": -0.03055129386484623,
@@ -2425,7 +2423,7 @@
 				"Translation": {
 					"X": 60.0,
 					"Y": 370.0,
-					"Z": 50.0
+					"Z": 4307.56201171875
 				},
 				"Orientation": {
 					"X": -0.03055129386484623,
@@ -2643,96 +2641,39 @@
 		},
 		{
 			"TypeID": 3,
-			"ID": "519c5fec44922a74f651538a33a3060b",
-			"ParentID": "59d6696c48ec2cb18c6e51b9f5749f82",
-			"Name": "torches",
+			"ID": "071e9be14a95b8760da726ae3f36e38e",
+			"ParentID": "53319fdf4987f9598c03d788df384910",
+			"Name": "BridgeTorches",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": -35.094024658203128,
+					"Z": 4022.734619140625
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": 1.0,
+					"Z": 0.0,
+					"W": -4.371138828673793e-8
+				},
+				"Scale": {
+					"X": -1.0,
+					"Y": 1.0,
+					"Z": 1.0
+				}
+			},
 			"StaticFlags": 0
 		},
 		{
 			"TypeID": 1,
-			"ID": "e6a5754b4f2bbadf5b6b1ebcf5dd354d",
-			"ParentID": "519c5fec44922a74f651538a33a3060b",
-			"Name": "torch 0",
-			"Transform": {
-				"Translation": {
-					"X": 621.839599609375,
-					"Y": 243.8466796875,
-					"Z": 459.62646484375
-				},
-				"Orientation": {
-					"X": 0.17520788311958314,
-					"Y": -0.4675796627998352,
-					"Z": 0.09513016045093537,
-					"W": 0.8611746430397034
-				}
-			},
-			"StaticFlags": 0,
-			"Model": "5e5c46f345772f868e8294a9e3eec18f",
-			"Buffer": {
-				"Entries": [
-					{}
-				]
-			}
-		},
-		{
-			"TypeID": 1,
-			"ID": "636d27c840a6e680461ce2af513b3db8",
-			"ParentID": "e6a5754b4f2bbadf5b6b1ebcf5dd354d",
-			"Name": "Cone",
-			"Transform": {
-				"Translation": {
-					"X": 0.0,
-					"Y": 87.6550064086914,
-					"Z": 0.0
-				},
-				"Scale": {
-					"X": 0.20000000298023225,
-					"Y": 0.25,
-					"Z": 0.20000000298023225
-				}
-			},
-			"StaticFlags": 0,
-			"Model": "1b4a643d44706750b2e35ea4e11e3663",
-			"Buffer": {
-				"Entries": [
-					{
-						"Material": "9ae7e799468f8034629d4baed4acfe6c"
-					}
-				]
-			}
-		},
-		{
-			"TypeID": 5,
-			"ID": "a064cd954852bfd818ac03acbdba492f",
-			"ParentID": "e6a5754b4f2bbadf5b6b1ebcf5dd354d",
-			"Name": "PointLight",
-			"Transform": {
-				"Translation": {
-					"X": 0.0,
-					"Y": 66.57888793945313,
-					"Z": 0.0
-				}
-			},
-			"StaticFlags": 0,
-			"Color": {
-				"R": 1.0,
-				"G": 0.43510696291923525,
-				"B": 0.13127028942108155,
-				"A": 1.0
-			},
-			"Radius": 700.0,
-			"FallOffExponent": 4.0
-		},
-		{
-			"TypeID": 1,
 			"ID": "f8555e604e3d868ad5a7c59da84cbe03",
-			"ParentID": "519c5fec44922a74f651538a33a3060b",
+			"ParentID": "071e9be14a95b8760da726ae3f36e38e",
 			"Name": "torch 11",
 			"Transform": {
 				"Translation": {
-					"X": -0.8863711357116699,
-					"Y": 351.10247802734377,
-					"Z": 7627.8603515625
+					"X": 65.68638610839844,
+					"Y": 616.1025390625,
+					"Z": 4097.7265625
 				},
 				"Orientation": {
 					"X": 0.0,
@@ -2801,13 +2742,13 @@
 		{
 			"TypeID": 1,
 			"ID": "b9dc2c5c47c2d7996425ef95ee9eae37",
-			"ParentID": "519c5fec44922a74f651538a33a3060b",
+			"ParentID": "071e9be14a95b8760da726ae3f36e38e",
 			"Name": "torch 10",
 			"Transform": {
 				"Translation": {
-					"X": -23.272323608398439,
-					"Y": 71.48133850097656,
-					"Z": 6527.2001953125
+					"X": 43.30043029785156,
+					"Y": 336.48138427734377,
+					"Z": 2997.06640625
 				},
 				"Orientation": {
 					"X": 0.0,
@@ -2876,13 +2817,13 @@
 		{
 			"TypeID": 1,
 			"ID": "a5fdbbc14abb3a5cabd58a83a5e996d3",
-			"ParentID": "519c5fec44922a74f651538a33a3060b",
+			"ParentID": "071e9be14a95b8760da726ae3f36e38e",
 			"Name": "torch 9",
 			"Transform": {
 				"Translation": {
-					"X": -30.24761199951172,
-					"Y": -5.009773254394531,
-					"Z": 5783.63671875
+					"X": 36.32514190673828,
+					"Y": 259.9902648925781,
+					"Z": 2253.5029296875
 				},
 				"Orientation": {
 					"X": 0.0,
@@ -2951,13 +2892,13 @@
 		{
 			"TypeID": 1,
 			"ID": "bbeabb6b4c720c2d7e81caacede32860",
-			"ParentID": "519c5fec44922a74f651538a33a3060b",
+			"ParentID": "071e9be14a95b8760da726ae3f36e38e",
 			"Name": "torch 8",
 			"Transform": {
 				"Translation": {
-					"X": -30.248775482177736,
-					"Y": -16.37281036376953,
-					"Z": 5143.10302734375
+					"X": 36.323978424072269,
+					"Y": 248.62722778320313,
+					"Z": 1612.96923828125
 				},
 				"Orientation": {
 					"X": 0.0,
@@ -3026,13 +2967,13 @@
 		{
 			"TypeID": 1,
 			"ID": "16f71e82478a517265dca19fd7e12a01",
-			"ParentID": "519c5fec44922a74f651538a33a3060b",
+			"ParentID": "071e9be14a95b8760da726ae3f36e38e",
 			"Name": "torch 7",
 			"Transform": {
 				"Translation": {
-					"X": -30.250764846801759,
-					"Y": 138.32081604003907,
-					"Z": 4050.62158203125
+					"X": 36.321990966796878,
+					"Y": 403.32086181640627,
+					"Z": 520.48779296875
 				},
 				"Orientation": {
 					"X": 0.0,
@@ -3101,13 +3042,13 @@
 		{
 			"TypeID": 1,
 			"ID": "c9ef3b844b5a99b6888da2a1d8558658",
-			"ParentID": "519c5fec44922a74f651538a33a3060b",
+			"ParentID": "071e9be14a95b8760da726ae3f36e38e",
 			"Name": "torch 17",
 			"Transform": {
 				"Translation": {
-					"X": -284.54583740234377,
-					"Y": 262.53533935546877,
-					"Z": 7331.302734375
+					"X": -217.97308349609376,
+					"Y": 527.535400390625,
+					"Z": 3801.1689453125
 				},
 				"Orientation": {
 					"X": 0.0,
@@ -3176,13 +3117,13 @@
 		{
 			"TypeID": 1,
 			"ID": "ec3dfbbc4c919d5c7b2e02be2d80870f",
-			"ParentID": "519c5fec44922a74f651538a33a3060b",
+			"ParentID": "071e9be14a95b8760da726ae3f36e38e",
 			"Name": "torch 16",
 			"Transform": {
 				"Translation": {
-					"X": -268.2908935546875,
-					"Y": 84.69609069824219,
-					"Z": 6578.0947265625
+					"X": -201.7181396484375,
+					"Y": 349.69610595703127,
+					"Z": 3047.9609375
 				},
 				"Orientation": {
 					"X": 0.0,
@@ -3251,13 +3192,13 @@
 		{
 			"TypeID": 1,
 			"ID": "1d74e2db45b1a4e96d36e1a59428876c",
-			"ParentID": "519c5fec44922a74f651538a33a3060b",
+			"ParentID": "071e9be14a95b8760da726ae3f36e38e",
 			"Name": "torch 15",
 			"Transform": {
 				"Translation": {
-					"X": -262.2342834472656,
-					"Y": -22.09368133544922,
-					"Z": 5623.8203125
+					"X": -195.66152954101563,
+					"Y": 242.90634155273438,
+					"Z": 2093.6865234375
 				},
 				"Orientation": {
 					"X": 0.0,
@@ -3326,13 +3267,13 @@
 		{
 			"TypeID": 1,
 			"ID": "12f807c04a0175948a8b4d84581d54fd",
-			"ParentID": "519c5fec44922a74f651538a33a3060b",
+			"ParentID": "071e9be14a95b8760da726ae3f36e38e",
 			"Name": "torch 14",
 			"Transform": {
 				"Translation": {
-					"X": -266.1101379394531,
-					"Y": 37.585044860839847,
-					"Z": 4654.8037109375
+					"X": -199.53738403320313,
+					"Y": 302.5850830078125,
+					"Z": 1124.669921875
 				},
 				"Orientation": {
 					"X": 0.0,
@@ -3401,13 +3342,13 @@
 		{
 			"TypeID": 1,
 			"ID": "b0d885bb40cc3cfe95556882555bd679",
-			"ParentID": "519c5fec44922a74f651538a33a3060b",
+			"ParentID": "071e9be14a95b8760da726ae3f36e38e",
 			"Name": "torch 13",
 			"Transform": {
 				"Translation": {
-					"X": -268.47796630859377,
-					"Y": 167.36495971679688,
-					"Z": 3910.1513671875
+					"X": -201.90521240234376,
+					"Y": 432.364990234375,
+					"Z": 380.017578125
 				},
 				"Orientation": {
 					"X": 0.0,
@@ -3476,13 +3417,13 @@
 		{
 			"TypeID": 1,
 			"ID": "f5e7299f4e1dff79d08683aa5e342ee0",
-			"ParentID": "519c5fec44922a74f651538a33a3060b",
+			"ParentID": "071e9be14a95b8760da726ae3f36e38e",
 			"Name": "torch 12",
 			"Transform": {
 				"Translation": {
-					"X": -294.4374084472656,
-					"Y": 374.46832275390627,
-					"Z": 3216.56005859375
+					"X": -227.86465454101563,
+					"Y": 639.4683837890625,
+					"Z": -313.57373046875
 				},
 				"Orientation": {
 					"X": 0.0,
@@ -3551,13 +3492,13 @@
 		{
 			"TypeID": 1,
 			"ID": "e5f25e8b4b906d1072949a892ea43559",
-			"ParentID": "519c5fec44922a74f651538a33a3060b",
+			"ParentID": "071e9be14a95b8760da726ae3f36e38e",
 			"Name": "torch 6",
 			"Transform": {
 				"Translation": {
-					"X": 2.550734281539917,
-					"Y": 374.46832275390627,
-					"Z": 3182.587890625
+					"X": 69.12348937988281,
+					"Y": 639.4683837890625,
+					"Z": -347.5458984375
 				},
 				"Orientation": {
 					"X": 0.0,
@@ -3605,6 +3546,88 @@
 			"TypeID": 5,
 			"ID": "08715bb641ee07397740f783446fcc25",
 			"ParentID": "e5f25e8b4b906d1072949a892ea43559",
+			"Name": "PointLight",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 66.57888793945313,
+					"Z": 0.0
+				}
+			},
+			"StaticFlags": 0,
+			"Color": {
+				"R": 1.0,
+				"G": 0.43510696291923525,
+				"B": 0.13127028942108155,
+				"A": 1.0
+			},
+			"Radius": 700.0,
+			"FallOffExponent": 4.0
+		},
+		{
+			"TypeID": 3,
+			"ID": "519c5fec44922a74f651538a33a3060b",
+			"ParentID": "59d6696c48ec2cb18c6e51b9f5749f82",
+			"Name": "torches",
+			"StaticFlags": 0
+		},
+		{
+			"TypeID": 1,
+			"ID": "e6a5754b4f2bbadf5b6b1ebcf5dd354d",
+			"ParentID": "519c5fec44922a74f651538a33a3060b",
+			"Name": "torch 0",
+			"Transform": {
+				"Translation": {
+					"X": 621.839599609375,
+					"Y": 243.8466796875,
+					"Z": 459.62646484375
+				},
+				"Orientation": {
+					"X": 0.17520788311958314,
+					"Y": -0.4675796627998352,
+					"Z": 0.09513016045093537,
+					"W": 0.8611746430397034
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "5e5c46f345772f868e8294a9e3eec18f",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "636d27c840a6e680461ce2af513b3db8",
+			"ParentID": "e6a5754b4f2bbadf5b6b1ebcf5dd354d",
+			"Name": "Cone",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 87.6550064086914,
+					"Z": 0.0
+				},
+				"Scale": {
+					"X": 0.20000000298023225,
+					"Y": 0.25,
+					"Z": 0.20000000298023225
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "9ae7e799468f8034629d4baed4acfe6c"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 5,
+			"ID": "a064cd954852bfd818ac03acbdba492f",
+			"ParentID": "e6a5754b4f2bbadf5b6b1ebcf5dd354d",
 			"Name": "PointLight",
 			"Transform": {
 				"Translation": {
@@ -5076,9 +5099,7 @@
 			"Model": "691c67fc4fb5410abd06239d0b5ac8bc",
 			"Buffer": {
 				"Entries": [
-					{
-						"Material": "9805578e4730a6bace243bb2fe0a6d92"
-					}
+					{}
 				]
 			}
 		},
@@ -5109,9 +5130,7 @@
 			"Model": "691c67fc4fb5410abd06239d0b5ac8bc",
 			"Buffer": {
 				"Entries": [
-					{
-						"Material": "9805578e4730a6bace243bb2fe0a6d92"
-					}
+					{}
 				]
 			}
 		},
@@ -5142,9 +5161,7 @@
 			"Model": "691c67fc4fb5410abd06239d0b5ac8bc",
 			"Buffer": {
 				"Entries": [
-					{
-						"Material": "9805578e4730a6bace243bb2fe0a6d92"
-					}
+					{}
 				]
 			}
 		},
@@ -5175,9 +5192,7 @@
 			"Model": "691c67fc4fb5410abd06239d0b5ac8bc",
 			"Buffer": {
 				"Entries": [
-					{
-						"Material": "9805578e4730a6bace243bb2fe0a6d92"
-					}
+					{}
 				]
 			}
 		},
@@ -5208,9 +5223,7 @@
 			"Model": "691c67fc4fb5410abd06239d0b5ac8bc",
 			"Buffer": {
 				"Entries": [
-					{
-						"Material": "9805578e4730a6bace243bb2fe0a6d92"
-					}
+					{}
 				]
 			}
 		},
@@ -5241,9 +5254,7 @@
 			"Model": "691c67fc4fb5410abd06239d0b5ac8bc",
 			"Buffer": {
 				"Entries": [
-					{
-						"Material": "9805578e4730a6bace243bb2fe0a6d92"
-					}
+					{}
 				]
 			}
 		},
@@ -5274,9 +5285,7 @@
 			"Model": "691c67fc4fb5410abd06239d0b5ac8bc",
 			"Buffer": {
 				"Entries": [
-					{
-						"Material": "9805578e4730a6bace243bb2fe0a6d92"
-					}
+					{}
 				]
 			}
 		},
@@ -5381,15 +5390,15 @@
 			"Name": "SunTopRays",
 			"Transform": {
 				"Translation": {
-					"X": 648.5121459960938,
-					"Y": 2966.90380859375,
-					"Z": 1272.78173828125
+					"X": 644.5120849609375,
+					"Y": 2673.0439453125,
+					"Z": 1554.78173828125
 				},
 				"Orientation": {
-					"X": 0.5150213837623596,
-					"Y": 0.007478366140276194,
-					"Z": -0.004493489861488342,
-					"W": 0.8571330308914185
+					"X": 0.6091243624687195,
+					"Y": 0.16199623048305512,
+					"Z": -0.12889043986797334,
+					"W": 0.7655795216560364
 				}
 			},
 			"StaticFlags": 0,
@@ -5402,8 +5411,8 @@
 			"Brightness": 2.0,
 			"ShadowsDistance": 10000.0,
 			"Radius": 10000.0,
-			"OuterAngle": 19.699996948242189,
-			"InnerAngle": 3.0
+			"OuterAngle": 13.49999713897705,
+			"InnerAngle": 3.299999952316284
 		},
 		{
 			"TypeID": 3,
@@ -5450,7 +5459,7 @@
 					"ID": "47db8c1a44f3d53d1e7c1ab20b20cf27",
 					"V": {
 	"EditorTime": {
-		"Ticks": 615168000
+		"Ticks": 153792000
 	}
 }
 				}
@@ -5458,9 +5467,7 @@
 			"Model": "691c67fc4fb5410abd06239d0b5ac8bc",
 			"Buffer": {
 				"Entries": [
-					{
-						"Material": "9805578e4730a6bace243bb2fe0a6d92"
-					}
+					{}
 				]
 			}
 		},
@@ -5503,7 +5510,7 @@
 					"ID": "a2fb71804ef5a2daee869f9dce2aacc6",
 					"V": {
 	"EditorTime": {
-		"Ticks": 461376000
+		"Ticks": 307584000
 	}
 }
 				}
@@ -5511,9 +5518,7 @@
 			"Model": "691c67fc4fb5410abd06239d0b5ac8bc",
 			"Buffer": {
 				"Entries": [
-					{
-						"Material": "9805578e4730a6bace243bb2fe0a6d92"
-					}
+					{}
 				]
 			}
 		},
@@ -5556,7 +5561,7 @@
 					"ID": "9402ac224d3ffd99aad6cf9cd29433ed",
 					"V": {
 	"EditorTime": {
-		"Ticks": 307584000
+		"Ticks": 461376000
 	}
 }
 				}
@@ -5564,9 +5569,7 @@
 			"Model": "691c67fc4fb5410abd06239d0b5ac8bc",
 			"Buffer": {
 				"Entries": [
-					{
-						"Material": "9805578e4730a6bace243bb2fe0a6d92"
-					}
+					{}
 				]
 			}
 		},
@@ -5609,7 +5612,7 @@
 					"ID": "61f6bb1847e30efc1b8a6f93d1331bc8",
 					"V": {
 	"EditorTime": {
-		"Ticks": 153792000
+		"Ticks": 615168000
 	}
 }
 				}
@@ -5617,9 +5620,7 @@
 			"Model": "691c67fc4fb5410abd06239d0b5ac8bc",
 			"Buffer": {
 				"Entries": [
-					{
-						"Material": "9805578e4730a6bace243bb2fe0a6d92"
-					}
+					{}
 				]
 			}
 		},
@@ -5661,7 +5662,7 @@
 					"ID": "9267e10845063d305c42e88597cd1be9",
 					"V": {
 	"EditorTime": {
-		"Ticks": 0
+		"Ticks": 768960000
 	}
 }
 				}
@@ -5669,9 +5670,7 @@
 			"Model": "691c67fc4fb5410abd06239d0b5ac8bc",
 			"Buffer": {
 				"Entries": [
-					{
-						"Material": "9805578e4730a6bace243bb2fe0a6d92"
-					}
+					{}
 				]
 			}
 		},
@@ -5696,7 +5695,7 @@
 					"ID": "07ba5e104938bafa9077bc9128fb5c54",
 					"V": {
 	"EditorTime": {
-		"Ticks": 768960000
+		"Ticks": 0
 	}
 }
 				}
@@ -5844,7 +5843,9 @@
 			"Model": "97164d4340a82961bb1094939f8e13ac",
 			"Buffer": {
 				"Entries": [
-					{}
+					{
+						"Material": "1c8c62384746f7aeecfa00b1ddbca915"
+					}
 				]
 			}
 		},
@@ -5868,19 +5869,20 @@
 			"StaticFlags": 0,
 			"Scripts": [
 				{
-					"Name": "FlaxTimeNexus.InteractActivator",
-					"ID": "c9c378be43ec0eb7f8ecb2b3bde04247",
-					"V": {
-	"InteractionRadius": 450.0,
-	"ToActivate": "0200809846b3b9128cdb8d95e615a46b"
-}
-				},
-				{
 					"Name": "FlaxTimeNexus.LookatGUIToggler",
 					"ID": "8731db7a4734a11f25723d86e14ed652",
 					"V": {
 	"MinDistance": 450.0,
 	"ToActivate": "b9980e5543490eed7e3d34adf3d0c009"
+}
+				},
+				{
+					"Name": "FlaxTimeNexus.InteractToggler",
+					"ID": "d285292d471fe248cae9999f1d5ac8a4",
+					"V": {
+	"InteractionRadius": 100.0,
+	"ToActivate": "0200809846b3b9128cdb8d95e615a46b",
+	"ToDeactivate": "1c72d2df4cfccf1b130c75b163de48e5"
 }
 				}
 			],
@@ -5925,140 +5927,29 @@
 			}
 		},
 		{
-			"TypeID": 1,
-			"ID": "d55443c848c1724f9423d1afab6511d9",
-			"ParentID": "11186b414d0f4c82fc621eb6039982b9",
-			"IsActive": false,
-			"Name": "WorkingBench",
-			"Transform": {
-				"Translation": {
-					"X": -1007.7952270507813,
-					"Y": 293.860107421875,
-					"Z": 1390.6868896484376
-				},
-				"Orientation": {
-					"X": -0.10347864776849747,
-					"Y": 0.10347860306501389,
-					"Z": -0.6994943618774414,
-					"W": 0.6994941830635071
-				}
-			},
-			"StaticFlags": 0,
-			"Scripts": [
-				{
-					"Name": "FlaxTimeNexus.ActorTime",
-					"ID": "452d2639468543c5fa4b8dabcee4058f",
-					"V": {
-	"EditorTime": {
-		"Ticks": 153792000
-	}
-}
-				}
-			],
-			"Model": "97164d4340a82961bb1094939f8e13ac",
-			"Buffer": {
-				"Entries": [
-					{}
-				]
-			}
-		},
-		{
-			"TypeID": 14,
-			"ID": "b5d97ac345c8df2d3413008529fae9d1",
-			"ParentID": "d55443c848c1724f9423d1afab6511d9",
-			"Name": "BoxCollider",
-			"Transform": {
-				"Translation": {
-					"X": 29.183191299438478,
-					"Y": 75.96993255615235,
-					"Z": -44.242218017578128
-				},
-				"Scale": {
-					"X": 4.418680191040039,
-					"Y": 0.5301849842071533,
-					"Z": 2.079429864883423
-				}
-			},
-			"StaticFlags": 0,
-			"Scripts": [
-				{
-					"Name": "FlaxTimeNexus.LookatGUIToggler",
-					"ID": "093b822e44629d80b3bf5797a1f08403",
-					"V": {
-	"MinDistance": 400.0,
-	"ToActivate": "04e9e8964047359ec43acc9b0f2303d7"
-}
-				}
-			],
-			"Size": {
-				"X": 100.0,
-				"Y": 100.0,
-				"Z": 100.0
-			}
-		},
-		{
-			"TypeID": 27,
-			"ID": "04e9e8964047359ec43acc9b0f2303d7",
-			"ParentID": "d55443c848c1724f9423d1afab6511d9",
-			"IsActive": false,
-			"Name": "GUI 0",
-			"Transform": {
-				"Translation": {
-					"X": 75.1060791015625,
-					"Y": 106.61473083496094,
-					"Z": 29.554121017456056
-				},
-				"Orientation": {
-					"X": -0.4999984800815582,
-					"Y": 0.5000015497207642,
-					"Z": 0.5000015497207642,
-					"W": 0.4999984800815582
-				}
-			},
-			"StaticFlags": 0,
-			"Text": "Broken Door\n",
-			"Color": {
-				"R": 0.534333348274231,
-				"G": 0.534333348274231,
-				"B": 0.534333348274231,
-				"A": 1.0
-			},
-			"Size": 20,
-			"Material": "e72782bd4d898e2f236ca3be780438af",
-			"Font": "ea9f671a4de39f19bf2a5082ac86e97c",
-			"ShadowsMode": 3,
-			"Bounds": {
-				"Location": {
-					"X": -100.0,
-					"Y": -100.0
-				},
-				"Size": {
-					"X": 200.0,
-					"Y": 200.0
-				}
-			},
-			"HAlignment": 1,
-			"VAlignment": 1,
-			"Wrapping": 0,
-			"GapScale": 1.0
+			"TypeID": 3,
+			"ID": "1c72d2df4cfccf1b130c75b163de48e5",
+			"ParentID": "5515c2bd434791e971d37db05ea1eff0",
+			"Name": "GUI Container",
+			"StaticFlags": 0
 		},
 		{
 			"TypeID": 27,
 			"ID": "b9980e5543490eed7e3d34adf3d0c009",
-			"ParentID": "11186b414d0f4c82fc621eb6039982b9",
+			"ParentID": "1c72d2df4cfccf1b130c75b163de48e5",
 			"IsActive": false,
 			"Name": "GUI",
 			"Transform": {
 				"Translation": {
-					"X": -897.1901245117188,
-					"Y": 218.75399780273438,
-					"Z": 1388.10693359375
+					"X": 75.10609436035156,
+					"Y": 106.61473083496094,
+					"Z": 29.55412483215332
 				},
 				"Orientation": {
-					"X": 0.0000025331974029541017,
-					"Y": 0.8029729127883911,
-					"Z": 0.0000017173588275909424,
-					"W": 0.5960156321525574
+					"X": -0.49999845027923586,
+					"Y": 0.5000015497207642,
+					"Z": 0.5000015497207642,
+					"W": 0.4999984800815582
 				}
 			},
 			"StaticFlags": 0,
@@ -6089,30 +5980,141 @@
 			"GapScale": 1.0
 		},
 		{
+			"TypeID": 30,
+			"ID": "395cafcf4d2c8d1436aafea9603c54dc",
+			"ParentID": "11186b414d0f4c82fc621eb6039982b9",
+			"IsActive": false,
+			"Name": "SingleBone",
+			"Transform": {
+				"Translation": {
+					"X": -969.0090942382813,
+					"Y": 48.253326416015628,
+					"Z": 1285.34814453125
+				},
+				"Orientation": {
+					"X": -0.10347864776849747,
+					"Y": 0.10347860306501389,
+					"Z": -0.6994943618774414,
+					"W": 0.6994941830635071
+				}
+			},
+			"StaticFlags": 0,
+			"Scripts": [
+				{
+					"Name": "FlaxTimeNexus.ActorTime",
+					"ID": "53ab25a24dafc94c98f461b3a380f23c",
+					"V": {
+	"EditorTime": {
+		"Ticks": 153792000
+	}
+}
+				}
+			],
+			"SkinnedModel": "f31227704c376818520ef2bcc211ab1b",
+			"AnimationGraph": "335075c74bff108df27be68fca137a03",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"TypeID": 31,
+			"ID": "a7f1ee564d47b544929c12a9df9bfa32",
+			"ParentID": "395cafcf4d2c8d1436aafea9603c54dc",
+			"Name": "BoneSocket",
+			"Transform": {
+				"Scale": {
+					"X": 100.0,
+					"Y": 99.99998474121094,
+					"Z": 99.99998474121094
+				}
+			},
+			"StaticFlags": 0,
+			"Bone": 0,
+			"UseScale": false
+		},
+		{
+			"TypeID": 3,
+			"ID": "36ebd586412c278837c9019729d09e7d",
+			"ParentID": "a7f1ee564d47b544929c12a9df9bfa32",
+			"Name": "ScaleFixer",
+			"Transform": {
+				"Scale": {
+					"X": 0.009999999776482582,
+					"Y": 0.009999999776482582,
+					"Z": 0.009999999776482582
+				}
+			},
+			"StaticFlags": 0
+		},
+		{
+			"TypeID": 1,
+			"ID": "d55443c848c1724f9423d1afab6511d9",
+			"ParentID": "36ebd586412c278837c9019729d09e7d",
+			"Name": "WorkingBench",
+			"Transform": {
+				"Translation": {
+					"X": -245.6067352294922,
+					"Y": -67.6237564086914,
+					"Z": 89.59720611572266
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "97164d4340a82961bb1094939f8e13ac",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"TypeID": 14,
+			"ID": "b5d97ac345c8df2d3413008529fae9d1",
+			"ParentID": "d55443c848c1724f9423d1afab6511d9",
+			"Name": "BoxCollider",
+			"Transform": {
+				"Translation": {
+					"X": 29.183191299438478,
+					"Y": 75.96993255615235,
+					"Z": -44.242218017578128
+				},
+				"Scale": {
+					"X": 4.418680191040039,
+					"Y": 0.5301849842071533,
+					"Z": 2.079429864883423
+				}
+			},
+			"StaticFlags": 0,
+			"Size": {
+				"X": 100.0,
+				"Y": 100.0,
+				"Z": 100.0
+			}
+		},
+		{
 			"TypeID": 1,
 			"ID": "86c8ea40444b7f3a85829090b83440e6",
 			"ParentID": "59d6696c48ec2cb18c6e51b9f5749f82",
 			"Name": "Signpost",
 			"Transform": {
 				"Translation": {
-					"X": 739.816650390625,
-					"Y": 22.965675354003908,
-					"Z": 2769.18798828125
+					"X": -658.8777465820313,
+					"Y": -36.42707061767578,
+					"Z": 2948.204345703125
 				},
 				"Orientation": {
-					"X": 0.15198206901550294,
-					"Y": 0.24629850685596467,
-					"Z": 0.030790919438004495,
-					"W": 0.9567081332206726
+					"X": 0.1103256568312645,
+					"Y": -0.25054189562797549,
+					"Z": -0.04232321307063103,
+					"W": 0.9608672857284546
 				}
 			},
 			"StaticFlags": 0,
 			"Model": "f0ed18b44344b42a31a9bf8d83e67f09",
 			"Buffer": {
 				"Entries": [
-					{
-						"Material": "07a51b824033c4ed55d75e897a6b6dab"
-					}
+					{}
 				]
 			}
 		},
@@ -6165,6 +6167,232 @@
 				"Y": 100.0,
 				"Z": 100.0
 			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "1894f5d84a0acbc56fe0ad825b2eae96",
+			"ParentID": "59d6696c48ec2cb18c6e51b9f5749f82",
+			"Name": "Pillar_02",
+			"Transform": {
+				"Translation": {
+					"X": 735.5383911132813,
+					"Y": -29.71527099609375,
+					"Z": 2234.42578125
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "142fd8974e0a5f4adcdc0b92f3f91d89",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "9214d8a64cc07de2f58c1b9123f57bd5"
+					},
+					{
+						"Material": "391c3f95447eaa6a8850848b51d6e7c5"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 14,
+			"ID": "06f2d2394a680b898c2d70b783ee5300",
+			"ParentID": "1894f5d84a0acbc56fe0ad825b2eae96",
+			"Name": "BoxCollider",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 102.74781799316406,
+					"Z": 0.0
+				},
+				"Scale": {
+					"X": 0.4000000059604645,
+					"Y": 1.7000000476837159,
+					"Z": 0.4000000059604645
+				}
+			},
+			"StaticFlags": 0,
+			"Size": {
+				"X": 100.0,
+				"Y": 100.0,
+				"Z": 100.0
+			}
+		},
+		{
+			"TypeID": 30,
+			"ID": "cac02d36412ddd3682f03091b1037b20",
+			"ParentID": "1894f5d84a0acbc56fe0ad825b2eae96",
+			"Name": "SingleBone",
+			"StaticFlags": 0,
+			"SkinnedModel": "f31227704c376818520ef2bcc211ab1b",
+			"AnimationGraph": "14aefac24bb2a958ebf6af82dbb2324b",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"TypeID": 31,
+			"ID": "b87d187d458105398b42698d489506dd",
+			"ParentID": "cac02d36412ddd3682f03091b1037b20",
+			"Name": "BoneSocket",
+			"Transform": {
+				"Scale": {
+					"X": 100.0,
+					"Y": 99.99998474121094,
+					"Z": 99.99998474121094
+				}
+			},
+			"StaticFlags": 0,
+			"Bone": 0,
+			"UseScale": false
+		},
+		{
+			"TypeID": 1,
+			"ID": "67a7761b49a2b29c0cea26b5e7c6c487",
+			"ParentID": "b87d187d458105398b42698d489506dd",
+			"Name": "Gun 0",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 2.28320574760437,
+					"Z": 0.0
+				},
+				"Orientation": {
+					"X": -0.07612605392932892,
+					"Y": -0.7947722673416138,
+					"Z": 0.5837132930755615,
+					"W": 0.1477189064025879
+				},
+				"Scale": {
+					"X": 0.001500000013038516,
+					"Y": 0.0015000003622844816,
+					"Z": 0.0015000003622844816
+				}
+			},
+			"StaticFlags": 0,
+			"Layer": 1,
+			"Model": "d1eebe63439e18608f1efca6baee6b8c",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "b77238674121fdad3d9bd7853fcb6d0e"
+					},
+					{
+						"ShadowsMode": 1
+					},
+					{
+						"Material": "c5e085c445fe7ee3375b74a070349002",
+						"ShadowsMode": 1
+					},
+					{
+						"ShadowsMode": 1
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 14,
+			"ID": "322603244321e7c33d191dae28f9ca69",
+			"ParentID": "1894f5d84a0acbc56fe0ad825b2eae96",
+			"Name": "BoxCollider",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 144.55941772460938,
+					"Z": 0.0
+				},
+				"Scale": {
+					"X": 0.5,
+					"Y": 2.0999999046325685,
+					"Z": 0.5
+				}
+			},
+			"StaticFlags": 0,
+			"Scripts": [
+				{
+					"Name": "FlaxTimeNexus.LookatToggler",
+					"ID": "ae3df13b42d460e971818a9536f79118",
+					"V": {
+	"ToActivate": "c25ba4324ba9ae9c036bf7a7a02b66d7"
+}
+				},
+				{
+					"Name": "FlaxTimeNexus.InteractToggler",
+					"ID": "db756229427932cad764099fa265fe27",
+					"V": {
+	"InteractionRadius": 100.0,
+	"ToActivate": "546e693948293c41bf0947ad01719db3",
+	"ToDeactivate": "cac02d36412ddd3682f03091b1037b20"
+}
+				}
+			],
+			"Size": {
+				"X": 100.0,
+				"Y": 100.0,
+				"Z": 100.0
+			}
+		},
+		{
+			"TypeID": 3,
+			"ID": "c25ba4324ba9ae9c036bf7a7a02b66d7",
+			"ParentID": "1894f5d84a0acbc56fe0ad825b2eae96",
+			"IsActive": false,
+			"Name": "GUI Container",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 217.08087158203126,
+					"Z": 0.0
+				}
+			},
+			"StaticFlags": 0,
+			"Scripts": [
+				{
+					"Name": "FlaxTimeNexus.Billboard",
+					"ID": "7bb9e475424f9568e7684598af72b41c",
+					"V": {}
+				}
+			]
+		},
+		{
+			"TypeID": 27,
+			"ID": "ca750c2c40b0058b20b4afb4659afa01",
+			"ParentID": "c25ba4324ba9ae9c036bf7a7a02b66d7",
+			"Name": "TextRender",
+			"Transform": {
+				"Translation": {
+					"X": -95.54364013671875,
+					"Y": 0.0,
+					"Z": 0.0
+				}
+			},
+			"StaticFlags": 0,
+			"Text": "Press E\n",
+			"Color": {
+				"R": 0.534333348274231,
+				"G": 0.534333348274231,
+				"B": 0.534333348274231,
+				"A": 1.0
+			},
+			"Size": 20,
+			"Material": "e72782bd4d898e2f236ca3be780438af",
+			"Font": "ea9f671a4de39f19bf2a5082ac86e97c",
+			"ShadowsMode": 3,
+			"Bounds": {
+				"Location": {
+					"X": -100.0,
+					"Y": -100.0
+				},
+				"Size": {
+					"X": 200.0,
+					"Y": 200.0
+				}
+			},
+			"HAlignment": 1,
+			"VAlignment": 1,
+			"Wrapping": 0,
+			"GapScale": 1.0
 		},
 		{
 			"TypeID": 17,
@@ -6242,6 +6470,7 @@
 			"TypeID": 1,
 			"ID": "546e693948293c41bf0947ad01719db3",
 			"ParentID": "a96d89ec44bc67b354a644acd2f02d32",
+			"IsActive": false,
 			"Name": "Gun",
 			"Transform": {
 				"Translation": {
@@ -6266,14 +6495,11 @@
 			"Model": "d1eebe63439e18608f1efca6baee6b8c",
 			"Buffer": {
 				"Entries": [
-					{
-						"Material": "de39dcd94598221ade8262ac84c1658e"
-					},
+					{},
 					{
 						"ShadowsMode": 1
 					},
 					{
-						"Material": "7abc723e4f52766e3fa922a96d5a676c",
 						"ShadowsMode": 1
 					},
 					{
@@ -6314,7 +6540,7 @@
 			"TypeID": 1,
 			"ID": "5a8cc35d4c5c442230de66a7d039f521",
 			"ParentID": "a96d89ec44bc67b354a644acd2f02d32",
-			"Name": "Plane",
+			"Name": "CursorVortex",
 			"Transform": {
 				"Translation": {
 					"X": 0.0,
@@ -6426,6 +6652,7 @@
 			"TypeID": 3,
 			"ID": "c98e8ab44c7cc860082f3dbf5156e151",
 			"ParentID": "35fd20cd4497ea1b18cafcae1c3524ef",
+			"IsActive": false,
 			"Name": "MainMenu",
 			"Transform": {
 				"Translation": {
@@ -6495,6 +6722,24 @@
 				"Y": 100.0,
 				"Z": 100.0
 			}
+		},
+		{
+			"TypeID": 7,
+			"ID": "aa186afb42b4fa363cb8cc9495378243",
+			"ParentID": "35fd20cd4497ea1b18cafcae1c3524ef",
+			"Name": "EnvironmentProbe",
+			"Transform": {
+				"Translation": {
+					"X": -817.038818359375,
+					"Y": 194.38278198242188,
+					"Z": -1381.01416015625
+				}
+			},
+			"StaticFlags": 0,
+			"Radius": 300.0,
+			"Brightness": 0.5,
+			"IsCustomProbe": false,
+			"ProbeID": "3509f7b14f4015946645b0b773d040eb"
 		}
 	]
 }

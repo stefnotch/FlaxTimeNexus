@@ -15,6 +15,9 @@ namespace FlaxTimeNexus
 
 		public override ContainerControl CreateUI(Vector2 size)
 		{
+			var fontAsset = Content.LoadInternal<FontAsset>("Editor/Segoe Media Center Regular");
+			var largerFont = fontAsset.CreateFont(30);
+
 			ContainerControl uiRoot = new ContainerControl
 			{
 				BackgroundColor = Color.White,
@@ -30,7 +33,8 @@ namespace FlaxTimeNexus
 			Button startButton = new Button
 			{
 				Text = "Start",
-				BackgroundColor = Color.Gray
+				BackgroundColor = Color.Gray,
+				Font = largerFont
 			};
 			startButton.Clicked += () =>
 			{
@@ -46,7 +50,8 @@ namespace FlaxTimeNexus
 			Button exitButton = new Button
 			{
 				Text = "Exit",
-				BackgroundColor = Color.Gray
+				BackgroundColor = Color.Gray,
+				Font = largerFont
 			};
 			exitButton.Clicked += () =>
 			{

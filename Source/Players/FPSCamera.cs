@@ -53,6 +53,8 @@ namespace FlaxTimeNexus
 			Screen.CursorLock = CursorLockMode.Locked;
 
 			Vector2 mouseDelta = new Vector2(MouseX.Value, MouseY.Value);
+
+			//TODO: Change _pitch and _yaw OnEnable & when the player gets TPd
 			_pitch = Mathf.Clamp(_pitch + mouseDelta.Y, -88, 88);
 			_yaw += mouseDelta.X;
 
@@ -130,7 +132,7 @@ namespace FlaxTimeNexus
 			{
 				if (velocity.Y > 0)
 				{
-					velocity.Y /= 2 * Time.DeltaTime;
+					velocity.Y *= 0.5f * Time.DeltaTime;
 				}
 			}
 

@@ -16,11 +16,9 @@ namespace FlaxTimeNexus.Source.UI
 
 		public override ContainerControl CreateUI(Vector2 size)
 		{
-			/*
 			var fontAsset = Content.LoadInternal<FontAsset>("Editor/Segoe Media Center Regular");
-			var largerFont = fontAsset.CreateFont(40);
-			*/
-
+			var largerFont = fontAsset.CreateFont(30);
+			
 			ContainerControl uiRoot = new ContainerControl
 			{
 				BackgroundColor = Color.White,
@@ -36,7 +34,8 @@ namespace FlaxTimeNexus.Source.UI
 			Button resumeButton = new Button
 			{
 				Text = "Resume",
-				BackgroundColor = Color.Gray
+				BackgroundColor = Color.Gray,
+				Font = largerFont
 			};
 			resumeButton.Clicked += () =>
 			{
@@ -51,7 +50,8 @@ namespace FlaxTimeNexus.Source.UI
 			Button saveButton = new Button
 			{
 				Text = "Save",
-				BackgroundColor = Color.Gray
+				BackgroundColor = Color.Gray,
+				Font = largerFont
 			};
 			saveButton.Clicked += () => Player?.Save();
 			buttonContainer.AddChild(saveButton);
@@ -60,7 +60,8 @@ namespace FlaxTimeNexus.Source.UI
 			Button loadButton = new Button
 			{
 				Text = "Load",
-				BackgroundColor = Color.Gray
+				BackgroundColor = Color.Gray,
+				Font = largerFont
 			};
 			loadButton.Clicked += () =>
 			{
@@ -73,7 +74,8 @@ namespace FlaxTimeNexus.Source.UI
 			Button settingsButton = new Button
 			{
 				Text = "Settings",
-				BackgroundColor = Color.Gray
+				BackgroundColor = Color.Gray,
+				Font = largerFont
 			};
 			settingsButton.Clicked += () =>
 			{
@@ -85,7 +87,8 @@ namespace FlaxTimeNexus.Source.UI
 			Button exitButton = new Button
 			{
 				Text = "Exit",
-				BackgroundColor = Color.Gray
+				BackgroundColor = Color.Gray,
+				Font = largerFont
 			};
 			exitButton.Clicked += () =>
 			{

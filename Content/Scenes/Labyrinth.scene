@@ -1,0 +1,131 @@
+{
+	"ID": "98e81b164499fc785678ee8383b4023e",
+	"TypeName": "FlaxEngine.SceneAsset",
+	"EngineBuild": 6156,
+	"Data": [
+		{
+			"TypeID": 9,
+			"ID": "98e81b164499fc785678ee8383b4023e",
+			"ParentID": "00000000000000000000000000000000",
+			"Name": "Scene",
+			"LightmapSettings": {
+				"GlobalObjectsScale": 0.5,
+				"ChartsPadding": 3,
+				"AtlasSize": 1024,
+				"BounceCount": 1,
+				"UseGeometryWithNoMaterials": false,
+				"Quality": 10
+			}
+		},
+		{
+			"TypeID": 10,
+			"ID": "2e01018c419e5daf043fa7aea80e1520",
+			"ParentID": "98e81b164499fc785678ee8383b4023e",
+			"Name": "Sky",
+			"Transform": {
+				"Translation": {
+					"X": 40.0,
+					"Y": 150.0,
+					"Z": 0.0
+				}
+			},
+			"Sun": "e1e6d17745a12a2b39794bbb737c695c",
+			"SunDiscScale": 1.0,
+			"FogSunPower": 8.0
+		},
+		{
+			"TypeID": 4,
+			"ID": "e1e6d17745a12a2b39794bbb737c695c",
+			"ParentID": "98e81b164499fc785678ee8383b4023e",
+			"Name": "Sun",
+			"Transform": {
+				"Translation": {
+					"X": 40.0,
+					"Y": 160.0,
+					"Z": 0.0
+				},
+				"Orientation": {
+					"X": 0.3826834559440613,
+					"Y": 0.0,
+					"Z": 0.0,
+					"W": 0.9238795042037964
+				}
+			},
+			"Brightness": 4.0
+		},
+		{
+			"TypeID": 25,
+			"ID": "8f18813347d47d4b5c597a82333d129e",
+			"ParentID": "98e81b164499fc785678ee8383b4023e",
+			"Name": "SkyLight",
+			"Brightness": 1.7999999523162842,
+			"AdditiveColor": {
+				"R": 0.0,
+				"G": 0.0,
+				"B": 0.0,
+				"A": 1.0
+			},
+			"Radius": 100000.0,
+			"SkyDistanceThreshold": 150000.0,
+			"BakedProbe": "00000000000000000000000000000000",
+			"Mode": 1,
+			"CustomTexture": "c54410104ff39427bc11e5bc761d66b0"
+		},
+		{
+			"TypeID": 2,
+			"ID": "d97e08254e13cfbda69fff835a7f7adc",
+			"ParentID": "98e81b164499fc785678ee8383b4023e",
+			"Name": "Camera",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 150.0,
+					"Z": -300.0
+				}
+			},
+			"StaticFlags": 0,
+			"UsePerspective": true,
+			"FOV": 60.0,
+			"Near": 2.0,
+			"Far": 10000.0
+		},
+		{
+			"TypeID": 3,
+			"ID": "5fffebac4864e61533240daba5c9a251",
+			"ParentID": "98e81b164499fc785678ee8383b4023e",
+			"Name": "SceneActor",
+			"StaticFlags": 0
+		},
+		{
+			"TypeID": 1,
+			"ID": "49ae50454439e62b7a0448ac6e7ada9e",
+			"ParentID": "98e81b164499fc785678ee8383b4023e",
+			"Name": "maze",
+			"Transform": {
+				"Translation": {
+					"X": 79.49627685546875,
+					"Y": 36.48798370361328,
+					"Z": 39.4486083984375
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "5efc6e5446d363a008e35d86a5b33dcb",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "aaf63f14422014a2912da1932e19a47c"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 24,
+			"ID": "6b4185644f765801a6bc268d78760ff4",
+			"ParentID": "49ae50454439e62b7a0448ac6e7ada9e",
+			"IsActive": false,
+			"Name": "Maze_coll",
+			"StaticFlags": 0,
+			"CollisionData": "e3a4bf68475fedb76707eca30b04ff44"
+		}
+	]
+}

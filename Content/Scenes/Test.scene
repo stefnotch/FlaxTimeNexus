@@ -1,7 +1,7 @@
 {
 	"ID": "457cae21433ed1410a669aa61b056c12",
 	"TypeName": "FlaxEngine.SceneAsset",
-	"EngineBuild": 6156,
+	"EngineBuild": 6157,
 	"Data": [
 		{
 			"TypeID": 9,
@@ -291,6 +291,94 @@
 				}
 			],
 			"Model": "54a1ff4a42af9f018234f7b39b1366b3",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"TypeID": 3,
+			"ID": "48dd26314121b43c3ff7dcb676259518",
+			"ParentID": "457cae21433ed1410a669aa61b056c12",
+			"Name": "EmptyActor",
+			"Transform": {
+				"Translation": {
+					"X": -114.55224609375,
+					"Y": 117.38517761230469,
+					"Z": -80.3372802734375
+				}
+			},
+			"StaticFlags": 0
+		},
+		{
+			"TypeID": 1,
+			"ID": "2f6cf1594547cea3af1a32ba136579e5",
+			"ParentID": "457cae21433ed1410a669aa61b056c12",
+			"IsActive": false,
+			"Name": "Cube",
+			"Transform": {
+				"Translation": {
+					"X": -23.942230224609376,
+					"Y": 99.61378479003906,
+					"Z": 36.158416748046878
+				}
+			},
+			"StaticFlags": 0,
+			"Scripts": [
+				{
+					"Name": "FlaxTimeNexus.MatrixSetter",
+					"ID": "752383e446f64123c665eeb9296eb2f3",
+					"V": {
+	"Speed": 1.0
+}
+				}
+			],
+			"Model": "b43f0f8f4aaba3f3156896a5a22ba493",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "bfcfc12f4b65aa5625e11f8d3942a58c"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "2577e7ba4083ede9c42b4eba5d8a4189",
+			"ParentID": "457cae21433ed1410a669aa61b056c12",
+			"IsActive": false,
+			"Name": "Sphere",
+			"Transform": {
+				"Translation": {
+					"X": -23.942230224609376,
+					"Y": 99.61377716064453,
+					"Z": 36.15842056274414
+				}
+			},
+			"Model": "dd86c4724bf734c4959d23b3c74faa05",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "15db06704aec7e9b8134eba4d0a8d839"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "2ccef19847bd156562c0b88ebb565b6e",
+			"ParentID": "457cae21433ed1410a669aa61b056c12",
+			"Name": "Cube",
+			"Transform": {
+				"Translation": {
+					"X": -91.20599365234375,
+					"Y": -13.153505325317383,
+					"Z": -33.04093933105469
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "b43f0f8f4aaba3f3156896a5a22ba493",
 			"Buffer": {
 				"Entries": [
 					{}

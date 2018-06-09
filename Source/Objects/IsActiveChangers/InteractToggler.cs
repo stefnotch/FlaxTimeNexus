@@ -11,9 +11,11 @@ namespace FlaxTimeNexus
 	/// Activates an actor when the interact key gets pressed
 	/// Does NOT deactivate it afterwards
 	/// </summary>
-	public class InteractActivator : Script, ILookatTrigger, IIsActiveChanger
+	public class InteractToggler : Script, ILookatTrigger, IIsActiveChanger
 	{
 		public Actor ToActivate { get; set; }
+		public Actor ToDeactivate { get; set; }
+
 		/// <summary>
 		/// How close the player needs to be to interact with an object
 		/// Note: Limited by the PlayerLookat MaxDistance 
@@ -36,7 +38,18 @@ namespace FlaxTimeNexus
 		{
 			if (Interact.Active)
 			{
-				ToActivate.IsActive = true;
+				if (ToActivate == ToDeactivate)
+				{
+					if (ToActivate)
+					{
+						ToActivate.IsActive = !ToActivate.IsActive;
+					}
+				}
+				else
+				{
+					if (ToActivate) ToActivate.IsActive = true;
+					if (ToDeactivate) ToDeactivate.IsActive = false;
+				}
 			}
 		}
 	}
