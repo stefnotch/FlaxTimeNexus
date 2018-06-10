@@ -46,10 +46,10 @@ namespace FlaxTimeNexus
 		}
 
 		[NoSerialize]
-		InputEvent Pause = new InputEvent("Pause");
+		private InputEvent Pause = new InputEvent("Pause");
 
 		[NoSerialize]
-		bool _isPaused;
+		private bool _isPaused;
 		private void Start()
 		{
 			if (Pause != null)

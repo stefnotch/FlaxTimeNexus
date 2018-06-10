@@ -8,8 +8,7 @@ namespace FlaxTimeNexus
 	{
 		public Actor Door;
 		public float InteractionRadius = 100f;
-
-		InputEvent Interact = new InputEvent("Interact");
+		private InputEvent Interact = new InputEvent("Interact");
 
 		public void OnLookatEnter(RayCastHit hitResult)
 		{

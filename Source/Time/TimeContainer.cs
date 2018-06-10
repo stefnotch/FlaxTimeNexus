@@ -35,7 +35,7 @@ namespace FlaxTimeNexus
 			}
 		}
 
-		void Start()
+		private void Start()
 		{
 			if (Actor.HasChildren)
 			{

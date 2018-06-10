@@ -9,7 +9,7 @@ namespace FlaxTimeNexus
 	{
 		public float Damage { get; set; }
 
-		void OnCollisionEnter(Collision collision)
+		private void OnCollisionEnter(Collision collision)
 		{
 			Player player = collision.OtherCollider.GetScript<Player>();
 			if (player)

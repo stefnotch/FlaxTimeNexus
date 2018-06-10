@@ -8,12 +8,12 @@ namespace FlaxTimeNexus
 	{
 		public Actor ToActivate { get; set; }
 
-		void OnTriggerEnter(Collider c)
+		private void OnTriggerEnter(Collider c)
 		{
 			ToActivate.IsActive = true;
 		}
 
-		void OnTriggerExit(Collider c)
+		private void OnTriggerExit(Collider c)
 		{
 			ToActivate.IsActive = false;
 		}

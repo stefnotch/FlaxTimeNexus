@@ -10,7 +10,8 @@ namespace FlaxTimeNexus.Source
 	public class ShowMainMenu : Script
 	{
 		public Actor MainMenu;
-		void Start()
+
+		private void Start()
 		{
 			Time.TimeScale = 0;
 			MainMenu.IsActive = true;

@@ -9,12 +9,11 @@ namespace FlaxTimeNexus
 {
 	public class EdgeTilt
 	{
-		const int RayCount = 16;
-		readonly float _radius = 100.0f;
-		readonly Vector3[] _offsets = new Vector3[RayCount];
-
-		readonly CharacterController _player;
-		readonly Vector3 _feetOffset;
+		private const int RayCount = 16;
+		private readonly float _radius = 100.0f;
+		private readonly Vector3[] _offsets = new Vector3[RayCount];
+		private readonly CharacterController _player;
+		private readonly Vector3 _feetOffset;
 
 		public EdgeTilt(CharacterController player, Vector3 feetOffset)
 		{

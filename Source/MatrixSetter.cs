@@ -7,7 +7,7 @@ namespace FlaxTimeNexus
 {
 	public class MatrixSetter : Script
 	{
-		MaterialParameter _matrix;
+		private MaterialParameter _matrix;
 
 		[Range(0f, 10f)]
 		public float Speed = 1f;

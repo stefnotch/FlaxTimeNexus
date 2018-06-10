@@ -9,7 +9,7 @@ namespace FlaxTimeNexus.Source
 {
 	public class leveldupe : Script
 	{
-		void Update()
+		private void Update()
 		{
 			if (Input.GetKeyUp(Keys.C))
 			{

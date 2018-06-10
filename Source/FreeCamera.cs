@@ -7,14 +7,15 @@ namespace FlaxTimeNexus
 		[Limit(0, 100), Tooltip("Camera movement speed factor")]
 		public float MoveSpeed { get; set; }
 
-		float pitch;
-		float yaw;
-		FreeCamera()
+		private float pitch;
+		private float yaw;
+
+		private FreeCamera()
 		{
 			MoveSpeed = 1;
 		}
 
-		void Update()
+		private void Update()
 		{
 			//Screen.CursorVisible = false;
 			//Screen.CursorLock = CursorLockMode.Locked;
@@ -24,7 +25,7 @@ namespace FlaxTimeNexus
 			yaw += mouseDelta.X;
 		}
 
-		void FixedUpdate()
+		private void FixedUpdate()
 		{
 			if (Input.GetMouseButton(MouseButton.Right))
 			{

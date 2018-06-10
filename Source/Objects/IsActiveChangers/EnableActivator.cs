@@ -13,7 +13,7 @@ namespace FlaxTimeNexus
 
 		//TODO: Ask about this vvv
 		//[ExecuteInEditMode]
-		void OnEnable()
+		private void OnEnable()
 		{
 			ToActivate.IsActive = true;
 		}

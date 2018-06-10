@@ -21,32 +21,25 @@ namespace FlaxTimeNexus
 		public CharacterController Player;
 		public Camera Camera;
 		public float CameraSmoothing = 20.0f;
+		private InputAxis MouseX = new InputAxis("Mouse X");
+		private InputAxis MouseY = new InputAxis("Mouse Y");
+		private InputAxis VerticalAxis = new InputAxis("Vertical");
+		private InputAxis HorizontalAxis = new InputAxis("Horizontal");
+		private InputAxis Sprint = new InputAxis("Sprint");
+		private float _pitch;
+		private float _yaw;
+		private bool _jump;
+		private Vector3 _prevVelocity = Vector3.Zero;
+		private EdgeTilt _edgeTilt;
+		private Vector3 _smoothEdgeTilt;
+		private float _edgeTiltSmoothing = 0.1f;
 
-		InputAxis MouseX = new InputAxis("Mouse X");
-		InputAxis MouseY = new InputAxis("Mouse Y");
-
-		InputAxis VerticalAxis = new InputAxis("Vertical");
-		InputAxis HorizontalAxis = new InputAxis("Horizontal");
-
-		InputAxis Sprint = new InputAxis("Sprint");
-
-		float _pitch;
-		float _yaw;
-
-		bool _jump;
-
-		Vector3 _prevVelocity = Vector3.Zero;
-
-		EdgeTilt _edgeTilt;
-		Vector3 _smoothEdgeTilt;
-		float _edgeTiltSmoothing = 0.1f;
-
-		void Start()
+		private void Start()
 		{
 			_edgeTilt = new EdgeTilt(Player, new Vector3(0, -Player.Height / 2f - Player.Radius, 0));
 		}
 
-		void Update()
+		private void Update()
 		{
 			//The camera may move while the player is paused
 			Screen.CursorVisible = false;
@@ -69,7 +62,7 @@ namespace FlaxTimeNexus
 			}
 		}
 
-		void FixedUpdate()
+		private void FixedUpdate()
 		{
 			// Camera update
 			var camFactor = Mathf.Clamp01(CameraSmoothing * Time.UnscaledDeltaTime);

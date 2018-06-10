@@ -21,8 +21,7 @@ namespace FlaxTimeNexus
 		/// Note: Limited by the PlayerLookat MaxDistance 
 		/// </summary>
 		public float InteractionRadius = 100f;
-
-		InputEvent Interact = new InputEvent("Interact");
+		private InputEvent Interact = new InputEvent("Interact");
 
 		public void OnLookatEnter(RayCastHit hitResult)
 		{

@@ -11,9 +11,9 @@ namespace FlaxTimeNexus
 	{
 		public Camera Camera;
 		public float MaxDistance = 100f * 30f;
+		private RayCastHit _lastHit;
 
-		RayCastHit _lastHit;
-		void Update()
+		private void Update()
 		{
 			//TODO: How to deal with children/parents???? (capturing, bubbling,...)
 			if (Physics.RayCast(Camera.MainCamera.Position, Camera.MainCamera.Direction, out RayCastHit hit, MaxDistance, this.Actor.Layer))

@@ -13,10 +13,9 @@ namespace FlaxTimeNexus
 		/// How close does the player have to be to activate an actor
 		/// </summary>
 		public float MinDistance = 100f;
+		private bool _isActivated;
 
-		bool _isActivated;
-
-		void Start()
+		private void Start()
 		{
 			if (ToActivate)
 			{

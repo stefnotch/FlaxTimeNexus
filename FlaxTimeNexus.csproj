@@ -55,6 +55,7 @@
     <Compile Include="Source\Settings.cs" />
     <Compile Include="Source\ShowMainMenu.cs" />
     <Compile Include="Source\Gun\TimeGun.cs" />
+    <Compile Include="Source\Gun\TransitionTimeContainer.cs" />
     <Compile Include="Source\Objects\Billboard.cs" />
     <Compile Include="Source\Objects\OpenDoor.cs" />
     <Compile Include="Source\Objects\Health Affecting\Damager.cs" />

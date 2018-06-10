@@ -16,8 +16,7 @@ namespace FlaxTimeNexus
 			rb.LinearVelocity = new Vector3(this.speed, 0, 0);
 		}
 
-
-		void OnCollisionEnter(Collision collision)
+		private void OnCollisionEnter(Collision collision)
 		{
 			//Reset
 			rb.LocalPosition = _startPosition;

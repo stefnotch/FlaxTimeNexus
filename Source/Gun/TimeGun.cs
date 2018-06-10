@@ -16,6 +16,12 @@ namespace FlaxTimeNexus
 		public SDateTime TimeIncrement = SDateTime.Zero;
 
 		/// <summary>
+		/// How fast should the time incrementing happen (seconds)
+		/// </summary>
+		[Tooltip("Speed of the time incrementing in seconds")]
+		public float TransitionSpeed = 1f;
+
+		/// <summary>
 		/// The model
 		/// </summary>
 		public Model GunBeamModel;
@@ -25,24 +31,24 @@ namespace FlaxTimeNexus
 		/// </summary>
 		public float FadeTime = 1f;
 
-		readonly InputAxis TimeScroll = new InputAxis("Time");
-		readonly float MaxDistance = 100 * 100;
-		readonly string GunBeamName = "GunBeam";
 
-		EmptyActor _gunBeamContainer;
-		ModelActor _gunBeam;
+		private readonly InputAxis TimeScroll = new InputAxis("Time");
+		private readonly float MaxDistance = 100 * 100;
+		private readonly string GunBeamName = "GunBeam";
+		private EmptyActor _gunBeamContainer;
+		private ModelActor _gunBeam;
+		private float _lastFireTime;
+		private MaterialParameter _materialLength;
+		private MaterialParameter _materialDirection;
+		private RayCastHit _lastTarget;
 
-		float _lastFireTime;
-		MaterialParameter _materialLength;
-		MaterialParameter _materialDirection;
-		RayCastHit _lastTarget;
+		private readonly Dictionary<TimeContainer, TransitionTimeContainer> _timeContainers = new Dictionary<TimeContainer, TransitionTimeContainer>();
+		private readonly Dictionary<MaterialBase, MaterialBase> _timeTransitionMaterials = new Dictionary<MaterialBase, MaterialBase>();
 
-
-
-		SDateTime _toAdd = SDateTime.Zero;
-
-		void Start()
+		private void Start()
 		{
+			//_gunBeam.GetMaterial(0)
+			//_gunBeam.Entries[0].Material = 
 			if (this.Actor.GetChild(GunBeamName))
 			{
 				Destroy(this.Actor.GetChild(GunBeamName));
@@ -72,32 +78,41 @@ namespace FlaxTimeNexus
 			_materialDirection = _gunBeam.GetMaterial(0).GetParam("Direction");
 		}
 
-		void Update()
+		private void Update()
 		{
+
+			//Can be null
+			TimeContainer timeContainer = null;
+
 			//TODO: Change to a camera that has to be set (property)
 			if (Physics.RayCast(Camera.MainCamera.Position, Camera.MainCamera.Direction, out RayCastHit hit, MaxDistance, this.Actor.Layer))
 			{
-				TimeContainer timeContainer = GetTimeContainer(hit.Collider);
-
-				//TODO: Little effect when something is scrollable
-
-				if (timeContainer && TimeScroll.Value != 0)
+				timeContainer = GetTimeContainer(hit.Collider);
+				if (timeContainer)
 				{
-					_toAdd = (TimeScroll.Value) * TimeIncrement;
-					timeContainer.Time = timeContainer.Time + _toAdd;
-
-					UpdateBeam(hit, TimeScroll.Value);
+					//TODO: Little effect when something is scrollable
 				}
-				else
+			}
+
+
+			if (timeContainer != null && TimeScroll.Value != 0)
+			{
+				//TODO: Shoot the beam()
+
+				if (!_timeContainers.TryGetValue(timeContainer, out var transitionTimeContainer))
 				{
-					UpdateBeam();
+					transitionTimeContainer = new TransitionTimeContainer(timeContainer);
 				}
 
+				transitionTimeContainer.Hit = hit;
+				transitionTimeContainer.ToAdd += TimeScroll.Value * TimeIncrement;
 			}
 			else
 			{
-				UpdateBeam();
+				//TODO: Update the beam()
 			}
+
+			UpdateAnimations();
 		}
 
 		private TimeContainer GetTimeContainer(Actor actor)
@@ -108,10 +123,25 @@ namespace FlaxTimeNexus
 				actor.Parent.Parent.GetScript<TimeContainer>(); //TimeContainer --> Model --> Collider (ILookatTrigger)
 		}
 
-		void OnDestroy()
+		private void OnDestroy()
 		{
 			Destroy(_gunBeam);
 			Destroy(_gunBeamContainer);
+		}
+
+		private void UpdateAnimations()
+		{
+			foreach(var transitionTimeContainer in _timeContainers.Values)
+			{
+				if (TransitionSpeed < Mathf.Epsilon)
+				{
+					transitionTimeContainer.TransitionValue = 1f;
+				}
+				else
+				{
+					transitionTimeContainer.TransitionValue += 1f / (Time.UpdateFPS * TransitionSpeed);
+				}
+			}
 		}
 
 		private void UpdateBeam(RayCastHit target = default(RayCastHit), float timeScroll = 1)

@@ -20,14 +20,14 @@ namespace FlaxTimeNexus
 			}
 		}
 
-		readonly List<Checkpoint> _checkpoints = new List<Checkpoint>();
+		private readonly List<Checkpoint> _checkpoints = new List<Checkpoint>();
 
-		void Start()
+		private void Start()
 		{
 			Health = DefaultHealth;
 		}
 
-		void Update()
+		private void Update()
 		{
 			
 		}
