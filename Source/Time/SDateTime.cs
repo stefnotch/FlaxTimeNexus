@@ -1,9 +1,5 @@
 ﻿using FlaxEngine;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace FlaxTimeNexus
 {
@@ -123,6 +119,7 @@ namespace FlaxTimeNexus
 		/// <returns></returns>
 		public override bool Equals(object obj)
 		{
+			if (obj == null) return false;
 			if (!(obj is SDateTime other))
 			{
 				return false;
@@ -164,12 +161,12 @@ namespace FlaxTimeNexus
 
 		public static bool operator ==(SDateTime a, SDateTime b)
 		{
-			return a.Ticks == b.Ticks;
+			return a?.Ticks == b?.Ticks;
 		}
 
 		public static bool operator !=(SDateTime a, SDateTime b)
 		{
-			return a.Ticks != b.Ticks;
+			return a?.Ticks != b?.Ticks;
 		}
 
 		public static bool operator <(SDateTime a, SDateTime b)

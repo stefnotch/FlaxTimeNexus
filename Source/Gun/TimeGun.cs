@@ -1,10 +1,6 @@
 ﻿using FlaxEngine;
 using FlaxEngine.Rendering;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace FlaxTimeNexus
 {
@@ -16,12 +12,6 @@ namespace FlaxTimeNexus
 		public SDateTime TimeIncrement = SDateTime.Zero;
 
 		/// <summary>
-		/// How fast should the time incrementing happen (seconds)
-		/// </summary>
-		[Tooltip("Speed of the time incrementing in seconds")]
-		public float TransitionSpeed = 1f;
-
-		/// <summary>
 		/// The model
 		/// </summary>
 		public Model GunBeamModel;
@@ -30,7 +20,6 @@ namespace FlaxTimeNexus
 		/// After how many seconds should the gun beam disappear
 		/// </summary>
 		public float FadeTime = 1f;
-
 
 		private readonly InputAxis TimeScroll = new InputAxis("Time");
 		private readonly float MaxDistance = 100 * 100;
@@ -42,8 +31,8 @@ namespace FlaxTimeNexus
 		private MaterialParameter _materialDirection;
 		private RayCastHit _lastTarget;
 
+		[NoSerialize]
 		private readonly Dictionary<TimeContainer, TransitionTimeContainer> _timeContainers = new Dictionary<TimeContainer, TransitionTimeContainer>();
-		private readonly Dictionary<MaterialBase, MaterialBase> _timeTransitionMaterials = new Dictionary<MaterialBase, MaterialBase>();
 
 		private void Start()
 		{
@@ -80,28 +69,28 @@ namespace FlaxTimeNexus
 
 		private void Update()
 		{
-
 			//Can be null
 			TimeContainer timeContainer = null;
 
-			//TODO: Change to a camera that has to be set (property)
+			//TODO: Change to a camera that has to be set (property), or use PlayerLookat
 			if (Physics.RayCast(Camera.MainCamera.Position, Camera.MainCamera.Direction, out RayCastHit hit, MaxDistance, this.Actor.Layer))
 			{
 				timeContainer = GetTimeContainer(hit.Collider);
-				if (timeContainer)
+				if (timeContainer != null)
 				{
 					//TODO: Little effect when something is scrollable
 				}
 			}
 
-
-			if (timeContainer != null && TimeScroll.Value != 0)
+			//If the player scrolled & is looking at something scrollable
+			if (TimeScroll.Value != 0 && timeContainer != null)
 			{
-				//TODO: Shoot the beam()
+				UpdateBeam(hit, TimeScroll.Value);
 
 				if (!_timeContainers.TryGetValue(timeContainer, out var transitionTimeContainer))
 				{
 					transitionTimeContainer = new TransitionTimeContainer(timeContainer);
+					_timeContainers.Add(timeContainer, transitionTimeContainer);
 				}
 
 				transitionTimeContainer.Hit = hit;
@@ -109,7 +98,7 @@ namespace FlaxTimeNexus
 			}
 			else
 			{
-				//TODO: Update the beam()
+				UpdateBeam();
 			}
 
 			UpdateAnimations();
@@ -131,20 +120,23 @@ namespace FlaxTimeNexus
 
 		private void UpdateAnimations()
 		{
-			foreach(var transitionTimeContainer in _timeContainers.Values)
+			List<TimeContainer> toRemove = new List<TimeContainer>();
+			foreach (var element in _timeContainers)
 			{
-				if (TransitionSpeed < Mathf.Epsilon)
+				if (element.Value.UpdateAnimation())
 				{
-					transitionTimeContainer.TransitionValue = 1f;
+					toRemove.Add(element.Key);
 				}
-				else
-				{
-					transitionTimeContainer.TransitionValue += 1f / (Time.UpdateFPS * TransitionSpeed);
-				}
+			}
+
+			foreach (var key in toRemove)
+			{
+				_timeContainers[key].Dispose();//Could be done asynchronously
+				_timeContainers.Remove(key);
 			}
 		}
 
-		private void UpdateBeam(RayCastHit target = default(RayCastHit), float timeScroll = 1)
+		private void UpdateBeam(RayCastHit target = default(RayCastHit), float scrollSpeed = 1)
 		{
 			bool hitTarget = (target.Collider != null);
 			if (hitTarget)
@@ -159,7 +151,7 @@ namespace FlaxTimeNexus
 				if (hitTarget)
 				{
 					SetBeamLength(target.Distance);
-					_materialDirection.Value = timeScroll;
+					_materialDirection.Value = scrollSpeed;
 					_gunBeamContainer.LookAt(target.Point);
 				}
 				else
@@ -181,26 +173,6 @@ namespace FlaxTimeNexus
 			_gunBeam.LocalScale = new Vector3(_gunBeam.LocalScale.X, beamLength / scaleFactor, _gunBeam.LocalScale.Z);
 			_gunBeam.LocalPosition = new Vector3(0, 0, beamLength / 2f);
 			_materialLength.Value = beamLength / scaleFactor;
-		}
-
-
-
-
-		/// <summary>
-		/// A nice lerping effect between 2 actors
-		/// </summary>
-		/// <param name="start"></param>
-		/// <param name="end"></param>
-		/// <param name="t">between 0 and 1</param>
-		private void LerpBetweenActors(Transform start, Transform end, float t)
-		{
-			//RigidBody.New().Sleep();
-			//Transform.Lerp()
-			/*if(t > 0.5)
-			{
-				start.IsActive = false;
-				end.IsActive = true;
-			}*/
 		}
 	}
 }

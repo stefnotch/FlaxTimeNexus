@@ -17,7 +17,7 @@ namespace FlaxTimeNexus
 		private SDateTime _time = SDateTime.Zero;
 
 		[NoSerialize]
-		private Actor _previousActor;
+		public Actor CurrentlyActive { get; private set; }
 
 		[HideInEditor]
 		[NoSerialize]
@@ -39,26 +39,12 @@ namespace FlaxTimeNexus
 		{
 			if (Actor.HasChildren)
 			{
-				_previousActor = Actor.GetChildren().DefaultIfEmpty(null).First(actor => actor.IsActive && actor.GetScript<ActorTime>() != null);
-				_time = _previousActor?.GetScript<ActorTime>()?.Time ?? SDateTime.Zero;
+				CurrentlyActive = Actor.GetChildren().DefaultIfEmpty(null).First(actor => actor.IsActive && actor.GetScript<ActorTime>() != null);
+				_time = CurrentlyActive?.GetScript<ActorTime>()?.Time ?? SDateTime.Zero;
 			}
-			/*foreach (Actor actor in Actor.GetChildren())
-			{
-				actor.IsActive = false;
-			}
-
-			Settings settings = FindScriptInParents<Settings>(Actor);
-			if (settings)
-			{
-				Time = settings.DefaultTime;
-			}
-			else
-			{
-				Time = SDateTime.Zero;
-			}*/
 		}
 
-		//Bad idea
+		[Obsolete("This is quite frequently a bad idea, since Flax doesn't guarantee that the parents are already loaded at the beginning")]
 		private T FindScriptInParents<T>(Actor actor) where T : Script
 		{
 			while (actor != null)
@@ -71,14 +57,9 @@ namespace FlaxTimeNexus
 			return null;
 		}
 
-		private void TimeChanged(SDateTime time)
+		public Actor GetActorByTime(SDateTime time)
 		{
-			//Can be removed
-			if (!SceneManager.IsGameLogicRunning || Actor == null) return;
-
-			if (Actor.ChildCount <= 0) return;
-
-			Actor toActivate = null;
+			Actor closestActor = null;
 			long shortestDuration = long.MaxValue;
 			for (int i = 0; i < Actor.ChildCount; i++)
 			{
@@ -89,26 +70,38 @@ namespace FlaxTimeNexus
 					if (duration < shortestDuration)
 					{
 						shortestDuration = duration;
-						toActivate = Actor.GetChild(i);
+						closestActor = Actor.GetChild(i);
 					}
 
 					//Special case: duration can be long.MaxValue which means that it wouldn't be smaller than shortestDuration 
-					if (duration == shortestDuration && toActivate == null)
+					if (duration == shortestDuration && closestActor == null)
 					{
-						toActivate = Actor.GetChild(i);
+						closestActor = Actor.GetChild(i);
 					}
 				}
 			}
 
-			if (_previousActor == toActivate) return;
+			return closestActor;
+		}
+
+		private void TimeChanged(SDateTime time)
+		{
+			//Can be removed
+			if (!SceneManager.IsGameLogicRunning || Actor == null) return;
+
+			if (Actor.ChildCount <= 0) return;
+
+			var toActivate = GetActorByTime(time);
+
+			if (CurrentlyActive == toActivate) return;
 
 			if (toActivate)
 			{
-				if (_previousActor) _previousActor.IsActive = false;
+				if (CurrentlyActive) CurrentlyActive.IsActive = false;
 
 				toActivate.IsActive = true;
 			}
-			_previousActor = toActivate;
+			CurrentlyActive = toActivate;
 		}
 	}
 }

@@ -5390,6 +5390,7 @@
 			"TypeID": 13,
 			"ID": "000d7d2746397da6d69d15bd4e6488ed",
 			"ParentID": "59d6696c48ec2cb18c6e51b9f5749f82",
+			"IsActive": false,
 			"Name": "PostFxVolume2",
 			"Transform": {
 				"Translation": {
