@@ -6559,7 +6559,6 @@
 			"TypeID": 1,
 			"ID": "546e693948293c41bf0947ad01719db3",
 			"ParentID": "a96d89ec44bc67b354a644acd2f02d32",
-			"IsActive": false,
 			"Name": "Gun",
 			"Transform": {
 				"Translation": {

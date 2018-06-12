@@ -1,6 +1,5 @@
 ﻿using FlaxEngine;
 using FlaxEngine.Rendering;
-using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -8,7 +7,7 @@ namespace FlaxTimeNexus
 {
 	//TODO: Rename this to something better
 	//TODO: Need some major overhauling, because the code is so horrible
-	internal class TransitionTimeContainer : IDisposable
+	internal class TransitionTimeContainer
 	{
 		private class TimeMaterialReplacement
 		{
@@ -33,6 +32,7 @@ namespace FlaxTimeNexus
 				string path = System.IO.Path.Combine(Globals.ContentFolder, "Materials", "Time Scrolling", "Overrides", materialName);
 
 				MaterialInstance = Content.Load<MaterialBase>(path).CreateVirtualInstance();
+
 				for (int j = 0; j < originalMaterial.Parameters.Length; j++)
 				{
 					MaterialInstance.Parameters[j].Value = originalMaterial.Parameters[j].Value; //TODO: Is that a good idea?
@@ -87,25 +87,19 @@ namespace FlaxTimeNexus
 				}
 				else if (ToAdd != _previousToAdd)//Scrolling around a bit after starting
 				{
-					//Apparently, he scrolled back to square one
-					if (ToAdd.Ticks == 0)
+
+					//Adjust the transition (e.g. t = 0.6, prev = 5 years, curr = 10 years --> t = 0.3)
+					_transitionValue *= _previousToAdd.Ticks / (float)ToAdd.Ticks;
+
+					//If he switched "directions" (prev = -5 year, curr = + 10 years) or scrolled back to square one
+					if (_transitionValue < 0 || ToAdd.Ticks == 0)
 					{
 						_transitionValue = 0f;
-						b.IsActive = false;
-						//TODO: Shattering effect (because he "cancelled" the time transition)
-						return true;
-					}
-					else
-					{
-						//Adjust the transition (e.g. t = 0.6, prev = 5 years, curr = 10 years --> t = 0.3)
-						_transitionValue *= _previousToAdd.Ticks / (float)ToAdd.Ticks;
+						//TODO: Shattering effect? (because he "cancelled" the time transition)
 
-						//If he switched "directions" (prev = -5 year, curr = + 10 years)
-						if (_transitionValue < 0)
-						{
-							_transitionValue = 0f;
-						}
+
 					}
+
 				}
 
 				//And, increment the transition value
@@ -117,6 +111,8 @@ namespace FlaxTimeNexus
 			if (_transitionValue >= 1f)
 			{
 				TimeContainer.Time = targetTime;
+
+				OnComplete();
 				return true;
 			}
 
@@ -125,9 +121,24 @@ namespace FlaxTimeNexus
 			return false;
 		}
 
+		private void OnComplete()
+		{
+			foreach (var mat in _timeTransitionMaterials)
+			{
+				mat.ModelEntryInfo.Material = mat.OriginalMaterial;
+
+				MaterialInstance materialInstance = mat.MaterialInstance;
+				Material baseMaterial = mat.MaterialInstance.BaseMaterial;
+
+				Material.Destroy(ref baseMaterial); //Not sure? TODO: Ask someone which things I should dispose of
+				MaterialInstance.Destroy(ref materialInstance);
+			}
+		}
+
 		private readonly List<TimeMaterialReplacement> _timeTransitionMaterials = new List<TimeMaterialReplacement>();
 		private Actor _cachedStartActor;
 		private Actor _cachedEndActor;
+		private bool _cachedEndIsActive;
 
 		/// <summary>
 		/// A nice transition effect between 2 actors
@@ -137,8 +148,28 @@ namespace FlaxTimeNexus
 		/// <param name="t">between 0 and 1</param>
 		private void LerpBetweenActors(Actor start, Actor end, float t)
 		{
+			bool startActorChanged = start != _cachedStartActor;
+			bool endActorChanged = end != _cachedEndActor;
+
+			if (startActorChanged)
+			{
+				_cachedStartActor = start;
+			}
+
+			//If the end actor is now different, disable the previous one!	
+			if (endActorChanged)
+			{
+				//If the end actor is now different, disable the previous one!
+				if (_cachedEndActor != null) _cachedEndActor.IsActive = _cachedEndIsActive;
+
+				_cachedEndIsActive = end.IsActive;
+				_cachedEndActor = end;
+			}
+
+			if (end == start) return;
+
 			//Caching, TODO: Improve this (better material caching, removal, etc)
-			if (start != _cachedStartActor)
+			if (startActorChanged)
 			{
 				foreach (var modelActor in start.DepthFirst().OfType<ModelActor>())
 				{
@@ -159,13 +190,11 @@ namespace FlaxTimeNexus
 						_timeTransitionMaterials.Add(materialReplacement);
 					}
 				}
-
-				_cachedStartActor = start;
 			}
 
-			if (end != _cachedEndActor)
+			if (endActorChanged)
 			{
-				//TODO: Display the end actor
+				//TODO: The end actor's triggers and whatnot shouldn't get activated! (Issues can also arise when it's a rigidbody)
 				foreach (var modelActor in end.DepthFirst().OfType<ModelActor>())
 				{
 					for (int i = 0; i < modelActor.Entries.Length; i++)
@@ -184,8 +213,8 @@ namespace FlaxTimeNexus
 						_timeTransitionMaterials.Add(materialReplacement);
 					}
 				}
+
 				end.IsActive = true;
-				_cachedEndActor = end;
 			}
 
 			//Transition effect
@@ -203,44 +232,5 @@ namespace FlaxTimeNexus
 				end.IsActive = true;
 			}*/
 		}
-
-		#region IDisposable Support
-		private bool disposedValue = false; // To detect redundant calls
-
-		protected virtual void Dispose(bool disposing)
-		{
-			if (!disposedValue)
-			{
-				if (disposing)
-				{
-					//TODO: Don't have this in the dispose handler, but rather call this when the animation is done
-					foreach (var mat in _timeTransitionMaterials)
-					{
-						mat.ModelEntryInfo.Material = mat.OriginalMaterial;
-
-						MaterialInstance materialInstance = mat.MaterialInstance;
-						MaterialInstance.Destroy(ref materialInstance);
-					}
-				}
-
-				disposedValue = true;
-			}
-		}
-
-		// TODO: override a finalizer only if Dispose(bool disposing) above has code to free unmanaged resources.
-		// ~TransitionTimeContainer() {
-		//   // Do not change this code. Put cleanup code in Dispose(bool disposing) above.
-		//   Dispose(false);
-		// }
-
-		// This code added to correctly implement the disposable pattern.
-		public void Dispose()
-		{
-			// Do not change this code. Put cleanup code in Dispose(bool disposing) above.
-			Dispose(true);
-			// TODO: uncomment the following line if the finalizer is overridden above.
-			// GC.SuppressFinalize(this);
-		}
-		#endregion
 	}
 }

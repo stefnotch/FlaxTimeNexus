@@ -131,7 +131,6 @@ namespace FlaxTimeNexus
 
 			foreach (var key in toRemove)
 			{
-				_timeContainers[key].Dispose();//Could be done asynchronously
 				_timeContainers.Remove(key);
 			}
 		}
