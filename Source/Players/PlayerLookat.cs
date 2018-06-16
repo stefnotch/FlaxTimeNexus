@@ -1,9 +1,5 @@
 ﻿using FlaxEngine;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace FlaxTimeNexus
 {
@@ -16,7 +12,7 @@ namespace FlaxTimeNexus
 		private void Update()
 		{
 			//TODO: How to deal with children/parents???? (capturing, bubbling,...)
-			if (Physics.RayCast(Camera.MainCamera.Position, Camera.MainCamera.Direction, out RayCastHit hit, MaxDistance, this.Actor.Layer))
+			if (Physics.RayCast(Camera.MainCamera.Position, Camera.MainCamera.Direction, out RayCastHit hit, MaxDistance, this.Actor.Layer, hitTriggers: false))
 			{
 				bool newCollider = _lastHit.Collider != hit.Collider;
 

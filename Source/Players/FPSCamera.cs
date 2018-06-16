@@ -1,9 +1,4 @@
 ﻿using FlaxEngine;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace FlaxTimeNexus
 {
@@ -29,7 +24,7 @@ namespace FlaxTimeNexus
 		private float _pitch;
 		private float _yaw;
 		private bool _jump;
-		private Vector3 _prevVelocity = Vector3.Zero;
+		//private Vector3 _prevVelocity = Vector3.Zero;
 		private EdgeTilt _edgeTilt;
 		private Vector3 _smoothEdgeTilt;
 		private float _edgeTiltSmoothing = 0.1f;
@@ -37,6 +32,9 @@ namespace FlaxTimeNexus
 		private void Start()
 		{
 			_edgeTilt = new EdgeTilt(Player, new Vector3(0, -Player.Height / 2f - Player.Radius, 0));
+			Vector3 eulerAngles = Camera.Orientation.EulerAngles;
+			_pitch = eulerAngles.X;
+			_yaw = eulerAngles.Y;
 		}
 
 		private void Update()
@@ -66,7 +64,7 @@ namespace FlaxTimeNexus
 		{
 			// Camera update
 			var camFactor = Mathf.Clamp01(CameraSmoothing * Time.UnscaledDeltaTime);
-			Vector3 angleOffsets = _edgeTilt.GetAngles() * 0.1f;
+			Vector3 angleOffsets = _edgeTilt.GetAngles() * 0.0f;
 			_smoothEdgeTilt = Vector3.SmoothStep(_smoothEdgeTilt, angleOffsets, _edgeTiltSmoothing * Time.UnscaledDeltaTime);
 			Player.LocalOrientation = Quaternion.Lerp(Player.LocalOrientation, Quaternion.Euler(0, _yaw, 0), camFactor);
 			Camera.LocalOrientation = Quaternion.Lerp(Camera.LocalOrientation, Quaternion.Euler(_pitch - angleOffsets.X, 0, angleOffsets.Z), camFactor);
@@ -82,7 +80,7 @@ namespace FlaxTimeNexus
 			if (velocity.Length < 0.05f) velocity = Vector3.Zero;
 
 
-			Vector3 horizontalPrevVelocity = new Vector3(_prevVelocity.X, 0, _prevVelocity.Z);
+			Vector3 horizontalPrevVelocity = new Vector3(Player.Velocity.X, 0, Player.Velocity.Z);
 
 			//TODO: Actually, you can't accelerate in the air.
 			//TODO: Friction doesn't respect the Time.DeltaTime
@@ -106,7 +104,7 @@ namespace FlaxTimeNexus
 			}
 			else
 			{
-				velocity.Y = _prevVelocity.Y;
+				velocity.Y = Player.Velocity.Y;
 			}
 
 			// Jump
@@ -131,7 +129,7 @@ namespace FlaxTimeNexus
 
 			// Move
 			Player.Move(velocity * Time.DeltaTime);
-			_prevVelocity = velocity;
+			Player.Velocity = velocity;
 		}
 	}
 }

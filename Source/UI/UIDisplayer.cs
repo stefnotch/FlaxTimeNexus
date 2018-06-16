@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using FlaxEngine;
+﻿using FlaxEngine;
 using FlaxEngine.GUI;
 using FlaxEngine.Rendering;
 
@@ -115,11 +113,11 @@ namespace FlaxTimeNexus
 			//}
 			//else
 			//{
-				ray = new Ray(Camera.Position, Camera.Direction);
+			ray = new Ray(Camera.Position, Camera.Direction);
 			//}
 
 
-			if (Physics.RayCast(ray.Position, ray.Direction, out var hit, layerMask: Camera.Layer) && hit.Collider.Parent == this)
+			if (Physics.RayCast(ray.Position, ray.Direction, out var hit, layerMask: Camera.Layer, hitTriggers: false) && hit.Collider.Parent == this)
 			{
 				Vector3 hitPos = hit.Point;
 				DebugDraw.DrawSphere(hitPos, 33f, Color.Red);

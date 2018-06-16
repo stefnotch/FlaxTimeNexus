@@ -42,6 +42,11 @@
 					"V": {
 	"MainMenu": "c98e8ab44c7cc860082f3dbf5156e151"
 }
+				},
+				{
+					"Name": "FlaxTimeNexus.OnLevelLoad",
+					"ID": "2434d9e84deadd49ad59f39d3bc6f696",
+					"V": {}
 				}
 			],
 			"LightmapSettings": {
@@ -87,7 +92,7 @@
 					"W": 0.9238795042037964
 				}
 			},
-			"Brightness": 3.0,
+			"Brightness": 2.0,
 			"ShadowsDistance": 10000.0
 		},
 		{
@@ -5187,6 +5192,39 @@
 		},
 		{
 			"TypeID": 1,
+			"ID": "ca7f595d4f18ba16b2fb5a80208b3817",
+			"ParentID": "336d01f24f6918f56ec592a3654e2901",
+			"Name": "Rock 32",
+			"Transform": {
+				"Translation": {
+					"X": -3490.95263671875,
+					"Y": 302.48199462890627,
+					"Z": 2415.437744140625
+				},
+				"Orientation": {
+					"X": -0.049186963587999347,
+					"Y": -0.02945462241768837,
+					"Z": 0.8022141456604004,
+					"W": -0.5942772626876831
+				},
+				"Scale": {
+					"X": 9.650888442993164,
+					"Y": 1.7846777439117432,
+					"Z": 7.433443546295166
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "691c67fc4fb5410abd06239d0b5ac8bc",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "342008a0428375648bc2eba3307d9ac1"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
 			"ID": "47c233474a26bcdb87b927b9380ab631",
 			"ParentID": "336d01f24f6918f56ec592a3654e2901",
 			"Name": "Rock 28",
@@ -6484,6 +6522,106 @@
 			"ProbeID": "3509f7b14f4015946645b0b773d040eb"
 		},
 		{
+			"TypeID": 14,
+			"ID": "e53508ad440a94e905b71e9a0c18da55",
+			"ParentID": "59d6696c48ec2cb18c6e51b9f5749f82",
+			"Name": "SpawnPoint",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 194.50282287597657,
+					"Z": -510.103271484375
+				},
+				"Scale": {
+					"X": 3.0,
+					"Y": 3.0,
+					"Z": 3.0
+				}
+			},
+			"Scripts": [
+				{
+					"Name": "FlaxTimeNexus.CheckpointTrigger",
+					"ID": "ee5b812147cf0689bb33bc8d558826a7",
+					"V": {}
+				}
+			],
+			"IsTrigger": true,
+			"Size": {
+				"X": 100.0,
+				"Y": 100.0,
+				"Z": 100.0
+			}
+		},
+		{
+			"TypeID": 14,
+			"ID": "7bc78e06426ee3c6c94d118efcde1d18",
+			"ParentID": "59d6696c48ec2cb18c6e51b9f5749f82",
+			"Name": "MaxDepth",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": -1000.0,
+					"Z": 2751.83642578125
+				},
+				"Scale": {
+					"X": 80.0,
+					"Y": 2.0,
+					"Z": 80.0
+				}
+			},
+			"StaticFlags": 0,
+			"Scripts": [
+				{
+					"Name": "FlaxTimeNexus.Damager",
+					"ID": "c6db3f124a7e2830df3a3999bae6ea6d",
+					"V": {
+	"Damage": 1000.0
+}
+				}
+			],
+			"IsTrigger": true,
+			"ContactOffset": 30.0,
+			"Size": {
+				"X": 100.0,
+				"Y": 100.0,
+				"Z": 100.0
+			}
+		},
+		{
+			"TypeID": 14,
+			"ID": "a3b7cc6f4b560dac69afac969dda5692",
+			"ParentID": "59d6696c48ec2cb18c6e51b9f5749f82",
+			"Name": "BoxCollider",
+			"Transform": {
+				"Translation": {
+					"X": -210.0113525390625,
+					"Y": 0.0,
+					"Z": 4786.638671875
+				},
+				"Scale": {
+					"X": 9.0,
+					"Y": 9.0,
+					"Z": 9.0
+				}
+			},
+			"StaticFlags": 0,
+			"Scripts": [
+				{
+					"Name": "FlaxTimeNexus.LevelLoader",
+					"ID": "c80e05a2421c439e3e565f85ffbd1b5a",
+					"V": {
+	"ToLoad": "/Scenes/Labyrinth.scene"
+}
+				}
+			],
+			"IsTrigger": true,
+			"Size": {
+				"X": 100.0,
+				"Y": 100.0,
+				"Z": 100.0
+			}
+		},
+		{
 			"TypeID": 17,
 			"ID": "cfabfa564c380fd244ee2085c529b3c4",
 			"ParentID": "35fd20cd4497ea1b18cafcae1c3524ef",
@@ -6524,12 +6662,14 @@
 					"Name": "FlaxTimeNexus.Player",
 					"ID": "4d48bf9b4a529af3768f09a0afb4f426",
 					"V": {
+	"MaxHealth": 100.0,
 	"DefaultHealth": 100.0,
+	"HealthBar": "41dc2bd14a8cddff0138fc9adec0e8c8",
 	"Health": 100.0
 }
 				}
 			],
-			"ContactOffset": 0.10000000149011612,
+			"ContactOffset": 10.0,
 			"StepOffset": 30.0,
 			"SlopeLimit": 45.0,
 			"Radius": 50.0,
@@ -6623,7 +6763,8 @@
 		"Ticks": 153792001
 	},
 	"GunBeamModel": "34efdf4147961b910d6996b5b14cfbd3",
-	"FadeTime": 1.0
+	"FadeTime": 1.0,
+	"MaxDistance": 10000.0
 }
 				}
 			]
@@ -6669,6 +6810,36 @@
 						"ScaleInLightmap": 0.0,
 						"ShadowsMode": 0
 					}
+				]
+			}
+		},
+		{
+			"TypeID": 13,
+			"ID": "aa7e04e1448adc65e407b1a92b5e2e3e",
+			"ParentID": "a96d89ec44bc67b354a644acd2f02d32",
+			"Name": "CrappyHealthBar",
+			"StaticFlags": 0,
+			"Size": {
+				"X": 1000.0,
+				"Y": 1000.0,
+				"Z": 1000.0
+			},
+			"Priority": 0,
+			"BlendRadius": 10.0,
+			"BlendWeight": 1.0,
+			"IsBounded": true,
+			"Settings": {
+				"AO": {},
+				"Bloom": {},
+				"ToneMapping": {},
+				"ColorGrading": {},
+				"EyeAdaptation": {},
+				"CameraArtifacts": {},
+				"LensFlares": {},
+				"DepthOfField": {},
+				"SSR": {},
+				"PostFxMaterials": [
+					"41dc2bd14a8cddff0138fc9adec0e8c8"
 				]
 			}
 		},

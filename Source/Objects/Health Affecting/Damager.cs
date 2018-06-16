@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using FlaxEngine;
-using FlaxTimeNexus;
+﻿using FlaxEngine;
 
 namespace FlaxTimeNexus
 {
@@ -11,7 +8,18 @@ namespace FlaxTimeNexus
 
 		private void OnCollisionEnter(Collision collision)
 		{
+			Debug.Log("Ok");
 			Player player = collision.OtherCollider.GetScript<Player>();
+			if (player)
+			{
+				player.Health -= Damage;
+			}
+		}
+
+		private void OnTriggerEnter(Collider collider)
+		{
+			Debug.Log("OkT");
+			Player player = collider.GetScript<Player>();
 			if (player)
 			{
 				player.Health -= Damage;

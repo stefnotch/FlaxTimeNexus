@@ -168,7 +168,7 @@ namespace FlaxTimeNexus
 
 			if (end == start) return;
 
-			//Caching, TODO: Improve this (better material caching, removal, etc)
+			//Caching, TODO: Improve this (better material caching)
 			if (startActorChanged)
 			{
 				foreach (var modelActor in start.DepthFirst().OfType<ModelActor>())
@@ -181,9 +181,6 @@ namespace FlaxTimeNexus
 						{
 							ModelEntryInfo = modelActor.Entries[i]
 						};
-
-						//TODO: End material...
-						//newMat.GetParam("Mask Multiplier")
 
 						modelActor.Entries[i].Material = materialReplacement.MaterialInstance;
 

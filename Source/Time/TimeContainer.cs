@@ -1,9 +1,6 @@
 ﻿using FlaxEngine;
 using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace FlaxTimeNexus
 {
@@ -39,7 +36,7 @@ namespace FlaxTimeNexus
 		{
 			if (Actor.HasChildren)
 			{
-				CurrentlyActive = Actor.GetChildren().DefaultIfEmpty(null).First(actor => actor.IsActive && actor.GetScript<ActorTime>() != null);
+				CurrentlyActive = Actor.GetChildren().DefaultIfEmpty(null).FirstOrDefault(actor => actor.IsActive && actor.GetScript<ActorTime>() != null);
 				_time = CurrentlyActive?.GetScript<ActorTime>()?.Time ?? SDateTime.Zero;
 			}
 		}

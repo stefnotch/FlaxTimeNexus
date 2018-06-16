@@ -47,7 +47,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Source\ActorExtensions.cs" />
-    <Compile Include="Source\CamRay.cs" />
     <Compile Include="Source\FreeCamera.cs" />
     <Compile Include="Source\leveldupe.cs" />
     <Compile Include="Source\MatrixSetter.cs" />
@@ -56,7 +55,11 @@
     <Compile Include="Source\ShowMainMenu.cs" />
     <Compile Include="Source\Gun\TimeGun.cs" />
     <Compile Include="Source\Gun\TransitionTimeContainer.cs" />
+    <Compile Include="Source\LevelManager\LevelLoader.cs" />
+    <Compile Include="Source\LevelManager\OnLevelLoad.cs" />
+    <Compile Include="Source\Objects\BeamReflector.cs" />
     <Compile Include="Source\Objects\Billboard.cs" />
+    <Compile Include="Source\Objects\ForceField.cs" />
     <Compile Include="Source\Objects\OpenDoor.cs" />
     <Compile Include="Source\Objects\Health Affecting\Damager.cs" />
     <Compile Include="Source\Objects\Health Affecting\ProjectileMove.cs" />
@@ -74,10 +77,12 @@
     <Compile Include="Source\Players\Player.cs" />
     <Compile Include="Source\Players\PlayerLookat.cs" />
     <Compile Include="Source\SaveManager\Checkpoint.cs" />
+    <Compile Include="Source\SaveManager\CheckpointTrigger.cs" />
     <Compile Include="Source\Time\ActorTime.cs" />
     <Compile Include="Source\Time\SDateTime.cs" />
     <Compile Include="Source\Time\TimeContainer.cs" />
     <Compile Include="Source\UI\AdjustToResolution.cs" />
+    <Compile Include="Source\UI\HUDUICreator.cs" />
     <Compile Include="Source\UI\MainMenuUICreator.cs" />
     <Compile Include="Source\UI\PauseUICreator.cs" />
     <Compile Include="Source\UI\UICreator.cs" />

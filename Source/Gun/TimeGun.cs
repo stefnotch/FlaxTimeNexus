@@ -21,8 +21,13 @@ namespace FlaxTimeNexus
 		/// </summary>
 		public float FadeTime = 1f;
 
+		/// <summary>
+		/// Maximum distance
+		/// </summary>
+		public float MaxDistance = 100 * 100;
+
+
 		private readonly InputAxis TimeScroll = new InputAxis("Time");
-		private readonly float MaxDistance = 100 * 100;
 		private readonly string GunBeamName = "GunBeam";
 		private EmptyActor _gunBeamContainer;
 		private ModelActor _gunBeam;
@@ -73,8 +78,14 @@ namespace FlaxTimeNexus
 			TimeContainer timeContainer = null;
 
 			//TODO: Change to a camera that has to be set (property), or use PlayerLookat
-			if (Physics.RayCast(Camera.MainCamera.Position, Camera.MainCamera.Direction, out RayCastHit hit, MaxDistance, this.Actor.Layer))
+			if (Physics.RayCast(Camera.MainCamera.Position, Camera.MainCamera.Direction, out RayCastHit hit, MaxDistance, this.Actor.Layer, hitTriggers: false))
 			{
+				var beamReflector = hit.Collider.GetScript<BeamReflector>();
+				if (beamReflector != null)
+				{
+					//TODO: Implement it
+				}
+
 				timeContainer = GetTimeContainer(hit.Collider);
 				if (timeContainer != null)
 				{

@@ -3,12 +3,6 @@ using FlaxEditor.CustomEditors.Editors;
 using FlaxEditor.CustomEditors.Elements;
 using FlaxEngine;
 
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 namespace FlaxTimeNexus.Source.Editor
 {
 	[CustomEditor(typeof(SDateTime))]
@@ -45,6 +39,8 @@ namespace FlaxTimeNexus.Source.Editor
 			hour.IntValue.EditEnd += EditEnd;
 			minute.IntValue.EditEnd += EditEnd;
 			second.IntValue.EditEnd += EditEnd;
+
+			//FlaxEditor.Editor.Instance.Windows.ContentWin.CurrentViewFolder.NamePath
 		}
 
 		private void EditEnd()

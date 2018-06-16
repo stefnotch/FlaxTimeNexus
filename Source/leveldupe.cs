@@ -2,8 +2,6 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace FlaxTimeNexus.Source
 {
@@ -16,7 +14,7 @@ namespace FlaxTimeNexus.Source
 				Actor clone = CloneActor(this.Actor.FindActor("SceneActor"));
 				clone.Position = clone.Position - Vector3.UnitX * 1100f;
 
-				
+
 				//SceneManager.IsGameLogicRunning
 				//SceneManager.SaveSceneToBytes()
 
