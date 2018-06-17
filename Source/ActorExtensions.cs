@@ -1,9 +1,6 @@
 ﻿using FlaxEngine;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace FlaxTimeNexus
 {
@@ -25,12 +22,32 @@ namespace FlaxTimeNexus
 				{
 					yield return actor;
 
-					for(int i = 0; i < actor.ChildCount; i++)
+					for (int i = 0; i < actor.ChildCount; i++)
 					{
 						s.Push(actor.GetChild(i));
 					}
 				}
 			}
+		}
+
+		/// <summary>
+		/// Gets a script in this actor and it's direct children
+		/// </summary>
+		/// <typeparam name="T"></typeparam>
+		/// <param name="actor"></param>
+		/// <returns></returns>
+		public static T GetScriptInChildren<T>(this Actor actor) where T : Script
+		{
+			T script = actor.GetScript<T>();
+			if (script != null) return script;
+
+			for (int i = 0; i < actor.ChildCount; i++)
+			{
+				script = actor.GetChild(i).GetScript<T>();
+				if (script != null) return script;
+			}
+
+			return null;
 		}
 
 	}

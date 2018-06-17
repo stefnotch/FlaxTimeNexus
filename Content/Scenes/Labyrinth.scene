@@ -8,19 +8,6 @@
 			"ID": "98e81b164499fc785678ee8383b4023e",
 			"ParentID": "00000000000000000000000000000000",
 			"Name": "Scene",
-			"Transform": {
-				"Translation": {
-					"X": -200.0,
-					"Y": -300.0,
-					"Z": 8200.0
-				},
-				"Orientation": {
-					"X": 0.0,
-					"Y": 0.7071068286895752,
-					"Z": 0.0,
-					"W": 0.7071067094802856
-				}
-			},
 			"LightmapSettings": {
 				"GlobalObjectsScale": 0.5,
 				"ChartsPadding": 3,
@@ -327,20 +314,21 @@
 			"StaticFlags": 0,
 			"Scripts": [
 				{
-					"Name": "FlaxTimeNexus.LookatGUIToggler",
-					"ID": "fda909ab448b57422e8e75a702fe6dac",
-					"V": {
-	"MinDistance": 200.0,
-	"ToActivate": "388c07f841ba9cf46384cf9ab2a3211f"
-}
-				},
-				{
 					"Name": "FlaxTimeNexus.InteractToggler",
 					"ID": "da1124794c5e36af5819feaceb83f17e",
 					"V": {
 	"InteractionRadius": 100.0,
 	"ToActivate": "f0dd55864aa54e439981498f87142436",
 	"ToDeactivate": "6dce007f43421ae35acfb6b9297a13e3"
+}
+				},
+				{
+					"Name": "FlaxTimeNexus.LookatDistanceToggler",
+					"ID": "50ed190e4da169c6ecfcd1a98c174c87",
+					"V": {
+	"MinDistance": 300.0,
+	"ToActivate": "388c07f841ba9cf46384cf9ab2a3211f",
+	"ToDeactivate": "388c07f841ba9cf46384cf9ab2a3211f"
 }
 				}
 			],
@@ -550,6 +538,36 @@
 			"Name": "Maze_coll",
 			"StaticFlags": 0,
 			"CollisionData": "e3a4bf68475fedb76707eca30b04ff44"
+		},
+		{
+			"TypeID": 3,
+			"ID": "f6f434294f582ae7954335a13281e527",
+			"ParentID": "5fffebac4864e61533240daba5c9a251",
+			"IsActive": false,
+			"Name": "LevelConnector",
+			"Transform": {
+				"Translation": {
+					"X": 3109.170166015625,
+					"Y": 183.89437866210938,
+					"Z": 39.527496337890628
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": 0.7071068286895752,
+					"Z": 0.0,
+					"W": 0.7071067094802856
+				}
+			},
+			"StaticFlags": 0,
+			"Scripts": [
+				{
+					"Name": "FlaxTimeNexus.LevelConnector",
+					"ID": "67e94ae242d1590e8719c59c19e70910",
+					"V": {
+	"IsExit": false
+}
+				}
+			]
 		},
 		{
 			"TypeID": 11,

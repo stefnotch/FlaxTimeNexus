@@ -1,21 +1,20 @@
-﻿using System;
-using System.Collections.Generic;
-using FlaxEngine;
+﻿using FlaxEngine;
 
 namespace FlaxTimeNexus
 {
-	public class TriggerToggler : Script, IIsActiveChanger
+	public class TriggerToggler : Script, IIsActiveToggler
 	{
 		public Actor ToActivate { get; set; }
+		public Actor ToDeactivate { get; set; }
 
 		private void OnTriggerEnter(Collider c)
 		{
-			ToActivate.IsActive = true;
+			if (ToActivate) ToActivate.IsActive = true;
 		}
 
 		private void OnTriggerExit(Collider c)
 		{
-			ToActivate.IsActive = false;
+			if (ToDeactivate) ToDeactivate.IsActive = false;
 		}
 	}
 }

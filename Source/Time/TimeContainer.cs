@@ -14,6 +14,7 @@ namespace FlaxTimeNexus
 		private SDateTime _time = SDateTime.Zero;
 
 		[NoSerialize]
+		[HideInEditor]
 		public Actor CurrentlyActive { get; private set; }
 
 		[HideInEditor]

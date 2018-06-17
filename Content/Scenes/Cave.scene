@@ -15,17 +15,15 @@
 					"V": {}
 				},
 				{
-					"Name": "FlaxTimeNexus.EnableActivator",
-					"ID": "c00089d449f0e0f9a99e1ebc694b5400",
-					"V": {
-	"ToActivate": "6a41cb0c41925a5a274ff388a149d463"
-}
+					"Name": "FlaxTimeNexus.OnLevelLoad",
+					"ID": "2434d9e84deadd49ad59f39d3bc6f696",
+					"V": {}
 				},
 				{
-					"Name": "FlaxTimeNexus.EnableActivator",
-					"ID": "ab7768a046eb8cb6b676b4b95c4bf8fe",
+					"Name": "FlaxTimeNexus.Source.ShowMainMenu",
+					"ID": "e8b1f58a4568a2eb34cfca9079018204",
 					"V": {
-	"ToActivate": "000d7d2746397da6d69d15bd4e6488ed"
+	"MainMenu": "c98e8ab44c7cc860082f3dbf5156e151"
 }
 				},
 				{
@@ -37,16 +35,18 @@
 }
 				},
 				{
-					"Name": "FlaxTimeNexus.Source.ShowMainMenu",
-					"ID": "e8b1f58a4568a2eb34cfca9079018204",
+					"Name": "FlaxTimeNexus.EnableToggler",
+					"ID": "85d983ab4ac56cdbfd91158fb1ed82e4",
 					"V": {
-	"MainMenu": "c98e8ab44c7cc860082f3dbf5156e151"
+	"ToActivate": "6a41cb0c41925a5a274ff388a149d463"
 }
 				},
 				{
-					"Name": "FlaxTimeNexus.OnLevelLoad",
-					"ID": "2434d9e84deadd49ad59f39d3bc6f696",
-					"V": {}
+					"Name": "FlaxTimeNexus.EnableToggler",
+					"ID": "592a63b44f54f072ef2902833d4b2806",
+					"V": {
+	"ToActivate": "000d7d2746397da6d69d15bd4e6488ed"
+}
 				}
 			],
 			"LightmapSettings": {
@@ -5976,20 +5976,21 @@
 			"StaticFlags": 0,
 			"Scripts": [
 				{
-					"Name": "FlaxTimeNexus.LookatGUIToggler",
-					"ID": "8731db7a4734a11f25723d86e14ed652",
-					"V": {
-	"MinDistance": 450.0,
-	"ToActivate": "b9980e5543490eed7e3d34adf3d0c009"
-}
-				},
-				{
 					"Name": "FlaxTimeNexus.InteractToggler",
 					"ID": "d285292d471fe248cae9999f1d5ac8a4",
 					"V": {
 	"InteractionRadius": 100.0,
 	"ToActivate": "0200809846b3b9128cdb8d95e615a46b",
 	"ToDeactivate": "1c72d2df4cfccf1b130c75b163de48e5"
+}
+				},
+				{
+					"Name": "FlaxTimeNexus.LookatDistanceToggler",
+					"ID": "3a7aa1294d672983fef011a408a911a6",
+					"V": {
+	"MinDistance": 300.0,
+	"ToActivate": "b9980e5543490eed7e3d34adf3d0c009",
+	"ToDeactivate": "b9980e5543490eed7e3d34adf3d0c009"
 }
 				}
 			],
@@ -6139,32 +6140,23 @@
 			},
 			"StaticFlags": 0,
 			"Bone": 0,
-			"UseScale": false
-		},
-		{
-			"TypeID": 3,
-			"ID": "36ebd586412c278837c9019729d09e7d",
-			"ParentID": "a7f1ee564d47b544929c12a9df9bfa32",
-			"Name": "ScaleFixer",
-			"Transform": {
-				"Scale": {
-					"X": 0.009999999776482582,
-					"Y": 0.009999999776482582,
-					"Z": 0.009999999776482582
-				}
-			},
-			"StaticFlags": 0
+			"UseScale": true
 		},
 		{
 			"TypeID": 1,
 			"ID": "d55443c848c1724f9423d1afab6511d9",
-			"ParentID": "36ebd586412c278837c9019729d09e7d",
+			"ParentID": "a7f1ee564d47b544929c12a9df9bfa32",
 			"Name": "WorkingBench",
 			"Transform": {
 				"Translation": {
-					"X": -245.6067352294922,
-					"Y": -67.6237564086914,
-					"Z": 89.59720611572266
+					"X": -2.4560673236846926,
+					"Y": -0.6762368083000183,
+					"Z": 0.8959721326828003
+				},
+				"Scale": {
+					"X": 0.009999999776482582,
+					"Y": 0.009999999776482582,
+					"Z": 0.009999999776482582
 				}
 			},
 			"StaticFlags": 0,
@@ -6420,10 +6412,12 @@
 			"StaticFlags": 0,
 			"Scripts": [
 				{
-					"Name": "FlaxTimeNexus.LookatToggler",
-					"ID": "ae3df13b42d460e971818a9536f79118",
+					"Name": "FlaxTimeNexus.LookatDistanceToggler",
+					"ID": "318e23d44fe11aa20176ee83bfe40932",
 					"V": {
-	"ToActivate": "c25ba4324ba9ae9c036bf7a7a02b66d7"
+	"MinDistance": 400.0,
+	"ToActivate": "c25ba4324ba9ae9c036bf7a7a02b66d7",
+	"ToDeactivate": "c25ba4324ba9ae9c036bf7a7a02b66d7"
 }
 				},
 				{
@@ -6591,7 +6585,7 @@
 			"TypeID": 14,
 			"ID": "a3b7cc6f4b560dac69afac969dda5692",
 			"ParentID": "59d6696c48ec2cb18c6e51b9f5749f82",
-			"Name": "BoxCollider",
+			"Name": "LevelLoader",
 			"Transform": {
 				"Translation": {
 					"X": -210.0113525390625,
@@ -6607,10 +6601,10 @@
 			"StaticFlags": 0,
 			"Scripts": [
 				{
-					"Name": "FlaxTimeNexus.LevelLoader",
-					"ID": "c80e05a2421c439e3e565f85ffbd1b5a",
+					"Name": "FlaxTimeNexus.TriggerToggler",
+					"ID": "adbb37af4d3331d29a1780bcb74f9fd3",
 					"V": {
-	"ToLoad": "/Scenes/Labyrinth.scene"
+	"ToActivate": "6680713f4ff2c822e0d928b05110fb01"
 }
 				}
 			],
@@ -6620,6 +6614,31 @@
 				"Y": 100.0,
 				"Z": 100.0
 			}
+		},
+		{
+			"TypeID": 3,
+			"ID": "6680713f4ff2c822e0d928b05110fb01",
+			"ParentID": "59d6696c48ec2cb18c6e51b9f5749f82",
+			"IsActive": false,
+			"Name": "LevelConnector",
+			"Transform": {
+				"Translation": {
+					"X": -140.86611938476563,
+					"Y": 14.10809326171875,
+					"Z": 7755.75048828125
+				}
+			},
+			"StaticFlags": 0,
+			"Scripts": [
+				{
+					"Name": "FlaxTimeNexus.LevelConnector",
+					"ID": "7aaa4bcd4b35d4b668ac1e855499fc62",
+					"V": {
+	"IsExit": true,
+	"ToLoad": "/Scenes/Labyrinth.scene"
+}
+				}
+			]
 		},
 		{
 			"TypeID": 17,

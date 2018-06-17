@@ -55,7 +55,7 @@
     <Compile Include="Source\ShowMainMenu.cs" />
     <Compile Include="Source\Gun\TimeGun.cs" />
     <Compile Include="Source\Gun\TransitionTimeContainer.cs" />
-    <Compile Include="Source\LevelManager\LevelLoader.cs" />
+    <Compile Include="Source\LevelManager\LevelConnector.cs" />
     <Compile Include="Source\LevelManager\OnLevelLoad.cs" />
     <Compile Include="Source\Objects\BeamReflector.cs" />
     <Compile Include="Source\Objects\Billboard.cs" />
@@ -63,11 +63,10 @@
     <Compile Include="Source\Objects\OpenDoor.cs" />
     <Compile Include="Source\Objects\Health Affecting\Damager.cs" />
     <Compile Include="Source\Objects\Health Affecting\ProjectileMove.cs" />
-    <Compile Include="Source\Objects\IsActiveChangers\EnableActivator.cs" />
-    <Compile Include="Source\Objects\IsActiveChangers\EnableDeactivator.cs" />
-    <Compile Include="Source\Objects\IsActiveChangers\IIsActiveChanger.cs" />
+    <Compile Include="Source\Objects\IsActiveChangers\EnableToggler.cs" />
+    <Compile Include="Source\Objects\IsActiveChangers\IIsActiveToggler.cs" />
     <Compile Include="Source\Objects\IsActiveChangers\InteractToggler.cs" />
-    <Compile Include="Source\Objects\IsActiveChangers\LookatGUIToggler.cs" />
+    <Compile Include="Source\Objects\IsActiveChangers\LookatDistanceToggler.cs" />
     <Compile Include="Source\Objects\IsActiveChangers\LookatToggler.cs" />
     <Compile Include="Source\Objects\IsActiveChangers\TriggerToggler.cs" />
     <Compile Include="Source\Players\EdgeTilt.cs" />

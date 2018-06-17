@@ -1,17 +1,8 @@
 ﻿using FlaxEngine;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace FlaxTimeNexus
 {
-	/// <summary>
-	/// Activates an actor when the interact key gets pressed
-	/// Does NOT deactivate it afterwards
-	/// </summary>
-	public class InteractToggler : Script, ILookatTrigger, IIsActiveChanger
+	public class InteractToggler : Script, ILookatTrigger, IIsActiveToggler
 	{
 		public Actor ToActivate { get; set; }
 		public Actor ToDeactivate { get; set; }
