@@ -6522,9 +6522,9 @@
 			"Name": "SpawnPoint",
 			"Transform": {
 				"Translation": {
-					"X": 0.0,
-					"Y": 194.50282287597657,
-					"Z": -510.103271484375
+					"X": -12.093597412109375,
+					"Y": -98.41861724853516,
+					"Z": -489.46142578125
 				},
 				"Scale": {
 					"X": 3.0,
@@ -6569,7 +6569,8 @@
 					"Name": "FlaxTimeNexus.Damager",
 					"ID": "c6db3f124a7e2830df3a3999bae6ea6d",
 					"V": {
-	"Damage": 1000.0
+	"HitDamage": 9001.0,
+	"DamagePerSecond": 0.0
 }
 				}
 			],
@@ -6604,6 +6605,7 @@
 					"Name": "FlaxTimeNexus.TriggerToggler",
 					"ID": "adbb37af4d3331d29a1780bcb74f9fd3",
 					"V": {
+	"PlayerTrigger": true,
 	"ToActivate": "6680713f4ff2c822e0d928b05110fb01"
 }
 				}
@@ -6625,7 +6627,7 @@
 				"Translation": {
 					"X": -140.86611938476563,
 					"Y": 14.10809326171875,
-					"Z": 7755.75048828125
+					"Z": 7823.9912109375
 				}
 			},
 			"StaticFlags": 0,
@@ -6647,9 +6649,9 @@
 			"Name": "Player",
 			"Transform": {
 				"Translation": {
-					"X": 0.0,
-					"Y": 194.50282287597657,
-					"Z": -3261.939697265625
+					"X": 3.354583740234375,
+					"Y": 191.19818115234376,
+					"Z": -3235.827880859375
 				}
 			},
 			"Layer": 1,
@@ -6835,8 +6837,15 @@
 		{
 			"TypeID": 13,
 			"ID": "aa7e04e1448adc65e407b1a92b5e2e3e",
-			"ParentID": "a96d89ec44bc67b354a644acd2f02d32",
+			"ParentID": "cfabfa564c380fd244ee2085c529b3c4",
 			"Name": "CrappyHealthBar",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 80.0,
+					"Z": 0.0
+				}
+			},
 			"StaticFlags": 0,
 			"Size": {
 				"X": 1000.0,

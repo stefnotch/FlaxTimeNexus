@@ -1,7 +1,7 @@
 {
 	"ID": "7f8bd4b94405683451e15896a6377e9a",
 	"TypeName": "FlaxEditor.Content.Settings.TimeSettings",
-	"EngineBuild": 6154,
+	"EngineBuild": 6159,
 	"Data": {
 	"UpdateFPS": 30.0,
 	"PhysicsFPS": 60.0,

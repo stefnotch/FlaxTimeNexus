@@ -85,9 +85,9 @@
 			"Name": "Lion",
 			"Transform": {
 				"Translation": {
-					"X": 3787.18115234375,
-					"Y": 419.0986022949219,
-					"Z": 463.04388427734377
+					"X": 5623.48974609375,
+					"Y": 626.2022094726563,
+					"Z": 894.7068481445313
 				},
 				"Orientation": {
 					"X": 0.0,
@@ -165,7 +165,8 @@
 					"Name": "FlaxTimeNexus.Damager",
 					"ID": "fd7837b34364e8036089f1a89cc78a5e",
 					"V": {
-	"Damage": 10.0
+	"HitDamage": 0.0,
+	"DamagePerSecond": 70.0
 }
 				},
 				{
@@ -491,26 +492,6 @@
 		},
 		{
 			"TypeID": 1,
-			"ID": "ee814de046a0dba06fe35fbabeb12c86",
-			"ParentID": "5fffebac4864e61533240daba5c9a251",
-			"IsActive": false,
-			"Name": "Cube",
-			"Transform": {
-				"Translation": {
-					"X": 2873.5908203125,
-					"Y": 756.31494140625,
-					"Z": 655.4207763671875
-				}
-			},
-			"Model": "b43f0f8f4aaba3f3156896a5a22ba493",
-			"Buffer": {
-				"Entries": [
-					{}
-				]
-			}
-		},
-		{
-			"TypeID": 1,
 			"ID": "49ae50454439e62b7a0448ac6e7ada9e",
 			"ParentID": "5fffebac4864e61533240daba5c9a251",
 			"Name": "maze",
@@ -526,7 +507,7 @@
 			"Buffer": {
 				"Entries": [
 					{
-						"Material": "e44c576147ffc81fd8961d89c12973ef"
+						"Material": "f75c7f5842e4103eab1e7795f4619c18"
 					}
 				]
 			}
@@ -540,6 +521,112 @@
 			"CollisionData": "e3a4bf68475fedb76707eca30b04ff44"
 		},
 		{
+			"TypeID": 1,
+			"ID": "2c7a8b184fd56906f526c18656b3bc45",
+			"ParentID": "49ae50454439e62b7a0448ac6e7ada9e",
+			"IsActive": false,
+			"Name": "maze 0",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 2699.453369140625,
+					"Z": 0.0
+				},
+				"Scale": {
+					"X": 1.0,
+					"Y": -1.0,
+					"Z": 1.0
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "5efc6e5446d363a008e35d86a5b33dcb",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "f75c7f5842e4103eab1e7795f4619c18"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 32,
+			"ID": "3f34526949a163356ed66f8e5049e29b",
+			"ParentID": "49ae50454439e62b7a0448ac6e7ada9e",
+			"Name": "Decal",
+			"Transform": {
+				"Translation": {
+					"X": 1384.026123046875,
+					"Y": 947.0989379882813,
+					"Z": 5144.47998046875
+				},
+				"Orientation": {
+					"X": 0.7044160962104797,
+					"Y": 0.06162788346409798,
+					"Z": -0.06162788346409798,
+					"W": 0.7044160962104797
+				}
+			},
+			"StaticFlags": 0,
+			"Material": "2eb0230d4c13c0d15f874fb325e41869",
+			"Size": {
+				"X": 100.0,
+				"Y": 100.0,
+				"Z": 100.0
+			}
+		},
+		{
+			"TypeID": 32,
+			"ID": "d0eff50a43f28f3942abeaa41a3b8746",
+			"ParentID": "49ae50454439e62b7a0448ac6e7ada9e",
+			"Name": "Decal",
+			"Transform": {
+				"Translation": {
+					"X": 5781.92529296875,
+					"Y": 1068.674560546875,
+					"Z": 2440.64013671875
+				},
+				"Orientation": {
+					"X": -0.7071068286895752,
+					"Y": -0.7071068286895752,
+					"Z": 0.0000011613043398028822,
+					"W": 1.2557769935028774e-7
+				}
+			},
+			"StaticFlags": 0,
+			"Material": "3f44149c4cc359153f40249b878774b2",
+			"Size": {
+				"X": 200.0,
+				"Y": 200.0,
+				"Z": 200.0
+			}
+		},
+		{
+			"TypeID": 32,
+			"ID": "e8ba2c4d4e95f757a99aad9bba5ff59a",
+			"ParentID": "49ae50454439e62b7a0448ac6e7ada9e",
+			"Name": "Decal",
+			"Transform": {
+				"Translation": {
+					"X": 1973.633544921875,
+					"Y": 935.7857666015625,
+					"Z": -1409.3492431640626
+				},
+				"Orientation": {
+					"X": -0.06162820756435394,
+					"Y": -0.704416036605835,
+					"Z": -0.704416036605835,
+					"W": 0.06162820756435394
+				}
+			},
+			"StaticFlags": 0,
+			"Material": "8f950f6e4e5bcf7f92974ebd7559881f",
+			"Size": {
+				"X": 150.0,
+				"Y": 200.0,
+				"Z": 200.0
+			}
+		},
+		{
 			"TypeID": 3,
 			"ID": "f6f434294f582ae7954335a13281e527",
 			"ParentID": "5fffebac4864e61533240daba5c9a251",
@@ -547,9 +634,9 @@
 			"Name": "LevelConnector",
 			"Transform": {
 				"Translation": {
-					"X": 4103.423828125,
-					"Y": 247.86129760742188,
-					"Z": 30.238895416259767
+					"X": 5817.18701171875,
+					"Y": 660.6777954101563,
+					"Z": 40.152767181396487
 				},
 				"Orientation": {
 					"X": 0.0,
@@ -570,27 +657,49 @@
 			]
 		},
 		{
-			"TypeID": 11,
-			"ID": "440717134d8e3f0e0b0bc898668e4c11",
-			"ParentID": "98e81b164499fc785678ee8383b4023e",
-			"IsActive": false,
-			"Name": "RigidBody",
+			"TypeID": 3,
+			"ID": "4e61eca94899fc69a437209b0d89455f",
+			"ParentID": "5fffebac4864e61533240daba5c9a251",
+			"Name": "BoulderTrap",
+			"StaticFlags": 0
+		},
+		{
+			"TypeID": 1,
+			"ID": "d4e848624304c1fcd3fd1680a9f11144",
+			"ParentID": "4e61eca94899fc69a437209b0d89455f",
+			"Name": "Stopper",
 			"Transform": {
 				"Translation": {
-					"X": 2873.5908203125,
-					"Y": 721.0568237304688,
-					"Z": 655.4207763671875
+					"X": 2956.680908203125,
+					"Y": 1047.2435302734376,
+					"Z": 5604.330078125
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": 0.0,
+					"Z": 0.7071068286895752,
+					"W": 0.7071068286895752
+				},
+				"Scale": {
+					"X": 5.0,
+					"Y": 1.0,
+					"Z": 5.0
 				}
 			},
 			"StaticFlags": 0,
-			"EnableSimulation": true,
-			"EnableGravity": true,
-			"StartAwake": true
+			"Model": "b43f0f8f4aaba3f3156896a5a22ba493",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "bc36947243af13107f7fceb62809c25a"
+					}
+				]
+			}
 		},
 		{
 			"TypeID": 14,
-			"ID": "3138241b4ed7a6dee9a4ffab0ef5c7a1",
-			"ParentID": "440717134d8e3f0e0b0bc898668e4c11",
+			"ID": "49a97d0c4da9b29c530e4a8eec779666",
+			"ParentID": "d4e848624304c1fcd3fd1680a9f11144",
 			"Name": "BoxCollider",
 			"StaticFlags": 0,
 			"Size": {
@@ -601,35 +710,4974 @@
 		},
 		{
 			"TypeID": 1,
-			"ID": "f2921ee947f470d377889ba7d57adf33",
-			"ParentID": "440717134d8e3f0e0b0bc898668e4c11",
+			"ID": "8ef2e7ef4785bd7f5c562385504e30e3",
+			"ParentID": "4e61eca94899fc69a437209b0d89455f",
 			"Name": "Cube",
+			"Transform": {
+				"Translation": {
+					"X": 2979.80419921875,
+					"Y": 896.5999755859375,
+					"Z": 5604.330078125
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": 0.0,
+					"Z": 0.258819043636322,
+					"W": 0.9659258127212524
+				},
+				"Scale": {
+					"X": 13.0,
+					"Y": 1.0,
+					"Z": 5.0
+				}
+			},
 			"StaticFlags": 0,
 			"Model": "b43f0f8f4aaba3f3156896a5a22ba493",
 			"Buffer": {
 				"Entries": [
+					{
+						"Material": "bc36947243af13107f7fceb62809c25a"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 14,
+			"ID": "91a8ed504dd8b62d675b449e68b9a079",
+			"ParentID": "8ef2e7ef4785bd7f5c562385504e30e3",
+			"Name": "BoxCollider",
+			"StaticFlags": 0,
+			"Size": {
+				"X": 100.0,
+				"Y": 100.0,
+				"Z": 100.0
+			}
+		},
+		{
+			"TypeID": 11,
+			"ID": "8a7d22eb42949727dde7d5a742598750",
+			"ParentID": "4e61eca94899fc69a437209b0d89455f",
+			"IsActive": false,
+			"Name": "Boulder",
+			"Transform": {
+				"Translation": {
+					"X": 3222.052978515625,
+					"Y": 1256.6939697265626,
+					"Z": 5589.61279296875
+				}
+			},
+			"StaticFlags": 0,
+			"Scripts": [
+				{
+					"Name": "FlaxTimeNexus.Source.Objects.OnEnableVelocity",
+					"ID": "73cfbe704fc5ecdab2b8fbbe8203bc7a",
+					"V": {
+	"LinearVelocity": {
+		"X": -100.0,
+		"Y": -50.0,
+		"Z": 0.0
+	},
+	"RigidBody": "8a7d22eb42949727dde7d5a742598750"
+}
+				}
+			],
+			"Mass": 500000.0,
+			"EnableSimulation": true,
+			"EnableGravity": true,
+			"StartAwake": true,
+			"OverrideMass": true
+		},
+		{
+			"TypeID": 1,
+			"ID": "32d9ba9b4aec147a96d45195d353e3d6",
+			"ParentID": "8a7d22eb42949727dde7d5a742598750",
+			"Name": "Sphere",
+			"Transform": {
+				"Scale": {
+					"X": 4.0,
+					"Y": 4.0,
+					"Z": 4.0
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "dd86c4724bf734c4959d23b3c74faa05",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "efd90653436599be3cadfab9c5bb5ed2"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 15,
+			"ID": "3944566948fac094651d219c315f17ae",
+			"ParentID": "8a7d22eb42949727dde7d5a742598750",
+			"Name": "SphereCollider",
+			"Transform": {
+				"Scale": {
+					"X": 4.0,
+					"Y": 4.0,
+					"Z": 4.0
+				}
+			},
+			"StaticFlags": 0,
+			"Scripts": [
+				{
+					"Name": "FlaxTimeNexus.Damager",
+					"ID": "15860c4b4084d0238f98c5a615fbcb49",
+					"V": {
+	"HitDamage": 30.0,
+	"DamagePerSecond": 0.0
+}
+				}
+			],
+			"Material": "a9ff6b2b4e5cac1db6f0fcadf850e30d",
+			"Radius": 50.0
+		},
+		{
+			"TypeID": 14,
+			"ID": "adc1fbc84c48b8854cc0d79f3b00b82d",
+			"ParentID": "4e61eca94899fc69a437209b0d89455f",
+			"Name": "Activator",
+			"Transform": {
+				"Translation": {
+					"X": 1876.4024658203126,
+					"Y": 798.1578369140625,
+					"Z": 4974.10693359375
+				},
+				"Scale": {
+					"X": 5.0,
+					"Y": 6.0,
+					"Z": 5.0
+				}
+			},
+			"StaticFlags": 0,
+			"Scripts": [
+				{
+					"Name": "FlaxTimeNexus.TriggerLeaveToggler",
+					"ID": "27c31e824ec8161619139594b16c6ec8",
+					"V": {
+	"PlayerTrigger": true,
+	"ToActivate": "8a7d22eb42949727dde7d5a742598750",
+	"ToDeactivate": "d4e848624304c1fcd3fd1680a9f11144"
+}
+				}
+			],
+			"IsTrigger": true,
+			"Size": {
+				"X": 100.0,
+				"Y": 100.0,
+				"Z": 100.0
+			}
+		},
+		{
+			"TypeID": 3,
+			"ID": "24c76a3d44e96e4ccb0af091c1645e6c",
+			"ParentID": "5fffebac4864e61533240daba5c9a251",
+			"Name": "Spike Trap 3",
+			"Transform": {
+				"Translation": {
+					"X": -1865.6959228515626,
+					"Y": 697.42919921875,
+					"Z": 4455.6708984375
+				}
+			},
+			"StaticFlags": 0
+		},
+		{
+			"TypeID": 3,
+			"ID": "b162fef64c65f30de4b5bb921d6957c5",
+			"ParentID": "24c76a3d44e96e4ccb0af091c1645e6c",
+			"IsActive": false,
+			"Name": "ExtendedSpikes",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": -27.3087158203125,
+					"Z": 81.183837890625
+				},
+				"Scale": {
+					"X": 1.0,
+					"Y": 3.0,
+					"Z": 1.0
+				}
+			},
+			"StaticFlags": 0
+		},
+		{
+			"TypeID": 1,
+			"ID": "30f797bd4cbb00ac61d9f299fa460be1",
+			"ParentID": "b162fef64c65f30de4b5bb921d6957c5",
+			"Name": "Cone 13",
+			"Transform": {
+				"Translation": {
+					"X": 94.62451171875,
+					"Y": 0.0,
+					"Z": -90.672607421875
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "b38b17524826ba5efed7ef97420d6d73",
+			"ParentID": "b162fef64c65f30de4b5bb921d6957c5",
+			"Name": "Cone 9",
+			"Transform": {
+				"Translation": {
+					"X": 94.62451171875,
+					"Y": 0.0,
+					"Z": -285.5576171875
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "316221944bf1cbf4df7af9981e060de3",
+			"ParentID": "b162fef64c65f30de4b5bb921d6957c5",
+			"Name": "Cone 14",
+			"Transform": {
+				"Translation": {
+					"X": 94.62451171875,
+					"Y": 0.0,
+					"Z": 4.309814453125
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "afe1a26542a6dae885f437af0641c4d8",
+			"ParentID": "b162fef64c65f30de4b5bb921d6957c5",
+			"Name": "Cone 5",
+			"Transform": {
+				"Translation": {
+					"X": -94.89794921875,
+					"Y": 0.0,
+					"Z": -285.5576171875
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "193a18634cc40389cd3f1cb1102cb6ce",
+			"ParentID": "b162fef64c65f30de4b5bb921d6957c5",
+			"Name": "Cone 10",
+			"Transform": {
+				"Translation": {
+					"X": 94.62451171875,
+					"Y": 0.0,
+					"Z": -190.5751953125
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "d078cde5487a8dbdccb1de8defe3a5b5",
+			"ParentID": "b162fef64c65f30de4b5bb921d6957c5",
+			"Name": "Cone 2",
+			"Transform": {
+				"Translation": {
+					"X": -94.89794921875,
+					"Y": 0.0,
+					"Z": -94.982421875
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "e4de714941c96a17b0ab7797a32efde9",
+			"ParentID": "b162fef64c65f30de4b5bb921d6957c5",
+			"Name": "Cone 6",
+			"Transform": {
+				"Translation": {
+					"X": -94.89794921875,
+					"Y": 0.0,
+					"Z": -190.5751953125
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "7ddd6377497384c6d2703e971684534a",
+			"ParentID": "b162fef64c65f30de4b5bb921d6957c5",
+			"Name": "Cone 12",
+			"Transform": {
+				"Translation": {
+					"X": 189.5224609375,
+					"Y": 0.0,
+					"Z": -90.672607421875
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "c632a1bb4b44b3b3e91ccba3f4a6aefb",
+			"ParentID": "b162fef64c65f30de4b5bb921d6957c5",
+			"Name": "Cone 8",
+			"Transform": {
+				"Translation": {
+					"X": 189.5224609375,
+					"Y": 0.0,
+					"Z": -285.5576171875
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "5720c785457826e9b0dcd0b17da6df2d",
+			"ParentID": "b162fef64c65f30de4b5bb921d6957c5",
+			"Name": "Cone 4",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 0.0,
+					"Z": -285.5576171875
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "01d1e2cb4e2dc8adb75d63b1ecb8451b",
+			"ParentID": "b162fef64c65f30de4b5bb921d6957c5",
+			"Name": "Cone 0",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 0.0,
+					"Z": -94.982421875
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "de379a3c41669642323f6fbc23e6d4a8",
+			"ParentID": "b162fef64c65f30de4b5bb921d6957c5",
+			"Name": "Cone 1",
+			"Transform": {
+				"Translation": {
+					"X": -94.89794921875,
+					"Y": 0.0,
+					"Z": 0.0
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "b26242b644b645862b09329329f8ea69",
+			"ParentID": "b162fef64c65f30de4b5bb921d6957c5",
+			"Name": "Cone 11",
+			"Transform": {
+				"Translation": {
+					"X": 189.5224609375,
+					"Y": 0.0,
+					"Z": 4.309814453125
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "7a7e26704e400edf3a20c897a7549823",
+			"ParentID": "b162fef64c65f30de4b5bb921d6957c5",
+			"Name": "Cone 7",
+			"Transform": {
+				"Translation": {
+					"X": 189.5224609375,
+					"Y": 0.0,
+					"Z": -190.5751953125
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "6b7c47f1486d5e3f6ac8578bdbb7ceae",
+			"ParentID": "b162fef64c65f30de4b5bb921d6957c5",
+			"Name": "Cone 3",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 0.0,
+					"Z": -190.5751953125
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "56bd9072404f67282062dfa4951d200a",
+			"ParentID": "b162fef64c65f30de4b5bb921d6957c5",
+			"Name": "Cone",
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 14,
+			"ID": "c4855b994d655c798d6fa4a383e2ff96",
+			"ParentID": "b162fef64c65f30de4b5bb921d6957c5",
+			"Name": "PushAway",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 15.647420883178711,
+					"Z": -133.10791015625
+				},
+				"Scale": {
+					"X": 5.0,
+					"Y": 1.0,
+					"Z": 5.0
+				}
+			},
+			"StaticFlags": 0,
+			"Scripts": [
+				{
+					"Name": "FlaxTimeNexus.ForceField",
+					"ID": "0d8b2ab74bc6841d15908daf2a3c6e43",
+					"V": {
+	"LocalDirection": {
+		"X": 1.0,
+		"Y": 0.2,
+		"Z": 0.0
+	},
+	"Strength": 1000.0
+}
+				},
+				{
+					"Name": "FlaxTimeNexus.Damager",
+					"ID": "625ba3014f8d8db82671459b8f9eed1b",
+					"V": {
+	"HitDamage": 30.0,
+	"DamagePerSecond": 10.0
+}
+				}
+			],
+			"IsTrigger": true,
+			"Size": {
+				"X": 100.0,
+				"Y": 100.0,
+				"Z": 100.0
+			}
+		},
+		{
+			"TypeID": 3,
+			"ID": "3cb7bcc64e8b3435def7b7b9286a0d5b",
+			"ParentID": "24c76a3d44e96e4ccb0af091c1645e6c",
+			"Name": "Spikes",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": -139.85626220703126,
+					"Z": 81.183837890625
+				},
+				"Scale": {
+					"X": 1.0,
+					"Y": 3.0,
+					"Z": 1.0
+				}
+			},
+			"StaticFlags": 0
+		},
+		{
+			"TypeID": 1,
+			"ID": "d3e2a876432555d1cf1f38b0c43721b0",
+			"ParentID": "3cb7bcc64e8b3435def7b7b9286a0d5b",
+			"Name": "Cone 13",
+			"Transform": {
+				"Translation": {
+					"X": 94.62451171875,
+					"Y": 0.0,
+					"Z": -90.672607421875
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "4d930cee466d9a01385032a833f0644a",
+			"ParentID": "3cb7bcc64e8b3435def7b7b9286a0d5b",
+			"Name": "Cone 9",
+			"Transform": {
+				"Translation": {
+					"X": 94.62451171875,
+					"Y": 0.0,
+					"Z": -285.5576171875
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "825ba9fa450554547dc5fa9ada5469d6",
+			"ParentID": "3cb7bcc64e8b3435def7b7b9286a0d5b",
+			"Name": "Cone 14",
+			"Transform": {
+				"Translation": {
+					"X": 94.62451171875,
+					"Y": 0.0,
+					"Z": 4.309814453125
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "a9feb5f646eb8ba396eb82b3b3879cbc",
+			"ParentID": "3cb7bcc64e8b3435def7b7b9286a0d5b",
+			"Name": "Cone 5",
+			"Transform": {
+				"Translation": {
+					"X": -94.89794921875,
+					"Y": 0.0,
+					"Z": -285.5576171875
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "6e76fa43412b4b13c5d4b7bd2345c741",
+			"ParentID": "3cb7bcc64e8b3435def7b7b9286a0d5b",
+			"Name": "Cone 10",
+			"Transform": {
+				"Translation": {
+					"X": 94.62451171875,
+					"Y": 0.0,
+					"Z": -190.5751953125
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "ac6e485a44593e7105db4cae500ae89c",
+			"ParentID": "3cb7bcc64e8b3435def7b7b9286a0d5b",
+			"Name": "Cone 2",
+			"Transform": {
+				"Translation": {
+					"X": -94.89794921875,
+					"Y": 0.0,
+					"Z": -94.982421875
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "85e675dd439cff89bdea6587607cb0cc",
+			"ParentID": "3cb7bcc64e8b3435def7b7b9286a0d5b",
+			"Name": "Cone 6",
+			"Transform": {
+				"Translation": {
+					"X": -94.89794921875,
+					"Y": 0.0,
+					"Z": -190.5751953125
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "ea498ca248b5bb0438e289b4c198e82e",
+			"ParentID": "3cb7bcc64e8b3435def7b7b9286a0d5b",
+			"Name": "Cone 12",
+			"Transform": {
+				"Translation": {
+					"X": 189.5224609375,
+					"Y": 0.0,
+					"Z": -90.672607421875
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "3e2d53e445f84e6c367e68b4abdbe8dd",
+			"ParentID": "3cb7bcc64e8b3435def7b7b9286a0d5b",
+			"Name": "Cone 8",
+			"Transform": {
+				"Translation": {
+					"X": 189.5224609375,
+					"Y": 0.0,
+					"Z": -285.5576171875
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "7ef6e5d443202584df7e639d8a10d72a",
+			"ParentID": "3cb7bcc64e8b3435def7b7b9286a0d5b",
+			"Name": "Cone 4",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 0.0,
+					"Z": -285.5576171875
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "c498c1ad4ac02e3ce775038f6f1a47a3",
+			"ParentID": "3cb7bcc64e8b3435def7b7b9286a0d5b",
+			"Name": "Cone 0",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 0.0,
+					"Z": -94.982421875
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "0538b5fc4158b252bf6711881637f8e3",
+			"ParentID": "3cb7bcc64e8b3435def7b7b9286a0d5b",
+			"Name": "Cone 1",
+			"Transform": {
+				"Translation": {
+					"X": -94.89794921875,
+					"Y": 0.0,
+					"Z": 0.0
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "6d3785e04f06a15dd9c084b39c54991f",
+			"ParentID": "3cb7bcc64e8b3435def7b7b9286a0d5b",
+			"Name": "Cone 11",
+			"Transform": {
+				"Translation": {
+					"X": 189.5224609375,
+					"Y": 0.0,
+					"Z": 4.309814453125
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "6ffebcf04dfc896a74e87ca2c2152a56",
+			"ParentID": "3cb7bcc64e8b3435def7b7b9286a0d5b",
+			"Name": "Cone 7",
+			"Transform": {
+				"Translation": {
+					"X": 189.5224609375,
+					"Y": 0.0,
+					"Z": -190.5751953125
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "69dc85fe4590caed09ee19b2ad84f70a",
+			"ParentID": "3cb7bcc64e8b3435def7b7b9286a0d5b",
+			"Name": "Cone 3",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 0.0,
+					"Z": -190.5751953125
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "0f6e6a594195473239c413bf74b4c75a",
+			"ParentID": "3cb7bcc64e8b3435def7b7b9286a0d5b",
+			"Name": "Cone",
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 7,
+			"ID": "007b5d9a449f13ed4f0b4da869f8e9c3",
+			"ParentID": "24c76a3d44e96e4ccb0af091c1645e6c",
+			"Name": "EnvironmentProbe",
+			"Transform": {
+				"Translation": {
+					"X": 52.04833984375,
+					"Y": -14.86968994140625,
+					"Z": -55.729736328125
+				}
+			},
+			"StaticFlags": 0,
+			"Radius": 300.0,
+			"IsCustomProbe": false,
+			"ProbeID": "f9496cc74ccf422b6dded09b9906e8af"
+		},
+		{
+			"TypeID": 14,
+			"ID": "30462a53403b9ac23d9cda817abc7d0c",
+			"ParentID": "24c76a3d44e96e4ccb0af091c1645e6c",
+			"Name": "BoxCollider",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 0.0,
+					"Z": -51.924072265625
+				},
+				"Scale": {
+					"X": 5.0,
+					"Y": 1.0,
+					"Z": 5.0
+				}
+			},
+			"StaticFlags": 0,
+			"Scripts": [
+				{
+					"Name": "FlaxTimeNexus.TriggerEnterToggler",
+					"ID": "1bb6958e4a49f067a483de80e14b8c20",
+					"V": {
+	"PlayerTrigger": true,
+	"ToActivate": "b162fef64c65f30de4b5bb921d6957c5"
+}
+				}
+			],
+			"IsTrigger": true,
+			"Size": {
+				"X": 100.0,
+				"Y": 100.0,
+				"Z": 100.0
+			}
+		},
+		{
+			"TypeID": 3,
+			"ID": "5443f8c84749f8226ef7a6b48cd9629e",
+			"ParentID": "5fffebac4864e61533240daba5c9a251",
+			"Name": "Spike Trap 2",
+			"Transform": {
+				"Translation": {
+					"X": -1472.569091796875,
+					"Y": 697.42919921875,
+					"Z": 4455.6708984375
+				}
+			},
+			"StaticFlags": 0
+		},
+		{
+			"TypeID": 3,
+			"ID": "413da1b0475f0d58328b0bbf9f5a86f0",
+			"ParentID": "5443f8c84749f8226ef7a6b48cd9629e",
+			"IsActive": false,
+			"Name": "ExtendedSpikes",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": -27.3087158203125,
+					"Z": 81.183837890625
+				},
+				"Scale": {
+					"X": 1.0,
+					"Y": 3.0,
+					"Z": 1.0
+				}
+			},
+			"StaticFlags": 0
+		},
+		{
+			"TypeID": 1,
+			"ID": "71b6333a41295057ef4622b87578e5a9",
+			"ParentID": "413da1b0475f0d58328b0bbf9f5a86f0",
+			"Name": "Cone 13",
+			"Transform": {
+				"Translation": {
+					"X": 94.62451171875,
+					"Y": 0.0,
+					"Z": -90.672607421875
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "056738be4e8abeaa6d31788628fff592",
+			"ParentID": "413da1b0475f0d58328b0bbf9f5a86f0",
+			"Name": "Cone 9",
+			"Transform": {
+				"Translation": {
+					"X": 94.62451171875,
+					"Y": 0.0,
+					"Z": -285.5576171875
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "740beecc4e54c5aab3c56a9e7d0e6315",
+			"ParentID": "413da1b0475f0d58328b0bbf9f5a86f0",
+			"Name": "Cone 14",
+			"Transform": {
+				"Translation": {
+					"X": 94.62451171875,
+					"Y": 0.0,
+					"Z": 4.309814453125
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "51d719234f02c7edd2e08f9c91b90194",
+			"ParentID": "413da1b0475f0d58328b0bbf9f5a86f0",
+			"Name": "Cone 5",
+			"Transform": {
+				"Translation": {
+					"X": -94.89794921875,
+					"Y": 0.0,
+					"Z": -285.5576171875
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "1fe4fb634b9090c3221f218e30ecac21",
+			"ParentID": "413da1b0475f0d58328b0bbf9f5a86f0",
+			"Name": "Cone 10",
+			"Transform": {
+				"Translation": {
+					"X": 94.62451171875,
+					"Y": 0.0,
+					"Z": -190.5751953125
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "67d09eea414e9a60c3f9369efb70803b",
+			"ParentID": "413da1b0475f0d58328b0bbf9f5a86f0",
+			"Name": "Cone 2",
+			"Transform": {
+				"Translation": {
+					"X": -94.89794921875,
+					"Y": 0.0,
+					"Z": -94.982421875
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "4e0b8f044a335ec69ce21bb8e2d49b4b",
+			"ParentID": "413da1b0475f0d58328b0bbf9f5a86f0",
+			"Name": "Cone 6",
+			"Transform": {
+				"Translation": {
+					"X": -94.89794921875,
+					"Y": 0.0,
+					"Z": -190.5751953125
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "ba7faa9b432279de4019f2872ac04389",
+			"ParentID": "413da1b0475f0d58328b0bbf9f5a86f0",
+			"Name": "Cone 12",
+			"Transform": {
+				"Translation": {
+					"X": 189.5224609375,
+					"Y": 0.0,
+					"Z": -90.672607421875
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "88ad44b24a4ad16d2c46d9a7ef99bbc5",
+			"ParentID": "413da1b0475f0d58328b0bbf9f5a86f0",
+			"Name": "Cone 8",
+			"Transform": {
+				"Translation": {
+					"X": 189.5224609375,
+					"Y": 0.0,
+					"Z": -285.5576171875
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "e9e894ee488772a23eadd485dc8088a3",
+			"ParentID": "413da1b0475f0d58328b0bbf9f5a86f0",
+			"Name": "Cone 4",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 0.0,
+					"Z": -285.5576171875
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "b21a9e0d44ae90b80a632690f3525a9c",
+			"ParentID": "413da1b0475f0d58328b0bbf9f5a86f0",
+			"Name": "Cone 0",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 0.0,
+					"Z": -94.982421875
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "dbd82be14fc689db3e502991c5c9bc05",
+			"ParentID": "413da1b0475f0d58328b0bbf9f5a86f0",
+			"Name": "Cone 1",
+			"Transform": {
+				"Translation": {
+					"X": -94.89794921875,
+					"Y": 0.0,
+					"Z": 0.0
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "be8b7689481ce75bcc024ea5e37410e0",
+			"ParentID": "413da1b0475f0d58328b0bbf9f5a86f0",
+			"Name": "Cone 11",
+			"Transform": {
+				"Translation": {
+					"X": 189.5224609375,
+					"Y": 0.0,
+					"Z": 4.309814453125
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "052ec06c4edb858c38bf5e9b3ec246d1",
+			"ParentID": "413da1b0475f0d58328b0bbf9f5a86f0",
+			"Name": "Cone 7",
+			"Transform": {
+				"Translation": {
+					"X": 189.5224609375,
+					"Y": 0.0,
+					"Z": -190.5751953125
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "9cb56aa24ced152b18d632bf343aaf1f",
+			"ParentID": "413da1b0475f0d58328b0bbf9f5a86f0",
+			"Name": "Cone 3",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 0.0,
+					"Z": -190.5751953125
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "8d77cdc240fb958f05e7d4aa0f23e96b",
+			"ParentID": "413da1b0475f0d58328b0bbf9f5a86f0",
+			"Name": "Cone",
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 14,
+			"ID": "3d647cc64cedbaa5ae3a169c6cb5589e",
+			"ParentID": "413da1b0475f0d58328b0bbf9f5a86f0",
+			"Name": "PushAway",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 15.647420883178711,
+					"Z": -133.10791015625
+				},
+				"Scale": {
+					"X": 5.0,
+					"Y": 1.0,
+					"Z": 5.0
+				}
+			},
+			"StaticFlags": 0,
+			"Scripts": [
+				{
+					"Name": "FlaxTimeNexus.ForceField",
+					"ID": "8e7cc2b042ee0f76c1379ba855264779",
+					"V": {
+	"LocalDirection": {
+		"X": 1.0,
+		"Y": 0.2,
+		"Z": 0.0
+	},
+	"Strength": 1000.0
+}
+				},
+				{
+					"Name": "FlaxTimeNexus.Damager",
+					"ID": "019c066a43673ab987e9cf9babb2db0e",
+					"V": {
+	"HitDamage": 30.0,
+	"DamagePerSecond": 10.0
+}
+				}
+			],
+			"IsTrigger": true,
+			"Size": {
+				"X": 100.0,
+				"Y": 100.0,
+				"Z": 100.0
+			}
+		},
+		{
+			"TypeID": 3,
+			"ID": "157120f547d70aa3c80d778ca7c19387",
+			"ParentID": "5443f8c84749f8226ef7a6b48cd9629e",
+			"Name": "Spikes",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": -139.85626220703126,
+					"Z": 81.183837890625
+				},
+				"Scale": {
+					"X": 1.0,
+					"Y": 3.0,
+					"Z": 1.0
+				}
+			},
+			"StaticFlags": 0
+		},
+		{
+			"TypeID": 1,
+			"ID": "aa33a66c43a4302dc2fe66ba86f27ec0",
+			"ParentID": "157120f547d70aa3c80d778ca7c19387",
+			"Name": "Cone 13",
+			"Transform": {
+				"Translation": {
+					"X": 94.62451171875,
+					"Y": 0.0,
+					"Z": -90.672607421875
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "7c0558cd4fa6346ef60f13befaedf616",
+			"ParentID": "157120f547d70aa3c80d778ca7c19387",
+			"Name": "Cone 9",
+			"Transform": {
+				"Translation": {
+					"X": 94.62451171875,
+					"Y": 0.0,
+					"Z": -285.5576171875
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "bbead39d4d5b2ce61ce4a89a3675f8d5",
+			"ParentID": "157120f547d70aa3c80d778ca7c19387",
+			"Name": "Cone 14",
+			"Transform": {
+				"Translation": {
+					"X": 94.62451171875,
+					"Y": 0.0,
+					"Z": 4.309814453125
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "8a0c5cfd4707e79c2a383bbafcb11096",
+			"ParentID": "157120f547d70aa3c80d778ca7c19387",
+			"Name": "Cone 5",
+			"Transform": {
+				"Translation": {
+					"X": -94.89794921875,
+					"Y": 0.0,
+					"Z": -285.5576171875
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "f4f535a64e31397ad2fb31a2d6a6fcb9",
+			"ParentID": "157120f547d70aa3c80d778ca7c19387",
+			"Name": "Cone 10",
+			"Transform": {
+				"Translation": {
+					"X": 94.62451171875,
+					"Y": 0.0,
+					"Z": -190.5751953125
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "fa83d29e40667d73ad3bf7a61d6c2722",
+			"ParentID": "157120f547d70aa3c80d778ca7c19387",
+			"Name": "Cone 2",
+			"Transform": {
+				"Translation": {
+					"X": -94.89794921875,
+					"Y": 0.0,
+					"Z": -94.982421875
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "a7fb17be433f1296fb1350acf0cf5409",
+			"ParentID": "157120f547d70aa3c80d778ca7c19387",
+			"Name": "Cone 6",
+			"Transform": {
+				"Translation": {
+					"X": -94.89794921875,
+					"Y": 0.0,
+					"Z": -190.5751953125
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "df2ba53d49105d99bb79aba0674fa16f",
+			"ParentID": "157120f547d70aa3c80d778ca7c19387",
+			"Name": "Cone 12",
+			"Transform": {
+				"Translation": {
+					"X": 189.5224609375,
+					"Y": 0.0,
+					"Z": -90.672607421875
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "bd3131584ea13847c803a39e41513a7f",
+			"ParentID": "157120f547d70aa3c80d778ca7c19387",
+			"Name": "Cone 8",
+			"Transform": {
+				"Translation": {
+					"X": 189.5224609375,
+					"Y": 0.0,
+					"Z": -285.5576171875
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "33933a7046dd71d191c92786b56c0e6c",
+			"ParentID": "157120f547d70aa3c80d778ca7c19387",
+			"Name": "Cone 4",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 0.0,
+					"Z": -285.5576171875
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "58a80dd54eed2119b4bf338a0ec8edb5",
+			"ParentID": "157120f547d70aa3c80d778ca7c19387",
+			"Name": "Cone 0",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 0.0,
+					"Z": -94.982421875
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "b4e2e43f450a08b07f6692b391fb7403",
+			"ParentID": "157120f547d70aa3c80d778ca7c19387",
+			"Name": "Cone 1",
+			"Transform": {
+				"Translation": {
+					"X": -94.89794921875,
+					"Y": 0.0,
+					"Z": 0.0
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "4e6c1015494e2088f2ca73aaf53789cb",
+			"ParentID": "157120f547d70aa3c80d778ca7c19387",
+			"Name": "Cone 11",
+			"Transform": {
+				"Translation": {
+					"X": 189.5224609375,
+					"Y": 0.0,
+					"Z": 4.309814453125
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "63fd2b4843410485a53f6cadc2e626a4",
+			"ParentID": "157120f547d70aa3c80d778ca7c19387",
+			"Name": "Cone 7",
+			"Transform": {
+				"Translation": {
+					"X": 189.5224609375,
+					"Y": 0.0,
+					"Z": -190.5751953125
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "47d8bd2d477fe1539f3d569f4b1c5f73",
+			"ParentID": "157120f547d70aa3c80d778ca7c19387",
+			"Name": "Cone 3",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 0.0,
+					"Z": -190.5751953125
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "563629a844ca5dae7583c8bdf97baa9a",
+			"ParentID": "157120f547d70aa3c80d778ca7c19387",
+			"Name": "Cone",
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 7,
+			"ID": "a34675544610ee95e79446b37ad8de45",
+			"ParentID": "5443f8c84749f8226ef7a6b48cd9629e",
+			"Name": "EnvironmentProbe",
+			"Transform": {
+				"Translation": {
+					"X": 52.04833984375,
+					"Y": -14.86968994140625,
+					"Z": -55.729736328125
+				}
+			},
+			"StaticFlags": 0,
+			"Radius": 300.0,
+			"IsCustomProbe": false,
+			"ProbeID": "f07ccf684cca7ce2d5b1139c72593117"
+		},
+		{
+			"TypeID": 14,
+			"ID": "608ccdda421f21e8ec7b588782ca36cc",
+			"ParentID": "5443f8c84749f8226ef7a6b48cd9629e",
+			"Name": "BoxCollider",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 0.0,
+					"Z": -51.924072265625
+				},
+				"Scale": {
+					"X": 5.0,
+					"Y": 1.0,
+					"Z": 5.0
+				}
+			},
+			"StaticFlags": 0,
+			"Scripts": [
+				{
+					"Name": "FlaxTimeNexus.TriggerEnterToggler",
+					"ID": "9e8aebae44f7464ee5d450a873097431",
+					"V": {
+	"PlayerTrigger": true,
+	"ToActivate": "413da1b0475f0d58328b0bbf9f5a86f0"
+}
+				}
+			],
+			"IsTrigger": true,
+			"Size": {
+				"X": 100.0,
+				"Y": 100.0,
+				"Z": 100.0
+			}
+		},
+		{
+			"TypeID": 3,
+			"ID": "47837b734def90152c8571906eb1d8b5",
+			"ParentID": "5fffebac4864e61533240daba5c9a251",
+			"Name": "Spike Trap 1",
+			"Transform": {
+				"Translation": {
+					"X": -1080.499267578125,
+					"Y": 697.42919921875,
+					"Z": 4455.6708984375
+				}
+			},
+			"StaticFlags": 0
+		},
+		{
+			"TypeID": 3,
+			"ID": "49bd28d642098981fa49ee8fa457e73f",
+			"ParentID": "47837b734def90152c8571906eb1d8b5",
+			"IsActive": false,
+			"Name": "ExtendedSpikes",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": -27.3087158203125,
+					"Z": 81.183837890625
+				},
+				"Scale": {
+					"X": 1.0,
+					"Y": 3.0,
+					"Z": 1.0
+				}
+			},
+			"StaticFlags": 0
+		},
+		{
+			"TypeID": 1,
+			"ID": "9658a7d945b004c04116658e3e39f538",
+			"ParentID": "49bd28d642098981fa49ee8fa457e73f",
+			"Name": "Cone 13",
+			"Transform": {
+				"Translation": {
+					"X": 94.62451171875,
+					"Y": 0.0,
+					"Z": -90.672607421875
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "44b102c947f47089439126bb859f9dc6",
+			"ParentID": "49bd28d642098981fa49ee8fa457e73f",
+			"Name": "Cone 9",
+			"Transform": {
+				"Translation": {
+					"X": 94.62451171875,
+					"Y": 0.0,
+					"Z": -285.5576171875
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "ad2c91b045aa914d602b31a4bc65d49c",
+			"ParentID": "49bd28d642098981fa49ee8fa457e73f",
+			"Name": "Cone 14",
+			"Transform": {
+				"Translation": {
+					"X": 94.62451171875,
+					"Y": 0.0,
+					"Z": 4.309814453125
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "e8592d3e4736c423bf288abc8709d507",
+			"ParentID": "49bd28d642098981fa49ee8fa457e73f",
+			"Name": "Cone 5",
+			"Transform": {
+				"Translation": {
+					"X": -94.89794921875,
+					"Y": 0.0,
+					"Z": -285.5576171875
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "8147c2a14689481eedb50c8c67bc554c",
+			"ParentID": "49bd28d642098981fa49ee8fa457e73f",
+			"Name": "Cone 10",
+			"Transform": {
+				"Translation": {
+					"X": 94.62451171875,
+					"Y": 0.0,
+					"Z": -190.5751953125
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "6cec45394b9b4b493a857b97348d0dde",
+			"ParentID": "49bd28d642098981fa49ee8fa457e73f",
+			"Name": "Cone 2",
+			"Transform": {
+				"Translation": {
+					"X": -94.89794921875,
+					"Y": 0.0,
+					"Z": -94.982421875
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "4b4718ce460c7613332769b5d8e0605b",
+			"ParentID": "49bd28d642098981fa49ee8fa457e73f",
+			"Name": "Cone 6",
+			"Transform": {
+				"Translation": {
+					"X": -94.89794921875,
+					"Y": 0.0,
+					"Z": -190.5751953125
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "1e0b07d24eb59ce2e3e3f5a76e951e9f",
+			"ParentID": "49bd28d642098981fa49ee8fa457e73f",
+			"Name": "Cone 12",
+			"Transform": {
+				"Translation": {
+					"X": 189.5224609375,
+					"Y": 0.0,
+					"Z": -90.672607421875
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "e2cebe4a4612d26dae2c9ea033233506",
+			"ParentID": "49bd28d642098981fa49ee8fa457e73f",
+			"Name": "Cone 8",
+			"Transform": {
+				"Translation": {
+					"X": 189.5224609375,
+					"Y": 0.0,
+					"Z": -285.5576171875
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "ca0f23d84509d7f84a95329f6aba0ab8",
+			"ParentID": "49bd28d642098981fa49ee8fa457e73f",
+			"Name": "Cone 4",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 0.0,
+					"Z": -285.5576171875
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "1c1c782c40a267108609ca917cb45b3d",
+			"ParentID": "49bd28d642098981fa49ee8fa457e73f",
+			"Name": "Cone 0",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 0.0,
+					"Z": -94.982421875
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "1f3336584781410c43a82f8eae5e8255",
+			"ParentID": "49bd28d642098981fa49ee8fa457e73f",
+			"Name": "Cone 1",
+			"Transform": {
+				"Translation": {
+					"X": -94.89794921875,
+					"Y": 0.0,
+					"Z": 0.0
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "b3a213514c61466c4fe705a5c265d77f",
+			"ParentID": "49bd28d642098981fa49ee8fa457e73f",
+			"Name": "Cone 11",
+			"Transform": {
+				"Translation": {
+					"X": 189.5224609375,
+					"Y": 0.0,
+					"Z": 4.309814453125
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "4aa2e1624ceb8ff8cae7d7a48a11ba7b",
+			"ParentID": "49bd28d642098981fa49ee8fa457e73f",
+			"Name": "Cone 7",
+			"Transform": {
+				"Translation": {
+					"X": 189.5224609375,
+					"Y": 0.0,
+					"Z": -190.5751953125
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "31e49b044e7d401e0fc920ba722fb497",
+			"ParentID": "49bd28d642098981fa49ee8fa457e73f",
+			"Name": "Cone 3",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 0.0,
+					"Z": -190.5751953125
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "af42c703416fbb93a62e3997020b9a88",
+			"ParentID": "49bd28d642098981fa49ee8fa457e73f",
+			"Name": "Cone",
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 14,
+			"ID": "2f298410490058d25802859dbdc4b3a3",
+			"ParentID": "49bd28d642098981fa49ee8fa457e73f",
+			"Name": "PushAway",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 15.647420883178711,
+					"Z": -133.10791015625
+				},
+				"Scale": {
+					"X": 5.0,
+					"Y": 1.0,
+					"Z": 5.0
+				}
+			},
+			"StaticFlags": 0,
+			"Scripts": [
+				{
+					"Name": "FlaxTimeNexus.ForceField",
+					"ID": "f23a7397414fa56d66c25f852532b4b9",
+					"V": {
+	"LocalDirection": {
+		"X": 1.0,
+		"Y": 0.2,
+		"Z": 0.0
+	},
+	"Strength": 1000.0
+}
+				},
+				{
+					"Name": "FlaxTimeNexus.Damager",
+					"ID": "358930a14990982f93a02390136c3ec1",
+					"V": {
+	"HitDamage": 30.0,
+	"DamagePerSecond": 10.0
+}
+				}
+			],
+			"IsTrigger": true,
+			"Size": {
+				"X": 100.0,
+				"Y": 100.0,
+				"Z": 100.0
+			}
+		},
+		{
+			"TypeID": 3,
+			"ID": "bd2aa1c44239f7b1d0ee7085a9beacb3",
+			"ParentID": "47837b734def90152c8571906eb1d8b5",
+			"Name": "Spikes",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": -139.85626220703126,
+					"Z": 81.183837890625
+				},
+				"Scale": {
+					"X": 1.0,
+					"Y": 3.0,
+					"Z": 1.0
+				}
+			},
+			"StaticFlags": 0
+		},
+		{
+			"TypeID": 1,
+			"ID": "48b36a1e468a9d68a4033786461b4d00",
+			"ParentID": "bd2aa1c44239f7b1d0ee7085a9beacb3",
+			"Name": "Cone 13",
+			"Transform": {
+				"Translation": {
+					"X": 94.62451171875,
+					"Y": 0.0,
+					"Z": -90.672607421875
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "a906fb154640f3c6014e66b737914d5e",
+			"ParentID": "bd2aa1c44239f7b1d0ee7085a9beacb3",
+			"Name": "Cone 9",
+			"Transform": {
+				"Translation": {
+					"X": 94.62451171875,
+					"Y": 0.0,
+					"Z": -285.5576171875
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "98cd1a654788b1a5da1e3194e88ecf71",
+			"ParentID": "bd2aa1c44239f7b1d0ee7085a9beacb3",
+			"Name": "Cone 14",
+			"Transform": {
+				"Translation": {
+					"X": 94.62451171875,
+					"Y": 0.0,
+					"Z": 4.309814453125
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "18326a4c49e5d3bc09d46f8d6e0dbe64",
+			"ParentID": "bd2aa1c44239f7b1d0ee7085a9beacb3",
+			"Name": "Cone 5",
+			"Transform": {
+				"Translation": {
+					"X": -94.89794921875,
+					"Y": 0.0,
+					"Z": -285.5576171875
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "1fb0f4034b27ecb5f2f109a6b0fc4302",
+			"ParentID": "bd2aa1c44239f7b1d0ee7085a9beacb3",
+			"Name": "Cone 10",
+			"Transform": {
+				"Translation": {
+					"X": 94.62451171875,
+					"Y": 0.0,
+					"Z": -190.5751953125
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "183626d8461c66eb22d2e4b6371111d6",
+			"ParentID": "bd2aa1c44239f7b1d0ee7085a9beacb3",
+			"Name": "Cone 2",
+			"Transform": {
+				"Translation": {
+					"X": -94.89794921875,
+					"Y": 0.0,
+					"Z": -94.982421875
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "cfd9fd904ffa6126cd1008b3464a31c6",
+			"ParentID": "bd2aa1c44239f7b1d0ee7085a9beacb3",
+			"Name": "Cone 6",
+			"Transform": {
+				"Translation": {
+					"X": -94.89794921875,
+					"Y": 0.0,
+					"Z": -190.5751953125
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "8c6a88164ce3d78434f4879289f75f94",
+			"ParentID": "bd2aa1c44239f7b1d0ee7085a9beacb3",
+			"Name": "Cone 12",
+			"Transform": {
+				"Translation": {
+					"X": 189.5224609375,
+					"Y": 0.0,
+					"Z": -90.672607421875
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "a120db144ab64fe490aef5a8def1a0e6",
+			"ParentID": "bd2aa1c44239f7b1d0ee7085a9beacb3",
+			"Name": "Cone 8",
+			"Transform": {
+				"Translation": {
+					"X": 189.5224609375,
+					"Y": 0.0,
+					"Z": -285.5576171875
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "8f911c0d4236b7d4bb89e99dd1752de7",
+			"ParentID": "bd2aa1c44239f7b1d0ee7085a9beacb3",
+			"Name": "Cone 4",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 0.0,
+					"Z": -285.5576171875
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "a65ef0da43e91cb9ff013c973b2ade22",
+			"ParentID": "bd2aa1c44239f7b1d0ee7085a9beacb3",
+			"Name": "Cone 0",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 0.0,
+					"Z": -94.982421875
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "0f087ef844f693aee4ee3686207da8ad",
+			"ParentID": "bd2aa1c44239f7b1d0ee7085a9beacb3",
+			"Name": "Cone 1",
+			"Transform": {
+				"Translation": {
+					"X": -94.89794921875,
+					"Y": 0.0,
+					"Z": 0.0
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "81105d0d4fadf0491a61d78f1007bc54",
+			"ParentID": "bd2aa1c44239f7b1d0ee7085a9beacb3",
+			"Name": "Cone 11",
+			"Transform": {
+				"Translation": {
+					"X": 189.5224609375,
+					"Y": 0.0,
+					"Z": 4.309814453125
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "f665703249db1e294cca32bb152be82a",
+			"ParentID": "bd2aa1c44239f7b1d0ee7085a9beacb3",
+			"Name": "Cone 7",
+			"Transform": {
+				"Translation": {
+					"X": 189.5224609375,
+					"Y": 0.0,
+					"Z": -190.5751953125
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "f4bce8b44cc409dff7d1648e8eb5ccf5",
+			"ParentID": "bd2aa1c44239f7b1d0ee7085a9beacb3",
+			"Name": "Cone 3",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 0.0,
+					"Z": -190.5751953125
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "5726f5d14dcb0ff468e39a82b7f0c506",
+			"ParentID": "bd2aa1c44239f7b1d0ee7085a9beacb3",
+			"Name": "Cone",
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 7,
+			"ID": "70ba424b4a3acc0dfd485187c5e1ece7",
+			"ParentID": "47837b734def90152c8571906eb1d8b5",
+			"Name": "EnvironmentProbe",
+			"Transform": {
+				"Translation": {
+					"X": 52.04833984375,
+					"Y": -14.86968994140625,
+					"Z": -55.729736328125
+				}
+			},
+			"StaticFlags": 0,
+			"Radius": 300.0,
+			"IsCustomProbe": false,
+			"ProbeID": "e0d104e542839c2af8e92ea7da92d4c0"
+		},
+		{
+			"TypeID": 14,
+			"ID": "ad2801e44a3d56666af1e98b166eb290",
+			"ParentID": "47837b734def90152c8571906eb1d8b5",
+			"Name": "BoxCollider",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 0.0,
+					"Z": -51.924072265625
+				},
+				"Scale": {
+					"X": 5.0,
+					"Y": 1.0,
+					"Z": 5.0
+				}
+			},
+			"StaticFlags": 0,
+			"Scripts": [
+				{
+					"Name": "FlaxTimeNexus.TriggerEnterToggler",
+					"ID": "4eb992c84fef46802c4c6e984d258c65",
+					"V": {
+	"PlayerTrigger": true,
+	"ToActivate": "49bd28d642098981fa49ee8fa457e73f"
+}
+				}
+			],
+			"IsTrigger": true,
+			"Size": {
+				"X": 100.0,
+				"Y": 100.0,
+				"Z": 100.0
+			}
+		},
+		{
+			"TypeID": 3,
+			"ID": "a13dde054b34b1c9360a449594123abd",
+			"ParentID": "5fffebac4864e61533240daba5c9a251",
+			"Name": "Spike Trap 0",
+			"Transform": {
+				"Translation": {
+					"X": 5061.12890625,
+					"Y": 697.42919921875,
+					"Z": 3080.021728515625
+				}
+			},
+			"StaticFlags": 0
+		},
+		{
+			"TypeID": 3,
+			"ID": "5ee824de4cf805f8454da1aafc88f891",
+			"ParentID": "a13dde054b34b1c9360a449594123abd",
+			"IsActive": false,
+			"Name": "ExtendedSpikes",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": -27.3087158203125,
+					"Z": 81.183837890625
+				},
+				"Scale": {
+					"X": 1.0,
+					"Y": 3.0,
+					"Z": 1.0
+				}
+			},
+			"StaticFlags": 0
+		},
+		{
+			"TypeID": 1,
+			"ID": "d65150874dcd8bad8f2b5abfc4ffbd88",
+			"ParentID": "5ee824de4cf805f8454da1aafc88f891",
+			"Name": "Cone 13",
+			"Transform": {
+				"Translation": {
+					"X": 94.62451171875,
+					"Y": 0.0,
+					"Z": -90.672607421875
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "13fa6f27433a61cf2cb4b69841f1cf4e",
+			"ParentID": "5ee824de4cf805f8454da1aafc88f891",
+			"Name": "Cone 9",
+			"Transform": {
+				"Translation": {
+					"X": 94.62451171875,
+					"Y": 0.0,
+					"Z": -285.5576171875
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "e4b61f9a485851d9e1549e8af866bb3b",
+			"ParentID": "5ee824de4cf805f8454da1aafc88f891",
+			"Name": "Cone 14",
+			"Transform": {
+				"Translation": {
+					"X": 94.62451171875,
+					"Y": 0.0,
+					"Z": 4.309814453125
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "baaf88f34b9f559dbef581b7ddf9a279",
+			"ParentID": "5ee824de4cf805f8454da1aafc88f891",
+			"Name": "Cone 5",
+			"Transform": {
+				"Translation": {
+					"X": -94.89794921875,
+					"Y": 0.0,
+					"Z": -285.5576171875
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "b65c907648076da3f16ed19253aa3f42",
+			"ParentID": "5ee824de4cf805f8454da1aafc88f891",
+			"Name": "Cone 10",
+			"Transform": {
+				"Translation": {
+					"X": 94.62451171875,
+					"Y": 0.0,
+					"Z": -190.5751953125
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "a90aa6564d3d9c00f5bd3c97689fa34c",
+			"ParentID": "5ee824de4cf805f8454da1aafc88f891",
+			"Name": "Cone 2",
+			"Transform": {
+				"Translation": {
+					"X": -94.89794921875,
+					"Y": 0.0,
+					"Z": -94.982421875
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "db109cbd42300169584f749d742e7c8d",
+			"ParentID": "5ee824de4cf805f8454da1aafc88f891",
+			"Name": "Cone 6",
+			"Transform": {
+				"Translation": {
+					"X": -94.89794921875,
+					"Y": 0.0,
+					"Z": -190.5751953125
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "d3ee8b6b44d0360ab460a59b0320b24a",
+			"ParentID": "5ee824de4cf805f8454da1aafc88f891",
+			"Name": "Cone 12",
+			"Transform": {
+				"Translation": {
+					"X": 189.5224609375,
+					"Y": 0.0,
+					"Z": -90.672607421875
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "f79c714f4f3b4ed63b9087982fa13195",
+			"ParentID": "5ee824de4cf805f8454da1aafc88f891",
+			"Name": "Cone 8",
+			"Transform": {
+				"Translation": {
+					"X": 189.5224609375,
+					"Y": 0.0,
+					"Z": -285.5576171875
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "c78e36824c03211234d502a624375b6a",
+			"ParentID": "5ee824de4cf805f8454da1aafc88f891",
+			"Name": "Cone 4",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 0.0,
+					"Z": -285.5576171875
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "de559e4a422c488919d63d87610095c1",
+			"ParentID": "5ee824de4cf805f8454da1aafc88f891",
+			"Name": "Cone 0",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 0.0,
+					"Z": -94.982421875
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "43094eac4adfd5f681de26aa2c589f2b",
+			"ParentID": "5ee824de4cf805f8454da1aafc88f891",
+			"Name": "Cone 1",
+			"Transform": {
+				"Translation": {
+					"X": -94.89794921875,
+					"Y": 0.0,
+					"Z": 0.0
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "a066ac1d42945912b00cb5840feb2181",
+			"ParentID": "5ee824de4cf805f8454da1aafc88f891",
+			"Name": "Cone 11",
+			"Transform": {
+				"Translation": {
+					"X": 189.5224609375,
+					"Y": 0.0,
+					"Z": 4.309814453125
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "b3a94beb43b61de03d8b76be4f84f2fb",
+			"ParentID": "5ee824de4cf805f8454da1aafc88f891",
+			"Name": "Cone 7",
+			"Transform": {
+				"Translation": {
+					"X": 189.5224609375,
+					"Y": 0.0,
+					"Z": -190.5751953125
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "cdc1ab8749e77b0a8c4f52a6ef9829e5",
+			"ParentID": "5ee824de4cf805f8454da1aafc88f891",
+			"Name": "Cone 3",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 0.0,
+					"Z": -190.5751953125
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "f9bcbd3147e66293a996bd8e1165d709",
+			"ParentID": "5ee824de4cf805f8454da1aafc88f891",
+			"Name": "Cone",
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 14,
+			"ID": "3fc0cf6f47d95c5e97c1b1808735a1c6",
+			"ParentID": "5ee824de4cf805f8454da1aafc88f891",
+			"Name": "PushAway",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 15.647420883178711,
+					"Z": -133.10791015625
+				},
+				"Scale": {
+					"X": 5.0,
+					"Y": 1.0,
+					"Z": 5.0
+				}
+			},
+			"StaticFlags": 0,
+			"Scripts": [
+				{
+					"Name": "FlaxTimeNexus.ForceField",
+					"ID": "ef8cd7494c55fb00357cb9880437b365",
+					"V": {
+	"LocalDirection": {
+		"X": 1.0,
+		"Y": 0.2,
+		"Z": 0.0
+	},
+	"Strength": 1000.0
+}
+				},
+				{
+					"Name": "FlaxTimeNexus.Damager",
+					"ID": "70b1c5434edd9119e6ca1b83303f00b4",
+					"V": {
+	"HitDamage": 30.0,
+	"DamagePerSecond": 10.0
+}
+				}
+			],
+			"IsTrigger": true,
+			"Size": {
+				"X": 100.0,
+				"Y": 100.0,
+				"Z": 100.0
+			}
+		},
+		{
+			"TypeID": 3,
+			"ID": "23e422ef41603c264a4d62a83dfdf6b1",
+			"ParentID": "a13dde054b34b1c9360a449594123abd",
+			"Name": "Spikes",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": -139.85626220703126,
+					"Z": 81.183837890625
+				},
+				"Scale": {
+					"X": 1.0,
+					"Y": 3.0,
+					"Z": 1.0
+				}
+			},
+			"StaticFlags": 0
+		},
+		{
+			"TypeID": 1,
+			"ID": "a1cbbc4d4e1de4f0904e5f84aad56a4f",
+			"ParentID": "23e422ef41603c264a4d62a83dfdf6b1",
+			"Name": "Cone 13",
+			"Transform": {
+				"Translation": {
+					"X": 94.62451171875,
+					"Y": 0.0,
+					"Z": -90.672607421875
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "9a6a934e48954ec7037bacb647049764",
+			"ParentID": "23e422ef41603c264a4d62a83dfdf6b1",
+			"Name": "Cone 9",
+			"Transform": {
+				"Translation": {
+					"X": 94.62451171875,
+					"Y": 0.0,
+					"Z": -285.5576171875
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "6dd8325d4b86865379a0e18bc7cdd987",
+			"ParentID": "23e422ef41603c264a4d62a83dfdf6b1",
+			"Name": "Cone 14",
+			"Transform": {
+				"Translation": {
+					"X": 94.62451171875,
+					"Y": 0.0,
+					"Z": 4.309814453125
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "1f13ce7d4095085bfac3b786b238117a",
+			"ParentID": "23e422ef41603c264a4d62a83dfdf6b1",
+			"Name": "Cone 5",
+			"Transform": {
+				"Translation": {
+					"X": -94.89794921875,
+					"Y": 0.0,
+					"Z": -285.5576171875
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "f3fa593e4d53c3e992959aad2b6453b7",
+			"ParentID": "23e422ef41603c264a4d62a83dfdf6b1",
+			"Name": "Cone 10",
+			"Transform": {
+				"Translation": {
+					"X": 94.62451171875,
+					"Y": 0.0,
+					"Z": -190.5751953125
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "b5421c6046dca03dca15a3bc05a82407",
+			"ParentID": "23e422ef41603c264a4d62a83dfdf6b1",
+			"Name": "Cone 2",
+			"Transform": {
+				"Translation": {
+					"X": -94.89794921875,
+					"Y": 0.0,
+					"Z": -94.982421875
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "959d76584f873b495088c6a8c02154f5",
+			"ParentID": "23e422ef41603c264a4d62a83dfdf6b1",
+			"Name": "Cone 6",
+			"Transform": {
+				"Translation": {
+					"X": -94.89794921875,
+					"Y": 0.0,
+					"Z": -190.5751953125
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "339b397c4be74756b1df4281d12cfb74",
+			"ParentID": "23e422ef41603c264a4d62a83dfdf6b1",
+			"Name": "Cone 12",
+			"Transform": {
+				"Translation": {
+					"X": 189.5224609375,
+					"Y": 0.0,
+					"Z": -90.672607421875
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "30a048784dfe7684e106769fcbbce37f",
+			"ParentID": "23e422ef41603c264a4d62a83dfdf6b1",
+			"Name": "Cone 8",
+			"Transform": {
+				"Translation": {
+					"X": 189.5224609375,
+					"Y": 0.0,
+					"Z": -285.5576171875
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "238b5c704e8df1ab9dbadfbd40d1f413",
+			"ParentID": "23e422ef41603c264a4d62a83dfdf6b1",
+			"Name": "Cone 4",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 0.0,
+					"Z": -285.5576171875
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "a26a19f14a837cb519b898abfb2a8919",
+			"ParentID": "23e422ef41603c264a4d62a83dfdf6b1",
+			"Name": "Cone 0",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 0.0,
+					"Z": -94.982421875
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "1730071542c3d0dd22aa939ee13a2d98",
+			"ParentID": "23e422ef41603c264a4d62a83dfdf6b1",
+			"Name": "Cone 1",
+			"Transform": {
+				"Translation": {
+					"X": -94.89794921875,
+					"Y": 0.0,
+					"Z": 0.0
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "e79b3bb549a7a8bf54d632b215e0cd06",
+			"ParentID": "23e422ef41603c264a4d62a83dfdf6b1",
+			"Name": "Cone 11",
+			"Transform": {
+				"Translation": {
+					"X": 189.5224609375,
+					"Y": 0.0,
+					"Z": 4.309814453125
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "244e8ec649c02d92f860168810e27a6e",
+			"ParentID": "23e422ef41603c264a4d62a83dfdf6b1",
+			"Name": "Cone 7",
+			"Transform": {
+				"Translation": {
+					"X": 189.5224609375,
+					"Y": 0.0,
+					"Z": -190.5751953125
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "5f6fc29242a8608cc13547b38acc4790",
+			"ParentID": "23e422ef41603c264a4d62a83dfdf6b1",
+			"Name": "Cone 3",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 0.0,
+					"Z": -190.5751953125
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "bd3f57444952d5628159a48915d229c8",
+			"ParentID": "23e422ef41603c264a4d62a83dfdf6b1",
+			"Name": "Cone",
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 7,
+			"ID": "5368d755403c8c05efbe4d8889562425",
+			"ParentID": "a13dde054b34b1c9360a449594123abd",
+			"Name": "EnvironmentProbe",
+			"Transform": {
+				"Translation": {
+					"X": 52.04833984375,
+					"Y": -14.86968994140625,
+					"Z": -55.729736328125
+				}
+			},
+			"StaticFlags": 0,
+			"Radius": 300.0,
+			"IsCustomProbe": false,
+			"ProbeID": "342294954f8b0eee66fae2bf7e2a2cb7"
+		},
+		{
+			"TypeID": 14,
+			"ID": "9c7674ad4dad589557e054a515f0d33c",
+			"ParentID": "a13dde054b34b1c9360a449594123abd",
+			"Name": "BoxCollider",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 0.0,
+					"Z": -51.924072265625
+				},
+				"Scale": {
+					"X": 5.0,
+					"Y": 1.0,
+					"Z": 5.0
+				}
+			},
+			"StaticFlags": 0,
+			"Scripts": [
+				{
+					"Name": "FlaxTimeNexus.TriggerEnterToggler",
+					"ID": "008200e743cdbec1b948f6ab11eb2991",
+					"V": {
+	"PlayerTrigger": true,
+	"ToActivate": "5ee824de4cf805f8454da1aafc88f891"
+}
+				}
+			],
+			"IsTrigger": true,
+			"Size": {
+				"X": 100.0,
+				"Y": 100.0,
+				"Z": 100.0
+			}
+		},
+		{
+			"TypeID": 3,
+			"ID": "fcec080b4a4db2e706755a83b39ce51e",
+			"ParentID": "5fffebac4864e61533240daba5c9a251",
+			"Name": "Spike Trap",
+			"Transform": {
+				"Translation": {
+					"X": 5075.82080078125,
+					"Y": 697.42919921875,
+					"Z": 5037.9423828125
+				}
+			},
+			"StaticFlags": 0
+		},
+		{
+			"TypeID": 3,
+			"ID": "252f63b04d024b364f6460b994ad2e38",
+			"ParentID": "fcec080b4a4db2e706755a83b39ce51e",
+			"IsActive": false,
+			"Name": "ExtendedSpikes",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": -27.3087158203125,
+					"Z": 81.183837890625
+				},
+				"Scale": {
+					"X": 1.0,
+					"Y": 3.0,
+					"Z": 1.0
+				}
+			},
+			"StaticFlags": 0
+		},
+		{
+			"TypeID": 1,
+			"ID": "b681c0a64f5abd683613ea94e11471b6",
+			"ParentID": "252f63b04d024b364f6460b994ad2e38",
+			"Name": "Cone 13",
+			"Transform": {
+				"Translation": {
+					"X": 94.62451171875,
+					"Y": 0.0,
+					"Z": -90.672607421875
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "7b11d7ef4c507c8a88f0b09bd690cd81",
+			"ParentID": "252f63b04d024b364f6460b994ad2e38",
+			"Name": "Cone 9",
+			"Transform": {
+				"Translation": {
+					"X": 94.62451171875,
+					"Y": 0.0,
+					"Z": -285.5576171875
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "56ec9e014777033242c5a7bcc6fd1d98",
+			"ParentID": "252f63b04d024b364f6460b994ad2e38",
+			"Name": "Cone 14",
+			"Transform": {
+				"Translation": {
+					"X": 94.62451171875,
+					"Y": 0.0,
+					"Z": 4.309814453125
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "650d701c41e18828e01896956933a664",
+			"ParentID": "252f63b04d024b364f6460b994ad2e38",
+			"Name": "Cone 5",
+			"Transform": {
+				"Translation": {
+					"X": -94.89794921875,
+					"Y": 0.0,
+					"Z": -285.5576171875
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "0b6790c94a913ff3f3c1f2a363b0c52f",
+			"ParentID": "252f63b04d024b364f6460b994ad2e38",
+			"Name": "Cone 10",
+			"Transform": {
+				"Translation": {
+					"X": 94.62451171875,
+					"Y": 0.0,
+					"Z": -190.5751953125
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "b39f6f974b7ac76426ae5d8636b75c2f",
+			"ParentID": "252f63b04d024b364f6460b994ad2e38",
+			"Name": "Cone 2",
+			"Transform": {
+				"Translation": {
+					"X": -94.89794921875,
+					"Y": 0.0,
+					"Z": -94.982421875
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "62626c87480dc7f5e916eb9aa84ae548",
+			"ParentID": "252f63b04d024b364f6460b994ad2e38",
+			"Name": "Cone 6",
+			"Transform": {
+				"Translation": {
+					"X": -94.89794921875,
+					"Y": 0.0,
+					"Z": -190.5751953125
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "d6ac6dfe4e8d546061f39c8a31ef48b6",
+			"ParentID": "252f63b04d024b364f6460b994ad2e38",
+			"Name": "Cone 12",
+			"Transform": {
+				"Translation": {
+					"X": 189.5224609375,
+					"Y": 0.0,
+					"Z": -90.672607421875
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "da1ad9684ccd5e1e9e44b18d18d279f8",
+			"ParentID": "252f63b04d024b364f6460b994ad2e38",
+			"Name": "Cone 8",
+			"Transform": {
+				"Translation": {
+					"X": 189.5224609375,
+					"Y": 0.0,
+					"Z": -285.5576171875
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "fba7687f40614cf2d7b50988076ad65a",
+			"ParentID": "252f63b04d024b364f6460b994ad2e38",
+			"Name": "Cone 4",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 0.0,
+					"Z": -285.5576171875
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "b866c9e44876fdfd6afe04b365e7bada",
+			"ParentID": "252f63b04d024b364f6460b994ad2e38",
+			"Name": "Cone 0",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 0.0,
+					"Z": -94.982421875
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "036894254b1ac5df2806598f287c2b3b",
+			"ParentID": "252f63b04d024b364f6460b994ad2e38",
+			"Name": "Cone 1",
+			"Transform": {
+				"Translation": {
+					"X": -94.89794921875,
+					"Y": 0.0,
+					"Z": 0.0
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "34fbc4f147c51ba6e636b3ab03fba074",
+			"ParentID": "252f63b04d024b364f6460b994ad2e38",
+			"Name": "Cone 11",
+			"Transform": {
+				"Translation": {
+					"X": 189.5224609375,
+					"Y": 0.0,
+					"Z": 4.309814453125
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "1489697f40896e6d2ef05faa80e30fbe",
+			"ParentID": "252f63b04d024b364f6460b994ad2e38",
+			"Name": "Cone 7",
+			"Transform": {
+				"Translation": {
+					"X": 189.5224609375,
+					"Y": 0.0,
+					"Z": -190.5751953125
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "006f650c40d7e5a2668f58b33613b0cd",
+			"ParentID": "252f63b04d024b364f6460b994ad2e38",
+			"Name": "Cone 3",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 0.0,
+					"Z": -190.5751953125
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "7377bcbe4abb77260e093c99df3efd29",
+			"ParentID": "252f63b04d024b364f6460b994ad2e38",
+			"Name": "Cone",
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 14,
+			"ID": "027a8b1d424c1cb74e5f46934914965c",
+			"ParentID": "252f63b04d024b364f6460b994ad2e38",
+			"Name": "PushAway",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 15.647420883178711,
+					"Z": -133.10791015625
+				},
+				"Scale": {
+					"X": 5.0,
+					"Y": 1.0,
+					"Z": 5.0
+				}
+			},
+			"StaticFlags": 0,
+			"Scripts": [
+				{
+					"Name": "FlaxTimeNexus.ForceField",
+					"ID": "096c2ce34583c587813e96a07b616509",
+					"V": {
+	"LocalDirection": {
+		"X": 1.0,
+		"Y": 0.2,
+		"Z": 0.0
+	},
+	"Strength": 1000.0
+}
+				},
+				{
+					"Name": "FlaxTimeNexus.Damager",
+					"ID": "067d8dfe4544c49cfc10788c0113f970",
+					"V": {
+	"HitDamage": 30.0,
+	"DamagePerSecond": 10.0
+}
+				}
+			],
+			"IsTrigger": true,
+			"Size": {
+				"X": 100.0,
+				"Y": 100.0,
+				"Z": 100.0
+			}
+		},
+		{
+			"TypeID": 3,
+			"ID": "99d5ec7e43b7482d44b16a96ec1502d3",
+			"ParentID": "fcec080b4a4db2e706755a83b39ce51e",
+			"Name": "Spikes",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": -139.85626220703126,
+					"Z": 81.183837890625
+				},
+				"Scale": {
+					"X": 1.0,
+					"Y": 3.0,
+					"Z": 1.0
+				}
+			},
+			"StaticFlags": 0
+		},
+		{
+			"TypeID": 1,
+			"ID": "3dbeea8947787a3209d60eac8efcf0e7",
+			"ParentID": "99d5ec7e43b7482d44b16a96ec1502d3",
+			"Name": "Cone 13",
+			"Transform": {
+				"Translation": {
+					"X": 94.62451171875,
+					"Y": 0.0,
+					"Z": -90.672607421875
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "cd79bfbb4f40a2570ffd78aa9b773ae9",
+			"ParentID": "99d5ec7e43b7482d44b16a96ec1502d3",
+			"Name": "Cone 9",
+			"Transform": {
+				"Translation": {
+					"X": 94.62451171875,
+					"Y": 0.0,
+					"Z": -285.5576171875
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "1490cdf74a2d560b486790be7bc6c6af",
+			"ParentID": "99d5ec7e43b7482d44b16a96ec1502d3",
+			"Name": "Cone 14",
+			"Transform": {
+				"Translation": {
+					"X": 94.62451171875,
+					"Y": 0.0,
+					"Z": 4.309814453125
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "fd4f183047c572ad916dd1975390ef05",
+			"ParentID": "99d5ec7e43b7482d44b16a96ec1502d3",
+			"Name": "Cone 5",
+			"Transform": {
+				"Translation": {
+					"X": -94.89794921875,
+					"Y": 0.0,
+					"Z": -285.5576171875
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "5cd6c1bd436868818f629cb863579e07",
+			"ParentID": "99d5ec7e43b7482d44b16a96ec1502d3",
+			"Name": "Cone 10",
+			"Transform": {
+				"Translation": {
+					"X": 94.62451171875,
+					"Y": 0.0,
+					"Z": -190.5751953125
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "21c21b374260983772d6db95fd1069b8",
+			"ParentID": "99d5ec7e43b7482d44b16a96ec1502d3",
+			"Name": "Cone 2",
+			"Transform": {
+				"Translation": {
+					"X": -94.89794921875,
+					"Y": 0.0,
+					"Z": -94.982421875
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "b6d2f70a493b6b930752b08060b13a51",
+			"ParentID": "99d5ec7e43b7482d44b16a96ec1502d3",
+			"Name": "Cone 6",
+			"Transform": {
+				"Translation": {
+					"X": -94.89794921875,
+					"Y": 0.0,
+					"Z": -190.5751953125
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "9d973854439e427fca85759016c68bc8",
+			"ParentID": "99d5ec7e43b7482d44b16a96ec1502d3",
+			"Name": "Cone 12",
+			"Transform": {
+				"Translation": {
+					"X": 189.5224609375,
+					"Y": 0.0,
+					"Z": -90.672607421875
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "9044477a44f96cd1cac01eaba852a847",
+			"ParentID": "99d5ec7e43b7482d44b16a96ec1502d3",
+			"Name": "Cone 8",
+			"Transform": {
+				"Translation": {
+					"X": 189.5224609375,
+					"Y": 0.0,
+					"Z": -285.5576171875
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "d22c2c9a496c435809fca0bcc81127e0",
+			"ParentID": "99d5ec7e43b7482d44b16a96ec1502d3",
+			"Name": "Cone 4",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 0.0,
+					"Z": -285.5576171875
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "e89d878048c7d4102f29059279822035",
+			"ParentID": "99d5ec7e43b7482d44b16a96ec1502d3",
+			"Name": "Cone 0",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 0.0,
+					"Z": -94.982421875
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "3ee142284bd301245b56bd908572c25a",
+			"ParentID": "99d5ec7e43b7482d44b16a96ec1502d3",
+			"Name": "Cone 1",
+			"Transform": {
+				"Translation": {
+					"X": -94.89794921875,
+					"Y": 0.0,
+					"Z": 0.0
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "4280a19f4eae43702f420080bdd8d672",
+			"ParentID": "99d5ec7e43b7482d44b16a96ec1502d3",
+			"Name": "Cone 11",
+			"Transform": {
+				"Translation": {
+					"X": 189.5224609375,
+					"Y": 0.0,
+					"Z": 4.309814453125
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "e1d140e44fa97eb1d8809b900a127893",
+			"ParentID": "99d5ec7e43b7482d44b16a96ec1502d3",
+			"Name": "Cone 7",
+			"Transform": {
+				"Translation": {
+					"X": 189.5224609375,
+					"Y": 0.0,
+					"Z": -190.5751953125
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "a89ac82c4fcd0bd289ba688e9a5521ac",
+			"ParentID": "99d5ec7e43b7482d44b16a96ec1502d3",
+			"Name": "Cone 3",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 0.0,
+					"Z": -190.5751953125
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "2ae5914a4dbbef0c92383b9607e46b2d",
+			"ParentID": "99d5ec7e43b7482d44b16a96ec1502d3",
+			"Name": "Cone",
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "085f7c7044635ebd3449599dd29be354"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 7,
+			"ID": "0b9c84834683994c4ad2008922c752ca",
+			"ParentID": "fcec080b4a4db2e706755a83b39ce51e",
+			"Name": "EnvironmentProbe",
+			"Transform": {
+				"Translation": {
+					"X": 52.04833984375,
+					"Y": -14.86968994140625,
+					"Z": -55.729736328125
+				}
+			},
+			"StaticFlags": 0,
+			"Radius": 300.0,
+			"IsCustomProbe": false,
+			"ProbeID": "2efb564e4e6152e9fbbc61856c8d6a42"
+		},
+		{
+			"TypeID": 14,
+			"ID": "4780ae4a42bca2bf56f17782e56c8a40",
+			"ParentID": "fcec080b4a4db2e706755a83b39ce51e",
+			"Name": "BoxCollider",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 0.0,
+					"Z": -51.924072265625
+				},
+				"Scale": {
+					"X": 5.0,
+					"Y": 1.0,
+					"Z": 5.0
+				}
+			},
+			"StaticFlags": 0,
+			"Scripts": [
+				{
+					"Name": "FlaxTimeNexus.TriggerEnterToggler",
+					"ID": "d0f6169848957d18475ae9bedbedf797",
+					"V": {
+	"PlayerTrigger": true,
+	"ToActivate": "252f63b04d024b364f6460b994ad2e38"
+}
+				}
+			],
+			"IsTrigger": true,
+			"Size": {
+				"X": 100.0,
+				"Y": 100.0,
+				"Z": 100.0
+			}
+		},
+		{
+			"TypeID": 3,
+			"ID": "52b972dc46aa06f30ce386ae4bc9b459",
+			"ParentID": "5fffebac4864e61533240daba5c9a251",
+			"Name": "Dart Trap Wall",
+			"Transform": {
+				"Translation": {
+					"X": 2244.76513671875,
+					"Y": 944.8273315429688,
+					"Z": 680.2514038085938
+				}
+			},
+			"StaticFlags": 0
+		},
+		{
+			"TypeID": 3,
+			"ID": "3e3c0680413c1f3cc61f3a9ebf002acc",
+			"ParentID": "52b972dc46aa06f30ce386ae4bc9b459",
+			"Name": "Dart Trap 1",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": -114.45440673828125,
+					"Z": 240.49951171875
+				}
+			},
+			"StaticFlags": 0
+		},
+		{
+			"TypeID": 32,
+			"ID": "23033759488bfeb81149509dffbf1ee4",
+			"ParentID": "3e3c0680413c1f3cc61f3a9ebf002acc",
+			"Name": "Decal",
+			"Transform": {
+				"Orientation": {
+					"X": -0.5,
+					"Y": 0.5,
+					"Z": 0.5,
+					"W": 0.5
+				}
+			},
+			"StaticFlags": 0,
+			"Material": "d0854fd2440c762a753ff0bf8918df80",
+			"Size": {
+				"X": 30.0,
+				"Y": 100.0,
+				"Z": 30.0
+			}
+		},
+		{
+			"TypeID": 11,
+			"ID": "d6a338594391c87e9531aaa0e3a86833",
+			"ParentID": "3e3c0680413c1f3cc61f3a9ebf002acc",
+			"Name": "RigidBody",
+			"Transform": {
+				"Translation": {
+					"X": -9.127685546875,
+					"Y": 0.0,
+					"Z": 0.0
+				}
+			},
+			"StaticFlags": 0,
+			"EnableSimulation": true,
+			"EnableGravity": false,
+			"StartAwake": false
+		},
+		{
+			"TypeID": 1,
+			"ID": "24f8cc014adc32ff4402fba8eb768e30",
+			"ParentID": "d6a338594391c87e9531aaa0e3a86833",
+			"Name": "arrow",
+			"Transform": {
+				"Translation": {
+					"X": 88.850341796875,
+					"Y": 0.0,
+					"Z": 0.0
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": 0.7071068286895752,
+					"Z": 0.0,
+					"W": 0.7071068286895752
+				},
+				"Scale": {
+					"X": 7.0,
+					"Y": 7.0,
+					"Z": 7.0
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1219cacb47b85d078b8308bce1706708",
+			"Buffer": {
+				"Entries": [
+					{},
+					{},
+					{},
 					{}
 				]
 			}
 		},
 		{
-			"TypeID": 17,
-			"ID": "1c08efc7482dd8d5f2520ca9cb217c72",
-			"ParentID": "98e81b164499fc785678ee8383b4023e",
-			"IsActive": false,
-			"Name": "CharacterController",
+			"TypeID": 14,
+			"ID": "0c0bc9184b2253d2d0b68a9adca173c8",
+			"ParentID": "d6a338594391c87e9531aaa0e3a86833",
+			"Name": "BoxCollider",
 			"Transform": {
-				"Translation": {
-					"X": 2873.5908203125,
-					"Y": 756.31494140625,
-					"Z": 655.4207763671875
+				"Scale": {
+					"X": 0.30000001192092898,
+					"Y": 0.30000001192092898,
+					"Z": 0.30000001192092898
 				}
 			},
-			"ContactOffset": 0.10000000149011612,
+			"StaticFlags": 0,
+			"Size": {
+				"X": 100.0,
+				"Y": 100.0,
+				"Z": 100.0
+			}
+		},
+		{
+			"TypeID": 3,
+			"ID": "62e8ab3643456dcd63661dae8f472eb2",
+			"ParentID": "52b972dc46aa06f30ce386ae4bc9b459",
+			"Name": "Dart Trap 0",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": -54.0740966796875,
+					"Z": 240.49951171875
+				}
+			},
+			"StaticFlags": 0
+		},
+		{
+			"TypeID": 32,
+			"ID": "16cce570468543bbafe59bba1e5d78ab",
+			"ParentID": "62e8ab3643456dcd63661dae8f472eb2",
+			"Name": "Decal",
+			"Transform": {
+				"Orientation": {
+					"X": -0.5,
+					"Y": 0.5,
+					"Z": 0.5,
+					"W": 0.5
+				}
+			},
+			"StaticFlags": 0,
+			"Material": "d0854fd2440c762a753ff0bf8918df80",
+			"Size": {
+				"X": 30.0,
+				"Y": 100.0,
+				"Z": 30.0
+			}
+		},
+		{
+			"TypeID": 11,
+			"ID": "193e5aed47524ee0da2905b2265872e7",
+			"ParentID": "62e8ab3643456dcd63661dae8f472eb2",
+			"Name": "RigidBody",
+			"Transform": {
+				"Translation": {
+					"X": -9.127685546875,
+					"Y": 0.0,
+					"Z": 0.0
+				}
+			},
+			"StaticFlags": 0,
+			"EnableSimulation": true,
+			"EnableGravity": false,
+			"StartAwake": false
+		},
+		{
+			"TypeID": 1,
+			"ID": "23bb3ac14542925d8b0ac8a72542a331",
+			"ParentID": "193e5aed47524ee0da2905b2265872e7",
+			"Name": "arrow",
+			"Transform": {
+				"Translation": {
+					"X": 88.850341796875,
+					"Y": 0.0,
+					"Z": 0.0
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": 0.7071068286895752,
+					"Z": 0.0,
+					"W": 0.7071068286895752
+				},
+				"Scale": {
+					"X": 7.0,
+					"Y": 7.0,
+					"Z": 7.0
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1219cacb47b85d078b8308bce1706708",
+			"Buffer": {
+				"Entries": [
+					{},
+					{},
+					{},
+					{}
+				]
+			}
+		},
+		{
+			"TypeID": 14,
+			"ID": "c6b456a04fb4be3e732eb2985cc6d732",
+			"ParentID": "193e5aed47524ee0da2905b2265872e7",
+			"Name": "BoxCollider",
+			"Transform": {
+				"Scale": {
+					"X": 0.30000001192092898,
+					"Y": 0.30000001192092898,
+					"Z": 0.30000001192092898
+				}
+			},
+			"StaticFlags": 0,
+			"Size": {
+				"X": 100.0,
+				"Y": 100.0,
+				"Z": 100.0
+			}
+		},
+		{
+			"TypeID": 3,
+			"ID": "c69f0c4848050b26c951969305879eb4",
+			"ParentID": "52b972dc46aa06f30ce386ae4bc9b459",
+			"Name": "Dart Trap",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 0.0,
+					"Z": 240.49949645996095
+				}
+			},
+			"StaticFlags": 0
+		},
+		{
+			"TypeID": 32,
+			"ID": "22cf19464e342104c9636ab7647a587d",
+			"ParentID": "c69f0c4848050b26c951969305879eb4",
+			"Name": "Decal",
+			"Transform": {
+				"Orientation": {
+					"X": -0.5,
+					"Y": 0.5,
+					"Z": 0.5,
+					"W": 0.5
+				}
+			},
+			"StaticFlags": 0,
+			"Material": "d0854fd2440c762a753ff0bf8918df80",
+			"Size": {
+				"X": 30.0,
+				"Y": 100.0,
+				"Z": 30.0
+			}
+		},
+		{
+			"TypeID": 11,
+			"ID": "59f5655c45efea18fd8c36ae3b2adadf",
+			"ParentID": "c69f0c4848050b26c951969305879eb4",
+			"Name": "RigidBody",
+			"Transform": {
+				"Translation": {
+					"X": -9.127685546875,
+					"Y": 0.0,
+					"Z": 0.0
+				}
+			},
+			"StaticFlags": 0,
+			"EnableSimulation": true,
+			"EnableGravity": false,
+			"StartAwake": false
+		},
+		{
+			"TypeID": 1,
+			"ID": "5b23e9df4aaf56c3a904509373faa8df",
+			"ParentID": "59f5655c45efea18fd8c36ae3b2adadf",
+			"Name": "arrow",
+			"Transform": {
+				"Translation": {
+					"X": 88.850341796875,
+					"Y": 0.0,
+					"Z": 0.0
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": 0.7071068286895752,
+					"Z": 0.0,
+					"W": 0.7071068286895752
+				},
+				"Scale": {
+					"X": 7.0,
+					"Y": 7.0,
+					"Z": 7.0
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1219cacb47b85d078b8308bce1706708",
+			"Buffer": {
+				"Entries": [
+					{},
+					{},
+					{},
+					{}
+				]
+			}
+		},
+		{
+			"TypeID": 14,
+			"ID": "28e5a44e45c23e3361b9bfbd7a74290a",
+			"ParentID": "59f5655c45efea18fd8c36ae3b2adadf",
+			"Name": "BoxCollider",
+			"Transform": {
+				"Scale": {
+					"X": 0.30000001192092898,
+					"Y": 0.30000001192092898,
+					"Z": 0.30000001192092898
+				}
+			},
+			"StaticFlags": 0,
+			"Size": {
+				"X": 100.0,
+				"Y": 100.0,
+				"Z": 100.0
+			}
+		},
+		{
+			"TypeID": 14,
+			"ID": "37c0c18a40e017829fbac299e8062027",
+			"ParentID": "5fffebac4864e61533240daba5c9a251",
+			"Name": "Dart Trap Wall Activator",
+			"Transform": {
+				"Translation": {
+					"X": 2034.2916259765626,
+					"Y": 787.060791015625,
+					"Z": 905.7105712890625
+				},
+				"Scale": {
+					"X": 5.0,
+					"Y": 3.0,
+					"Z": 5.0
+				}
+			},
+			"StaticFlags": 0,
+			"Scripts": [
+				{
+					"Name": "FlaxTimeNexus.ShootArrows",
+					"ID": "318a21a04f4b97b30281aeabcdcd78f4",
+					"V": {
+	"DartTrapWall": "52b972dc46aa06f30ce386ae4bc9b459",
+	"Damage": 10.0,
+	"LinearVelocity": {
+		"X": -300.0,
+		"Y": 0.0,
+		"Z": 0.0
+	}
+}
+				}
+			],
+			"IsTrigger": true,
+			"Size": {
+				"X": 100.0,
+				"Y": 100.0,
+				"Z": 100.0
+			}
+		},
+		{
+			"TypeID": 17,
+			"ID": "a621d2c44756f6880030dba1dbea0b23",
+			"ParentID": "98e81b164499fc785678ee8383b4023e",
+			"Name": "Player",
+			"Transform": {
+				"Translation": {
+					"X": 4749.03515625,
+					"Y": 785.21923828125,
+					"Z": 110.87158203125
+				}
+			},
+			"Layer": 1,
+			"Tag": "Player",
+			"Scripts": [
+				{
+					"Name": "FlaxTimeNexus.FPSCamera",
+					"ID": "6bd8f5b5488dbed571da61ad37f78ae6",
+					"V": {
+	"Acceleration": 10000.0,
+	"Friction": 0.1,
+	"Speed": 700.0,
+	"SprintSpeedIncrease": 1.0,
+	"JumpForce": 500.0,
+	"Player": "a621d2c44756f6880030dba1dbea0b23",
+	"Camera": "ffd38c1a475d7c1644fef49ac1c496a0",
+	"CameraSmoothing": 20.0
+}
+				},
+				{
+					"Name": "FlaxTimeNexus.PlayerLookat",
+					"ID": "81843ed34f9be17ca6b6eda1a4056d11",
+					"V": {
+	"Camera": "ffd38c1a475d7c1644fef49ac1c496a0",
+	"MaxDistance": 3000.0
+}
+				},
+				{
+					"Name": "FlaxTimeNexus.Player",
+					"ID": "aac7050d4125c78fbe97729cebb6f5c0",
+					"V": {
+	"MaxHealth": 100.0,
+	"DefaultHealth": 100.0,
+	"HealthBar": "41dc2bd14a8cddff0138fc9adec0e8c8",
+	"Health": 100.0
+}
+				}
+			],
+			"ContactOffset": 10.0,
 			"StepOffset": 30.0,
 			"SlopeLimit": 45.0,
 			"Radius": 50.0,
 			"Height": 150.0
+		},
+		{
+			"TypeID": 2,
+			"ID": "ffd38c1a475d7c1644fef49ac1c496a0",
+			"ParentID": "a621d2c44756f6880030dba1dbea0b23",
+			"Name": "Camera",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 80.0,
+					"Z": 0.0
+				}
+			},
+			"StaticFlags": 0,
+			"Layer": 1,
+			"Tag": "Player",
+			"UsePerspective": true,
+			"FOV": 60.0,
+			"Near": 2.0,
+			"Far": 10000.0
+		},
+		{
+			"TypeID": 1,
+			"ID": "57752eca4744f05e3f8d089d74c5a31c",
+			"ParentID": "ffd38c1a475d7c1644fef49ac1c496a0",
+			"IsActive": false,
+			"Name": "Gun",
+			"Transform": {
+				"Translation": {
+					"X": 31.156957626342775,
+					"Y": -17.1380615234375,
+					"Z": 21.202392578125
+				},
+				"Orientation": {
+					"X": 0.390277624130249,
+					"Y": -0.5896474123001099,
+					"Z": 0.4867437779903412,
+					"W": 0.5129129886627197
+				},
+				"Scale": {
+					"X": 0.07999999821186066,
+					"Y": 0.07999999821186066,
+					"Z": 0.07999999821186066
+				}
+			},
+			"StaticFlags": 0,
+			"Layer": 1,
+			"Model": "d1eebe63439e18608f1efca6baee6b8c",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "b77238674121fdad3d9bd7853fcb6d0e"
+					},
+					{
+						"ShadowsMode": 1
+					},
+					{
+						"Material": "c5e085c445fe7ee3375b74a070349002",
+						"ShadowsMode": 1
+					},
+					{
+						"ShadowsMode": 1
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 3,
+			"ID": "bd01d02c4d2ebd72e497d98ab4902ce0",
+			"ParentID": "57752eca4744f05e3f8d089d74c5a31c",
+			"Name": "GunBeamStart",
+			"Transform": {
+				"Translation": {
+					"X": 493.395751953125,
+					"Y": 47.808135986328128,
+					"Z": -51.110618591308597
+				}
+			},
+			"StaticFlags": 0,
+			"Layer": 1,
+			"Scripts": [
+				{
+					"Name": "FlaxTimeNexus.TimeGun",
+					"ID": "9b38d5ea4636156d67137dbbd8af3495",
+					"V": {
+	"TimeIncrement": {
+		"Ticks": 153792001
+	},
+	"GunBeamModel": "34efdf4147961b910d6996b5b14cfbd3",
+	"FadeTime": 1.0,
+	"MaxDistance": 10000.0
+}
+				}
+			]
+		},
+		{
+			"TypeID": 1,
+			"ID": "131f4007416706f6e3747b909cef9dca",
+			"ParentID": "ffd38c1a475d7c1644fef49ac1c496a0",
+			"Name": "CursorVortex",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 0.0,
+					"Z": 35.0
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": -0.7071068286895752,
+					"Z": 0.0,
+					"W": 0.7071067094802856
+				},
+				"Scale": {
+					"X": 1.0,
+					"Y": 0.009999999776482582,
+					"Z": 0.009999999776482582
+				}
+			},
+			"Layer": 1,
+			"Scripts": [
+				{
+					"Name": "FlaxTimeNexus.AdjustToResolution",
+					"ID": "70e411304a152d3a9637cab1b737bba1",
+					"V": {
+	"Camera": "ffd38c1a475d7c1644fef49ac1c496a0"
+}
+				}
+			],
+			"Model": "54a1ff4a42af9f018234f7b39b1366b3",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "9a5f939749c6da49ba61bab25061004c",
+						"ScaleInLightmap": 0.0,
+						"ShadowsMode": 0
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 13,
+			"ID": "0d6fa82844f03da4651253ba198fb33b",
+			"ParentID": "a621d2c44756f6880030dba1dbea0b23",
+			"Name": "CrappyHealthBar",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 80.0,
+					"Z": 0.0
+				}
+			},
+			"StaticFlags": 0,
+			"Size": {
+				"X": 1000.0,
+				"Y": 1000.0,
+				"Z": 1000.0
+			},
+			"Priority": 0,
+			"BlendRadius": 10.0,
+			"BlendWeight": 1.0,
+			"IsBounded": true,
+			"Settings": {
+				"AO": {},
+				"Bloom": {},
+				"ToneMapping": {},
+				"ColorGrading": {},
+				"EyeAdaptation": {},
+				"CameraArtifacts": {},
+				"LensFlares": {},
+				"DepthOfField": {},
+				"SSR": {},
+				"PostFxMaterials": [
+					"41dc2bd14a8cddff0138fc9adec0e8c8"
+				]
+			}
 		}
 	]
 }
