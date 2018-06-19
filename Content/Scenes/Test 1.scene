@@ -1,0 +1,185 @@
+{
+	"ID": "1d57609f4b87db50b17281831e1c5b47",
+	"TypeName": "FlaxEngine.SceneAsset",
+	"EngineBuild": 6159,
+	"Data": [
+		{
+			"TypeID": 9,
+			"ID": "1d57609f4b87db50b17281831e1c5b47",
+			"ParentID": "00000000000000000000000000000000",
+			"Name": "Scene",
+			"LightmapSettings": {
+				"GlobalObjectsScale": 0.5,
+				"ChartsPadding": 3,
+				"AtlasSize": 1024,
+				"BounceCount": 1,
+				"UseGeometryWithNoMaterials": false,
+				"Quality": 10
+			}
+		},
+		{
+			"TypeID": 10,
+			"ID": "684c77a547ad6818b22360ad41f568fd",
+			"ParentID": "1d57609f4b87db50b17281831e1c5b47",
+			"Name": "Sky",
+			"Transform": {
+				"Translation": {
+					"X": 40.0,
+					"Y": 150.0,
+					"Z": 0.0
+				}
+			},
+			"Sun": "e883fad44f52f81dc85b5ba74044ba2b",
+			"SunDiscScale": 1.0,
+			"FogSunPower": 8.0
+		},
+		{
+			"TypeID": 4,
+			"ID": "e883fad44f52f81dc85b5ba74044ba2b",
+			"ParentID": "1d57609f4b87db50b17281831e1c5b47",
+			"Name": "Sun",
+			"Transform": {
+				"Translation": {
+					"X": 40.0,
+					"Y": 160.0,
+					"Z": 0.0
+				},
+				"Orientation": {
+					"X": 0.3826834559440613,
+					"Y": 0.0,
+					"Z": 0.0,
+					"W": 0.9238795042037964
+				}
+			},
+			"Brightness": 4.0
+		},
+		{
+			"TypeID": 25,
+			"ID": "e992b48141ed34016fa3aeba0ff1fc79",
+			"ParentID": "1d57609f4b87db50b17281831e1c5b47",
+			"Name": "SkyLight",
+			"Brightness": 1.7999999523162842,
+			"AdditiveColor": {
+				"R": 0.0,
+				"G": 0.0,
+				"B": 0.0,
+				"A": 1.0
+			},
+			"Radius": 100000.0,
+			"SkyDistanceThreshold": 150000.0,
+			"BakedProbe": "00000000000000000000000000000000",
+			"Mode": 1,
+			"CustomTexture": "c54410104ff39427bc11e5bc761d66b0"
+		},
+		{
+			"TypeID": 1,
+			"ID": "9efa0aff4f98088f1e275c8ecc660b16",
+			"ParentID": "1d57609f4b87db50b17281831e1c5b47",
+			"Name": "Floor",
+			"Transform": {
+				"Scale": {
+					"X": 4.0,
+					"Y": 0.5,
+					"Z": 4.0
+				}
+			},
+			"Model": "b43f0f8f4aaba3f3156896a5a22ba493",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "1771b53343d461faacdf2c8581b1fdbb"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 17,
+			"ID": "a801e38748c4e4401ddea7bcfffa9019",
+			"ParentID": "1d57609f4b87db50b17281831e1c5b47",
+			"Name": "Player 0",
+			"Transform": {
+				"Translation": {
+					"X": 2338.19677734375,
+					"Y": 785.21923828125,
+					"Z": 110.87158203125
+				}
+			},
+			"Layer": 1,
+			"Tag": "Player",
+			"Scripts": [
+				{
+					"Name": "FlaxTimeNexus.FPSCamera",
+					"ID": "ff35f88947192f2f7ce06ebc4e1f6f0e",
+					"V": {
+	"Acceleration": 10000.0,
+	"Friction": 0.1,
+	"Speed": 700.0,
+	"SprintSpeedIncrease": 1.0,
+	"JumpForce": 500.0,
+	"CameraSmoothing": 20.0
+}
+				}
+			],
+			"ContactOffset": 10.0,
+			"StepOffset": 30.0,
+			"SlopeLimit": 45.0,
+			"Radius": 50.0,
+			"Height": 150.0
+		},
+		{
+			"TypeID": 2,
+			"ID": "d76c43e246768ac75dc312a164ac7e73",
+			"ParentID": "a801e38748c4e4401ddea7bcfffa9019",
+			"Name": "Camera",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 80.0,
+					"Z": 0.0
+				}
+			},
+			"StaticFlags": 0,
+			"Layer": 1,
+			"Tag": "Player",
+			"UsePerspective": true,
+			"FOV": 60.0,
+			"Near": 2.0,
+			"Far": 10000.0
+		},
+		{
+			"TypeID": 1,
+			"ID": "5988593544bb29a2e5de499b7a328d69",
+			"ParentID": "d76c43e246768ac75dc312a164ac7e73",
+			"Name": "CursorVortex",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 0.0,
+					"Z": 35.0
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": -0.7071068286895752,
+					"Z": 0.0,
+					"W": 0.7071067094802856
+				},
+				"Scale": {
+					"X": 1.0,
+					"Y": 0.009999999776482582,
+					"Z": 0.009999999776482582
+				}
+			},
+			"Layer": 1,
+			"Model": "54a1ff4a42af9f018234f7b39b1366b3",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "9a5f939749c6da49ba61bab25061004c",
+						"ScaleInLightmap": 0.0,
+						"ShadowsMode": 0
+					}
+				]
+			}
+		}
+	]
+}

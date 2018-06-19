@@ -630,7 +630,6 @@
 			"TypeID": 3,
 			"ID": "f6f434294f582ae7954335a13281e527",
 			"ParentID": "5fffebac4864e61533240daba5c9a251",
-			"IsActive": false,
 			"Name": "LevelConnector",
 			"Transform": {
 				"Translation": {
@@ -5097,6 +5096,951 @@
 		},
 		{
 			"TypeID": 3,
+			"ID": "528eeb744b81492787226fa4e8e992bc",
+			"ParentID": "52b972dc46aa06f30ce386ae4bc9b459",
+			"Name": "Dart Trap 8",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": -148.57635498046876,
+					"Z": 16.5836181640625
+				}
+			},
+			"StaticFlags": 0
+		},
+		{
+			"TypeID": 32,
+			"ID": "3b6912f3467bd654a40e6e9069749174",
+			"ParentID": "528eeb744b81492787226fa4e8e992bc",
+			"Name": "Decal",
+			"Transform": {
+				"Orientation": {
+					"X": -0.5,
+					"Y": 0.5,
+					"Z": 0.5,
+					"W": 0.5
+				}
+			},
+			"StaticFlags": 0,
+			"Material": "d0854fd2440c762a753ff0bf8918df80",
+			"Size": {
+				"X": 30.0,
+				"Y": 100.0,
+				"Z": 30.0
+			}
+		},
+		{
+			"TypeID": 11,
+			"ID": "0b6d3f044912cb1b5b72a1a8bc375bb2",
+			"ParentID": "528eeb744b81492787226fa4e8e992bc",
+			"Name": "RigidBody",
+			"Transform": {
+				"Translation": {
+					"X": -9.127685546875,
+					"Y": 0.0,
+					"Z": 0.0
+				}
+			},
+			"StaticFlags": 0,
+			"EnableSimulation": true,
+			"EnableGravity": false,
+			"StartAwake": false
+		},
+		{
+			"TypeID": 1,
+			"ID": "e5548c9a421b59102479558aa5a3dff5",
+			"ParentID": "0b6d3f044912cb1b5b72a1a8bc375bb2",
+			"Name": "arrow",
+			"Transform": {
+				"Translation": {
+					"X": 88.850341796875,
+					"Y": 0.0,
+					"Z": 0.0
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": 0.7071068286895752,
+					"Z": 0.0,
+					"W": 0.7071068286895752
+				},
+				"Scale": {
+					"X": 7.0,
+					"Y": 7.0,
+					"Z": 7.0
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1219cacb47b85d078b8308bce1706708",
+			"Buffer": {
+				"Entries": [
+					{},
+					{},
+					{},
+					{}
+				]
+			}
+		},
+		{
+			"TypeID": 14,
+			"ID": "23714fc74ceeb003d0fc12b863501cb4",
+			"ParentID": "0b6d3f044912cb1b5b72a1a8bc375bb2",
+			"Name": "BoxCollider",
+			"Transform": {
+				"Scale": {
+					"X": 0.30000001192092898,
+					"Y": 0.30000001192092898,
+					"Z": 0.30000001192092898
+				}
+			},
+			"StaticFlags": 0,
+			"Size": {
+				"X": 100.0,
+				"Y": 100.0,
+				"Z": 100.0
+			}
+		},
+		{
+			"TypeID": 3,
+			"ID": "873243ca44a64a39127adf81a2658812",
+			"ParentID": "52b972dc46aa06f30ce386ae4bc9b459",
+			"Name": "Dart Trap 9",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": -88.196044921875,
+					"Z": 16.5836181640625
+				}
+			},
+			"StaticFlags": 0
+		},
+		{
+			"TypeID": 32,
+			"ID": "51e3640f4829431d40ede493c811feed",
+			"ParentID": "873243ca44a64a39127adf81a2658812",
+			"Name": "Decal",
+			"Transform": {
+				"Orientation": {
+					"X": -0.5,
+					"Y": 0.5,
+					"Z": 0.5,
+					"W": 0.5
+				}
+			},
+			"StaticFlags": 0,
+			"Material": "d0854fd2440c762a753ff0bf8918df80",
+			"Size": {
+				"X": 30.0,
+				"Y": 100.0,
+				"Z": 30.0
+			}
+		},
+		{
+			"TypeID": 11,
+			"ID": "c88e440a45abae7a5e4c81becaed3f46",
+			"ParentID": "873243ca44a64a39127adf81a2658812",
+			"Name": "RigidBody",
+			"Transform": {
+				"Translation": {
+					"X": -9.127685546875,
+					"Y": 0.0,
+					"Z": 0.0
+				}
+			},
+			"StaticFlags": 0,
+			"EnableSimulation": true,
+			"EnableGravity": false,
+			"StartAwake": false
+		},
+		{
+			"TypeID": 1,
+			"ID": "03baced94f9a5f66bd63528f58ad0f2d",
+			"ParentID": "c88e440a45abae7a5e4c81becaed3f46",
+			"Name": "arrow",
+			"Transform": {
+				"Translation": {
+					"X": 88.850341796875,
+					"Y": 0.0,
+					"Z": 0.0
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": 0.7071068286895752,
+					"Z": 0.0,
+					"W": 0.7071068286895752
+				},
+				"Scale": {
+					"X": 7.0,
+					"Y": 7.0,
+					"Z": 7.0
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1219cacb47b85d078b8308bce1706708",
+			"Buffer": {
+				"Entries": [
+					{},
+					{},
+					{},
+					{}
+				]
+			}
+		},
+		{
+			"TypeID": 14,
+			"ID": "aa86f2584a2586f2eb94a597063af2a1",
+			"ParentID": "c88e440a45abae7a5e4c81becaed3f46",
+			"Name": "BoxCollider",
+			"Transform": {
+				"Scale": {
+					"X": 0.30000001192092898,
+					"Y": 0.30000001192092898,
+					"Z": 0.30000001192092898
+				}
+			},
+			"StaticFlags": 0,
+			"Size": {
+				"X": 100.0,
+				"Y": 100.0,
+				"Z": 100.0
+			}
+		},
+		{
+			"TypeID": 3,
+			"ID": "1b7db1144c97806d96b4ffb3bd5e34d8",
+			"ParentID": "52b972dc46aa06f30ce386ae4bc9b459",
+			"Name": "Dart Trap 10",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": -34.1219482421875,
+					"Z": 16.5836181640625
+				}
+			},
+			"StaticFlags": 0
+		},
+		{
+			"TypeID": 32,
+			"ID": "457fec22483b3bb0b339759cab5bc662",
+			"ParentID": "1b7db1144c97806d96b4ffb3bd5e34d8",
+			"Name": "Decal",
+			"Transform": {
+				"Orientation": {
+					"X": -0.5,
+					"Y": 0.5,
+					"Z": 0.5,
+					"W": 0.5
+				}
+			},
+			"StaticFlags": 0,
+			"Material": "d0854fd2440c762a753ff0bf8918df80",
+			"Size": {
+				"X": 30.0,
+				"Y": 100.0,
+				"Z": 30.0
+			}
+		},
+		{
+			"TypeID": 11,
+			"ID": "1d05a3204fe1d03318d746ab3e0902a8",
+			"ParentID": "1b7db1144c97806d96b4ffb3bd5e34d8",
+			"Name": "RigidBody",
+			"Transform": {
+				"Translation": {
+					"X": -9.127685546875,
+					"Y": 0.0,
+					"Z": 0.0
+				}
+			},
+			"StaticFlags": 0,
+			"EnableSimulation": true,
+			"EnableGravity": false,
+			"StartAwake": false
+		},
+		{
+			"TypeID": 1,
+			"ID": "c2b2df994e862629fbefd8b210cd6bbb",
+			"ParentID": "1d05a3204fe1d03318d746ab3e0902a8",
+			"Name": "arrow",
+			"Transform": {
+				"Translation": {
+					"X": 88.850341796875,
+					"Y": 0.0,
+					"Z": 0.0
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": 0.7071068286895752,
+					"Z": 0.0,
+					"W": 0.7071068286895752
+				},
+				"Scale": {
+					"X": 7.0,
+					"Y": 7.0,
+					"Z": 7.0
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1219cacb47b85d078b8308bce1706708",
+			"Buffer": {
+				"Entries": [
+					{},
+					{},
+					{},
+					{}
+				]
+			}
+		},
+		{
+			"TypeID": 14,
+			"ID": "c26c163042f13d69d4fb7d9787617a57",
+			"ParentID": "1d05a3204fe1d03318d746ab3e0902a8",
+			"Name": "BoxCollider",
+			"Transform": {
+				"Scale": {
+					"X": 0.30000001192092898,
+					"Y": 0.30000001192092898,
+					"Z": 0.30000001192092898
+				}
+			},
+			"StaticFlags": 0,
+			"Size": {
+				"X": 100.0,
+				"Y": 100.0,
+				"Z": 100.0
+			}
+		},
+		{
+			"TypeID": 3,
+			"ID": "6c3e6f8d4b8758b7cd8ae68ffd8ceada",
+			"ParentID": "52b972dc46aa06f30ce386ae4bc9b459",
+			"Name": "Dart Trap 5",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": -115.37890625,
+					"Z": 91.12164306640625
+				}
+			},
+			"StaticFlags": 0
+		},
+		{
+			"TypeID": 32,
+			"ID": "57acbaff45624c9f79ec3d80a288473e",
+			"ParentID": "6c3e6f8d4b8758b7cd8ae68ffd8ceada",
+			"Name": "Decal",
+			"Transform": {
+				"Orientation": {
+					"X": -0.5,
+					"Y": 0.5,
+					"Z": 0.5,
+					"W": 0.5
+				}
+			},
+			"StaticFlags": 0,
+			"Material": "d0854fd2440c762a753ff0bf8918df80",
+			"Size": {
+				"X": 30.0,
+				"Y": 100.0,
+				"Z": 30.0
+			}
+		},
+		{
+			"TypeID": 11,
+			"ID": "9af364ff4544d587c7a3e6acc0b8ac5a",
+			"ParentID": "6c3e6f8d4b8758b7cd8ae68ffd8ceada",
+			"Name": "RigidBody",
+			"Transform": {
+				"Translation": {
+					"X": -9.127685546875,
+					"Y": 0.0,
+					"Z": 0.0
+				}
+			},
+			"StaticFlags": 0,
+			"EnableSimulation": true,
+			"EnableGravity": false,
+			"StartAwake": false
+		},
+		{
+			"TypeID": 1,
+			"ID": "5acd23df40877ba55d02fdab03ad1706",
+			"ParentID": "9af364ff4544d587c7a3e6acc0b8ac5a",
+			"Name": "arrow",
+			"Transform": {
+				"Translation": {
+					"X": 88.850341796875,
+					"Y": 0.0,
+					"Z": 0.0
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": 0.7071068286895752,
+					"Z": 0.0,
+					"W": 0.7071068286895752
+				},
+				"Scale": {
+					"X": 7.0,
+					"Y": 7.0,
+					"Z": 7.0
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1219cacb47b85d078b8308bce1706708",
+			"Buffer": {
+				"Entries": [
+					{},
+					{},
+					{},
+					{}
+				]
+			}
+		},
+		{
+			"TypeID": 14,
+			"ID": "9a4b1e114f9ae856fd9e44b1447eebea",
+			"ParentID": "9af364ff4544d587c7a3e6acc0b8ac5a",
+			"Name": "BoxCollider",
+			"Transform": {
+				"Scale": {
+					"X": 0.30000001192092898,
+					"Y": 0.30000001192092898,
+					"Z": 0.30000001192092898
+				}
+			},
+			"StaticFlags": 0,
+			"Size": {
+				"X": 100.0,
+				"Y": 100.0,
+				"Z": 100.0
+			}
+		},
+		{
+			"TypeID": 3,
+			"ID": "9fb38d5a4eb27a7e8811f5bfa9f6a758",
+			"ParentID": "52b972dc46aa06f30ce386ae4bc9b459",
+			"Name": "Dart Trap 6",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": -54.99859619140625,
+					"Z": 91.12164306640625
+				}
+			},
+			"StaticFlags": 0
+		},
+		{
+			"TypeID": 32,
+			"ID": "22eafb00471b3de17b1f46b257a44f20",
+			"ParentID": "9fb38d5a4eb27a7e8811f5bfa9f6a758",
+			"Name": "Decal",
+			"Transform": {
+				"Orientation": {
+					"X": -0.5,
+					"Y": 0.5,
+					"Z": 0.5,
+					"W": 0.5
+				}
+			},
+			"StaticFlags": 0,
+			"Material": "d0854fd2440c762a753ff0bf8918df80",
+			"Size": {
+				"X": 30.0,
+				"Y": 100.0,
+				"Z": 30.0
+			}
+		},
+		{
+			"TypeID": 11,
+			"ID": "ab695b2d4e9a2982d6a9d19a50df895f",
+			"ParentID": "9fb38d5a4eb27a7e8811f5bfa9f6a758",
+			"Name": "RigidBody",
+			"Transform": {
+				"Translation": {
+					"X": -9.127685546875,
+					"Y": 0.0,
+					"Z": 0.0
+				}
+			},
+			"StaticFlags": 0,
+			"EnableSimulation": true,
+			"EnableGravity": false,
+			"StartAwake": false
+		},
+		{
+			"TypeID": 1,
+			"ID": "ea4cb927488a173d6f3e25b1a6da573d",
+			"ParentID": "ab695b2d4e9a2982d6a9d19a50df895f",
+			"Name": "arrow",
+			"Transform": {
+				"Translation": {
+					"X": 88.850341796875,
+					"Y": 0.0,
+					"Z": 0.0
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": 0.7071068286895752,
+					"Z": 0.0,
+					"W": 0.7071068286895752
+				},
+				"Scale": {
+					"X": 7.0,
+					"Y": 7.0,
+					"Z": 7.0
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1219cacb47b85d078b8308bce1706708",
+			"Buffer": {
+				"Entries": [
+					{},
+					{},
+					{},
+					{}
+				]
+			}
+		},
+		{
+			"TypeID": 14,
+			"ID": "2db0585048ce882dcf5488a08e309e71",
+			"ParentID": "ab695b2d4e9a2982d6a9d19a50df895f",
+			"Name": "BoxCollider",
+			"Transform": {
+				"Scale": {
+					"X": 0.30000001192092898,
+					"Y": 0.30000001192092898,
+					"Z": 0.30000001192092898
+				}
+			},
+			"StaticFlags": 0,
+			"Size": {
+				"X": 100.0,
+				"Y": 100.0,
+				"Z": 100.0
+			}
+		},
+		{
+			"TypeID": 3,
+			"ID": "9b4dfeb4474d497556a1038c410d869c",
+			"ParentID": "52b972dc46aa06f30ce386ae4bc9b459",
+			"Name": "Dart Trap 7",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": -0.92449951171875,
+					"Z": 91.12164306640625
+				}
+			},
+			"StaticFlags": 0
+		},
+		{
+			"TypeID": 32,
+			"ID": "7128c9514b64d5cf27577fa80b561cbd",
+			"ParentID": "9b4dfeb4474d497556a1038c410d869c",
+			"Name": "Decal",
+			"Transform": {
+				"Orientation": {
+					"X": -0.5,
+					"Y": 0.5,
+					"Z": 0.5,
+					"W": 0.5
+				}
+			},
+			"StaticFlags": 0,
+			"Material": "d0854fd2440c762a753ff0bf8918df80",
+			"Size": {
+				"X": 30.0,
+				"Y": 100.0,
+				"Z": 30.0
+			}
+		},
+		{
+			"TypeID": 11,
+			"ID": "3454ed13491aec579c0c5d8aefad1cc3",
+			"ParentID": "9b4dfeb4474d497556a1038c410d869c",
+			"Name": "RigidBody",
+			"Transform": {
+				"Translation": {
+					"X": -9.127685546875,
+					"Y": 0.0,
+					"Z": 0.0
+				}
+			},
+			"StaticFlags": 0,
+			"EnableSimulation": true,
+			"EnableGravity": false,
+			"StartAwake": false
+		},
+		{
+			"TypeID": 1,
+			"ID": "0a97f5cb4e273b23765249bf8af7852d",
+			"ParentID": "3454ed13491aec579c0c5d8aefad1cc3",
+			"Name": "arrow",
+			"Transform": {
+				"Translation": {
+					"X": 88.850341796875,
+					"Y": 0.0,
+					"Z": 0.0
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": 0.7071068286895752,
+					"Z": 0.0,
+					"W": 0.7071068286895752
+				},
+				"Scale": {
+					"X": 7.0,
+					"Y": 7.0,
+					"Z": 7.0
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1219cacb47b85d078b8308bce1706708",
+			"Buffer": {
+				"Entries": [
+					{},
+					{},
+					{},
+					{}
+				]
+			}
+		},
+		{
+			"TypeID": 14,
+			"ID": "6e2c83d34271d953dac7fd9af0a2e975",
+			"ParentID": "3454ed13491aec579c0c5d8aefad1cc3",
+			"Name": "BoxCollider",
+			"Transform": {
+				"Scale": {
+					"X": 0.30000001192092898,
+					"Y": 0.30000001192092898,
+					"Z": 0.30000001192092898
+				}
+			},
+			"StaticFlags": 0,
+			"Size": {
+				"X": 100.0,
+				"Y": 100.0,
+				"Z": 100.0
+			}
+		},
+		{
+			"TypeID": 3,
+			"ID": "c408dab14633282187304583f2d97729",
+			"ParentID": "52b972dc46aa06f30ce386ae4bc9b459",
+			"Name": "Dart Trap 2",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": -148.1856689453125,
+					"Z": 171.8514404296875
+				}
+			},
+			"StaticFlags": 0
+		},
+		{
+			"TypeID": 32,
+			"ID": "a2c3350b4aad1c1d37d1a5ad3c689829",
+			"ParentID": "c408dab14633282187304583f2d97729",
+			"Name": "Decal",
+			"Transform": {
+				"Orientation": {
+					"X": -0.5,
+					"Y": 0.5,
+					"Z": 0.5,
+					"W": 0.5
+				}
+			},
+			"StaticFlags": 0,
+			"Material": "d0854fd2440c762a753ff0bf8918df80",
+			"Size": {
+				"X": 30.0,
+				"Y": 100.0,
+				"Z": 30.0
+			}
+		},
+		{
+			"TypeID": 11,
+			"ID": "94fdb9074fa966000aeba79cb25d5e7c",
+			"ParentID": "c408dab14633282187304583f2d97729",
+			"Name": "RigidBody",
+			"Transform": {
+				"Translation": {
+					"X": -9.127685546875,
+					"Y": 0.0,
+					"Z": 0.0
+				}
+			},
+			"StaticFlags": 0,
+			"EnableSimulation": true,
+			"EnableGravity": false,
+			"StartAwake": false
+		},
+		{
+			"TypeID": 1,
+			"ID": "29b50a0149f46096db4fe9ac8ebcace3",
+			"ParentID": "94fdb9074fa966000aeba79cb25d5e7c",
+			"Name": "arrow",
+			"Transform": {
+				"Translation": {
+					"X": 88.850341796875,
+					"Y": 0.0,
+					"Z": 0.0
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": 0.7071068286895752,
+					"Z": 0.0,
+					"W": 0.7071068286895752
+				},
+				"Scale": {
+					"X": 7.0,
+					"Y": 7.0,
+					"Z": 7.0
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1219cacb47b85d078b8308bce1706708",
+			"Buffer": {
+				"Entries": [
+					{},
+					{},
+					{},
+					{}
+				]
+			}
+		},
+		{
+			"TypeID": 14,
+			"ID": "3602e1434c84278690f97fbd18ad743a",
+			"ParentID": "94fdb9074fa966000aeba79cb25d5e7c",
+			"Name": "BoxCollider",
+			"Transform": {
+				"Scale": {
+					"X": 0.30000001192092898,
+					"Y": 0.30000001192092898,
+					"Z": 0.30000001192092898
+				}
+			},
+			"StaticFlags": 0,
+			"Size": {
+				"X": 100.0,
+				"Y": 100.0,
+				"Z": 100.0
+			}
+		},
+		{
+			"TypeID": 3,
+			"ID": "b0667294497b8c7ec090db98938cab50",
+			"ParentID": "52b972dc46aa06f30ce386ae4bc9b459",
+			"Name": "Dart Trap 3",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": -87.80535888671875,
+					"Z": 171.8514404296875
+				}
+			},
+			"StaticFlags": 0
+		},
+		{
+			"TypeID": 32,
+			"ID": "e737836a440d5fbec51201b593fd0321",
+			"ParentID": "b0667294497b8c7ec090db98938cab50",
+			"Name": "Decal",
+			"Transform": {
+				"Orientation": {
+					"X": -0.5,
+					"Y": 0.5,
+					"Z": 0.5,
+					"W": 0.5
+				}
+			},
+			"StaticFlags": 0,
+			"Material": "d0854fd2440c762a753ff0bf8918df80",
+			"Size": {
+				"X": 30.0,
+				"Y": 100.0,
+				"Z": 30.0
+			}
+		},
+		{
+			"TypeID": 11,
+			"ID": "3f0fc2c845e96a8e2c58d586e6293491",
+			"ParentID": "b0667294497b8c7ec090db98938cab50",
+			"Name": "RigidBody",
+			"Transform": {
+				"Translation": {
+					"X": -9.127685546875,
+					"Y": 0.0,
+					"Z": 0.0
+				}
+			},
+			"StaticFlags": 0,
+			"EnableSimulation": true,
+			"EnableGravity": false,
+			"StartAwake": false
+		},
+		{
+			"TypeID": 1,
+			"ID": "d6f0640d42565cb9d2acdeaa5bf99c03",
+			"ParentID": "3f0fc2c845e96a8e2c58d586e6293491",
+			"Name": "arrow",
+			"Transform": {
+				"Translation": {
+					"X": 88.850341796875,
+					"Y": 0.0,
+					"Z": 0.0
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": 0.7071068286895752,
+					"Z": 0.0,
+					"W": 0.7071068286895752
+				},
+				"Scale": {
+					"X": 7.0,
+					"Y": 7.0,
+					"Z": 7.0
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1219cacb47b85d078b8308bce1706708",
+			"Buffer": {
+				"Entries": [
+					{},
+					{},
+					{},
+					{}
+				]
+			}
+		},
+		{
+			"TypeID": 14,
+			"ID": "844088a749b08997017fd695d28fc5c9",
+			"ParentID": "3f0fc2c845e96a8e2c58d586e6293491",
+			"Name": "BoxCollider",
+			"Transform": {
+				"Scale": {
+					"X": 0.30000001192092898,
+					"Y": 0.30000001192092898,
+					"Z": 0.30000001192092898
+				}
+			},
+			"StaticFlags": 0,
+			"Size": {
+				"X": 100.0,
+				"Y": 100.0,
+				"Z": 100.0
+			}
+		},
+		{
+			"TypeID": 3,
+			"ID": "c2b0c0aa49cdaf74061f87a16b958de6",
+			"ParentID": "52b972dc46aa06f30ce386ae4bc9b459",
+			"Name": "Dart Trap 4",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": -33.73126220703125,
+					"Z": 171.8514404296875
+				}
+			},
+			"StaticFlags": 0
+		},
+		{
+			"TypeID": 32,
+			"ID": "e744efdd4e70a55cbe34548c39463af6",
+			"ParentID": "c2b0c0aa49cdaf74061f87a16b958de6",
+			"Name": "Decal",
+			"Transform": {
+				"Orientation": {
+					"X": -0.5,
+					"Y": 0.5,
+					"Z": 0.5,
+					"W": 0.5
+				}
+			},
+			"StaticFlags": 0,
+			"Material": "d0854fd2440c762a753ff0bf8918df80",
+			"Size": {
+				"X": 30.0,
+				"Y": 100.0,
+				"Z": 30.0
+			}
+		},
+		{
+			"TypeID": 11,
+			"ID": "1fb5367d42dec8c7492aca91799adad5",
+			"ParentID": "c2b0c0aa49cdaf74061f87a16b958de6",
+			"Name": "RigidBody",
+			"Transform": {
+				"Translation": {
+					"X": -9.127685546875,
+					"Y": 0.0,
+					"Z": 0.0
+				}
+			},
+			"StaticFlags": 0,
+			"EnableSimulation": true,
+			"EnableGravity": false,
+			"StartAwake": false
+		},
+		{
+			"TypeID": 1,
+			"ID": "cfd025e54462f7a2aa037dab6a6c7a40",
+			"ParentID": "1fb5367d42dec8c7492aca91799adad5",
+			"Name": "arrow",
+			"Transform": {
+				"Translation": {
+					"X": 88.850341796875,
+					"Y": 0.0,
+					"Z": 0.0
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": 0.7071068286895752,
+					"Z": 0.0,
+					"W": 0.7071068286895752
+				},
+				"Scale": {
+					"X": 7.0,
+					"Y": 7.0,
+					"Z": 7.0
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1219cacb47b85d078b8308bce1706708",
+			"Buffer": {
+				"Entries": [
+					{},
+					{},
+					{},
+					{}
+				]
+			}
+		},
+		{
+			"TypeID": 14,
+			"ID": "f42f860a4fbe5725ea56bbaa6039733b",
+			"ParentID": "1fb5367d42dec8c7492aca91799adad5",
+			"Name": "BoxCollider",
+			"Transform": {
+				"Scale": {
+					"X": 0.30000001192092898,
+					"Y": 0.30000001192092898,
+					"Z": 0.30000001192092898
+				}
+			},
+			"StaticFlags": 0,
+			"Size": {
+				"X": 100.0,
+				"Y": 100.0,
+				"Z": 100.0
+			}
+		},
+		{
+			"TypeID": 3,
 			"ID": "3e3c0680413c1f3cc61f3a9ebf002acc",
 			"ParentID": "52b972dc46aa06f30ce386ae4bc9b459",
 			"Name": "Dart Trap 1",
@@ -5457,7 +6401,7 @@
 			"Name": "Player",
 			"Transform": {
 				"Translation": {
-					"X": 4749.03515625,
+					"X": 2338.19677734375,
 					"Y": 785.21923828125,
 					"Z": 110.87158203125
 				}
@@ -5622,15 +6566,6 @@
 				}
 			},
 			"Layer": 1,
-			"Scripts": [
-				{
-					"Name": "FlaxTimeNexus.AdjustToResolution",
-					"ID": "70e411304a152d3a9637cab1b737bba1",
-					"V": {
-	"Camera": "ffd38c1a475d7c1644fef49ac1c496a0"
-}
-				}
-			],
 			"Model": "54a1ff4a42af9f018234f7b39b1366b3",
 			"Buffer": {
 				"Entries": [
@@ -5676,6 +6611,128 @@
 				"SSR": {},
 				"PostFxMaterials": [
 					"41dc2bd14a8cddff0138fc9adec0e8c8"
+				]
+			}
+		},
+		{
+			"TypeID": 14,
+			"ID": "f4e82d054c3cb54c725acf81330c2c60",
+			"ParentID": "98e81b164499fc785678ee8383b4023e",
+			"Name": "BoxCollider 0",
+			"Transform": {
+				"Translation": {
+					"X": -3693.81396484375,
+					"Y": 922.8035888671875,
+					"Z": -1839.2041015625
+				},
+				"Scale": {
+					"X": 7.0,
+					"Y": 5.0,
+					"Z": 6.0
+				}
+			},
+			"StaticFlags": 0,
+			"Scripts": [
+				{
+					"Name": "FlaxTimeNexus.DirectionalTeleporter",
+					"ID": "e35d8f2b4030d31aaf77c8b4613a6336",
+					"V": {
+	"ExpectedOrientation": {
+		"X": 0.0,
+		"Y": 0.7071067,
+		"Z": 0.0,
+		"W": 0.7071068
+	},
+	"Other": "f9b408ec4fb084ea35b81aae86843720",
+	"Epsilon": 90.0
+}
+				}
+			],
+			"IsTrigger": true,
+			"Size": {
+				"X": 100.0,
+				"Y": 100.0,
+				"Z": 100.0
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "ea968dd44b5dde5bb069078eb35850fc",
+			"ParentID": "f4e82d054c3cb54c725acf81330c2c60",
+			"IsActive": false,
+			"Name": "Cube",
+			"StaticFlags": 0,
+			"Scripts": [
+				{
+					"Name": "FlaxTimeNexus.Source.Objects.RenderTargetDisplayer",
+					"ID": "4f10694444045fc2d8fbfdb21868201c",
+					"V": {
+	"Resolution": {
+		"X": 100.0,
+		"Y": 100.0
+	}
+}
+				}
+			],
+			"Model": "b43f0f8f4aaba3f3156896a5a22ba493",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"TypeID": 14,
+			"ID": "3e4bd88f455961c7be8e13ad3652d5c4",
+			"ParentID": "98e81b164499fc785678ee8383b4023e",
+			"Name": "BoxCollider",
+			"Transform": {
+				"Translation": {
+					"X": 1983.193359375,
+					"Y": 922.8035888671875,
+					"Z": -1839.2041015625
+				},
+				"Scale": {
+					"X": 7.0,
+					"Y": 5.0,
+					"Z": 6.0
+				}
+			},
+			"StaticFlags": 0,
+			"Scripts": [
+				{
+					"Name": "FlaxTimeNexus.DirectionalTeleporter",
+					"ID": "f9b408ec4fb084ea35b81aae86843720",
+					"V": {
+	"ExpectedOrientation": {
+		"X": 0.0,
+		"Y": -0.7071067,
+		"Z": 0.0,
+		"W": 0.7071068
+	},
+	"Other": "e35d8f2b4030d31aaf77c8b4613a6336",
+	"Epsilon": 90.0
+}
+				}
+			],
+			"IsTrigger": true,
+			"Size": {
+				"X": 100.0,
+				"Y": 100.0,
+				"Z": 100.0
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "bf9af2d042fde4874f732ca1ee461e7d",
+			"ParentID": "3e4bd88f455961c7be8e13ad3652d5c4",
+			"IsActive": false,
+			"Name": "Cube",
+			"StaticFlags": 0,
+			"Model": "b43f0f8f4aaba3f3156896a5a22ba493",
+			"Buffer": {
+				"Entries": [
+					{}
 				]
 			}
 		}

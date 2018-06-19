@@ -1,7 +1,7 @@
 {
 	"ID": "457cae21433ed1410a669aa61b056c12",
 	"TypeName": "FlaxEngine.SceneAsset",
-	"EngineBuild": 6157,
+	"EngineBuild": 6159,
 	"Data": [
 		{
 			"TypeID": 9,
@@ -373,17 +373,55 @@
 			"Transform": {
 				"Translation": {
 					"X": -91.20599365234375,
-					"Y": -13.153505325317383,
+					"Y": 105.62185668945313,
 					"Z": -33.04093933105469
 				}
 			},
 			"StaticFlags": 0,
+			"Scripts": [
+				{
+					"Name": "FlaxTimeNexus.Source.Objects.RenderTargetDisplayer",
+					"ID": "52a03ec64bc0a5b4df13eab1a066e014",
+					"V": {
+	"RenderTargetMaterial": "e7a887d64406c9677470b1b9a3c9d49d",
+	"RenderTargetCamera": "9cfc44fa41912e862e919f8fad9ecfa7",
+	"Resolution": {
+		"X": 1000.0,
+		"Y": 1000.0
+	}
+}
+				}
+			],
 			"Model": "b43f0f8f4aaba3f3156896a5a22ba493",
 			"Buffer": {
 				"Entries": [
 					{}
 				]
 			}
+		},
+		{
+			"TypeID": 2,
+			"ID": "9cfc44fa41912e862e919f8fad9ecfa7",
+			"ParentID": "457cae21433ed1410a669aa61b056c12",
+			"Name": "RTCam",
+			"Transform": {
+				"Translation": {
+					"X": 20.075672149658204,
+					"Y": 62.576812744140628,
+					"Z": 32.0147705078125
+				},
+				"Orientation": {
+					"X": 0.023989956825971605,
+					"Y": -0.40000373125076296,
+					"Z": -0.010474467650055886,
+					"W": -0.9161396622657776
+				}
+			},
+			"StaticFlags": 0,
+			"UsePerspective": true,
+			"FOV": 60.0,
+			"Near": 2.0,
+			"Far": 10000.0
 		}
 	]
 }

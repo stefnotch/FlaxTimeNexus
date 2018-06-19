@@ -38,9 +38,10 @@ namespace FlaxTimeNexus
 
 		private class OnHitDisableSimulation : Script
 		{
+
+			private bool _firstHit = false;
 			public RigidBody arrow;
 
-			private bool _firstHit = true;
 			private void OnTriggerEnter(Collider collider)
 			{
 				Player player = collider?.GetScript<Player>();
@@ -48,14 +49,11 @@ namespace FlaxTimeNexus
 				{
 					arrow.EnableGravity = true;
 				}
-				else if (!_firstHit)
+				else if (this.Actor.LocalPosition.Length < 100f) //Cheap hack
 				{
 					arrow.EnableSimulation = false;
 				}
-				else
-				{
-					_firstHit = false;
-				}
+
 			}
 
 			private void OnCollisionEnter(Collision collision)

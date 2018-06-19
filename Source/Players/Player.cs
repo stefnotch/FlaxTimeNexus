@@ -22,7 +22,7 @@ namespace FlaxTimeNexus
 			get => _health;
 			set
 			{
-				//Eww
+				//Eww - Very cheap health bar
 				if (_h != null)
 				{
 					_h.Value = value / MaxHealth;
@@ -38,12 +38,11 @@ namespace FlaxTimeNexus
 
 		private void Start()
 		{
-			Health = DefaultHealth;
-
 			if (HealthBar)
 			{
 				_h = HealthBar.GetParam("Health");
 			}
+			Health = DefaultHealth;
 		}
 
 		private void Update()
@@ -62,7 +61,15 @@ namespace FlaxTimeNexus
 			if (_checkpoints.Count > 0)
 			{
 				this.Actor.Transform = _checkpoints.Last().PlayerTransform;
+
+				var fpsCamera = this.Actor.GetScript<FPSCamera>();
+				if (fpsCamera) fpsCamera.SetOrientation(_checkpoints.Last().PlayerTransform.Orientation);
 			}
+		}
+
+		private void OnDestroy()
+		{
+
 		}
 	}
 }

@@ -37,6 +37,21 @@ namespace FlaxTimeNexus
 			_yaw = eulerAngles.Y;
 		}
 
+		//Until I think up something better
+		//TODO: Think up a neater solution
+		public void SetOrientation(Quaternion orientation)
+		{
+			Vector3 eulerAngles = orientation.EulerAngles;
+			_pitch = eulerAngles.X;
+			_yaw = eulerAngles.Y;
+		}
+
+		public void SetPitch(Quaternion orientation)
+		{
+			Vector3 eulerAngles = orientation.EulerAngles;
+			_pitch = eulerAngles.X;
+		}
+
 		private void Update()
 		{
 			//The camera may move while the player is paused
@@ -45,10 +60,9 @@ namespace FlaxTimeNexus
 
 			Vector2 mouseDelta = new Vector2(MouseX.Value, MouseY.Value);
 
-			//TODO: Change _pitch and _yaw OnEnable & when the player gets TPd
+			//TODO: Change _pitch and _yaw when the player gets TPd
 			_pitch = Mathf.Clamp(_pitch + mouseDelta.Y, -88, 88);
 			_yaw += mouseDelta.X;
-
 
 			//However, the player shouldn't be able to run around
 			if (Time.TimeScale == 0) return;
