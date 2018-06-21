@@ -38,7 +38,7 @@ namespace FlaxTimeNexus
 			if (Actor.HasChildren)
 			{
 				CurrentlyActive = Actor.GetChildren().DefaultIfEmpty(null).FirstOrDefault(actor => actor.IsActive && actor.GetScript<ActorTime>() != null);
-				_time = CurrentlyActive?.GetScript<ActorTime>()?.Time ?? SDateTime.Zero;
+				_time = CurrentlyActive?.GetScript<ActorTime>()?.Time ?? SDateTime.Zero; //TODO: Indirect children!
 			}
 		}
 

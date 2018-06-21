@@ -59,11 +59,13 @@
     <Compile Include="Source\LevelManager\OnLevelLoad.cs" />
     <Compile Include="Source\Objects\BeamReflector.cs" />
     <Compile Include="Source\Objects\Billboard.cs" />
+    <Compile Include="Source\Objects\CameraCameraCoupling.cs" />
     <Compile Include="Source\Objects\DirectionalTeleporter.cs" />
     <Compile Include="Source\Objects\ForceField.cs" />
     <Compile Include="Source\Objects\OnEnableVelocity.cs" />
     <Compile Include="Source\Objects\Portal.cs" />
     <Compile Include="Source\Objects\RenderTargetDisplayer.cs" />
+    <Compile Include="Source\Objects\Teleporter.cs" />
     <Compile Include="Source\Objects\Health Affecting\Damager.cs" />
     <Compile Include="Source\Objects\Health Affecting\ProjectileMove.cs" />
     <Compile Include="Source\Objects\IsActiveChangers\EnableToggler.cs" />

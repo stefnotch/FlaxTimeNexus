@@ -1,14 +1,14 @@
 ﻿using FlaxEngine;
 using FlaxEngine.Rendering;
 
-namespace FlaxTimeNexus.Source.Objects
+namespace FlaxTimeNexus
 {
 	[ExecuteInEditMode]
 	public class RenderTargetDisplayer : Script
 	{
 		[Tooltip("The first parameter must be the render target image!")]
 		public Material RenderTargetMaterial;
-		public Camera RenderTargetCamera;
+
 
 		[Limit(1, 2000)]
 		public Vector2 Resolution
@@ -28,6 +28,18 @@ namespace FlaxTimeNexus.Source.Objects
 			}
 		}
 
+		public Camera RenderTargetCamera
+		{
+			get => _renderTargetCamera;
+			set
+			{
+				_renderTargetCamera = value;
+				if (_task) _task.Camera = _renderTargetCamera;
+			}
+		}
+
+
+		private Camera _renderTargetCamera;
 		private MaterialInstance _rtMaterial;
 		private RenderTarget _output;
 		private Vector2 _resolution = new Vector2(100, 100);

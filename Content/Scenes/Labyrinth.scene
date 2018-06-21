@@ -58,7 +58,7 @@
 			"ID": "8f18813347d47d4b5c597a82333d129e",
 			"ParentID": "98e81b164499fc785678ee8383b4023e",
 			"Name": "SkyLight",
-			"Brightness": 3.0,
+			"Brightness": 1.0,
 			"AdditiveColor": {
 				"R": 0.0,
 				"G": 0.0,
@@ -318,7 +318,7 @@
 					"Name": "FlaxTimeNexus.InteractToggler",
 					"ID": "da1124794c5e36af5819feaceb83f17e",
 					"V": {
-	"InteractionRadius": 100.0,
+	"InteractionRadius": 300.0,
 	"ToActivate": "f0dd55864aa54e439981498f87142436",
 	"ToDeactivate": "6dce007f43421ae35acfb6b9297a13e3"
 }
@@ -569,9 +569,9 @@
 			"StaticFlags": 0,
 			"Material": "2eb0230d4c13c0d15f874fb325e41869",
 			"Size": {
-				"X": 100.0,
+				"X": 200.0,
 				"Y": 100.0,
-				"Z": 100.0
+				"Z": 200.0
 			}
 		},
 		{
@@ -5082,6 +5082,1280 @@
 		},
 		{
 			"TypeID": 3,
+			"ID": "1967efaa494a7129abb649bd34857383",
+			"ParentID": "5fffebac4864e61533240daba5c9a251",
+			"Name": "Dart Trap Wall 0",
+			"Transform": {
+				"Translation": {
+					"X": 2244.76513671875,
+					"Y": 944.8273315429688,
+					"Z": -686.4879150390625
+				}
+			},
+			"StaticFlags": 0
+		},
+		{
+			"TypeID": 3,
+			"ID": "795ce01c4a211a40f90903b884075264",
+			"ParentID": "1967efaa494a7129abb649bd34857383",
+			"Name": "Dart Trap 8",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": -148.57635498046876,
+					"Z": 16.5836181640625
+				}
+			},
+			"StaticFlags": 0
+		},
+		{
+			"TypeID": 32,
+			"ID": "ffa7de8c48798ee14394c19415a0174a",
+			"ParentID": "795ce01c4a211a40f90903b884075264",
+			"Name": "Decal",
+			"Transform": {
+				"Orientation": {
+					"X": -0.5,
+					"Y": 0.5,
+					"Z": 0.5,
+					"W": 0.5
+				}
+			},
+			"StaticFlags": 0,
+			"Material": "d0854fd2440c762a753ff0bf8918df80",
+			"Size": {
+				"X": 30.0,
+				"Y": 100.0,
+				"Z": 30.0
+			}
+		},
+		{
+			"TypeID": 11,
+			"ID": "bad28e2d4fe67dd190c825bde2899567",
+			"ParentID": "795ce01c4a211a40f90903b884075264",
+			"Name": "RigidBody",
+			"Transform": {
+				"Translation": {
+					"X": -9.127685546875,
+					"Y": 0.0,
+					"Z": 0.0
+				}
+			},
+			"StaticFlags": 0,
+			"EnableSimulation": true,
+			"EnableGravity": false,
+			"StartAwake": false
+		},
+		{
+			"TypeID": 1,
+			"ID": "c0c5e31a4a46d90a03b40a85ce6f8dd9",
+			"ParentID": "bad28e2d4fe67dd190c825bde2899567",
+			"Name": "arrow",
+			"Transform": {
+				"Translation": {
+					"X": 88.850341796875,
+					"Y": 0.0,
+					"Z": 0.0
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": 0.7071068286895752,
+					"Z": 0.0,
+					"W": 0.7071068286895752
+				},
+				"Scale": {
+					"X": 7.0,
+					"Y": 7.0,
+					"Z": 7.0
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1219cacb47b85d078b8308bce1706708",
+			"Buffer": {
+				"Entries": [
+					{},
+					{},
+					{},
+					{}
+				]
+			}
+		},
+		{
+			"TypeID": 14,
+			"ID": "392349e5491fb9879beae1abcf031d3d",
+			"ParentID": "bad28e2d4fe67dd190c825bde2899567",
+			"Name": "BoxCollider",
+			"Transform": {
+				"Scale": {
+					"X": 0.30000001192092898,
+					"Y": 0.30000001192092898,
+					"Z": 0.30000001192092898
+				}
+			},
+			"StaticFlags": 0,
+			"Size": {
+				"X": 100.0,
+				"Y": 100.0,
+				"Z": 100.0
+			}
+		},
+		{
+			"TypeID": 3,
+			"ID": "1d6eb06446584aef7a52219fce0549dc",
+			"ParentID": "1967efaa494a7129abb649bd34857383",
+			"Name": "Dart Trap 9",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": -88.196044921875,
+					"Z": 16.5836181640625
+				}
+			},
+			"StaticFlags": 0
+		},
+		{
+			"TypeID": 32,
+			"ID": "38b5288b41cd1e67736a43946f2b0698",
+			"ParentID": "1d6eb06446584aef7a52219fce0549dc",
+			"Name": "Decal",
+			"Transform": {
+				"Orientation": {
+					"X": -0.5,
+					"Y": 0.5,
+					"Z": 0.5,
+					"W": 0.5
+				}
+			},
+			"StaticFlags": 0,
+			"Material": "d0854fd2440c762a753ff0bf8918df80",
+			"Size": {
+				"X": 30.0,
+				"Y": 100.0,
+				"Z": 30.0
+			}
+		},
+		{
+			"TypeID": 11,
+			"ID": "bfc7e74c47d8ab40a2564cbd80823d76",
+			"ParentID": "1d6eb06446584aef7a52219fce0549dc",
+			"Name": "RigidBody",
+			"Transform": {
+				"Translation": {
+					"X": -9.127685546875,
+					"Y": 0.0,
+					"Z": 0.0
+				}
+			},
+			"StaticFlags": 0,
+			"EnableSimulation": true,
+			"EnableGravity": false,
+			"StartAwake": false
+		},
+		{
+			"TypeID": 1,
+			"ID": "5dcdc3c44aee3596e518479bf540b562",
+			"ParentID": "bfc7e74c47d8ab40a2564cbd80823d76",
+			"Name": "arrow",
+			"Transform": {
+				"Translation": {
+					"X": 88.850341796875,
+					"Y": 0.0,
+					"Z": 0.0
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": 0.7071068286895752,
+					"Z": 0.0,
+					"W": 0.7071068286895752
+				},
+				"Scale": {
+					"X": 7.0,
+					"Y": 7.0,
+					"Z": 7.0
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1219cacb47b85d078b8308bce1706708",
+			"Buffer": {
+				"Entries": [
+					{},
+					{},
+					{},
+					{}
+				]
+			}
+		},
+		{
+			"TypeID": 14,
+			"ID": "59c79d2c4b235461759f278ea9cea094",
+			"ParentID": "bfc7e74c47d8ab40a2564cbd80823d76",
+			"Name": "BoxCollider",
+			"Transform": {
+				"Scale": {
+					"X": 0.30000001192092898,
+					"Y": 0.30000001192092898,
+					"Z": 0.30000001192092898
+				}
+			},
+			"StaticFlags": 0,
+			"Size": {
+				"X": 100.0,
+				"Y": 100.0,
+				"Z": 100.0
+			}
+		},
+		{
+			"TypeID": 3,
+			"ID": "3bb6f9a44287954b28b8c0bc35971f80",
+			"ParentID": "1967efaa494a7129abb649bd34857383",
+			"Name": "Dart Trap 10",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": -34.1219482421875,
+					"Z": 16.5836181640625
+				}
+			},
+			"StaticFlags": 0
+		},
+		{
+			"TypeID": 32,
+			"ID": "84d56b9b44e5edb920c4b5a5612929a3",
+			"ParentID": "3bb6f9a44287954b28b8c0bc35971f80",
+			"Name": "Decal",
+			"Transform": {
+				"Orientation": {
+					"X": -0.5,
+					"Y": 0.5,
+					"Z": 0.5,
+					"W": 0.5
+				}
+			},
+			"StaticFlags": 0,
+			"Material": "d0854fd2440c762a753ff0bf8918df80",
+			"Size": {
+				"X": 30.0,
+				"Y": 100.0,
+				"Z": 30.0
+			}
+		},
+		{
+			"TypeID": 11,
+			"ID": "476d0be746ce09ab90c917983d96fd8a",
+			"ParentID": "3bb6f9a44287954b28b8c0bc35971f80",
+			"Name": "RigidBody",
+			"Transform": {
+				"Translation": {
+					"X": -9.127685546875,
+					"Y": 0.0,
+					"Z": 0.0
+				}
+			},
+			"StaticFlags": 0,
+			"EnableSimulation": true,
+			"EnableGravity": false,
+			"StartAwake": false
+		},
+		{
+			"TypeID": 1,
+			"ID": "2cf7df574f349fb06efd2893db02034a",
+			"ParentID": "476d0be746ce09ab90c917983d96fd8a",
+			"Name": "arrow",
+			"Transform": {
+				"Translation": {
+					"X": 88.850341796875,
+					"Y": 0.0,
+					"Z": 0.0
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": 0.7071068286895752,
+					"Z": 0.0,
+					"W": 0.7071068286895752
+				},
+				"Scale": {
+					"X": 7.0,
+					"Y": 7.0,
+					"Z": 7.0
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1219cacb47b85d078b8308bce1706708",
+			"Buffer": {
+				"Entries": [
+					{},
+					{},
+					{},
+					{}
+				]
+			}
+		},
+		{
+			"TypeID": 14,
+			"ID": "e9ecc669479c78345c0c0c96f5100212",
+			"ParentID": "476d0be746ce09ab90c917983d96fd8a",
+			"Name": "BoxCollider",
+			"Transform": {
+				"Scale": {
+					"X": 0.30000001192092898,
+					"Y": 0.30000001192092898,
+					"Z": 0.30000001192092898
+				}
+			},
+			"StaticFlags": 0,
+			"Size": {
+				"X": 100.0,
+				"Y": 100.0,
+				"Z": 100.0
+			}
+		},
+		{
+			"TypeID": 3,
+			"ID": "1dfa32d8416516dcae75e188843c437b",
+			"ParentID": "1967efaa494a7129abb649bd34857383",
+			"Name": "Dart Trap 5",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": -115.37890625,
+					"Z": 91.12164306640625
+				}
+			},
+			"StaticFlags": 0
+		},
+		{
+			"TypeID": 32,
+			"ID": "458dd153448c7aef35f067a6826c7a90",
+			"ParentID": "1dfa32d8416516dcae75e188843c437b",
+			"Name": "Decal",
+			"Transform": {
+				"Orientation": {
+					"X": -0.5,
+					"Y": 0.5,
+					"Z": 0.5,
+					"W": 0.5
+				}
+			},
+			"StaticFlags": 0,
+			"Material": "d0854fd2440c762a753ff0bf8918df80",
+			"Size": {
+				"X": 30.0,
+				"Y": 100.0,
+				"Z": 30.0
+			}
+		},
+		{
+			"TypeID": 11,
+			"ID": "8ed82c834d3ac436c434e2aa67dd2488",
+			"ParentID": "1dfa32d8416516dcae75e188843c437b",
+			"Name": "RigidBody",
+			"Transform": {
+				"Translation": {
+					"X": -9.127685546875,
+					"Y": 0.0,
+					"Z": 0.0
+				}
+			},
+			"StaticFlags": 0,
+			"EnableSimulation": true,
+			"EnableGravity": false,
+			"StartAwake": false
+		},
+		{
+			"TypeID": 1,
+			"ID": "556992194698d08f7da1f485a5c04087",
+			"ParentID": "8ed82c834d3ac436c434e2aa67dd2488",
+			"Name": "arrow",
+			"Transform": {
+				"Translation": {
+					"X": 88.850341796875,
+					"Y": 0.0,
+					"Z": 0.0
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": 0.7071068286895752,
+					"Z": 0.0,
+					"W": 0.7071068286895752
+				},
+				"Scale": {
+					"X": 7.0,
+					"Y": 7.0,
+					"Z": 7.0
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1219cacb47b85d078b8308bce1706708",
+			"Buffer": {
+				"Entries": [
+					{},
+					{},
+					{},
+					{}
+				]
+			}
+		},
+		{
+			"TypeID": 14,
+			"ID": "8d71e044427dbd5a9736d8aa8c0faf52",
+			"ParentID": "8ed82c834d3ac436c434e2aa67dd2488",
+			"Name": "BoxCollider",
+			"Transform": {
+				"Scale": {
+					"X": 0.30000001192092898,
+					"Y": 0.30000001192092898,
+					"Z": 0.30000001192092898
+				}
+			},
+			"StaticFlags": 0,
+			"Size": {
+				"X": 100.0,
+				"Y": 100.0,
+				"Z": 100.0
+			}
+		},
+		{
+			"TypeID": 3,
+			"ID": "58bd757047008c3df10d5e982c64fb48",
+			"ParentID": "1967efaa494a7129abb649bd34857383",
+			"Name": "Dart Trap 6",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": -54.99859619140625,
+					"Z": 91.12164306640625
+				}
+			},
+			"StaticFlags": 0
+		},
+		{
+			"TypeID": 32,
+			"ID": "311ff12b4c2d8eef5033ad94dbf1ee16",
+			"ParentID": "58bd757047008c3df10d5e982c64fb48",
+			"Name": "Decal",
+			"Transform": {
+				"Orientation": {
+					"X": -0.5,
+					"Y": 0.5,
+					"Z": 0.5,
+					"W": 0.5
+				}
+			},
+			"StaticFlags": 0,
+			"Material": "d0854fd2440c762a753ff0bf8918df80",
+			"Size": {
+				"X": 30.0,
+				"Y": 100.0,
+				"Z": 30.0
+			}
+		},
+		{
+			"TypeID": 11,
+			"ID": "6d90f9354135799ff4fee0b51a2c6b05",
+			"ParentID": "58bd757047008c3df10d5e982c64fb48",
+			"Name": "RigidBody",
+			"Transform": {
+				"Translation": {
+					"X": -9.127685546875,
+					"Y": 0.0,
+					"Z": 0.0
+				}
+			},
+			"StaticFlags": 0,
+			"EnableSimulation": true,
+			"EnableGravity": false,
+			"StartAwake": false
+		},
+		{
+			"TypeID": 1,
+			"ID": "8b94364f4c5a809d3c9a028dbdc4e3f9",
+			"ParentID": "6d90f9354135799ff4fee0b51a2c6b05",
+			"Name": "arrow",
+			"Transform": {
+				"Translation": {
+					"X": 88.850341796875,
+					"Y": 0.0,
+					"Z": 0.0
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": 0.7071068286895752,
+					"Z": 0.0,
+					"W": 0.7071068286895752
+				},
+				"Scale": {
+					"X": 7.0,
+					"Y": 7.0,
+					"Z": 7.0
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1219cacb47b85d078b8308bce1706708",
+			"Buffer": {
+				"Entries": [
+					{},
+					{},
+					{},
+					{}
+				]
+			}
+		},
+		{
+			"TypeID": 14,
+			"ID": "6e65c71d42475e82af65d399cd0c1395",
+			"ParentID": "6d90f9354135799ff4fee0b51a2c6b05",
+			"Name": "BoxCollider",
+			"Transform": {
+				"Scale": {
+					"X": 0.30000001192092898,
+					"Y": 0.30000001192092898,
+					"Z": 0.30000001192092898
+				}
+			},
+			"StaticFlags": 0,
+			"Size": {
+				"X": 100.0,
+				"Y": 100.0,
+				"Z": 100.0
+			}
+		},
+		{
+			"TypeID": 3,
+			"ID": "61c69fed45301bc6699154b358fd1006",
+			"ParentID": "1967efaa494a7129abb649bd34857383",
+			"Name": "Dart Trap 7",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": -0.92449951171875,
+					"Z": 91.12164306640625
+				}
+			},
+			"StaticFlags": 0
+		},
+		{
+			"TypeID": 32,
+			"ID": "1af67779490b227313b4a090f7f8efdd",
+			"ParentID": "61c69fed45301bc6699154b358fd1006",
+			"Name": "Decal",
+			"Transform": {
+				"Orientation": {
+					"X": -0.5,
+					"Y": 0.5,
+					"Z": 0.5,
+					"W": 0.5
+				}
+			},
+			"StaticFlags": 0,
+			"Material": "d0854fd2440c762a753ff0bf8918df80",
+			"Size": {
+				"X": 30.0,
+				"Y": 100.0,
+				"Z": 30.0
+			}
+		},
+		{
+			"TypeID": 11,
+			"ID": "f469094843661d30233bd6b5f19cec05",
+			"ParentID": "61c69fed45301bc6699154b358fd1006",
+			"Name": "RigidBody",
+			"Transform": {
+				"Translation": {
+					"X": -9.127685546875,
+					"Y": 0.0,
+					"Z": 0.0
+				}
+			},
+			"StaticFlags": 0,
+			"EnableSimulation": true,
+			"EnableGravity": false,
+			"StartAwake": false
+		},
+		{
+			"TypeID": 1,
+			"ID": "f1cc7d7e4270abecdd79a5ab32721914",
+			"ParentID": "f469094843661d30233bd6b5f19cec05",
+			"Name": "arrow",
+			"Transform": {
+				"Translation": {
+					"X": 88.850341796875,
+					"Y": 0.0,
+					"Z": 0.0
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": 0.7071068286895752,
+					"Z": 0.0,
+					"W": 0.7071068286895752
+				},
+				"Scale": {
+					"X": 7.0,
+					"Y": 7.0,
+					"Z": 7.0
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1219cacb47b85d078b8308bce1706708",
+			"Buffer": {
+				"Entries": [
+					{},
+					{},
+					{},
+					{}
+				]
+			}
+		},
+		{
+			"TypeID": 14,
+			"ID": "a3bbff4a412db8d23bc7458b9f4e4e5d",
+			"ParentID": "f469094843661d30233bd6b5f19cec05",
+			"Name": "BoxCollider",
+			"Transform": {
+				"Scale": {
+					"X": 0.30000001192092898,
+					"Y": 0.30000001192092898,
+					"Z": 0.30000001192092898
+				}
+			},
+			"StaticFlags": 0,
+			"Size": {
+				"X": 100.0,
+				"Y": 100.0,
+				"Z": 100.0
+			}
+		},
+		{
+			"TypeID": 3,
+			"ID": "4ecc438b403066b1ec215083dc1b31dc",
+			"ParentID": "1967efaa494a7129abb649bd34857383",
+			"Name": "Dart Trap 2",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": -148.1856689453125,
+					"Z": 171.8514404296875
+				}
+			},
+			"StaticFlags": 0
+		},
+		{
+			"TypeID": 32,
+			"ID": "35e1abea47baf6606a2a418575ca7f2f",
+			"ParentID": "4ecc438b403066b1ec215083dc1b31dc",
+			"Name": "Decal",
+			"Transform": {
+				"Orientation": {
+					"X": -0.5,
+					"Y": 0.5,
+					"Z": 0.5,
+					"W": 0.5
+				}
+			},
+			"StaticFlags": 0,
+			"Material": "d0854fd2440c762a753ff0bf8918df80",
+			"Size": {
+				"X": 30.0,
+				"Y": 100.0,
+				"Z": 30.0
+			}
+		},
+		{
+			"TypeID": 11,
+			"ID": "b167d2f946476a89cff28db91cc0c77c",
+			"ParentID": "4ecc438b403066b1ec215083dc1b31dc",
+			"Name": "RigidBody",
+			"Transform": {
+				"Translation": {
+					"X": -9.127685546875,
+					"Y": 0.0,
+					"Z": 0.0
+				}
+			},
+			"StaticFlags": 0,
+			"EnableSimulation": true,
+			"EnableGravity": false,
+			"StartAwake": false
+		},
+		{
+			"TypeID": 1,
+			"ID": "369aefc7427cf086c3a5ddac65fcae69",
+			"ParentID": "b167d2f946476a89cff28db91cc0c77c",
+			"Name": "arrow",
+			"Transform": {
+				"Translation": {
+					"X": 88.850341796875,
+					"Y": 0.0,
+					"Z": 0.0
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": 0.7071068286895752,
+					"Z": 0.0,
+					"W": 0.7071068286895752
+				},
+				"Scale": {
+					"X": 7.0,
+					"Y": 7.0,
+					"Z": 7.0
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1219cacb47b85d078b8308bce1706708",
+			"Buffer": {
+				"Entries": [
+					{},
+					{},
+					{},
+					{}
+				]
+			}
+		},
+		{
+			"TypeID": 14,
+			"ID": "6afd3e1048e198f0282b5287c9c5c233",
+			"ParentID": "b167d2f946476a89cff28db91cc0c77c",
+			"Name": "BoxCollider",
+			"Transform": {
+				"Scale": {
+					"X": 0.30000001192092898,
+					"Y": 0.30000001192092898,
+					"Z": 0.30000001192092898
+				}
+			},
+			"StaticFlags": 0,
+			"Size": {
+				"X": 100.0,
+				"Y": 100.0,
+				"Z": 100.0
+			}
+		},
+		{
+			"TypeID": 3,
+			"ID": "44dd65a944ebb3b5b0a32286884d7add",
+			"ParentID": "1967efaa494a7129abb649bd34857383",
+			"Name": "Dart Trap 3",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": -87.80535888671875,
+					"Z": 171.8514404296875
+				}
+			},
+			"StaticFlags": 0
+		},
+		{
+			"TypeID": 32,
+			"ID": "5fb7cb254859dd520df0e184c1da7710",
+			"ParentID": "44dd65a944ebb3b5b0a32286884d7add",
+			"Name": "Decal",
+			"Transform": {
+				"Orientation": {
+					"X": -0.5,
+					"Y": 0.5,
+					"Z": 0.5,
+					"W": 0.5
+				}
+			},
+			"StaticFlags": 0,
+			"Material": "d0854fd2440c762a753ff0bf8918df80",
+			"Size": {
+				"X": 30.0,
+				"Y": 100.0,
+				"Z": 30.0
+			}
+		},
+		{
+			"TypeID": 11,
+			"ID": "c1a8d7d44764f770781d82a744f91b4b",
+			"ParentID": "44dd65a944ebb3b5b0a32286884d7add",
+			"Name": "RigidBody",
+			"Transform": {
+				"Translation": {
+					"X": -9.127685546875,
+					"Y": 0.0,
+					"Z": 0.0
+				}
+			},
+			"StaticFlags": 0,
+			"EnableSimulation": true,
+			"EnableGravity": false,
+			"StartAwake": false
+		},
+		{
+			"TypeID": 1,
+			"ID": "6b880794477653b6240e08a6c7c4f6f3",
+			"ParentID": "c1a8d7d44764f770781d82a744f91b4b",
+			"Name": "arrow",
+			"Transform": {
+				"Translation": {
+					"X": 88.850341796875,
+					"Y": 0.0,
+					"Z": 0.0
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": 0.7071068286895752,
+					"Z": 0.0,
+					"W": 0.7071068286895752
+				},
+				"Scale": {
+					"X": 7.0,
+					"Y": 7.0,
+					"Z": 7.0
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1219cacb47b85d078b8308bce1706708",
+			"Buffer": {
+				"Entries": [
+					{},
+					{},
+					{},
+					{}
+				]
+			}
+		},
+		{
+			"TypeID": 14,
+			"ID": "cb730c0e47f4d9026791e3a9a117dd1b",
+			"ParentID": "c1a8d7d44764f770781d82a744f91b4b",
+			"Name": "BoxCollider",
+			"Transform": {
+				"Scale": {
+					"X": 0.30000001192092898,
+					"Y": 0.30000001192092898,
+					"Z": 0.30000001192092898
+				}
+			},
+			"StaticFlags": 0,
+			"Size": {
+				"X": 100.0,
+				"Y": 100.0,
+				"Z": 100.0
+			}
+		},
+		{
+			"TypeID": 3,
+			"ID": "08d2d8c0493d1fad422f6b94b5630316",
+			"ParentID": "1967efaa494a7129abb649bd34857383",
+			"Name": "Dart Trap 4",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": -33.73126220703125,
+					"Z": 171.8514404296875
+				}
+			},
+			"StaticFlags": 0
+		},
+		{
+			"TypeID": 32,
+			"ID": "82514c7d4d8a38d33c137fab88eda054",
+			"ParentID": "08d2d8c0493d1fad422f6b94b5630316",
+			"Name": "Decal",
+			"Transform": {
+				"Orientation": {
+					"X": -0.5,
+					"Y": 0.5,
+					"Z": 0.5,
+					"W": 0.5
+				}
+			},
+			"StaticFlags": 0,
+			"Material": "d0854fd2440c762a753ff0bf8918df80",
+			"Size": {
+				"X": 30.0,
+				"Y": 100.0,
+				"Z": 30.0
+			}
+		},
+		{
+			"TypeID": 11,
+			"ID": "dce402464ff6ec0f41c3f89cb31a5d42",
+			"ParentID": "08d2d8c0493d1fad422f6b94b5630316",
+			"Name": "RigidBody",
+			"Transform": {
+				"Translation": {
+					"X": -9.127685546875,
+					"Y": 0.0,
+					"Z": 0.0
+				}
+			},
+			"StaticFlags": 0,
+			"EnableSimulation": true,
+			"EnableGravity": false,
+			"StartAwake": false
+		},
+		{
+			"TypeID": 1,
+			"ID": "0702ad52477d2b737ca5d2b1a1411d62",
+			"ParentID": "dce402464ff6ec0f41c3f89cb31a5d42",
+			"Name": "arrow",
+			"Transform": {
+				"Translation": {
+					"X": 88.850341796875,
+					"Y": 0.0,
+					"Z": 0.0
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": 0.7071068286895752,
+					"Z": 0.0,
+					"W": 0.7071068286895752
+				},
+				"Scale": {
+					"X": 7.0,
+					"Y": 7.0,
+					"Z": 7.0
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1219cacb47b85d078b8308bce1706708",
+			"Buffer": {
+				"Entries": [
+					{},
+					{},
+					{},
+					{}
+				]
+			}
+		},
+		{
+			"TypeID": 14,
+			"ID": "89006c0c4709c6c5007811a8122d1759",
+			"ParentID": "dce402464ff6ec0f41c3f89cb31a5d42",
+			"Name": "BoxCollider",
+			"Transform": {
+				"Scale": {
+					"X": 0.30000001192092898,
+					"Y": 0.30000001192092898,
+					"Z": 0.30000001192092898
+				}
+			},
+			"StaticFlags": 0,
+			"Size": {
+				"X": 100.0,
+				"Y": 100.0,
+				"Z": 100.0
+			}
+		},
+		{
+			"TypeID": 3,
+			"ID": "b7bb211e46502af35abdb19264896a0c",
+			"ParentID": "1967efaa494a7129abb649bd34857383",
+			"Name": "Dart Trap 1",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": -114.45440673828125,
+					"Z": 240.49951171875
+				}
+			},
+			"StaticFlags": 0
+		},
+		{
+			"TypeID": 32,
+			"ID": "e751305545491200f6774e8fb5a2470a",
+			"ParentID": "b7bb211e46502af35abdb19264896a0c",
+			"Name": "Decal",
+			"Transform": {
+				"Orientation": {
+					"X": -0.5,
+					"Y": 0.5,
+					"Z": 0.5,
+					"W": 0.5
+				}
+			},
+			"StaticFlags": 0,
+			"Material": "d0854fd2440c762a753ff0bf8918df80",
+			"Size": {
+				"X": 30.0,
+				"Y": 100.0,
+				"Z": 30.0
+			}
+		},
+		{
+			"TypeID": 11,
+			"ID": "fe45c54047f27a1fe5ca5a9cad0dbec3",
+			"ParentID": "b7bb211e46502af35abdb19264896a0c",
+			"Name": "RigidBody",
+			"Transform": {
+				"Translation": {
+					"X": -9.127685546875,
+					"Y": 0.0,
+					"Z": 0.0
+				}
+			},
+			"StaticFlags": 0,
+			"EnableSimulation": true,
+			"EnableGravity": false,
+			"StartAwake": false
+		},
+		{
+			"TypeID": 1,
+			"ID": "c10fb5404998a7bd1a05b39ea92cb049",
+			"ParentID": "fe45c54047f27a1fe5ca5a9cad0dbec3",
+			"Name": "arrow",
+			"Transform": {
+				"Translation": {
+					"X": 88.850341796875,
+					"Y": 0.0,
+					"Z": 0.0
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": 0.7071068286895752,
+					"Z": 0.0,
+					"W": 0.7071068286895752
+				},
+				"Scale": {
+					"X": 7.0,
+					"Y": 7.0,
+					"Z": 7.0
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1219cacb47b85d078b8308bce1706708",
+			"Buffer": {
+				"Entries": [
+					{},
+					{},
+					{},
+					{}
+				]
+			}
+		},
+		{
+			"TypeID": 14,
+			"ID": "f6fdc0484610dc4b63e60fb5d9a784ad",
+			"ParentID": "fe45c54047f27a1fe5ca5a9cad0dbec3",
+			"Name": "BoxCollider",
+			"Transform": {
+				"Scale": {
+					"X": 0.30000001192092898,
+					"Y": 0.30000001192092898,
+					"Z": 0.30000001192092898
+				}
+			},
+			"StaticFlags": 0,
+			"Size": {
+				"X": 100.0,
+				"Y": 100.0,
+				"Z": 100.0
+			}
+		},
+		{
+			"TypeID": 3,
+			"ID": "376720e7475175decd3826a76ae4b47a",
+			"ParentID": "1967efaa494a7129abb649bd34857383",
+			"Name": "Dart Trap 0",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": -54.0740966796875,
+					"Z": 240.49951171875
+				}
+			},
+			"StaticFlags": 0
+		},
+		{
+			"TypeID": 32,
+			"ID": "09250de54475262f7bee92af636fb071",
+			"ParentID": "376720e7475175decd3826a76ae4b47a",
+			"Name": "Decal",
+			"Transform": {
+				"Orientation": {
+					"X": -0.5,
+					"Y": 0.5,
+					"Z": 0.5,
+					"W": 0.5
+				}
+			},
+			"StaticFlags": 0,
+			"Material": "d0854fd2440c762a753ff0bf8918df80",
+			"Size": {
+				"X": 30.0,
+				"Y": 100.0,
+				"Z": 30.0
+			}
+		},
+		{
+			"TypeID": 11,
+			"ID": "c10ae2ed48d250a1849748ac26344bd5",
+			"ParentID": "376720e7475175decd3826a76ae4b47a",
+			"Name": "RigidBody",
+			"Transform": {
+				"Translation": {
+					"X": -9.127685546875,
+					"Y": 0.0,
+					"Z": 0.0
+				}
+			},
+			"StaticFlags": 0,
+			"EnableSimulation": true,
+			"EnableGravity": false,
+			"StartAwake": false
+		},
+		{
+			"TypeID": 1,
+			"ID": "e15abcc443f20e10a0c6eebf58afb43f",
+			"ParentID": "c10ae2ed48d250a1849748ac26344bd5",
+			"Name": "arrow",
+			"Transform": {
+				"Translation": {
+					"X": 88.850341796875,
+					"Y": 0.0,
+					"Z": 0.0
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": 0.7071068286895752,
+					"Z": 0.0,
+					"W": 0.7071068286895752
+				},
+				"Scale": {
+					"X": 7.0,
+					"Y": 7.0,
+					"Z": 7.0
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1219cacb47b85d078b8308bce1706708",
+			"Buffer": {
+				"Entries": [
+					{},
+					{},
+					{},
+					{}
+				]
+			}
+		},
+		{
+			"TypeID": 14,
+			"ID": "aa3f476d45159896e1eae0b1996cba53",
+			"ParentID": "c10ae2ed48d250a1849748ac26344bd5",
+			"Name": "BoxCollider",
+			"Transform": {
+				"Scale": {
+					"X": 0.30000001192092898,
+					"Y": 0.30000001192092898,
+					"Z": 0.30000001192092898
+				}
+			},
+			"StaticFlags": 0,
+			"Size": {
+				"X": 100.0,
+				"Y": 100.0,
+				"Z": 100.0
+			}
+		},
+		{
+			"TypeID": 3,
+			"ID": "af2301d2480da0f84bcab2aeef7f3225",
+			"ParentID": "1967efaa494a7129abb649bd34857383",
+			"Name": "Dart Trap",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 0.0,
+					"Z": 240.49949645996095
+				}
+			},
+			"StaticFlags": 0
+		},
+		{
+			"TypeID": 32,
+			"ID": "b07e40284ea135dcda22d3ae56c9a299",
+			"ParentID": "af2301d2480da0f84bcab2aeef7f3225",
+			"Name": "Decal",
+			"Transform": {
+				"Orientation": {
+					"X": -0.5,
+					"Y": 0.5,
+					"Z": 0.5,
+					"W": 0.5
+				}
+			},
+			"StaticFlags": 0,
+			"Material": "d0854fd2440c762a753ff0bf8918df80",
+			"Size": {
+				"X": 30.0,
+				"Y": 100.0,
+				"Z": 30.0
+			}
+		},
+		{
+			"TypeID": 11,
+			"ID": "67264f70482201eb88df5095fd441a25",
+			"ParentID": "af2301d2480da0f84bcab2aeef7f3225",
+			"Name": "RigidBody",
+			"Transform": {
+				"Translation": {
+					"X": -9.127685546875,
+					"Y": 0.0,
+					"Z": 0.0
+				}
+			},
+			"StaticFlags": 0,
+			"EnableSimulation": true,
+			"EnableGravity": false,
+			"StartAwake": false
+		},
+		{
+			"TypeID": 1,
+			"ID": "77cb09894762f86990a0cd90941f4d76",
+			"ParentID": "67264f70482201eb88df5095fd441a25",
+			"Name": "arrow",
+			"Transform": {
+				"Translation": {
+					"X": 88.850341796875,
+					"Y": 0.0,
+					"Z": 0.0
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": 0.7071068286895752,
+					"Z": 0.0,
+					"W": 0.7071068286895752
+				},
+				"Scale": {
+					"X": 7.0,
+					"Y": 7.0,
+					"Z": 7.0
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1219cacb47b85d078b8308bce1706708",
+			"Buffer": {
+				"Entries": [
+					{},
+					{},
+					{},
+					{}
+				]
+			}
+		},
+		{
+			"TypeID": 14,
+			"ID": "b6cef24e4d9791915e01dfbd314327cc",
+			"ParentID": "67264f70482201eb88df5095fd441a25",
+			"Name": "BoxCollider",
+			"Transform": {
+				"Scale": {
+					"X": 0.30000001192092898,
+					"Y": 0.30000001192092898,
+					"Z": 0.30000001192092898
+				}
+			},
+			"StaticFlags": 0,
+			"Size": {
+				"X": 100.0,
+				"Y": 100.0,
+				"Z": 100.0
+			}
+		},
+		{
+			"TypeID": 3,
 			"ID": "52b972dc46aa06f30ce386ae4bc9b459",
 			"ParentID": "5fffebac4864e61533240daba5c9a251",
 			"Name": "Dart Trap Wall",
@@ -6356,6 +7630,46 @@
 		},
 		{
 			"TypeID": 14,
+			"ID": "fbeb273d425f09a4d4b1b187ce3bc8ee",
+			"ParentID": "5fffebac4864e61533240daba5c9a251",
+			"Name": "Dart Trap Wall Activator 0",
+			"Transform": {
+				"Translation": {
+					"X": 2034.2916259765626,
+					"Y": 787.060791015625,
+					"Z": -527.30859375
+				},
+				"Scale": {
+					"X": 5.0,
+					"Y": 3.0,
+					"Z": 5.0
+				}
+			},
+			"StaticFlags": 0,
+			"Scripts": [
+				{
+					"Name": "FlaxTimeNexus.ShootArrows",
+					"ID": "23038c4448a53c6dadd48eb22b092d97",
+					"V": {
+	"DartTrapWall": "1967efaa494a7129abb649bd34857383",
+	"Damage": 10.0,
+	"LinearVelocity": {
+		"X": -300.0,
+		"Y": 0.0,
+		"Z": 0.0
+	}
+}
+				}
+			],
+			"IsTrigger": true,
+			"Size": {
+				"X": 100.0,
+				"Y": 100.0,
+				"Z": 100.0
+			}
+		},
+		{
+			"TypeID": 14,
 			"ID": "37c0c18a40e017829fbac299e8062027",
 			"ParentID": "5fffebac4864e61533240daba5c9a251",
 			"Name": "Dart Trap Wall Activator",
@@ -6392,6 +7706,3336 @@
 				"X": 100.0,
 				"Y": 100.0,
 				"Z": 100.0
+			}
+		},
+		{
+			"TypeID": 14,
+			"ID": "64654182485be8b3261c48899922a13b",
+			"ParentID": "5fffebac4864e61533240daba5c9a251",
+			"Name": "BoxCollider 0",
+			"Transform": {
+				"Translation": {
+					"X": 1904.5,
+					"Y": 1011.5,
+					"Z": -1760.5
+				},
+				"Scale": {
+					"X": 5.0,
+					"Y": 7.5,
+					"Z": 4.5
+				}
+			},
+			"StaticFlags": 0,
+			"Scripts": [
+				{
+					"Name": "FlaxTimeNexus.Teleporter",
+					"ID": "dd313b9f4210b583545a0a8cec9d40a2",
+					"V": {
+	"IsRelative": true,
+	"Target": "51d9951449096619f0da93a702fb4690"
+}
+				}
+			],
+			"IsTrigger": true,
+			"Size": {
+				"X": 100.0,
+				"Y": 100.0,
+				"Z": 100.0
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "636986b646fe4ad762e0758550e9de1e",
+			"ParentID": "64654182485be8b3261c48899922a13b",
+			"Name": "Cube",
+			"StaticFlags": 0,
+			"Scripts": [
+				{
+					"Name": "FlaxTimeNexus.Source.Objects.Portal",
+					"ID": "694455b64b75fe049582d09e751d6faa",
+					"V": {
+	"RenderTargetMaterial": "e7a887d64406c9677470b1b9a3c9d49d",
+	"Resolution": {
+		"X": 1500.0,
+		"Y": 900.0
+	},
+	"RenderTargetCamera": "513f7eac48992e9bd739abbb6564acab"
+}
+				}
+			],
+			"Model": "b43f0f8f4aaba3f3156896a5a22ba493",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"TypeID": 3,
+			"ID": "51d9951449096619f0da93a702fb4690",
+			"ParentID": "636986b646fe4ad762e0758550e9de1e",
+			"Name": "TPTarget",
+			"Transform": {
+				"Translation": {
+					"X": -1140.0,
+					"Y": 0.0,
+					"Z": 0.0
+				}
+			},
+			"StaticFlags": 0
+		},
+		{
+			"TypeID": 2,
+			"ID": "513f7eac48992e9bd739abbb6564acab",
+			"ParentID": "51d9951449096619f0da93a702fb4690",
+			"Name": "Camera 1",
+			"StaticFlags": 0,
+			"UsePerspective": true,
+			"FOV": 60.0,
+			"Near": 2.0,
+			"Far": 10000.0
+		},
+		{
+			"TypeID": 3,
+			"ID": "50fe4f9c4e9e0888c3d5c9bad90821a7",
+			"ParentID": "5fffebac4864e61533240daba5c9a251",
+			"Name": "Torches",
+			"StaticFlags": 0
+		},
+		{
+			"TypeID": 1,
+			"ID": "f8cfb24549b74fcbbdf5c9938469e271",
+			"ParentID": "50fe4f9c4e9e0888c3d5c9bad90821a7",
+			"Name": "torch 3",
+			"Transform": {
+				"Translation": {
+					"X": 5560.49365234375,
+					"Y": 914.3306884765625,
+					"Z": 2071.30029296875
+				},
+				"Orientation": {
+					"X": -0.10492437332868576,
+					"Y": -0.7969798445701599,
+					"Z": 0.07763996720314026,
+					"W": 0.589733898639679
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "5e5c46f345772f868e8294a9e3eec18f",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "b6e547754d7f46044683f790fff47d92",
+			"ParentID": "f8cfb24549b74fcbbdf5c9938469e271",
+			"Name": "Cone",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 87.6550064086914,
+					"Z": 0.0
+				},
+				"Scale": {
+					"X": 0.20000000298023225,
+					"Y": 0.25,
+					"Z": 0.20000000298023225
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "984b7f7446dd2206c926ba983abd3859"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 5,
+			"ID": "fed42b124d1c15a30d60a9921b8ca555",
+			"ParentID": "f8cfb24549b74fcbbdf5c9938469e271",
+			"Name": "PointLight",
+			"Transform": {
+				"Translation": {
+					"X": -32.0,
+					"Y": 125.57888793945313,
+					"Z": 0.0
+				}
+			},
+			"StaticFlags": 0,
+			"Color": {
+				"R": 0.515550434589386,
+				"G": 0.7044286131858826,
+				"B": 1.0,
+				"A": 1.0
+			},
+			"Brightness": 4.0,
+			"ShadowsDistance": 4000.0,
+			"ShadowsStrength": 0.6000000238418579,
+			"Radius": 4000.0,
+			"FallOffExponent": 2.0
+		},
+		{
+			"TypeID": 1,
+			"ID": "9301ac0a45233a30c4cb87abe96d31b8",
+			"ParentID": "50fe4f9c4e9e0888c3d5c9bad90821a7",
+			"Name": "torch 11",
+			"Transform": {
+				"Translation": {
+					"X": 2998.12451171875,
+					"Y": 914.3306884765625,
+					"Z": -1091.825439453125
+				},
+				"Orientation": {
+					"X": -0.13044683635234834,
+					"Y": -0.9908409714698792,
+					"Z": 0.004555328283458948,
+					"W": 0.03460092470049858
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "5e5c46f345772f868e8294a9e3eec18f",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "b9f79ae648d032aa04a9338c05f30f23",
+			"ParentID": "9301ac0a45233a30c4cb87abe96d31b8",
+			"Name": "Cone",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 87.6550064086914,
+					"Z": 0.0
+				},
+				"Scale": {
+					"X": 0.20000000298023225,
+					"Y": 0.25,
+					"Z": 0.20000000298023225
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "984b7f7446dd2206c926ba983abd3859"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 5,
+			"ID": "b840aa754be11931ae07c59042073fda",
+			"ParentID": "9301ac0a45233a30c4cb87abe96d31b8",
+			"Name": "PointLight",
+			"Transform": {
+				"Translation": {
+					"X": -32.0,
+					"Y": 125.57888793945313,
+					"Z": 0.0
+				}
+			},
+			"StaticFlags": 0,
+			"Color": {
+				"R": 0.515550434589386,
+				"G": 0.7044286131858826,
+				"B": 1.0,
+				"A": 1.0
+			},
+			"Brightness": 4.0,
+			"ShadowsDistance": 4000.0,
+			"ShadowsStrength": 0.6000000238418579,
+			"Radius": 4000.0,
+			"FallOffExponent": 2.0
+		},
+		{
+			"TypeID": 1,
+			"ID": "41a7b80e4785bd4f32bd4ab5e5bc59dd",
+			"ParentID": "50fe4f9c4e9e0888c3d5c9bad90821a7",
+			"Name": "torch 10",
+			"Transform": {
+				"Translation": {
+					"X": 3008.23486328125,
+					"Y": 914.3306884765625,
+					"Z": 1719.5401611328126
+				},
+				"Orientation": {
+					"X": -0.13044683635234834,
+					"Y": -0.9908409714698792,
+					"Z": 0.004555328283458948,
+					"W": 0.03460092470049858
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "5e5c46f345772f868e8294a9e3eec18f",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "0f43844944ad901ea22ab0ba0bb13cc8",
+			"ParentID": "41a7b80e4785bd4f32bd4ab5e5bc59dd",
+			"Name": "Cone",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 87.6550064086914,
+					"Z": 0.0
+				},
+				"Scale": {
+					"X": 0.20000000298023225,
+					"Y": 0.25,
+					"Z": 0.20000000298023225
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "984b7f7446dd2206c926ba983abd3859"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 5,
+			"ID": "bab02c6440f26d7ff78fa484174cf2c4",
+			"ParentID": "41a7b80e4785bd4f32bd4ab5e5bc59dd",
+			"Name": "PointLight",
+			"Transform": {
+				"Translation": {
+					"X": -32.0,
+					"Y": 125.57888793945313,
+					"Z": 0.0
+				}
+			},
+			"StaticFlags": 0,
+			"Color": {
+				"R": 0.515550434589386,
+				"G": 0.7044286131858826,
+				"B": 1.0,
+				"A": 1.0
+			},
+			"Brightness": 4.0,
+			"ShadowsDistance": 4000.0,
+			"ShadowsStrength": 0.6000000238418579,
+			"Radius": 4000.0,
+			"FallOffExponent": 2.0
+		},
+		{
+			"TypeID": 1,
+			"ID": "ae3a88a84e741b0f1199ac91e030152c",
+			"ParentID": "50fe4f9c4e9e0888c3d5c9bad90821a7",
+			"Name": "torch 9",
+			"Transform": {
+				"Translation": {
+					"X": 2998.12451171875,
+					"Y": 914.3306884765625,
+					"Z": 293.7138366699219
+				},
+				"Orientation": {
+					"X": -0.13044683635234834,
+					"Y": -0.9908409714698792,
+					"Z": 0.004555328283458948,
+					"W": 0.03460092470049858
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "5e5c46f345772f868e8294a9e3eec18f",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "a02c9d8c4c91e6a40e763b951319649b",
+			"ParentID": "ae3a88a84e741b0f1199ac91e030152c",
+			"Name": "Cone",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 87.6550064086914,
+					"Z": 0.0
+				},
+				"Scale": {
+					"X": 0.20000000298023225,
+					"Y": 0.25,
+					"Z": 0.20000000298023225
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "984b7f7446dd2206c926ba983abd3859"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 5,
+			"ID": "633c7630427d9c531bee228c25561ac3",
+			"ParentID": "ae3a88a84e741b0f1199ac91e030152c",
+			"Name": "PointLight",
+			"Transform": {
+				"Translation": {
+					"X": -32.0,
+					"Y": 125.57888793945313,
+					"Z": 0.0
+				}
+			},
+			"StaticFlags": 0,
+			"Color": {
+				"R": 0.515550434589386,
+				"G": 0.7044286131858826,
+				"B": 1.0,
+				"A": 1.0
+			},
+			"Brightness": 4.0,
+			"ShadowsDistance": 4000.0,
+			"ShadowsStrength": 0.6000000238418579,
+			"Radius": 4000.0,
+			"FallOffExponent": 2.0
+		},
+		{
+			"TypeID": 1,
+			"ID": "2c554d784ee2e64b53bf50af591f9304",
+			"ParentID": "50fe4f9c4e9e0888c3d5c9bad90821a7",
+			"Name": "torch 15",
+			"Transform": {
+				"Translation": {
+					"X": 5448.85498046875,
+					"Y": 914.3306884765625,
+					"Z": 5205.40966796875
+				},
+				"Orientation": {
+					"X": -0.08477021008729935,
+					"Y": -0.6438918113708496,
+					"Z": 0.09925320744514466,
+					"W": 0.7539006471633911
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "5e5c46f345772f868e8294a9e3eec18f",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "0fe247844a519d46b8f689a4fcef8d14",
+			"ParentID": "2c554d784ee2e64b53bf50af591f9304",
+			"Name": "Cone",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 87.6550064086914,
+					"Z": 0.0
+				},
+				"Scale": {
+					"X": 0.20000000298023225,
+					"Y": 0.25,
+					"Z": 0.20000000298023225
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "984b7f7446dd2206c926ba983abd3859"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 5,
+			"ID": "58e4d09841effb0eca84d5babd8dfe41",
+			"ParentID": "2c554d784ee2e64b53bf50af591f9304",
+			"Name": "PointLight",
+			"Transform": {
+				"Translation": {
+					"X": -32.0,
+					"Y": 125.57888793945313,
+					"Z": 0.0
+				}
+			},
+			"StaticFlags": 0,
+			"Color": {
+				"R": 0.515550434589386,
+				"G": 0.7044286131858826,
+				"B": 1.0,
+				"A": 1.0
+			},
+			"Brightness": 4.0,
+			"ShadowsDistance": 4000.0,
+			"ShadowsStrength": 0.6000000238418579,
+			"Radius": 4000.0,
+			"FallOffExponent": 2.0
+		},
+		{
+			"TypeID": 1,
+			"ID": "f02d8cda42875bcef12a1f9470eb4dcb",
+			"ParentID": "50fe4f9c4e9e0888c3d5c9bad90821a7",
+			"Name": "torch 14",
+			"Transform": {
+				"Translation": {
+					"X": 5848.236328125,
+					"Y": 914.3306884765625,
+					"Z": 3828.141357421875
+				},
+				"Orientation": {
+					"X": 0.020418891683220865,
+					"Y": 0.15509632229804994,
+					"Z": 0.1289195716381073,
+					"W": 0.9792384505271912
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "5e5c46f345772f868e8294a9e3eec18f",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "65ba52d1454f6f63d99f0b9ee79d3d6f",
+			"ParentID": "f02d8cda42875bcef12a1f9470eb4dcb",
+			"Name": "Cone",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 87.6550064086914,
+					"Z": 0.0
+				},
+				"Scale": {
+					"X": 0.20000000298023225,
+					"Y": 0.25,
+					"Z": 0.20000000298023225
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "984b7f7446dd2206c926ba983abd3859"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 5,
+			"ID": "b2927bfb4e93b5514e67938b056927af",
+			"ParentID": "f02d8cda42875bcef12a1f9470eb4dcb",
+			"Name": "PointLight",
+			"Transform": {
+				"Translation": {
+					"X": -32.0,
+					"Y": 125.57888793945313,
+					"Z": 0.0
+				}
+			},
+			"StaticFlags": 0,
+			"Color": {
+				"R": 0.515550434589386,
+				"G": 0.7044286131858826,
+				"B": 1.0,
+				"A": 1.0
+			},
+			"Brightness": 4.0,
+			"ShadowsDistance": 4000.0,
+			"ShadowsStrength": 0.6000000238418579,
+			"Radius": 4000.0,
+			"FallOffExponent": 2.0
+		},
+		{
+			"TypeID": 1,
+			"ID": "438de6ad46eee8ccaa78b4bee1fd7f4f",
+			"ParentID": "50fe4f9c4e9e0888c3d5c9bad90821a7",
+			"Name": "torch 13",
+			"Transform": {
+				"Translation": {
+					"X": 5643.9287109375,
+					"Y": 914.3306884765625,
+					"Z": 2213.21826171875
+				},
+				"Orientation": {
+					"X": -0.09389298409223557,
+					"Y": -0.7131858468055725,
+					"Z": -0.0906713530421257,
+					"W": -0.6887153387069702
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "5e5c46f345772f868e8294a9e3eec18f",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "076a9bfd46d4910126ce4e8e22423c5b",
+			"ParentID": "438de6ad46eee8ccaa78b4bee1fd7f4f",
+			"Name": "Cone",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 87.6550064086914,
+					"Z": 0.0
+				},
+				"Scale": {
+					"X": 0.20000000298023225,
+					"Y": 0.25,
+					"Z": 0.20000000298023225
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "984b7f7446dd2206c926ba983abd3859"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 5,
+			"ID": "1cf54b3f490eb6be3e6663a20be4c828",
+			"ParentID": "438de6ad46eee8ccaa78b4bee1fd7f4f",
+			"Name": "PointLight",
+			"Transform": {
+				"Translation": {
+					"X": -32.0,
+					"Y": 125.57888793945313,
+					"Z": 0.0
+				}
+			},
+			"StaticFlags": 0,
+			"Color": {
+				"R": 0.515550434589386,
+				"G": 0.7044286131858826,
+				"B": 1.0,
+				"A": 1.0
+			},
+			"Brightness": 4.0,
+			"ShadowsDistance": 4000.0,
+			"ShadowsStrength": 0.6000000238418579,
+			"Radius": 4000.0,
+			"FallOffExponent": 2.0
+		},
+		{
+			"TypeID": 1,
+			"ID": "fe9f068a448c2d2fab0655b247aaf47a",
+			"ParentID": "50fe4f9c4e9e0888c3d5c9bad90821a7",
+			"Name": "torch 12",
+			"Transform": {
+				"Translation": {
+					"X": 4739.3291015625,
+					"Y": 914.3306884765625,
+					"Z": 1462.84521484375
+				},
+				"Orientation": {
+					"X": -0.08302511274814606,
+					"Y": -0.6306365728378296,
+					"Z": 0.10071751475334168,
+					"W": 0.7650231122970581
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "5e5c46f345772f868e8294a9e3eec18f",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "49b05bd440a54bfdd9eae2b514bda0bc",
+			"ParentID": "fe9f068a448c2d2fab0655b247aaf47a",
+			"Name": "Cone",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 87.6550064086914,
+					"Z": 0.0
+				},
+				"Scale": {
+					"X": 0.20000000298023225,
+					"Y": 0.25,
+					"Z": 0.20000000298023225
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "984b7f7446dd2206c926ba983abd3859"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 5,
+			"ID": "24a1c09f4355ef4ed47763b62e76bc2d",
+			"ParentID": "fe9f068a448c2d2fab0655b247aaf47a",
+			"Name": "PointLight",
+			"Transform": {
+				"Translation": {
+					"X": -32.0,
+					"Y": 125.57888793945313,
+					"Z": 0.0
+				}
+			},
+			"StaticFlags": 0,
+			"Color": {
+				"R": 0.515550434589386,
+				"G": 0.7044286131858826,
+				"B": 1.0,
+				"A": 1.0
+			},
+			"Brightness": 4.0,
+			"ShadowsDistance": 4000.0,
+			"ShadowsStrength": 0.6000000238418579,
+			"Radius": 4000.0,
+			"FallOffExponent": 2.0
+		},
+		{
+			"TypeID": 1,
+			"ID": "84b902b140ecabd9e01f05a43e21c2a8",
+			"ParentID": "50fe4f9c4e9e0888c3d5c9bad90821a7",
+			"Name": "torch 8",
+			"Transform": {
+				"Translation": {
+					"X": 4204.13427734375,
+					"Y": 914.3306884765625,
+					"Z": 1611.4862060546876
+				},
+				"Orientation": {
+					"X": 0.12265476584434509,
+					"Y": 0.9316533803939819,
+					"Z": 0.04464266076683998,
+					"W": 0.3390941023826599
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "5e5c46f345772f868e8294a9e3eec18f",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "f7a5db53406f321582b2fd82b866ca71",
+			"ParentID": "84b902b140ecabd9e01f05a43e21c2a8",
+			"Name": "Cone",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 87.6550064086914,
+					"Z": 0.0
+				},
+				"Scale": {
+					"X": 0.20000000298023225,
+					"Y": 0.25,
+					"Z": 0.20000000298023225
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "984b7f7446dd2206c926ba983abd3859"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 5,
+			"ID": "d2f743354f71cb7909700b8b62df1015",
+			"ParentID": "84b902b140ecabd9e01f05a43e21c2a8",
+			"Name": "PointLight",
+			"Transform": {
+				"Translation": {
+					"X": -32.0,
+					"Y": 125.57888793945313,
+					"Z": 0.0
+				}
+			},
+			"StaticFlags": 0,
+			"Color": {
+				"R": 0.515550434589386,
+				"G": 0.7044286131858826,
+				"B": 1.0,
+				"A": 1.0
+			},
+			"Brightness": 4.0,
+			"ShadowsDistance": 4000.0,
+			"ShadowsStrength": 0.6000000238418579,
+			"Radius": 4000.0,
+			"FallOffExponent": 2.0
+		},
+		{
+			"TypeID": 1,
+			"ID": "7d3d12474689e18d5f50528071a4faa3",
+			"ParentID": "50fe4f9c4e9e0888c3d5c9bad90821a7",
+			"Name": "torch 41",
+			"Transform": {
+				"Translation": {
+					"X": -5807.12939453125,
+					"Y": 914.3306884765625,
+					"Z": 262.72137451171877
+				},
+				"Orientation": {
+					"X": -0.09546095132827759,
+					"Y": -0.7250968217849731,
+					"Z": 0.089018814265728,
+					"W": 0.6761637330055237
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "5e5c46f345772f868e8294a9e3eec18f",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "bfccbb8b44f7cbb9a898e39bf667fd7c",
+			"ParentID": "7d3d12474689e18d5f50528071a4faa3",
+			"Name": "Cone",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 87.6550064086914,
+					"Z": 0.0
+				},
+				"Scale": {
+					"X": 0.20000000298023225,
+					"Y": 0.25,
+					"Z": 0.20000000298023225
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "984b7f7446dd2206c926ba983abd3859"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 5,
+			"ID": "eeeb65df4eb3e2e9e8da1d8ed3ba3611",
+			"ParentID": "7d3d12474689e18d5f50528071a4faa3",
+			"Name": "PointLight",
+			"Transform": {
+				"Translation": {
+					"X": -32.0,
+					"Y": 125.57888793945313,
+					"Z": 0.0
+				}
+			},
+			"StaticFlags": 0,
+			"Color": {
+				"R": 0.515550434589386,
+				"G": 0.7044286131858826,
+				"B": 1.0,
+				"A": 1.0
+			},
+			"Brightness": 4.0,
+			"ShadowsDistance": 4000.0,
+			"ShadowsStrength": 0.6000000238418579,
+			"Radius": 4000.0,
+			"FallOffExponent": 2.0
+		},
+		{
+			"TypeID": 1,
+			"ID": "34821f8546726d786e857c92c070395a",
+			"ParentID": "50fe4f9c4e9e0888c3d5c9bad90821a7",
+			"Name": "torch 40",
+			"Transform": {
+				"Translation": {
+					"X": -5807.12939453125,
+					"Y": 914.3306884765625,
+					"Z": -183.93894958496095
+				},
+				"Orientation": {
+					"X": 0.1069210097193718,
+					"Y": 0.8121441006660461,
+					"Z": 0.0748668760061264,
+					"W": 0.5686694979667664
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "5e5c46f345772f868e8294a9e3eec18f",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "a90e4e0c49019e84586a9a93e8111753",
+			"ParentID": "34821f8546726d786e857c92c070395a",
+			"Name": "Cone",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 87.6550064086914,
+					"Z": 0.0
+				},
+				"Scale": {
+					"X": 0.20000000298023225,
+					"Y": 0.25,
+					"Z": 0.20000000298023225
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "984b7f7446dd2206c926ba983abd3859"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 5,
+			"ID": "ed30e05e4e227f076a45a898076a9284",
+			"ParentID": "34821f8546726d786e857c92c070395a",
+			"Name": "PointLight",
+			"Transform": {
+				"Translation": {
+					"X": -32.0,
+					"Y": 125.57888793945313,
+					"Z": 0.0
+				}
+			},
+			"StaticFlags": 0,
+			"Color": {
+				"R": 0.515550434589386,
+				"G": 0.7044286131858826,
+				"B": 1.0,
+				"A": 1.0
+			},
+			"Brightness": 4.0,
+			"ShadowsDistance": 4000.0,
+			"ShadowsStrength": 0.6000000238418579,
+			"Radius": 4000.0,
+			"FallOffExponent": 2.0
+		},
+		{
+			"TypeID": 1,
+			"ID": "a608318d4d7de1bcf73d018f7fa512fe",
+			"ParentID": "50fe4f9c4e9e0888c3d5c9bad90821a7",
+			"Name": "torch 39",
+			"Transform": {
+				"Translation": {
+					"X": -5237.31884765625,
+					"Y": 914.3306884765625,
+					"Z": -1774.6119384765626
+				},
+				"Orientation": {
+					"X": -0.021543089300394059,
+					"Y": -0.16363553702831269,
+					"Z": -0.12873633205890656,
+					"W": -0.9778478741645813
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "5e5c46f345772f868e8294a9e3eec18f",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "ec2a43bb40667e028e414d94ed1e42ac",
+			"ParentID": "a608318d4d7de1bcf73d018f7fa512fe",
+			"Name": "Cone",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 87.6550064086914,
+					"Z": 0.0
+				},
+				"Scale": {
+					"X": 0.20000000298023225,
+					"Y": 0.25,
+					"Z": 0.20000000298023225
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "984b7f7446dd2206c926ba983abd3859"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 5,
+			"ID": "2b978089417044ba86c53d98a168e50c",
+			"ParentID": "a608318d4d7de1bcf73d018f7fa512fe",
+			"Name": "PointLight",
+			"Transform": {
+				"Translation": {
+					"X": -32.0,
+					"Y": 125.57888793945313,
+					"Z": 0.0
+				}
+			},
+			"StaticFlags": 0,
+			"Color": {
+				"R": 0.515550434589386,
+				"G": 0.7044286131858826,
+				"B": 1.0,
+				"A": 1.0
+			},
+			"Brightness": 4.0,
+			"ShadowsDistance": 4000.0,
+			"ShadowsStrength": 0.6000000238418579,
+			"Radius": 4000.0,
+			"FallOffExponent": 2.0
+		},
+		{
+			"TypeID": 1,
+			"ID": "70994610481b86d15455dfb760cffd34",
+			"ParentID": "50fe4f9c4e9e0888c3d5c9bad90821a7",
+			"Name": "torch 38",
+			"Transform": {
+				"Translation": {
+					"X": -5095.56982421875,
+					"Y": 914.3306884765625,
+					"Z": -1774.6119384765626
+				},
+				"Orientation": {
+					"X": -0.12909255921840669,
+					"Y": -0.9805546998977661,
+					"Z": 0.01929304376244545,
+					"W": 0.1465449333190918
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "5e5c46f345772f868e8294a9e3eec18f",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "6391d6474e93c3ef31b8248196aa448d",
+			"ParentID": "70994610481b86d15455dfb760cffd34",
+			"Name": "Cone",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 87.6550064086914,
+					"Z": 0.0
+				},
+				"Scale": {
+					"X": 0.20000000298023225,
+					"Y": 0.25,
+					"Z": 0.20000000298023225
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "984b7f7446dd2206c926ba983abd3859"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 5,
+			"ID": "4dbfb30d48c7241cd09d7aa00512758f",
+			"ParentID": "70994610481b86d15455dfb760cffd34",
+			"Name": "PointLight",
+			"Transform": {
+				"Translation": {
+					"X": -32.0,
+					"Y": 125.57888793945313,
+					"Z": 0.0
+				}
+			},
+			"StaticFlags": 0,
+			"Color": {
+				"R": 0.515550434589386,
+				"G": 0.7044286131858826,
+				"B": 1.0,
+				"A": 1.0
+			},
+			"Brightness": 4.0,
+			"ShadowsDistance": 4000.0,
+			"ShadowsStrength": 0.6000000238418579,
+			"Radius": 4000.0,
+			"FallOffExponent": 2.0
+		},
+		{
+			"TypeID": 1,
+			"ID": "eeb569504600561cb67b75b7d4c8a00c",
+			"ParentID": "50fe4f9c4e9e0888c3d5c9bad90821a7",
+			"Name": "torch 37",
+			"Transform": {
+				"Translation": {
+					"X": -4496.4853515625,
+					"Y": 914.3306884765625,
+					"Z": -1987.99267578125
+				},
+				"Orientation": {
+					"X": -0.12909255921840669,
+					"Y": -0.9805546998977661,
+					"Z": 0.01929304376244545,
+					"W": 0.1465449333190918
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "5e5c46f345772f868e8294a9e3eec18f",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "f72b2bec422d6a062ec769ac1798ca66",
+			"ParentID": "eeb569504600561cb67b75b7d4c8a00c",
+			"Name": "Cone",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 87.6550064086914,
+					"Z": 0.0
+				},
+				"Scale": {
+					"X": 0.20000000298023225,
+					"Y": 0.25,
+					"Z": 0.20000000298023225
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "984b7f7446dd2206c926ba983abd3859"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 5,
+			"ID": "e90695ac4a0cb90176457ba142a14a80",
+			"ParentID": "eeb569504600561cb67b75b7d4c8a00c",
+			"Name": "PointLight",
+			"Transform": {
+				"Translation": {
+					"X": -32.0,
+					"Y": 125.57888793945313,
+					"Z": 0.0
+				}
+			},
+			"StaticFlags": 0,
+			"Color": {
+				"R": 0.515550434589386,
+				"G": 0.7044286131858826,
+				"B": 1.0,
+				"A": 1.0
+			},
+			"Brightness": 4.0,
+			"ShadowsDistance": 4000.0,
+			"ShadowsStrength": 0.6000000238418579,
+			"Radius": 4000.0,
+			"FallOffExponent": 2.0
+		},
+		{
+			"TypeID": 1,
+			"ID": "03e8550a430fe5646b64a19e49e1af57",
+			"ParentID": "50fe4f9c4e9e0888c3d5c9bad90821a7",
+			"Name": "torch 36",
+			"Transform": {
+				"Translation": {
+					"X": -3449.886962890625,
+					"Y": 914.3306884765625,
+					"Z": -1987.99267578125
+				},
+				"Orientation": {
+					"X": 0.08390064537525177,
+					"Y": 0.6372884511947632,
+					"Z": 0.09998886287212372,
+					"W": 0.7594908475875855
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "5e5c46f345772f868e8294a9e3eec18f",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "99d0d52a480651a3e057fdb7be46be85",
+			"ParentID": "03e8550a430fe5646b64a19e49e1af57",
+			"Name": "Cone",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 87.6550064086914,
+					"Z": 0.0
+				},
+				"Scale": {
+					"X": 0.20000000298023225,
+					"Y": 0.25,
+					"Z": 0.20000000298023225
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "984b7f7446dd2206c926ba983abd3859"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 5,
+			"ID": "13abf5a749e244b62bfaadb8064d4f19",
+			"ParentID": "03e8550a430fe5646b64a19e49e1af57",
+			"Name": "PointLight",
+			"Transform": {
+				"Translation": {
+					"X": -32.0,
+					"Y": 125.57888793945313,
+					"Z": 0.0
+				}
+			},
+			"StaticFlags": 0,
+			"Color": {
+				"R": 0.515550434589386,
+				"G": 0.7044286131858826,
+				"B": 1.0,
+				"A": 1.0
+			},
+			"Brightness": 4.0,
+			"ShadowsDistance": 4000.0,
+			"ShadowsStrength": 0.6000000238418579,
+			"Radius": 4000.0,
+			"FallOffExponent": 2.0
+		},
+		{
+			"TypeID": 1,
+			"ID": "17aab15746c4bb9cd162adbd1ca4a796",
+			"ParentID": "50fe4f9c4e9e0888c3d5c9bad90821a7",
+			"Name": "torch 35",
+			"Transform": {
+				"Translation": {
+					"X": 2533.9365234375,
+					"Y": 914.3306884765625,
+					"Z": -1987.99267578125
+				},
+				"Orientation": {
+					"X": 0.08390064537525177,
+					"Y": 0.6372884511947632,
+					"Z": 0.09998886287212372,
+					"W": 0.7594908475875855
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "5e5c46f345772f868e8294a9e3eec18f",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "73376620469ada5ec56fd8921ff675a0",
+			"ParentID": "17aab15746c4bb9cd162adbd1ca4a796",
+			"Name": "Cone",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 87.6550064086914,
+					"Z": 0.0
+				},
+				"Scale": {
+					"X": 0.20000000298023225,
+					"Y": 0.25,
+					"Z": 0.20000000298023225
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "984b7f7446dd2206c926ba983abd3859"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 5,
+			"ID": "7cf4f36545958d8168dd15a27b6ade54",
+			"ParentID": "17aab15746c4bb9cd162adbd1ca4a796",
+			"Name": "PointLight",
+			"Transform": {
+				"Translation": {
+					"X": -32.0,
+					"Y": 125.57888793945313,
+					"Z": 0.0
+				}
+			},
+			"StaticFlags": 0,
+			"Color": {
+				"R": 0.515550434589386,
+				"G": 0.7044286131858826,
+				"B": 1.0,
+				"A": 1.0
+			},
+			"Brightness": 4.0,
+			"ShadowsDistance": 4000.0,
+			"ShadowsStrength": 0.6000000238418579,
+			"Radius": 4000.0,
+			"FallOffExponent": 2.0
+		},
+		{
+			"TypeID": 1,
+			"ID": "afe3f58944a288943c85f2b061681038",
+			"ParentID": "50fe4f9c4e9e0888c3d5c9bad90821a7",
+			"Name": "torch 7",
+			"Transform": {
+				"Translation": {
+					"X": 3476.358642578125,
+					"Y": 914.3306884765625,
+					"Z": -1987.99267578125
+				},
+				"Orientation": {
+					"X": 0.08390064537525177,
+					"Y": 0.6372884511947632,
+					"Z": 0.09998886287212372,
+					"W": 0.7594908475875855
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "5e5c46f345772f868e8294a9e3eec18f",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "d7efe0f849b5294391b70387c9bb6f47",
+			"ParentID": "afe3f58944a288943c85f2b061681038",
+			"Name": "Cone",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 87.6550064086914,
+					"Z": 0.0
+				},
+				"Scale": {
+					"X": 0.20000000298023225,
+					"Y": 0.25,
+					"Z": 0.20000000298023225
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "984b7f7446dd2206c926ba983abd3859"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 5,
+			"ID": "79b811c84d88c761193ac49a8457c2d0",
+			"ParentID": "afe3f58944a288943c85f2b061681038",
+			"Name": "PointLight",
+			"Transform": {
+				"Translation": {
+					"X": -32.0,
+					"Y": 125.57888793945313,
+					"Z": 0.0
+				}
+			},
+			"StaticFlags": 0,
+			"Color": {
+				"R": 0.515550434589386,
+				"G": 0.7044286131858826,
+				"B": 1.0,
+				"A": 1.0
+			},
+			"Brightness": 4.0,
+			"ShadowsDistance": 4000.0,
+			"ShadowsStrength": 0.6000000238418579,
+			"Radius": 4000.0,
+			"FallOffExponent": 2.0
+		},
+		{
+			"TypeID": 1,
+			"ID": "07e90cd342eeacaedd6a62afc525e874",
+			"ParentID": "50fe4f9c4e9e0888c3d5c9bad90821a7",
+			"Name": "torch 6",
+			"Transform": {
+				"Translation": {
+					"X": 3476.358642578125,
+					"Y": 914.3306884765625,
+					"Z": -2597.935546875
+				},
+				"Orientation": {
+					"X": 0.08390064537525177,
+					"Y": 0.6372884511947632,
+					"Z": 0.09998886287212372,
+					"W": 0.7594908475875855
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "5e5c46f345772f868e8294a9e3eec18f",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "1952ab334f0aef8bab291d94047ed6da",
+			"ParentID": "07e90cd342eeacaedd6a62afc525e874",
+			"Name": "Cone",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 87.6550064086914,
+					"Z": 0.0
+				},
+				"Scale": {
+					"X": 0.20000000298023225,
+					"Y": 0.25,
+					"Z": 0.20000000298023225
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "984b7f7446dd2206c926ba983abd3859"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 5,
+			"ID": "a927b3aa4e3b99bd9980c18273586ae5",
+			"ParentID": "07e90cd342eeacaedd6a62afc525e874",
+			"Name": "PointLight",
+			"Transform": {
+				"Translation": {
+					"X": -32.0,
+					"Y": 125.57888793945313,
+					"Z": 0.0
+				}
+			},
+			"StaticFlags": 0,
+			"Color": {
+				"R": 0.515550434589386,
+				"G": 0.7044286131858826,
+				"B": 1.0,
+				"A": 1.0
+			},
+			"Brightness": 4.0,
+			"ShadowsDistance": 4000.0,
+			"ShadowsStrength": 0.6000000238418579,
+			"Radius": 4000.0,
+			"FallOffExponent": 2.0
+		},
+		{
+			"TypeID": 1,
+			"ID": "10a2b40b4c15e0b3284867805e325404",
+			"ParentID": "50fe4f9c4e9e0888c3d5c9bad90821a7",
+			"Name": "torch 32",
+			"Transform": {
+				"Translation": {
+					"X": 4512.091796875,
+					"Y": 914.3306884765625,
+					"Z": -780.5264282226563
+				},
+				"Orientation": {
+					"X": 0.08390064537525177,
+					"Y": 0.6372884511947632,
+					"Z": 0.09998886287212372,
+					"W": 0.7594908475875855
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "5e5c46f345772f868e8294a9e3eec18f",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "477773924c50f73f2ca9dc8859ac4385",
+			"ParentID": "10a2b40b4c15e0b3284867805e325404",
+			"Name": "Cone",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 87.6550064086914,
+					"Z": 0.0
+				},
+				"Scale": {
+					"X": 0.20000000298023225,
+					"Y": 0.25,
+					"Z": 0.20000000298023225
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "984b7f7446dd2206c926ba983abd3859"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 5,
+			"ID": "faf667964f83b507e178ad97a5e48eee",
+			"ParentID": "10a2b40b4c15e0b3284867805e325404",
+			"Name": "PointLight",
+			"Transform": {
+				"Translation": {
+					"X": -32.0,
+					"Y": 125.57888793945313,
+					"Z": 0.0
+				}
+			},
+			"StaticFlags": 0,
+			"Color": {
+				"R": 0.515550434589386,
+				"G": 0.7044286131858826,
+				"B": 1.0,
+				"A": 1.0
+			},
+			"Brightness": 4.0,
+			"ShadowsDistance": 4000.0,
+			"ShadowsStrength": 0.6000000238418579,
+			"Radius": 4000.0,
+			"FallOffExponent": 2.0
+		},
+		{
+			"TypeID": 1,
+			"ID": "25fe2227445ce9d49d52a299843abf82",
+			"ParentID": "50fe4f9c4e9e0888c3d5c9bad90821a7",
+			"Name": "torch 5",
+			"Transform": {
+				"Translation": {
+					"X": 4512.091796875,
+					"Y": 914.3306884765625,
+					"Z": -2586.011962890625
+				},
+				"Orientation": {
+					"X": 0.08390064537525177,
+					"Y": 0.6372884511947632,
+					"Z": 0.09998886287212372,
+					"W": 0.7594908475875855
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "5e5c46f345772f868e8294a9e3eec18f",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "4624a7fd4a1be9660f9016b1136b4b9c",
+			"ParentID": "25fe2227445ce9d49d52a299843abf82",
+			"Name": "Cone",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 87.6550064086914,
+					"Z": 0.0
+				},
+				"Scale": {
+					"X": 0.20000000298023225,
+					"Y": 0.25,
+					"Z": 0.20000000298023225
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "984b7f7446dd2206c926ba983abd3859"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 5,
+			"ID": "6961b3ba497b8814b059649bcd039f44",
+			"ParentID": "25fe2227445ce9d49d52a299843abf82",
+			"Name": "PointLight",
+			"Transform": {
+				"Translation": {
+					"X": -32.0,
+					"Y": 125.57888793945313,
+					"Z": 0.0
+				}
+			},
+			"StaticFlags": 0,
+			"Color": {
+				"R": 0.515550434589386,
+				"G": 0.7044286131858826,
+				"B": 1.0,
+				"A": 1.0
+			},
+			"Brightness": 4.0,
+			"ShadowsDistance": 4000.0,
+			"ShadowsStrength": 0.6000000238418579,
+			"Radius": 4000.0,
+			"FallOffExponent": 2.0
+		},
+		{
+			"TypeID": 1,
+			"ID": "24b8644d499e4e17b4654b913134a12c",
+			"ParentID": "50fe4f9c4e9e0888c3d5c9bad90821a7",
+			"Name": "torch 33",
+			"Transform": {
+				"Translation": {
+					"X": -3288.448486328125,
+					"Y": 914.3306884765625,
+					"Z": 5523.73486328125
+				},
+				"Orientation": {
+					"X": 0.24794353544712068,
+					"Y": 0.95872563123703,
+					"Z": 0.03484617546200752,
+					"W": 0.13474011421203614
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "5e5c46f345772f868e8294a9e3eec18f",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "8cad203a4606d84d2f8a5694c735eb8b",
+			"ParentID": "24b8644d499e4e17b4654b913134a12c",
+			"Name": "Cone",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 87.6550064086914,
+					"Z": 0.0
+				},
+				"Scale": {
+					"X": 0.20000000298023225,
+					"Y": 0.25,
+					"Z": 0.20000000298023225
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "984b7f7446dd2206c926ba983abd3859"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 5,
+			"ID": "a1fdaa0b46b1649b3aa78bb6134d2ac1",
+			"ParentID": "24b8644d499e4e17b4654b913134a12c",
+			"Name": "PointLight",
+			"Transform": {
+				"Translation": {
+					"X": -32.0,
+					"Y": 125.57888793945313,
+					"Z": 0.0
+				}
+			},
+			"StaticFlags": 0,
+			"Color": {
+				"R": 0.515550434589386,
+				"G": 0.7044286131858826,
+				"B": 1.0,
+				"A": 1.0
+			},
+			"Brightness": 4.0,
+			"ShadowsDistance": 4000.0,
+			"ShadowsStrength": 0.6000000238418579,
+			"Radius": 4000.0,
+			"FallOffExponent": 2.0
+		},
+		{
+			"TypeID": 1,
+			"ID": "aa6fa42948f0f7fdd3830c8b90b10a79",
+			"ParentID": "50fe4f9c4e9e0888c3d5c9bad90821a7",
+			"Name": "torch 22",
+			"Transform": {
+				"Translation": {
+					"X": -3288.448486328125,
+					"Y": 914.3306884765625,
+					"Z": 5676.83935546875
+				},
+				"Orientation": {
+					"X": 0.24794353544712068,
+					"Y": 0.95872563123703,
+					"Z": 0.03484617546200752,
+					"W": 0.13474011421203614
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "5e5c46f345772f868e8294a9e3eec18f",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "4e852ff94d3d7cfb6e3757a3c0a8dacf",
+			"ParentID": "aa6fa42948f0f7fdd3830c8b90b10a79",
+			"Name": "Cone",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 87.6550064086914,
+					"Z": 0.0
+				},
+				"Scale": {
+					"X": 0.20000000298023225,
+					"Y": 0.25,
+					"Z": 0.20000000298023225
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "984b7f7446dd2206c926ba983abd3859"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 5,
+			"ID": "82e48f4c4b906823e1558a87e59c6193",
+			"ParentID": "aa6fa42948f0f7fdd3830c8b90b10a79",
+			"Name": "PointLight",
+			"Transform": {
+				"Translation": {
+					"X": -32.0,
+					"Y": 125.57888793945313,
+					"Z": 0.0
+				}
+			},
+			"StaticFlags": 0,
+			"Color": {
+				"R": 0.515550434589386,
+				"G": 0.7044286131858826,
+				"B": 1.0,
+				"A": 1.0
+			},
+			"Brightness": 4.0,
+			"ShadowsDistance": 4000.0,
+			"ShadowsStrength": 0.6000000238418579,
+			"Radius": 4000.0,
+			"FallOffExponent": 2.0
+		},
+		{
+			"TypeID": 1,
+			"ID": "57b317ed4e56da5829e20b82a07367a7",
+			"ParentID": "50fe4f9c4e9e0888c3d5c9bad90821a7",
+			"Name": "torch 23",
+			"Transform": {
+				"Translation": {
+					"X": -317.7446594238281,
+					"Y": 914.3306884765625,
+					"Z": 5209.34912109375
+				},
+				"Orientation": {
+					"X": -0.0876850113272667,
+					"Y": -0.33905255794525149,
+					"Z": 0.2345241904258728,
+					"W": 0.9068368673324585
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "5e5c46f345772f868e8294a9e3eec18f",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "afa048834600f206e34272925dbb8bac",
+			"ParentID": "57b317ed4e56da5829e20b82a07367a7",
+			"Name": "Cone",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 87.6550064086914,
+					"Z": 0.0
+				},
+				"Scale": {
+					"X": 0.20000000298023225,
+					"Y": 0.25,
+					"Z": 0.20000000298023225
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "984b7f7446dd2206c926ba983abd3859"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 5,
+			"ID": "5b8f13b94fd78bb6d413e09a1f8c87b1",
+			"ParentID": "57b317ed4e56da5829e20b82a07367a7",
+			"Name": "PointLight",
+			"Transform": {
+				"Translation": {
+					"X": -32.0,
+					"Y": 125.57888793945313,
+					"Z": 0.0
+				}
+			},
+			"StaticFlags": 0,
+			"Color": {
+				"R": 0.515550434589386,
+				"G": 0.7044286131858826,
+				"B": 1.0,
+				"A": 1.0
+			},
+			"Brightness": 4.0,
+			"ShadowsDistance": 4000.0,
+			"ShadowsStrength": 0.6000000238418579,
+			"Radius": 4000.0,
+			"FallOffExponent": 2.0
+		},
+		{
+			"TypeID": 1,
+			"ID": "cb7a3eb34828069069ee8192f5258868",
+			"ParentID": "50fe4f9c4e9e0888c3d5c9bad90821a7",
+			"Name": "torch 24",
+			"Transform": {
+				"Translation": {
+					"X": -2180.891845703125,
+					"Y": 914.3306884765625,
+					"Z": 4759.78857421875
+				},
+				"Orientation": {
+					"X": 0.1945819854736328,
+					"Y": 0.7523919939994812,
+					"Z": 0.15756940841674806,
+					"W": 0.6092751622200012
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "5e5c46f345772f868e8294a9e3eec18f",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "c57b1341422914cd5a5f4992a2f0f79a",
+			"ParentID": "cb7a3eb34828069069ee8192f5258868",
+			"Name": "Cone",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 87.6550064086914,
+					"Z": 0.0
+				},
+				"Scale": {
+					"X": 0.20000000298023225,
+					"Y": 0.25,
+					"Z": 0.20000000298023225
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "984b7f7446dd2206c926ba983abd3859"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 5,
+			"ID": "2dc4187b403143f68285a0857f4a6dfc",
+			"ParentID": "cb7a3eb34828069069ee8192f5258868",
+			"Name": "PointLight",
+			"Transform": {
+				"Translation": {
+					"X": -32.0,
+					"Y": 125.57888793945313,
+					"Z": 0.0
+				}
+			},
+			"StaticFlags": 0,
+			"Color": {
+				"R": 0.515550434589386,
+				"G": 0.7044286131858826,
+				"B": 1.0,
+				"A": 1.0
+			},
+			"Brightness": 4.0,
+			"ShadowsDistance": 4000.0,
+			"ShadowsStrength": 0.6000000238418579,
+			"Radius": 4000.0,
+			"FallOffExponent": 2.0
+		},
+		{
+			"TypeID": 1,
+			"ID": "a450c52d4b4edfc7d0f95e95f5da9af6",
+			"ParentID": "50fe4f9c4e9e0888c3d5c9bad90821a7",
+			"Name": "torch 21",
+			"Transform": {
+				"Translation": {
+					"X": -3288.448486328125,
+					"Y": 914.3306884765625,
+					"Z": 4803.82861328125
+				},
+				"Orientation": {
+					"X": 0.24794353544712068,
+					"Y": 0.95872563123703,
+					"Z": 0.03484617546200752,
+					"W": 0.13474011421203614
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "5e5c46f345772f868e8294a9e3eec18f",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "54231da748a00f6bc3e884abb919e720",
+			"ParentID": "a450c52d4b4edfc7d0f95e95f5da9af6",
+			"Name": "Cone",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 87.6550064086914,
+					"Z": 0.0
+				},
+				"Scale": {
+					"X": 0.20000000298023225,
+					"Y": 0.25,
+					"Z": 0.20000000298023225
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "984b7f7446dd2206c926ba983abd3859"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 5,
+			"ID": "40d1500d468cbd0aee4d3a98593670e8",
+			"ParentID": "a450c52d4b4edfc7d0f95e95f5da9af6",
+			"Name": "PointLight",
+			"Transform": {
+				"Translation": {
+					"X": -32.0,
+					"Y": 125.57888793945313,
+					"Z": 0.0
+				}
+			},
+			"StaticFlags": 0,
+			"Color": {
+				"R": 0.515550434589386,
+				"G": 0.7044286131858826,
+				"B": 1.0,
+				"A": 1.0
+			},
+			"Brightness": 4.0,
+			"ShadowsDistance": 4000.0,
+			"ShadowsStrength": 0.6000000238418579,
+			"Radius": 4000.0,
+			"FallOffExponent": 2.0
+		},
+		{
+			"TypeID": 1,
+			"ID": "1a132f194b737d63ae8d3eb652f9bf38",
+			"ParentID": "50fe4f9c4e9e0888c3d5c9bad90821a7",
+			"Name": "torch 31",
+			"Transform": {
+				"Translation": {
+					"X": 455.6156921386719,
+					"Y": 914.3306884765625,
+					"Z": 1088.1875
+				},
+				"Orientation": {
+					"X": -0.2503419518470764,
+					"Y": -0.9680001735687256,
+					"Z": -0.004369661677628756,
+					"W": -0.01689634472131729
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "5e5c46f345772f868e8294a9e3eec18f",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "808a6d86465324206db8bfa66531bdb1",
+			"ParentID": "1a132f194b737d63ae8d3eb652f9bf38",
+			"Name": "Cone",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 87.6550064086914,
+					"Z": 0.0
+				},
+				"Scale": {
+					"X": 0.20000000298023225,
+					"Y": 0.25,
+					"Z": 0.20000000298023225
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "984b7f7446dd2206c926ba983abd3859"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 5,
+			"ID": "fc289f2c474c6dbea3c270bd5e219b2b",
+			"ParentID": "1a132f194b737d63ae8d3eb652f9bf38",
+			"Name": "PointLight",
+			"Transform": {
+				"Translation": {
+					"X": -32.0,
+					"Y": 125.57888793945313,
+					"Z": 0.0
+				}
+			},
+			"StaticFlags": 0,
+			"Color": {
+				"R": 0.515550434589386,
+				"G": 0.7044286131858826,
+				"B": 1.0,
+				"A": 1.0
+			},
+			"Brightness": 4.0,
+			"ShadowsDistance": 4000.0,
+			"ShadowsStrength": 0.6000000238418579,
+			"Radius": 4000.0,
+			"FallOffExponent": 2.0
+		},
+		{
+			"TypeID": 1,
+			"ID": "135c33fa44ead93165a2f0aa9fa8ed53",
+			"ParentID": "50fe4f9c4e9e0888c3d5c9bad90821a7",
+			"Name": "torch 30",
+			"Transform": {
+				"Translation": {
+					"X": 2847.86181640625,
+					"Y": 914.3306884765625,
+					"Z": 1586.197509765625
+				},
+				"Orientation": {
+					"X": -0.013103810139000416,
+					"Y": -0.05066877231001854,
+					"Z": 0.25003698468208315,
+					"W": 0.9668208360671997
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "5e5c46f345772f868e8294a9e3eec18f",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "7ea9263f4f4e58fb41732cba2c92ab8c",
+			"ParentID": "135c33fa44ead93165a2f0aa9fa8ed53",
+			"Name": "Cone",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 87.6550064086914,
+					"Z": 0.0
+				},
+				"Scale": {
+					"X": 0.20000000298023225,
+					"Y": 0.25,
+					"Z": 0.20000000298023225
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "984b7f7446dd2206c926ba983abd3859"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 5,
+			"ID": "650586d940bf826579cab59d6dca6133",
+			"ParentID": "135c33fa44ead93165a2f0aa9fa8ed53",
+			"Name": "PointLight",
+			"Transform": {
+				"Translation": {
+					"X": -32.0,
+					"Y": 125.57888793945313,
+					"Z": 0.0
+				}
+			},
+			"StaticFlags": 0,
+			"Color": {
+				"R": 0.515550434589386,
+				"G": 0.7044286131858826,
+				"B": 1.0,
+				"A": 1.0
+			},
+			"Brightness": 4.0,
+			"ShadowsDistance": 4000.0,
+			"ShadowsStrength": 0.6000000238418579,
+			"Radius": 4000.0,
+			"FallOffExponent": 2.0
+		},
+		{
+			"TypeID": 1,
+			"ID": "de3941ec49ae3a89f15bada515d0443a",
+			"ParentID": "50fe4f9c4e9e0888c3d5c9bad90821a7",
+			"Name": "torch 29",
+			"Transform": {
+				"Translation": {
+					"X": 2847.86181640625,
+					"Y": 914.3306884765625,
+					"Z": 37.809173583984378
+				},
+				"Orientation": {
+					"X": -0.013103810139000416,
+					"Y": -0.05066877231001854,
+					"Z": 0.25003698468208315,
+					"W": 0.9668208360671997
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "5e5c46f345772f868e8294a9e3eec18f",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "8e6fe8fa43c1d1edb21409bffe2bb964",
+			"ParentID": "de3941ec49ae3a89f15bada515d0443a",
+			"Name": "Cone",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 87.6550064086914,
+					"Z": 0.0
+				},
+				"Scale": {
+					"X": 0.20000000298023225,
+					"Y": 0.25,
+					"Z": 0.20000000298023225
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "984b7f7446dd2206c926ba983abd3859"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 5,
+			"ID": "d603302e47d1766114c58fb81f1a9126",
+			"ParentID": "de3941ec49ae3a89f15bada515d0443a",
+			"Name": "PointLight",
+			"Transform": {
+				"Translation": {
+					"X": -32.0,
+					"Y": 125.57888793945313,
+					"Z": 0.0
+				}
+			},
+			"StaticFlags": 0,
+			"Color": {
+				"R": 0.515550434589386,
+				"G": 0.7044286131858826,
+				"B": 1.0,
+				"A": 1.0
+			},
+			"Brightness": 4.0,
+			"ShadowsDistance": 4000.0,
+			"ShadowsStrength": 0.6000000238418579,
+			"Radius": 4000.0,
+			"FallOffExponent": 2.0
+		},
+		{
+			"TypeID": 1,
+			"ID": "339749e240665658bfcba3b4655615f8",
+			"ParentID": "50fe4f9c4e9e0888c3d5c9bad90821a7",
+			"Name": "torch 28",
+			"Transform": {
+				"Translation": {
+					"X": 2256.965087890625,
+					"Y": 914.3306884765625,
+					"Z": 3241.14453125
+				},
+				"Orientation": {
+					"X": -0.013103810139000416,
+					"Y": -0.05066877231001854,
+					"Z": 0.25003698468208315,
+					"W": 0.9668208360671997
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "5e5c46f345772f868e8294a9e3eec18f",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "cf2b5732422c590b041fdea64aab2c1b",
+			"ParentID": "339749e240665658bfcba3b4655615f8",
+			"Name": "Cone",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 87.6550064086914,
+					"Z": 0.0
+				},
+				"Scale": {
+					"X": 0.20000000298023225,
+					"Y": 0.25,
+					"Z": 0.20000000298023225
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "984b7f7446dd2206c926ba983abd3859"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 5,
+			"ID": "c6bae7d640581d3a0489cd86274c644d",
+			"ParentID": "339749e240665658bfcba3b4655615f8",
+			"Name": "PointLight",
+			"Transform": {
+				"Translation": {
+					"X": -32.0,
+					"Y": 125.57888793945313,
+					"Z": 0.0
+				}
+			},
+			"StaticFlags": 0,
+			"Color": {
+				"R": 0.515550434589386,
+				"G": 0.7044286131858826,
+				"B": 1.0,
+				"A": 1.0
+			},
+			"Brightness": 4.0,
+			"ShadowsDistance": 4000.0,
+			"ShadowsStrength": 0.6000000238418579,
+			"Radius": 4000.0,
+			"FallOffExponent": 2.0
+		},
+		{
+			"TypeID": 1,
+			"ID": "cd4362d34aacf7ce526d118ae9f20614",
+			"ParentID": "50fe4f9c4e9e0888c3d5c9bad90821a7",
+			"Name": "torch 27",
+			"Transform": {
+				"Translation": {
+					"X": 2144.27880859375,
+					"Y": 914.3306884765625,
+					"Z": 2200.401611328125
+				},
+				"Orientation": {
+					"X": -0.1754937767982483,
+					"Y": -0.6785838007926941,
+					"Z": -0.17858363687992097,
+					"W": -0.6905315518379211
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "5e5c46f345772f868e8294a9e3eec18f",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "48402cd6420c78134d236b86cc927b2c",
+			"ParentID": "cd4362d34aacf7ce526d118ae9f20614",
+			"Name": "Cone",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 87.6550064086914,
+					"Z": 0.0
+				},
+				"Scale": {
+					"X": 0.20000000298023225,
+					"Y": 0.25,
+					"Z": 0.20000000298023225
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "984b7f7446dd2206c926ba983abd3859"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 5,
+			"ID": "8814836f4747e3a9177b96aaf45c86c2",
+			"ParentID": "cd4362d34aacf7ce526d118ae9f20614",
+			"Name": "PointLight",
+			"Transform": {
+				"Translation": {
+					"X": -32.0,
+					"Y": 125.57888793945313,
+					"Z": 0.0
+				}
+			},
+			"StaticFlags": 0,
+			"Color": {
+				"R": 0.515550434589386,
+				"G": 0.7044286131858826,
+				"B": 1.0,
+				"A": 1.0
+			},
+			"Brightness": 4.0,
+			"ShadowsDistance": 4000.0,
+			"ShadowsStrength": 0.6000000238418579,
+			"Radius": 4000.0,
+			"FallOffExponent": 2.0
+		},
+		{
+			"TypeID": 1,
+			"ID": "e7b1be714f6916dd7dd2d3bc37ab63b2",
+			"ParentID": "50fe4f9c4e9e0888c3d5c9bad90821a7",
+			"Name": "torch 26",
+			"Transform": {
+				"Translation": {
+					"X": 1046.203857421875,
+					"Y": 914.3306884765625,
+					"Z": 3450.955810546875
+				},
+				"Orientation": {
+					"X": 0.060572490096092227,
+					"Y": 0.23421628773212434,
+					"Z": 0.2429426908493042,
+					"W": 0.9393894672393799
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "5e5c46f345772f868e8294a9e3eec18f",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "61f627f64129e3611eff31bbf237974e",
+			"ParentID": "e7b1be714f6916dd7dd2d3bc37ab63b2",
+			"Name": "Cone",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 87.6550064086914,
+					"Z": 0.0
+				},
+				"Scale": {
+					"X": 0.20000000298023225,
+					"Y": 0.25,
+					"Z": 0.20000000298023225
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "984b7f7446dd2206c926ba983abd3859"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 5,
+			"ID": "d81659214b78a3a475cc72a12b25d7b6",
+			"ParentID": "e7b1be714f6916dd7dd2d3bc37ab63b2",
+			"Name": "PointLight",
+			"Transform": {
+				"Translation": {
+					"X": -32.0,
+					"Y": 125.57888793945313,
+					"Z": 0.0
+				}
+			},
+			"StaticFlags": 0,
+			"Color": {
+				"R": 0.515550434589386,
+				"G": 0.7044286131858826,
+				"B": 1.0,
+				"A": 1.0
+			},
+			"Brightness": 4.0,
+			"ShadowsDistance": 4000.0,
+			"ShadowsStrength": 0.6000000238418579,
+			"Radius": 4000.0,
+			"FallOffExponent": 2.0
+		},
+		{
+			"TypeID": 1,
+			"ID": "fc8d16494dc53883abb112b2943b1181",
+			"ParentID": "50fe4f9c4e9e0888c3d5c9bad90821a7",
+			"Name": "torch 25",
+			"Transform": {
+				"Translation": {
+					"X": 1706.9822998046876,
+					"Y": 914.3306884765625,
+					"Z": 4169.17578125
+				},
+				"Orientation": {
+					"X": -0.1754937767982483,
+					"Y": -0.6785838007926941,
+					"Z": -0.17858363687992097,
+					"W": -0.6905315518379211
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "5e5c46f345772f868e8294a9e3eec18f",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "a0ae9cfa40699a47d130a097192797d4",
+			"ParentID": "fc8d16494dc53883abb112b2943b1181",
+			"Name": "Cone",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 87.6550064086914,
+					"Z": 0.0
+				},
+				"Scale": {
+					"X": 0.20000000298023225,
+					"Y": 0.25,
+					"Z": 0.20000000298023225
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "984b7f7446dd2206c926ba983abd3859"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 5,
+			"ID": "bac1fb624dfa1ccdeee9b89c9467bf77",
+			"ParentID": "fc8d16494dc53883abb112b2943b1181",
+			"Name": "PointLight",
+			"Transform": {
+				"Translation": {
+					"X": -32.0,
+					"Y": 125.57888793945313,
+					"Z": 0.0
+				}
+			},
+			"StaticFlags": 0,
+			"Color": {
+				"R": 0.515550434589386,
+				"G": 0.7044286131858826,
+				"B": 1.0,
+				"A": 1.0
+			},
+			"Brightness": 4.0,
+			"ShadowsDistance": 4000.0,
+			"ShadowsStrength": 0.6000000238418579,
+			"Radius": 4000.0,
+			"FallOffExponent": 2.0
+		},
+		{
+			"TypeID": 1,
+			"ID": "bb4f5e5c433cdff3f5aa7f890cb342c7",
+			"ParentID": "50fe4f9c4e9e0888c3d5c9bad90821a7",
+			"Name": "torch 20",
+			"Transform": {
+				"Translation": {
+					"X": 1706.9822998046876,
+					"Y": 914.3306884765625,
+					"Z": 4762.93017578125
+				},
+				"Orientation": {
+					"X": -0.1754937767982483,
+					"Y": -0.6785838007926941,
+					"Z": -0.17858363687992097,
+					"W": -0.6905315518379211
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "5e5c46f345772f868e8294a9e3eec18f",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "e88ccf21433b4c9f297ae19016a562cd",
+			"ParentID": "bb4f5e5c433cdff3f5aa7f890cb342c7",
+			"Name": "Cone",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 87.6550064086914,
+					"Z": 0.0
+				},
+				"Scale": {
+					"X": 0.20000000298023225,
+					"Y": 0.25,
+					"Z": 0.20000000298023225
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "984b7f7446dd2206c926ba983abd3859"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 5,
+			"ID": "9dd60a5f43fccc4196d4daa43e0cf467",
+			"ParentID": "bb4f5e5c433cdff3f5aa7f890cb342c7",
+			"Name": "PointLight",
+			"Transform": {
+				"Translation": {
+					"X": -32.0,
+					"Y": 125.57888793945313,
+					"Z": 0.0
+				}
+			},
+			"StaticFlags": 0,
+			"Color": {
+				"R": 0.515550434589386,
+				"G": 0.7044286131858826,
+				"B": 1.0,
+				"A": 1.0
+			},
+			"Brightness": 4.0,
+			"ShadowsDistance": 4000.0,
+			"ShadowsStrength": 0.6000000238418579,
+			"Radius": 3000.0,
+			"FallOffExponent": 2.0
+		},
+		{
+			"TypeID": 1,
+			"ID": "0a235ac74d49b5e70f60c8bd5ee1e464",
+			"ParentID": "50fe4f9c4e9e0888c3d5c9bad90821a7",
+			"Name": "torch 19",
+			"Transform": {
+				"Translation": {
+					"X": 2974.864013671875,
+					"Y": 914.3306884765625,
+					"Z": 4762.93017578125
+				},
+				"Orientation": {
+					"X": -0.1754937767982483,
+					"Y": -0.6785838007926941,
+					"Z": -0.17858363687992097,
+					"W": -0.6905315518379211
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "5e5c46f345772f868e8294a9e3eec18f",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "8c25942d44ef84f01d60c0b0504b85d2",
+			"ParentID": "0a235ac74d49b5e70f60c8bd5ee1e464",
+			"Name": "Cone",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 87.6550064086914,
+					"Z": 0.0
+				},
+				"Scale": {
+					"X": 0.20000000298023225,
+					"Y": 0.25,
+					"Z": 0.20000000298023225
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "984b7f7446dd2206c926ba983abd3859"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 5,
+			"ID": "ad77a1994c9c2a4434ca84a4de9db0bb",
+			"ParentID": "0a235ac74d49b5e70f60c8bd5ee1e464",
+			"Name": "PointLight",
+			"Transform": {
+				"Translation": {
+					"X": -32.0,
+					"Y": 125.57888793945313,
+					"Z": 0.0
+				}
+			},
+			"StaticFlags": 0,
+			"Color": {
+				"R": 0.515550434589386,
+				"G": 0.7044286131858826,
+				"B": 1.0,
+				"A": 1.0
+			},
+			"Brightness": 4.0,
+			"ShadowsDistance": 4000.0,
+			"ShadowsStrength": 0.6000000238418579,
+			"Radius": 3000.0,
+			"FallOffExponent": 2.0
+		},
+		{
+			"TypeID": 1,
+			"ID": "30bc9c5f4945f8e729dfdeb9a7ae04e6",
+			"ParentID": "50fe4f9c4e9e0888c3d5c9bad90821a7",
+			"Name": "torch 18",
+			"Transform": {
+				"Translation": {
+					"X": 2975.2978515625,
+					"Y": 914.3306884765625,
+					"Z": 4612.1103515625
+				},
+				"Orientation": {
+					"X": -0.09148703515529633,
+					"Y": -0.6949129700660706,
+					"Z": 0.09309790283441544,
+					"W": 0.7071484327316284
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "5e5c46f345772f868e8294a9e3eec18f",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "0488858046f43f7608fa6fbb78be4c11",
+			"ParentID": "30bc9c5f4945f8e729dfdeb9a7ae04e6",
+			"Name": "Cone",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 87.6550064086914,
+					"Z": 0.0
+				},
+				"Scale": {
+					"X": 0.20000000298023225,
+					"Y": 0.25,
+					"Z": 0.20000000298023225
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "984b7f7446dd2206c926ba983abd3859"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 5,
+			"ID": "bb15eb0b4003193b02f815bd12b8e554",
+			"ParentID": "30bc9c5f4945f8e729dfdeb9a7ae04e6",
+			"Name": "PointLight",
+			"Transform": {
+				"Translation": {
+					"X": -32.0,
+					"Y": 125.57888793945313,
+					"Z": 0.0
+				}
+			},
+			"StaticFlags": 0,
+			"Color": {
+				"R": 0.515550434589386,
+				"G": 0.7044286131858826,
+				"B": 1.0,
+				"A": 1.0
+			},
+			"Brightness": 4.0,
+			"ShadowsDistance": 4000.0,
+			"ShadowsStrength": 0.6000000238418579,
+			"Radius": 3000.0,
+			"FallOffExponent": 2.0
+		},
+		{
+			"TypeID": 1,
+			"ID": "9100deb74267c7210ad1b0ace3a5c3b6",
+			"ParentID": "50fe4f9c4e9e0888c3d5c9bad90821a7",
+			"Name": "torch 17",
+			"Transform": {
+				"Translation": {
+					"X": 2975.2978515625,
+					"Y": 914.3306884765625,
+					"Z": 3260.875244140625
+				},
+				"Orientation": {
+					"X": -0.09148703515529633,
+					"Y": -0.6949129700660706,
+					"Z": 0.09309790283441544,
+					"W": 0.7071484327316284
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "5e5c46f345772f868e8294a9e3eec18f",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "80563f5c497d6f28ec2dd5adfc4b0e81",
+			"ParentID": "9100deb74267c7210ad1b0ace3a5c3b6",
+			"Name": "Cone",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 87.6550064086914,
+					"Z": 0.0
+				},
+				"Scale": {
+					"X": 0.20000000298023225,
+					"Y": 0.25,
+					"Z": 0.20000000298023225
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "984b7f7446dd2206c926ba983abd3859"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 5,
+			"ID": "ea76cacb4258127540ca85b8153fe55e",
+			"ParentID": "9100deb74267c7210ad1b0ace3a5c3b6",
+			"Name": "PointLight",
+			"Transform": {
+				"Translation": {
+					"X": -32.0,
+					"Y": 125.57888793945313,
+					"Z": 0.0
+				}
+			},
+			"StaticFlags": 0,
+			"Color": {
+				"R": 0.515550434589386,
+				"G": 0.7044286131858826,
+				"B": 1.0,
+				"A": 1.0
+			},
+			"Brightness": 4.0,
+			"ShadowsDistance": 4000.0,
+			"ShadowsStrength": 0.6000000238418579,
+			"Radius": 3000.0,
+			"FallOffExponent": 2.0
+		},
+		{
+			"TypeID": 1,
+			"ID": "85dca32a4e644dda40a4a084b643d1b0",
+			"ParentID": "50fe4f9c4e9e0888c3d5c9bad90821a7",
+			"Name": "torch 16",
+			"Transform": {
+				"Translation": {
+					"X": 4439.7724609375,
+					"Y": 914.3306884765625,
+					"Z": 2817.476806640625
+				},
+				"Orientation": {
+					"X": 0.08390064537525177,
+					"Y": 0.6372884511947632,
+					"Z": 0.09998886287212372,
+					"W": 0.7594908475875855
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "5e5c46f345772f868e8294a9e3eec18f",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "81fb1aa14626c51ed43328a97c8fc376",
+			"ParentID": "85dca32a4e644dda40a4a084b643d1b0",
+			"Name": "Cone",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 87.6550064086914,
+					"Z": 0.0
+				},
+				"Scale": {
+					"X": 0.20000000298023225,
+					"Y": 0.25,
+					"Z": 0.20000000298023225
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "984b7f7446dd2206c926ba983abd3859"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 5,
+			"ID": "410654784c8f4c7aa2aa99a46e517f0f",
+			"ParentID": "85dca32a4e644dda40a4a084b643d1b0",
+			"Name": "PointLight",
+			"Transform": {
+				"Translation": {
+					"X": -32.0,
+					"Y": 125.57888793945313,
+					"Z": 0.0
+				}
+			},
+			"StaticFlags": 0,
+			"Color": {
+				"R": 0.515550434589386,
+				"G": 0.7044286131858826,
+				"B": 1.0,
+				"A": 1.0
+			},
+			"Brightness": 4.0,
+			"ShadowsDistance": 4000.0,
+			"ShadowsStrength": 0.6000000238418579,
+			"Radius": 3000.0,
+			"FallOffExponent": 2.0
+		},
+		{
+			"TypeID": 1,
+			"ID": "d2e0dbfb42c7b219253752aa96baeccc",
+			"ParentID": "50fe4f9c4e9e0888c3d5c9bad90821a7",
+			"Name": "torch 34",
+			"Transform": {
+				"Translation": {
+					"X": 5853.2685546875,
+					"Y": 914.3306884765625,
+					"Z": -1504.1641845703126
+				},
+				"Orientation": {
+					"X": 0.01816575601696968,
+					"Y": 0.13798239827156068,
+					"Z": 0.12925593554973603,
+					"W": 0.9817962050437927
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "5e5c46f345772f868e8294a9e3eec18f",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "a12fb9c64c42cd7ac685f2b26848a707",
+			"ParentID": "d2e0dbfb42c7b219253752aa96baeccc",
+			"Name": "Cone",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 87.6550064086914,
+					"Z": 0.0
+				},
+				"Scale": {
+					"X": 0.20000000298023225,
+					"Y": 0.25,
+					"Z": 0.20000000298023225
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "984b7f7446dd2206c926ba983abd3859"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 5,
+			"ID": "c7d65fe24efc9149304624874fb2638f",
+			"ParentID": "d2e0dbfb42c7b219253752aa96baeccc",
+			"Name": "PointLight",
+			"Transform": {
+				"Translation": {
+					"X": -32.0,
+					"Y": 125.57888793945313,
+					"Z": 0.0
+				}
+			},
+			"StaticFlags": 0,
+			"Color": {
+				"R": 0.515550434589386,
+				"G": 0.7044286131858826,
+				"B": 1.0,
+				"A": 1.0
+			},
+			"Brightness": 4.0,
+			"ShadowsDistance": 4000.0,
+			"ShadowsStrength": 0.6000000238418579,
+			"Radius": 1000.0,
+			"FallOffExponent": 2.0
+		},
+		{
+			"TypeID": 1,
+			"ID": "d8bb5fae46319e8b23d7a1925d0976fc",
+			"ParentID": "50fe4f9c4e9e0888c3d5c9bad90821a7",
+			"Name": "torch 4",
+			"Transform": {
+				"Translation": {
+					"X": 5753.24853515625,
+					"Y": 914.3306884765625,
+					"Z": -2584.021484375
+				},
+				"Orientation": {
+					"X": 0.08390064537525177,
+					"Y": 0.6372884511947632,
+					"Z": 0.09998886287212372,
+					"W": 0.7594908475875855
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "5e5c46f345772f868e8294a9e3eec18f",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "d04424db412c8887a82158b12cadbc42",
+			"ParentID": "d8bb5fae46319e8b23d7a1925d0976fc",
+			"Name": "Cone",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 87.6550064086914,
+					"Z": 0.0
+				},
+				"Scale": {
+					"X": 0.20000000298023225,
+					"Y": 0.25,
+					"Z": 0.20000000298023225
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "984b7f7446dd2206c926ba983abd3859"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 5,
+			"ID": "2b3fb887422d955c278f46bde37122cc",
+			"ParentID": "d8bb5fae46319e8b23d7a1925d0976fc",
+			"Name": "PointLight",
+			"Transform": {
+				"Translation": {
+					"X": -32.0,
+					"Y": 125.57888793945313,
+					"Z": 0.0
+				}
+			},
+			"StaticFlags": 0,
+			"Color": {
+				"R": 0.515550434589386,
+				"G": 0.7044286131858826,
+				"B": 1.0,
+				"A": 1.0
+			},
+			"Brightness": 4.0,
+			"ShadowsDistance": 4000.0,
+			"ShadowsStrength": 0.6000000238418579,
+			"Radius": 1000.0,
+			"FallOffExponent": 2.0
+		},
+		{
+			"TypeID": 1,
+			"ID": "6c7de5a44d9b0855029257bed4b20076",
+			"ParentID": "50fe4f9c4e9e0888c3d5c9bad90821a7",
+			"Name": "torch 2",
+			"Transform": {
+				"Translation": {
+					"X": 5379.23291015625,
+					"Y": 914.3306884765625,
+					"Z": -182.423583984375
+				},
+				"Orientation": {
+					"X": 0.08390064537525177,
+					"Y": 0.6372884511947632,
+					"Z": 0.09998886287212372,
+					"W": 0.7594908475875855
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "5e5c46f345772f868e8294a9e3eec18f",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "3b6fa9344c87822f8cfea1bbafa50884",
+			"ParentID": "6c7de5a44d9b0855029257bed4b20076",
+			"Name": "Cone",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 87.6550064086914,
+					"Z": 0.0
+				},
+				"Scale": {
+					"X": 0.20000000298023225,
+					"Y": 0.25,
+					"Z": 0.20000000298023225
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "984b7f7446dd2206c926ba983abd3859"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 5,
+			"ID": "2026596e4165dd1d6678b2a195d36a86",
+			"ParentID": "6c7de5a44d9b0855029257bed4b20076",
+			"Name": "PointLight",
+			"Transform": {
+				"Translation": {
+					"X": -32.0,
+					"Y": 125.57888793945313,
+					"Z": 0.0
+				}
+			},
+			"StaticFlags": 0,
+			"Color": {
+				"R": 0.515550434589386,
+				"G": 0.7044286131858826,
+				"B": 1.0,
+				"A": 1.0
+			},
+			"Brightness": 4.0,
+			"ShadowsDistance": 4000.0,
+			"ShadowsStrength": 0.6000000238418579,
+			"Radius": 1000.0,
+			"FallOffExponent": 2.0
+		},
+		{
+			"TypeID": 1,
+			"ID": "f056f97b4e3b411aa9b27aacd60e3838",
+			"ParentID": "50fe4f9c4e9e0888c3d5c9bad90821a7",
+			"Name": "torch 1",
+			"Transform": {
+				"Translation": {
+					"X": 5379.23291015625,
+					"Y": 914.3306884765625,
+					"Z": 259.6951904296875
+				},
+				"Orientation": {
+					"X": -0.0864892527461052,
+					"Y": -0.6569512486457825,
+					"Z": 0.09775835275650025,
+					"W": 0.7425482869148254
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "5e5c46f345772f868e8294a9e3eec18f",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "4b043acb4bb65575d730b19b93820932",
+			"ParentID": "f056f97b4e3b411aa9b27aacd60e3838",
+			"Name": "Cone",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 87.6550064086914,
+					"Z": 0.0
+				},
+				"Scale": {
+					"X": 0.20000000298023225,
+					"Y": 0.25,
+					"Z": 0.20000000298023225
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "984b7f7446dd2206c926ba983abd3859"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 5,
+			"ID": "d062b8da4f4ab873cf20ab8bb3e487c6",
+			"ParentID": "f056f97b4e3b411aa9b27aacd60e3838",
+			"Name": "PointLight",
+			"Transform": {
+				"Translation": {
+					"X": -32.0,
+					"Y": 125.57888793945313,
+					"Z": 0.0
+				}
+			},
+			"StaticFlags": 0,
+			"Color": {
+				"R": 0.515550434589386,
+				"G": 0.7044286131858826,
+				"B": 1.0,
+				"A": 1.0
+			},
+			"Brightness": 3.0,
+			"ShadowsDistance": 4000.0,
+			"ShadowsStrength": 0.6000000238418579,
+			"Radius": 1000.0,
+			"FallOffExponent": 2.0
+		},
+		{
+			"TypeID": 13,
+			"ID": "231485634b5c485c9df90f95b8a2790a",
+			"ParentID": "5fffebac4864e61533240daba5c9a251",
+			"IsActive": false,
+			"Name": "PostFxVolume",
+			"Transform": {
+				"Scale": {
+					"X": 12.5,
+					"Y": 7.0,
+					"Z": 12.0
+				}
+			},
+			"StaticFlags": 0,
+			"Size": {
+				"X": 1000.0,
+				"Y": 1000.0,
+				"Z": 1000.0
+			},
+			"Priority": 0,
+			"BlendRadius": 1000.0,
+			"BlendWeight": 1.0,
+			"IsBounded": true,
+			"Settings": {
+				"AO": {
+					"Intensity": 1.0,
+					"OverrideFlags": 3
+				},
+				"Bloom": {},
+				"ToneMapping": {},
+				"ColorGrading": {},
+				"EyeAdaptation": {},
+				"CameraArtifacts": {},
+				"LensFlares": {},
+				"DepthOfField": {},
+				"SSR": {}
 			}
 		},
 		{
@@ -6611,128 +11255,6 @@
 				"SSR": {},
 				"PostFxMaterials": [
 					"41dc2bd14a8cddff0138fc9adec0e8c8"
-				]
-			}
-		},
-		{
-			"TypeID": 14,
-			"ID": "f4e82d054c3cb54c725acf81330c2c60",
-			"ParentID": "98e81b164499fc785678ee8383b4023e",
-			"Name": "BoxCollider 0",
-			"Transform": {
-				"Translation": {
-					"X": -3693.81396484375,
-					"Y": 922.8035888671875,
-					"Z": -1839.2041015625
-				},
-				"Scale": {
-					"X": 7.0,
-					"Y": 5.0,
-					"Z": 6.0
-				}
-			},
-			"StaticFlags": 0,
-			"Scripts": [
-				{
-					"Name": "FlaxTimeNexus.DirectionalTeleporter",
-					"ID": "e35d8f2b4030d31aaf77c8b4613a6336",
-					"V": {
-	"ExpectedOrientation": {
-		"X": 0.0,
-		"Y": 0.7071067,
-		"Z": 0.0,
-		"W": 0.7071068
-	},
-	"Other": "f9b408ec4fb084ea35b81aae86843720",
-	"Epsilon": 90.0
-}
-				}
-			],
-			"IsTrigger": true,
-			"Size": {
-				"X": 100.0,
-				"Y": 100.0,
-				"Z": 100.0
-			}
-		},
-		{
-			"TypeID": 1,
-			"ID": "ea968dd44b5dde5bb069078eb35850fc",
-			"ParentID": "f4e82d054c3cb54c725acf81330c2c60",
-			"IsActive": false,
-			"Name": "Cube",
-			"StaticFlags": 0,
-			"Scripts": [
-				{
-					"Name": "FlaxTimeNexus.Source.Objects.RenderTargetDisplayer",
-					"ID": "4f10694444045fc2d8fbfdb21868201c",
-					"V": {
-	"Resolution": {
-		"X": 100.0,
-		"Y": 100.0
-	}
-}
-				}
-			],
-			"Model": "b43f0f8f4aaba3f3156896a5a22ba493",
-			"Buffer": {
-				"Entries": [
-					{}
-				]
-			}
-		},
-		{
-			"TypeID": 14,
-			"ID": "3e4bd88f455961c7be8e13ad3652d5c4",
-			"ParentID": "98e81b164499fc785678ee8383b4023e",
-			"Name": "BoxCollider",
-			"Transform": {
-				"Translation": {
-					"X": 1983.193359375,
-					"Y": 922.8035888671875,
-					"Z": -1839.2041015625
-				},
-				"Scale": {
-					"X": 7.0,
-					"Y": 5.0,
-					"Z": 6.0
-				}
-			},
-			"StaticFlags": 0,
-			"Scripts": [
-				{
-					"Name": "FlaxTimeNexus.DirectionalTeleporter",
-					"ID": "f9b408ec4fb084ea35b81aae86843720",
-					"V": {
-	"ExpectedOrientation": {
-		"X": 0.0,
-		"Y": -0.7071067,
-		"Z": 0.0,
-		"W": 0.7071068
-	},
-	"Other": "e35d8f2b4030d31aaf77c8b4613a6336",
-	"Epsilon": 90.0
-}
-				}
-			],
-			"IsTrigger": true,
-			"Size": {
-				"X": 100.0,
-				"Y": 100.0,
-				"Z": 100.0
-			}
-		},
-		{
-			"TypeID": 1,
-			"ID": "bf9af2d042fde4874f732ca1ee461e7d",
-			"ParentID": "3e4bd88f455961c7be8e13ad3652d5c4",
-			"IsActive": false,
-			"Name": "Cube",
-			"StaticFlags": 0,
-			"Model": "b43f0f8f4aaba3f3156896a5a22ba493",
-			"Buffer": {
-				"Entries": [
-					{}
 				]
 			}
 		}

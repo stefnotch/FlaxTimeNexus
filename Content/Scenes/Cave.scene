@@ -101,7 +101,6 @@
 			"ParentID": "35fd20cd4497ea1b18cafcae1c3524ef",
 			"Name": "SkyLight",
 			"Brightness": 1.0,
-			"ViewDistance": 10000.0,
 			"AdditiveColor": {
 				"R": 0.0,
 				"G": 0.0,
@@ -5158,6 +5157,14 @@
 			}
 		},
 		{
+			"TypeID": 24,
+			"ID": "8d4a393044d572dd2c374fb85b7b7003",
+			"ParentID": "c2a7e45e4d783a1138a9049fc4d30b90",
+			"Name": "Rock_coll",
+			"StaticFlags": 0,
+			"CollisionData": "7ed06b7d4bbfded0c82c3e9cee9b0932"
+		},
+		{
 			"TypeID": 1,
 			"ID": "7aaf82134e876ccc05bc918aa93a46d8",
 			"ParentID": "336d01f24f6918f56ec592a3654e2901",
@@ -5434,12 +5441,12 @@
 				"Translation": {
 					"X": -117.78201293945313,
 					"Y": 100.0,
-					"Z": 4572.03076171875
+					"Z": 4112.03076171875
 				},
 				"Scale": {
 					"X": 4.0,
 					"Y": 2.0,
-					"Z": 8.0
+					"Z": 7.0
 				}
 			},
 			"StaticFlags": 0,
@@ -5451,7 +5458,7 @@
 			"Priority": 0,
 			"BlendRadius": 10.0,
 			"BlendWeight": 1.0,
-			"IsBounded": false,
+			"IsBounded": true,
 			"Settings": {
 				"AO": {},
 				"Bloom": {},
@@ -5979,7 +5986,7 @@
 					"Name": "FlaxTimeNexus.InteractToggler",
 					"ID": "d285292d471fe248cae9999f1d5ac8a4",
 					"V": {
-	"InteractionRadius": 100.0,
+	"InteractionRadius": 600.0,
 	"ToActivate": "0200809846b3b9128cdb8d95e615a46b",
 	"ToDeactivate": "1c72d2df4cfccf1b130c75b163de48e5"
 }
@@ -5988,7 +5995,7 @@
 					"Name": "FlaxTimeNexus.LookatDistanceToggler",
 					"ID": "3a7aa1294d672983fef011a408a911a6",
 					"V": {
-	"MinDistance": 300.0,
+	"MinDistance": 600.0,
 	"ToActivate": "b9980e5543490eed7e3d34adf3d0c009",
 	"ToDeactivate": "b9980e5543490eed7e3d34adf3d0c009"
 }
@@ -6415,7 +6422,7 @@
 					"Name": "FlaxTimeNexus.LookatDistanceToggler",
 					"ID": "318e23d44fe11aa20176ee83bfe40932",
 					"V": {
-	"MinDistance": 400.0,
+	"MinDistance": 800.0,
 	"ToActivate": "c25ba4324ba9ae9c036bf7a7a02b66d7",
 	"ToDeactivate": "c25ba4324ba9ae9c036bf7a7a02b66d7"
 }
@@ -6424,7 +6431,7 @@
 					"Name": "FlaxTimeNexus.InteractToggler",
 					"ID": "db756229427932cad764099fa265fe27",
 					"V": {
-	"InteractionRadius": 100.0,
+	"InteractionRadius": 800.0,
 	"ToActivate": "546e693948293c41bf0947ad01719db3",
 	"ToDeactivate": "cac02d36412ddd3682f03091b1037b20"
 }
@@ -6591,7 +6598,7 @@
 				"Translation": {
 					"X": -210.0113525390625,
 					"Y": 0.0,
-					"Z": 4786.638671875
+					"Z": 3213.438232421875
 				},
 				"Scale": {
 					"X": 9.0,
@@ -6628,6 +6635,12 @@
 					"X": -140.86611938476563,
 					"Y": 14.10809326171875,
 					"Z": 7823.9912109375
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": -0.13052619993686677,
+					"Z": 0.0,
+					"W": 0.9914448857307434
 				}
 			},
 			"StaticFlags": 0,
@@ -6814,15 +6827,6 @@
 				}
 			},
 			"Layer": 1,
-			"Scripts": [
-				{
-					"Name": "FlaxTimeNexus.AdjustToResolution",
-					"ID": "38487f3e458058b5d7f191be55383812",
-					"V": {
-	"Camera": "a96d89ec44bc67b354a644acd2f02d32"
-}
-				}
-			],
 			"Model": "54a1ff4a42af9f018234f7b39b1366b3",
 			"Buffer": {
 				"Entries": [

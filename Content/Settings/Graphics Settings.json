@@ -1,7 +1,7 @@
 {
 	"ID": "77d62db547567a5e138e56876a9df094",
 	"TypeName": "FlaxEditor.Content.Settings.GraphicsSettings",
-	"EngineBuild": 6154,
+	"EngineBuild": 6159,
 	"Data": {
 	"UseVSync": true,
 	"AAQuality": 1,
@@ -10,6 +10,6 @@
 	"VolumetricFogQuality": 1,
 	"ShadowsQuality": 1,
 	"ShadowMapsQuality": 1,
-	"AllowCSMBlending": false
+	"AllowCSMBlending": true
 }
 }

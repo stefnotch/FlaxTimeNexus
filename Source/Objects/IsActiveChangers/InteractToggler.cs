@@ -26,7 +26,7 @@ namespace FlaxTimeNexus
 
 		public void OnLookatStay(RayCastHit hitResult)
 		{
-			if (Interact.Active)
+			if (Interact.Active && hitResult.Distance <= InteractionRadius)
 			{
 				if (ToActivate == ToDeactivate)
 				{
