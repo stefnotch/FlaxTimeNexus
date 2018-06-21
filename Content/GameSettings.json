@@ -1,11 +1,11 @@
 {
 	"ID": "bae075ed4419f402afb54e9afb5829b5",
 	"TypeName": "FlaxEditor.Content.Settings.GameSettings",
-	"EngineBuild": 6155,
+	"EngineBuild": 6159,
 	"Data": {
 	"ProductName": "Time Nexus",
-	"CompanyName": "",
-	"Version": "0.0.0",
+	"CompanyName": "na",
+	"Version": "0.0.1",
 	"FirstScene": "35fd20cd4497ea1b18cafcae1c3524ef",
 	"Defines": [],
 	"Time": "7f8bd4b94405683451e15896a6377e9a",
