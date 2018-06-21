@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using FlaxEngine;
+﻿using FlaxEngine;
 using FlaxEngine.GUI;
 
 namespace FlaxTimeNexus
@@ -15,8 +10,9 @@ namespace FlaxTimeNexus
 
 		public override ContainerControl CreateUI(Vector2 size)
 		{
-			var fontAsset = Content.LoadInternal<FontAsset>("Editor/Segoe Media Center Regular");
-			var largerFont = fontAsset.CreateFont(30);
+			Button fake = new Button();
+
+			var largerFont = fake.Font.Asset.CreateFont(30);
 
 			ContainerControl uiRoot = new ContainerControl
 			{
