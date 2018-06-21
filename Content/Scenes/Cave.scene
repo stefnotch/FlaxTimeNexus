@@ -100,7 +100,7 @@
 			"ID": "01f4114449265a0f60a06b826bc94895",
 			"ParentID": "35fd20cd4497ea1b18cafcae1c3524ef",
 			"Name": "SkyLight",
-			"Brightness": 1.0,
+			"Brightness": 1.5,
 			"AdditiveColor": {
 				"R": 0.0,
 				"G": 0.0,
@@ -6654,6 +6654,103 @@
 }
 				}
 			]
+		},
+		{
+			"TypeID": 1,
+			"ID": "98de542447a4340548320e81b02c4ebd",
+			"ParentID": "59d6696c48ec2cb18c6e51b9f5749f82",
+			"Name": "yyy",
+			"Transform": {
+				"Translation": {
+					"X": -280.090576171875,
+					"Y": -184.9552001953125,
+					"Z": -5055.767578125
+				}
+			},
+			"Model": "16205e4a49e15155a4804ab36ba998ae",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "edf63dcb41dd09263744eab90c858027"
+					},
+					{
+						"Material": "738933ee4103ed88f406f8b97f0d832d"
+					},
+					{
+						"Material": "dbfc04a44815ff31446fdaaeffef4789"
+					},
+					{
+						"Material": "738933ee4103ed88f406f8b97f0d832d"
+					},
+					{
+						"Material": "53a771614f4d1feb3a075b80539af692"
+					},
+					{
+						"Material": "4c5df32e45f5f0c1eafc5c92dba877d9"
+					},
+					{},
+					{
+						"Material": "a1053f364a053269249652bfcb8af63c"
+					},
+					{
+						"Material": "f919dc1743bb977469ccc38793183541"
+					},
+					{
+						"Material": "53a771614f4d1feb3a075b80539af692"
+					},
+					{
+						"Material": "0a7929224b2a4bc35cc1d5abdd0c9c67"
+					},
+					{
+						"Material": "8f48436d48d90fd37a7fbd9b5796d4b3"
+					},
+					{
+						"Material": "a7b65dfa4925b6a53da0678ca36b5e71"
+					},
+					{
+						"Material": "448d79ba443d6ef12d5b27906eef18cd"
+					},
+					{
+						"Material": "1b3acd38455120c700b2429ee9c15459"
+					},
+					{
+						"Material": "ab7bcdb341468a2166db9c84cbfefb37"
+					},
+					{
+						"Material": "42a035664fac15fe97ccd0a51a9fcd90"
+					},
+					{
+						"Material": "3a891292470c477886f371952d40d351"
+					},
+					{
+						"Material": "2ad792894e6dca674828e1965e495b88"
+					},
+					{}
+				]
+			}
+		},
+		{
+			"TypeID": 14,
+			"ID": "f3152f4b445d02ca43b087a0327572ad",
+			"ParentID": "98de542447a4340548320e81b02c4ebd",
+			"Name": "BoxCollider",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 67.0,
+					"Z": 0.0
+				},
+				"Scale": {
+					"X": 70.0,
+					"Y": 1.0,
+					"Z": 100.0
+				}
+			},
+			"Size": {
+				"X": 100.0,
+				"Y": 100.0,
+				"Z": 100.0
+			}
 		},
 		{
 			"TypeID": 17,

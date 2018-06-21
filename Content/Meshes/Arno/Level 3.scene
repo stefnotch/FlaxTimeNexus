@@ -1,0 +1,2274 @@
+{
+	"ID": "ec2a578e416a59de0d5fa28dd5dd7575",
+	"TypeName": "FlaxEngine.SceneAsset",
+	"EngineBuild": 6159,
+	"Data": [
+		{
+			"TypeID": 9,
+			"ID": "ec2a578e416a59de0d5fa28dd5dd7575",
+			"ParentID": "00000000000000000000000000000000",
+			"Name": "Scene",
+			"LightmapSettings": {
+				"GlobalObjectsScale": 0.5,
+				"ChartsPadding": 3,
+				"AtlasSize": 1024,
+				"BounceCount": 1,
+				"UseGeometryWithNoMaterials": false,
+				"Quality": 10
+			}
+		},
+		{
+			"TypeID": 10,
+			"ID": "e033d9784f1a5a395b9a58b3bd8e8a52",
+			"ParentID": "ec2a578e416a59de0d5fa28dd5dd7575",
+			"Name": "Sky",
+			"Transform": {
+				"Translation": {
+					"X": 40.0,
+					"Y": 150.0,
+					"Z": 0.0
+				}
+			},
+			"Sun": "3ae583bb4f4b4c8e469799b0caa82077",
+			"SunDiscScale": 1.0,
+			"FogSunPower": 8.0
+		},
+		{
+			"TypeID": 4,
+			"ID": "3ae583bb4f4b4c8e469799b0caa82077",
+			"ParentID": "ec2a578e416a59de0d5fa28dd5dd7575",
+			"Name": "Sun",
+			"Transform": {
+				"Translation": {
+					"X": 40.0,
+					"Y": 160.0,
+					"Z": 0.0
+				},
+				"Orientation": {
+					"X": 0.3826834559440613,
+					"Y": 0.0,
+					"Z": 0.0,
+					"W": 0.9238795042037964
+				}
+			},
+			"Brightness": 4.0
+		},
+		{
+			"TypeID": 25,
+			"ID": "b443d5b84d3ae523b7f12d8b08d5c129",
+			"ParentID": "ec2a578e416a59de0d5fa28dd5dd7575",
+			"Name": "SkyLight",
+			"Brightness": 1.5,
+			"AdditiveColor": {
+				"R": 0.0,
+				"G": 0.0,
+				"B": 0.0,
+				"A": 1.0
+			},
+			"Radius": 100000.0,
+			"SkyDistanceThreshold": 150000.0,
+			"BakedProbe": "00000000000000000000000000000000",
+			"Mode": 1,
+			"CustomTexture": "c54410104ff39427bc11e5bc761d66b0"
+		},
+		{
+			"TypeID": 3,
+			"ID": "e06d06a34cafd79bc9c7118a21ba87bd",
+			"ParentID": "ec2a578e416a59de0d5fa28dd5dd7575",
+			"IsActive": false,
+			"Name": "TODO",
+			"StaticFlags": 0
+		},
+		{
+			"TypeID": 27,
+			"ID": "baf5147a4e43e326ec5289a91e6b47b0",
+			"ParentID": "e06d06a34cafd79bc9c7118a21ba87bd",
+			"Name": "TextRender",
+			"Transform": {
+				"Translation": {
+					"X": 803.4942016601563,
+					"Y": -1611.7393798828126,
+					"Z": 321.5533142089844
+				},
+				"Orientation": {
+					"X": -0.7071068286895752,
+					"Y": 0.0,
+					"Z": 0.0,
+					"W": 0.7071068286895752
+				},
+				"Scale": {
+					"X": 3.1240203380584719,
+					"Y": 5.000051975250244,
+					"Z": -1.2861027717590333
+				}
+			},
+			"StaticFlags": 0,
+			"Text": "Add Spike Traps here.\n",
+			"Color": {
+				"R": 8.407790785948902e-45,
+				"G": 2.755106923693666e-40,
+				"B": 1.1770907100328464e-43,
+				"A": 9.80908925027372e-45
+			},
+			"Size": 32,
+			"Material": "e72782bd4d898e2f236ca3be780438af",
+			"Font": "ea9f671a4de39f19bf2a5082ac86e97c",
+			"ShadowsMode": 3,
+			"Bounds": {
+				"Location": {
+					"X": -100.0,
+					"Y": -100.0
+				},
+				"Size": {
+					"X": 200.0,
+					"Y": 200.0
+				}
+			},
+			"HAlignment": 1,
+			"VAlignment": 1,
+			"Wrapping": 0,
+			"GapScale": 1.0
+		},
+		{
+			"TypeID": 27,
+			"ID": "36eb2c7d4d7b95cecf6197b55f8ef871",
+			"ParentID": "e06d06a34cafd79bc9c7118a21ba87bd",
+			"Name": "TextRender 0",
+			"Transform": {
+				"Translation": {
+					"X": -3773.218017578125,
+					"Y": 848.8759155273438,
+					"Z": 856.469482421875
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": 0.7071068286895752,
+					"Z": 0.0,
+					"W": 0.7071068286895752
+				}
+			},
+			"StaticFlags": 0,
+			"Text": "Final passage of the level",
+			"Color": {
+				"R": 1.0,
+				"G": 0.0,
+				"B": 0.056522369384765628,
+				"A": 1.0
+			},
+			"Size": 32,
+			"Material": "e72782bd4d898e2f236ca3be780438af",
+			"Font": "ea9f671a4de39f19bf2a5082ac86e97c",
+			"ShadowsMode": 3,
+			"Bounds": {
+				"Location": {
+					"X": -100.0,
+					"Y": -100.0
+				},
+				"Size": {
+					"X": 200.0,
+					"Y": 200.0
+				}
+			},
+			"HAlignment": 1,
+			"VAlignment": 1,
+			"Wrapping": 0,
+			"GapScale": 1.0
+		},
+		{
+			"TypeID": 27,
+			"ID": "906553df47d1519601f3bbb50b95d083",
+			"ParentID": "e06d06a34cafd79bc9c7118a21ba87bd",
+			"Name": "TextRender 1",
+			"Transform": {
+				"Translation": {
+					"X": -2663.76171875,
+					"Y": 1537.3797607421876,
+					"Z": 2021.5609130859376
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": 1.0,
+					"Z": -0.0,
+					"W": -4.371138828673793e-8
+				}
+			},
+			"StaticFlags": 0,
+			"Text": "Give the Player a way to get up here.\n\n(Maybe over the <-- roof?)",
+			"Color": {
+				"R": 1.0,
+				"G": 0.0,
+				"B": 0.07045269012451172,
+				"A": 1.0
+			},
+			"Size": 32,
+			"Material": "e72782bd4d898e2f236ca3be780438af",
+			"Font": "ea9f671a4de39f19bf2a5082ac86e97c",
+			"ShadowsMode": 3,
+			"Bounds": {
+				"Location": {
+					"X": -100.0,
+					"Y": -100.0
+				},
+				"Size": {
+					"X": 200.0,
+					"Y": 200.0
+				}
+			},
+			"HAlignment": 1,
+			"VAlignment": 1,
+			"Wrapping": 0,
+			"GapScale": 1.0
+		},
+		{
+			"TypeID": 3,
+			"ID": "90f5c567491ec285641c5287c632b5cb",
+			"ParentID": "ec2a578e416a59de0d5fa28dd5dd7575",
+			"Name": "SceneActor",
+			"StaticFlags": 0
+		},
+		{
+			"TypeID": 3,
+			"ID": "44e32c8741c25b382e18fa81bc220aeb",
+			"ParentID": "90f5c567491ec285641c5287c632b5cb",
+			"Name": "Rocks",
+			"StaticFlags": 0
+		},
+		{
+			"TypeID": 1,
+			"ID": "de5933fd4cf2ef254f770e9bbc295f02",
+			"ParentID": "44e32c8741c25b382e18fa81bc220aeb",
+			"Name": "rock_40",
+			"Transform": {
+				"Translation": {
+					"X": -2421.389892578125,
+					"Y": 875.9417724609375,
+					"Z": 73.67130279541016
+				},
+				"Orientation": {
+					"X": -0.287481427192688,
+					"Y": -0.25791069865226748,
+					"Z": -0.6576201319694519,
+					"W": 0.6468170881271362
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "50573d17460b8ec3fa5b13a9eeb06523",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"TypeID": 24,
+			"ID": "28f6b0c443fbdc743e327baa9da9db9b",
+			"ParentID": "de5933fd4cf2ef254f770e9bbc295f02",
+			"Name": "MeshCollider",
+			"StaticFlags": 0,
+			"CollisionData": "ae09b3cc45cd03a3a2b0f6a0f07caa4e"
+		},
+		{
+			"TypeID": 1,
+			"ID": "aaf0a20e4940934ace0d9d9091587475",
+			"ParentID": "44e32c8741c25b382e18fa81bc220aeb",
+			"Name": "rock_40",
+			"Transform": {
+				"Translation": {
+					"X": -1728.3568115234376,
+					"Y": 904.0777587890625,
+					"Z": 171.28492736816407
+				},
+				"Scale": {
+					"X": 0.672687828540802,
+					"Y": 0.6937444806098938,
+					"Z": 0.5265838503837586
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "ede37d5b44e1e833a1c742ad8c62cd16",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "2ad792894e6dca674828e1965e495b88"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 24,
+			"ID": "138858e3421cfd6f138da784c661800f",
+			"ParentID": "aaf0a20e4940934ace0d9d9091587475",
+			"Name": "MeshCollider",
+			"StaticFlags": 0,
+			"CollisionData": "ec0b8bef49f1fb7ed6095e9560b49145"
+		},
+		{
+			"TypeID": 1,
+			"ID": "15f946b046ee153ffcd58fa8155b48d0",
+			"ParentID": "44e32c8741c25b382e18fa81bc220aeb",
+			"Name": "rock_39",
+			"Transform": {
+				"Translation": {
+					"X": -1694.650390625,
+					"Y": 904.0777587890625,
+					"Z": -24.775917053222658
+				},
+				"Orientation": {
+					"X": -0.23234787583351136,
+					"Y": 0.6321753263473511,
+					"Z": -0.2069987952709198,
+					"W": 0.7095917463302612
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "ede37d5b44e1e833a1c742ad8c62cd16",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "2ad792894e6dca674828e1965e495b88"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 24,
+			"ID": "b8f9d71843c2f20d0c6c0788bb075f19",
+			"ParentID": "15f946b046ee153ffcd58fa8155b48d0",
+			"Name": "MeshCollider",
+			"StaticFlags": 0,
+			"CollisionData": "ec0b8bef49f1fb7ed6095e9560b49145"
+		},
+		{
+			"TypeID": 3,
+			"ID": "3ec06b1a40e88ecaf1a385bcb57c9f55",
+			"ParentID": "44e32c8741c25b382e18fa81bc220aeb",
+			"Name": "EmptyActor 0",
+			"Transform": {
+				"Translation": {
+					"X": 2063.79248046875,
+					"Y": 0.0,
+					"Z": 660.295654296875
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": -0.7071068286895752,
+					"Z": 0.0,
+					"W": 0.7071067094802856
+				}
+			},
+			"StaticFlags": 0
+		},
+		{
+			"TypeID": 1,
+			"ID": "f21bd18f4ce557e33a79e0aef0782df3",
+			"ParentID": "3ec06b1a40e88ecaf1a385bcb57c9f55",
+			"Name": "Rock 0",
+			"Transform": {
+				"Translation": {
+					"X": 519.20068359375,
+					"Y": 2326.591552734375,
+					"Z": -2593.476318359375
+				},
+				"Orientation": {
+					"X": -0.18570084869861604,
+					"Y": 0.7075003981590271,
+					"Z": -0.06283427774906159,
+					"W": 0.6789773106575012
+				},
+				"Scale": {
+					"X": 1.760977864265442,
+					"Y": 2.462733030319214,
+					"Z": -1.8281930685043336
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "691c67fc4fb5410abd06239d0b5ac8bc",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "9c291e4f4899dc17d8447fbcba7f8a03"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "630adb7b4710f844bdfc93932a804bf4",
+			"ParentID": "3ec06b1a40e88ecaf1a385bcb57c9f55",
+			"Name": "Rock",
+			"Transform": {
+				"Translation": {
+					"X": -564.17578125,
+					"Y": 1629.1083984375,
+					"Z": -2194.0693359375
+				},
+				"Scale": {
+					"X": 1.760977864265442,
+					"Y": 2.462733030319214,
+					"Z": -1.8281930685043336
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "691c67fc4fb5410abd06239d0b5ac8bc",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "9c291e4f4899dc17d8447fbcba7f8a03"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "b167726b42f6579b56d06398f989cd74",
+			"ParentID": "3ec06b1a40e88ecaf1a385bcb57c9f55",
+			"Name": "rock_39",
+			"Transform": {
+				"Translation": {
+					"X": 453.3623046875,
+					"Y": 2277.282958984375,
+					"Z": -3603.22021484375
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": -0.7436914443969727,
+					"Z": 0.0,
+					"W": 0.6685230135917664
+				},
+				"Scale": {
+					"X": 1.0,
+					"Y": 2.5175533294677736,
+					"Z": 1.0
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "ede37d5b44e1e833a1c742ad8c62cd16",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "875dc82043062b1a15b844ae2011dec5"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "4ab4716040951847468d859b5d2f140b",
+			"ParentID": "3ec06b1a40e88ecaf1a385bcb57c9f55",
+			"Name": "rock_40",
+			"Transform": {
+				"Translation": {
+					"X": -2123.783203125,
+					"Y": 1906.77685546875,
+					"Z": -2393.055908203125
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": 0.0,
+					"Z": 0.525882363319397,
+					"W": 0.8505573272705078
+				},
+				"Scale": {
+					"X": 2.0,
+					"Y": 3.0,
+					"Z": 1.5
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "50573d17460b8ec3fa5b13a9eeb06523",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "9c291e4f4899dc17d8447fbcba7f8a03"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 3,
+			"ID": "d600fbec4d2a3348708d1d8bcd706adb",
+			"ParentID": "44e32c8741c25b382e18fa81bc220aeb",
+			"Name": "EmptyActor",
+			"StaticFlags": 0
+		},
+		{
+			"TypeID": 1,
+			"ID": "f4e77b584f251500d034d7b3b5e814ec",
+			"ParentID": "d600fbec4d2a3348708d1d8bcd706adb",
+			"Name": "Rock",
+			"Transform": {
+				"Translation": {
+					"X": -564.17578125,
+					"Y": 1629.1083984375,
+					"Z": -2194.0693359375
+				},
+				"Scale": {
+					"X": 1.760977864265442,
+					"Y": 2.462733030319214,
+					"Z": -1.8281930685043336
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "691c67fc4fb5410abd06239d0b5ac8bc",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "9c291e4f4899dc17d8447fbcba7f8a03"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "3bccc83a4c316e0eec48a29fde7ed5eb",
+			"ParentID": "d600fbec4d2a3348708d1d8bcd706adb",
+			"Name": "rock_39",
+			"Transform": {
+				"Translation": {
+					"X": 453.3623046875,
+					"Y": 2277.282958984375,
+					"Z": -3603.22021484375
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": -0.7436914443969727,
+					"Z": 0.0,
+					"W": 0.6685230135917664
+				},
+				"Scale": {
+					"X": 1.0,
+					"Y": 2.5175533294677736,
+					"Z": 1.0
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "ede37d5b44e1e833a1c742ad8c62cd16",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "875dc82043062b1a15b844ae2011dec5"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "edb8a0da4dcae84aa08fd18d5601873c",
+			"ParentID": "d600fbec4d2a3348708d1d8bcd706adb",
+			"Name": "rock_40",
+			"Transform": {
+				"Translation": {
+					"X": -2123.783203125,
+					"Y": 1906.77685546875,
+					"Z": -2393.055908203125
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": 0.0,
+					"Z": 0.525882363319397,
+					"W": 0.8505573272705078
+				},
+				"Scale": {
+					"X": 2.0,
+					"Y": 3.0,
+					"Z": 1.5
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "50573d17460b8ec3fa5b13a9eeb06523",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "9c291e4f4899dc17d8447fbcba7f8a03"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 3,
+			"ID": "2d397168484a3f6c85cc0b9d32036405",
+			"ParentID": "44e32c8741c25b382e18fa81bc220aeb",
+			"Name": "Barrier 0",
+			"Transform": {
+				"Translation": {
+					"X": 666.2235107421875,
+					"Y": 0.0,
+					"Z": -501.1075439453125
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": 0.803683340549469,
+					"Z": 0.0,
+					"W": 0.5950573086738586
+				}
+			},
+			"StaticFlags": 0
+		},
+		{
+			"TypeID": 1,
+			"ID": "5bf2ef1b44148336b068728a0c44c47e",
+			"ParentID": "2d397168484a3f6c85cc0b9d32036405",
+			"Name": "Rock 1",
+			"Transform": {
+				"Translation": {
+					"X": 1941.5557861328126,
+					"Y": 301.32586669921877,
+					"Z": 1981.1558837890626
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": -0.5524844527244568,
+					"Z": 0.0,
+					"W": 0.833523154258728
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "691c67fc4fb5410abd06239d0b5ac8bc",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "9c291e4f4899dc17d8447fbcba7f8a03"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 24,
+			"ID": "6de3b09c49a548e5b2a95db431640f3c",
+			"ParentID": "5bf2ef1b44148336b068728a0c44c47e",
+			"Name": "Rock_coll",
+			"StaticFlags": 0,
+			"CollisionData": "7ed06b7d4bbfded0c82c3e9cee9b0932"
+		},
+		{
+			"TypeID": 1,
+			"ID": "f1d9d1974c6c6052b5e378a9bf4cb4b9",
+			"ParentID": "2d397168484a3f6c85cc0b9d32036405",
+			"Name": "Rock 0",
+			"Transform": {
+				"Translation": {
+					"X": 1620.20751953125,
+					"Y": 204.89158630371095,
+					"Z": 1981.1558837890626
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "691c67fc4fb5410abd06239d0b5ac8bc",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "9c291e4f4899dc17d8447fbcba7f8a03"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 24,
+			"ID": "49b5001d481479cf3e315a961fe99c9f",
+			"ParentID": "f1d9d1974c6c6052b5e378a9bf4cb4b9",
+			"Name": "Rock_coll",
+			"StaticFlags": 0,
+			"CollisionData": "7ed06b7d4bbfded0c82c3e9cee9b0932"
+		},
+		{
+			"TypeID": 1,
+			"ID": "c6010f3a4e4ed0e09c0ddb8d978f76f5",
+			"ParentID": "2d397168484a3f6c85cc0b9d32036405",
+			"Name": "Rock",
+			"Transform": {
+				"Translation": {
+					"X": 2168.90087890625,
+					"Y": 302.384033203125,
+					"Z": 1066.126220703125
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "691c67fc4fb5410abd06239d0b5ac8bc",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "9c291e4f4899dc17d8447fbcba7f8a03"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 24,
+			"ID": "520df286402fdc6c41c06c88c1feecaa",
+			"ParentID": "c6010f3a4e4ed0e09c0ddb8d978f76f5",
+			"Name": "Rock_coll",
+			"StaticFlags": 0,
+			"CollisionData": "7ed06b7d4bbfded0c82c3e9cee9b0932"
+		},
+		{
+			"TypeID": 1,
+			"ID": "8988622d4afd972caa46cb9a36199ca7",
+			"ParentID": "2d397168484a3f6c85cc0b9d32036405",
+			"Name": "rock_53",
+			"Transform": {
+				"Translation": {
+					"X": -223.62472534179688,
+					"Y": 231.72303771972657,
+					"Z": 2034.0692138671876
+				},
+				"Orientation": {
+					"X": 0.09112788736820221,
+					"Y": -0.9162188172340393,
+					"Z": 0.14723879098892213,
+					"W": -0.36133041977882388
+				},
+				"Scale": {
+					"X": 3.0234429836273195,
+					"Y": 2.7251389026641847,
+					"Z": 2.4516563415527345
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "ede37d5b44e1e833a1c742ad8c62cd16",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "875dc82043062b1a15b844ae2011dec5"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 24,
+			"ID": "da440d774c64721f466270961c7a1cc4",
+			"ParentID": "8988622d4afd972caa46cb9a36199ca7",
+			"Name": "rock_39_coll",
+			"StaticFlags": 0,
+			"CollisionData": "ec0b8bef49f1fb7ed6095e9560b49145"
+		},
+		{
+			"TypeID": 1,
+			"ID": "1778e958408a58073203319ee41c226f",
+			"ParentID": "2d397168484a3f6c85cc0b9d32036405",
+			"Name": "rock_44",
+			"Transform": {
+				"Translation": {
+					"X": 70.55191040039063,
+					"Y": 73.03388977050781,
+					"Z": 2167.89208984375
+				},
+				"Orientation": {
+					"X": 0.16434168815612794,
+					"Y": -0.9347504377365112,
+					"Z": 0.054547019302845,
+					"W": 0.3102550506591797
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "ede37d5b44e1e833a1c742ad8c62cd16",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "875dc82043062b1a15b844ae2011dec5"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 24,
+			"ID": "06fa258844d76bf530ef3096d1b88f11",
+			"ParentID": "1778e958408a58073203319ee41c226f",
+			"Name": "rock_39_coll",
+			"StaticFlags": 0,
+			"CollisionData": "ec0b8bef49f1fb7ed6095e9560b49145"
+		},
+		{
+			"TypeID": 1,
+			"ID": "a68e15b642a2515d6ccba4b0bc46b6b7",
+			"ParentID": "2d397168484a3f6c85cc0b9d32036405",
+			"Name": "rock_48",
+			"Transform": {
+				"Translation": {
+					"X": 1196.4111328125,
+					"Y": 183.88258361816407,
+					"Z": 2301.060791015625
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": 0.9177226424217224,
+					"Z": 0.0,
+					"W": -0.3972219228744507
+				},
+				"Scale": {
+					"X": 1.6568323373794556,
+					"Y": 3.616819381713867,
+					"Z": 1.3045068979263306
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "ede37d5b44e1e833a1c742ad8c62cd16",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "875dc82043062b1a15b844ae2011dec5"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 24,
+			"ID": "485271be48de9cd96eedc5bc0a613e3e",
+			"ParentID": "a68e15b642a2515d6ccba4b0bc46b6b7",
+			"Name": "rock_39_coll",
+			"StaticFlags": 0,
+			"CollisionData": "ec0b8bef49f1fb7ed6095e9560b49145"
+		},
+		{
+			"TypeID": 1,
+			"ID": "67b86fd64edd457c54a1bfa26a5e861e",
+			"ParentID": "2d397168484a3f6c85cc0b9d32036405",
+			"Name": "rock_43",
+			"Transform": {
+				"Translation": {
+					"X": 742.707763671875,
+					"Y": 73.03388977050781,
+					"Z": 2675.695068359375
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": -0.9925029873847961,
+					"Z": 0.0,
+					"W": -0.12222028523683548
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "ede37d5b44e1e833a1c742ad8c62cd16",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "875dc82043062b1a15b844ae2011dec5"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 24,
+			"ID": "d7be1dad4be615f22d5d00b0727e3a4b",
+			"ParentID": "67b86fd64edd457c54a1bfa26a5e861e",
+			"Name": "rock_39_coll",
+			"StaticFlags": 0,
+			"CollisionData": "ec0b8bef49f1fb7ed6095e9560b49145"
+		},
+		{
+			"TypeID": 1,
+			"ID": "6bec83754528c720d7cd3c9d7751b91b",
+			"ParentID": "2d397168484a3f6c85cc0b9d32036405",
+			"Name": "rock_50",
+			"Transform": {
+				"Translation": {
+					"X": 1469.47607421875,
+					"Y": 73.03388977050781,
+					"Z": 2089.10986328125
+				},
+				"Orientation": {
+					"X": 0.15643449127674104,
+					"Y": 5.582238600254641e-7,
+					"Z": 5.582238600254641e-7,
+					"W": 0.9876883625984192
+				},
+				"Scale": {
+					"X": 1.88983154296875,
+					"Y": 7.910458087921143,
+					"Z": 1.0
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "ede37d5b44e1e833a1c742ad8c62cd16",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "875dc82043062b1a15b844ae2011dec5"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 24,
+			"ID": "336e79874479498c636dc992acf40196",
+			"ParentID": "6bec83754528c720d7cd3c9d7751b91b",
+			"Name": "rock_39_coll",
+			"StaticFlags": 0,
+			"CollisionData": "ec0b8bef49f1fb7ed6095e9560b49145"
+		},
+		{
+			"TypeID": 1,
+			"ID": "51fdf811476248e2fb4cffbaffe710e8",
+			"ParentID": "2d397168484a3f6c85cc0b9d32036405",
+			"Name": "rock_42",
+			"Transform": {
+				"Translation": {
+					"X": 1469.47607421875,
+					"Y": 73.03388977050781,
+					"Z": 1941.573486328125
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": -0.9925029873847961,
+					"Z": 0.0,
+					"W": -0.12222028523683548
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "ede37d5b44e1e833a1c742ad8c62cd16",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "875dc82043062b1a15b844ae2011dec5"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 24,
+			"ID": "fda5959a436f61a1b68e40b325ebcc88",
+			"ParentID": "51fdf811476248e2fb4cffbaffe710e8",
+			"Name": "rock_39_coll",
+			"StaticFlags": 0,
+			"CollisionData": "ec0b8bef49f1fb7ed6095e9560b49145"
+		},
+		{
+			"TypeID": 1,
+			"ID": "ab8365a84462c7845983d497d9b4b752",
+			"ParentID": "2d397168484a3f6c85cc0b9d32036405",
+			"Name": "rock_41",
+			"Transform": {
+				"Translation": {
+					"X": 2070.85107421875,
+					"Y": 73.03388977050781,
+					"Z": 1839.3612060546876
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": -0.9329273104667664,
+					"Z": 0.0,
+					"W": 0.36006486415863039
+				},
+				"Scale": {
+					"X": 1.5,
+					"Y": 1.399999976158142,
+					"Z": 1.0
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "ede37d5b44e1e833a1c742ad8c62cd16",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "875dc82043062b1a15b844ae2011dec5"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 24,
+			"ID": "e2f8bcea4aaf890bd10eea9cae76555c",
+			"ParentID": "ab8365a84462c7845983d497d9b4b752",
+			"Name": "rock_39_coll",
+			"StaticFlags": 0,
+			"CollisionData": "ec0b8bef49f1fb7ed6095e9560b49145"
+		},
+		{
+			"TypeID": 1,
+			"ID": "fa1fb16444613141c5f7afae30cb4caf",
+			"ParentID": "2d397168484a3f6c85cc0b9d32036405",
+			"Name": "rock_39",
+			"Transform": {
+				"Translation": {
+					"X": 2091.027099609375,
+					"Y": 73.03388977050781,
+					"Z": 1122.921875
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": -0.6999173760414124,
+					"Z": 0.0,
+					"W": 0.7142238020896912
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "ede37d5b44e1e833a1c742ad8c62cd16",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "875dc82043062b1a15b844ae2011dec5"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 24,
+			"ID": "314a96b2418cc63532bb248c63167d02",
+			"ParentID": "fa1fb16444613141c5f7afae30cb4caf",
+			"Name": "rock_39_coll",
+			"StaticFlags": 0,
+			"CollisionData": "ec0b8bef49f1fb7ed6095e9560b49145"
+		},
+		{
+			"TypeID": 1,
+			"ID": "a351c2fc47498cb5abdca593f9ab6341",
+			"ParentID": "2d397168484a3f6c85cc0b9d32036405",
+			"Name": "rock_45",
+			"Transform": {
+				"Translation": {
+					"X": 2216.393310546875,
+					"Y": 242.15187072753907,
+					"Z": 1511.8250732421876
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": 0.41428056359291079,
+					"Z": 0.0,
+					"W": 0.9101492762565613
+				},
+				"Scale": {
+					"X": 2.0,
+					"Y": 4.0,
+					"Z": 2.0
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "50573d17460b8ec3fa5b13a9eeb06523",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "b57670824ce45b272c19c197e1511d45"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 24,
+			"ID": "23816dbc46bbe8ae7d424d87d83043ff",
+			"ParentID": "a351c2fc47498cb5abdca593f9ab6341",
+			"Name": "rock_40_coll",
+			"StaticFlags": 0,
+			"CollisionData": "ae09b3cc45cd03a3a2b0f6a0f07caa4e"
+		},
+		{
+			"TypeID": 1,
+			"ID": "1d2057fa4c628112d76187aeee4cbfc9",
+			"ParentID": "2d397168484a3f6c85cc0b9d32036405",
+			"Name": "rock_51",
+			"Transform": {
+				"Translation": {
+					"X": 340.91436767578127,
+					"Y": 158.66065979003907,
+					"Z": 2600.229248046875
+				},
+				"Orientation": {
+					"X": 0.15643449127674104,
+					"Y": 5.582238600254641e-7,
+					"Z": 5.582238600254641e-7,
+					"W": 0.9876883625984192
+				},
+				"Scale": {
+					"X": 2.0,
+					"Y": 10.0,
+					"Z": 2.0
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "50573d17460b8ec3fa5b13a9eeb06523",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "b57670824ce45b272c19c197e1511d45"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 24,
+			"ID": "b1f12a3b47d2e66f9794e68521d4d8a9",
+			"ParentID": "1d2057fa4c628112d76187aeee4cbfc9",
+			"Name": "rock_40_coll",
+			"StaticFlags": 0,
+			"CollisionData": "ae09b3cc45cd03a3a2b0f6a0f07caa4e"
+		},
+		{
+			"TypeID": 1,
+			"ID": "1e04a559409c5a0b80b9a9910a2cac0a",
+			"ParentID": "2d397168484a3f6c85cc0b9d32036405",
+			"Name": "rock_52",
+			"Transform": {
+				"Translation": {
+					"X": 706.3416137695313,
+					"Y": 158.66065979003907,
+					"Z": 2728.65380859375
+				},
+				"Orientation": {
+					"X": 0.15643449127674104,
+					"Y": 5.582238600254641e-7,
+					"Z": 5.582238600254641e-7,
+					"W": 0.9876883625984192
+				},
+				"Scale": {
+					"X": -3.2853288650512697,
+					"Y": 1.8902121782302857,
+					"Z": 2.476687431335449
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "50573d17460b8ec3fa5b13a9eeb06523",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "b57670824ce45b272c19c197e1511d45"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 24,
+			"ID": "6671d3c14beaf086ed9d008d1d8abad1",
+			"ParentID": "1e04a559409c5a0b80b9a9910a2cac0a",
+			"Name": "rock_40_coll",
+			"StaticFlags": 0,
+			"CollisionData": "ae09b3cc45cd03a3a2b0f6a0f07caa4e"
+		},
+		{
+			"TypeID": 1,
+			"ID": "c30e00844236e53c2c389b9c8aa1124e",
+			"ParentID": "2d397168484a3f6c85cc0b9d32036405",
+			"Name": "rock_47",
+			"Transform": {
+				"Translation": {
+					"X": 706.3416137695313,
+					"Y": 158.66065979003907,
+					"Z": 2792.455810546875
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "50573d17460b8ec3fa5b13a9eeb06523",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "b57670824ce45b272c19c197e1511d45"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 24,
+			"ID": "ad5f3f0c423e16b2720073a5ed20493c",
+			"ParentID": "c30e00844236e53c2c389b9c8aa1124e",
+			"Name": "rock_40_coll",
+			"StaticFlags": 0,
+			"CollisionData": "ae09b3cc45cd03a3a2b0f6a0f07caa4e"
+		},
+		{
+			"TypeID": 1,
+			"ID": "a9e6ab1740528df98ee7169fc3cc640f",
+			"ParentID": "2d397168484a3f6c85cc0b9d32036405",
+			"Name": "rock_46",
+			"Transform": {
+				"Translation": {
+					"X": 1161.153076171875,
+					"Y": 1.424530029296875,
+					"Z": 2285.809814453125
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "50573d17460b8ec3fa5b13a9eeb06523",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "b57670824ce45b272c19c197e1511d45"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 24,
+			"ID": "06fcce094317982e0ea29c952c2264d3",
+			"ParentID": "a9e6ab1740528df98ee7169fc3cc640f",
+			"Name": "rock_40_coll",
+			"StaticFlags": 0,
+			"CollisionData": "ae09b3cc45cd03a3a2b0f6a0f07caa4e"
+		},
+		{
+			"TypeID": 1,
+			"ID": "1680dd1b4e75d1075f93b98cc1038152",
+			"ParentID": "2d397168484a3f6c85cc0b9d32036405",
+			"Name": "rock_54",
+			"Transform": {
+				"Translation": {
+					"X": -110.93991088867188,
+					"Y": 201.06362915039063,
+					"Z": 1645.908935546875
+				},
+				"Orientation": {
+					"X": -0.7541933655738831,
+					"Y": 0.6566524505615234,
+					"Z": -4.342184567462937e-8,
+					"W": -5.022412263855358e-9
+				},
+				"Scale": {
+					"X": 1.5,
+					"Y": 1.0,
+					"Z": 1.5
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "50573d17460b8ec3fa5b13a9eeb06523",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "b57670824ce45b272c19c197e1511d45"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 24,
+			"ID": "3fcb0a0d4004a27dfda6d1b923cd6d0d",
+			"ParentID": "1680dd1b4e75d1075f93b98cc1038152",
+			"Name": "rock_40_coll",
+			"StaticFlags": 0,
+			"CollisionData": "ae09b3cc45cd03a3a2b0f6a0f07caa4e"
+		},
+		{
+			"TypeID": 1,
+			"ID": "6fbad17e49ba64df398e0bb8f48449c4",
+			"ParentID": "2d397168484a3f6c85cc0b9d32036405",
+			"Name": "rock_49",
+			"Transform": {
+				"Translation": {
+					"X": 1429.2266845703126,
+					"Y": 201.06362915039063,
+					"Z": 1871.2972412109376
+				},
+				"Orientation": {
+					"X": 0.296101838350296,
+					"Y": 0.9551563858985901,
+					"Z": -1.294302265364422e-8,
+					"W": -4.175121048888286e-8
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "50573d17460b8ec3fa5b13a9eeb06523",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "b57670824ce45b272c19c197e1511d45"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 24,
+			"ID": "6e89b4724970b5370a230997a1ba1fd5",
+			"ParentID": "6fbad17e49ba64df398e0bb8f48449c4",
+			"Name": "rock_40_coll",
+			"StaticFlags": 0,
+			"CollisionData": "ae09b3cc45cd03a3a2b0f6a0f07caa4e"
+		},
+		{
+			"TypeID": 1,
+			"ID": "b0b80356499b8cef1823908a8fd97268",
+			"ParentID": "2d397168484a3f6c85cc0b9d32036405",
+			"Name": "rock_40",
+			"Transform": {
+				"Translation": {
+					"X": 1772.2197265625,
+					"Y": 73.87928771972656,
+					"Z": 2051.3876953125
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": 0.0,
+					"Z": 0.296101838350296,
+					"W": 0.9551563858985901
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "50573d17460b8ec3fa5b13a9eeb06523",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "b57670824ce45b272c19c197e1511d45"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 24,
+			"ID": "6e9119f449390d491ae10fb3be4d5006",
+			"ParentID": "b0b80356499b8cef1823908a8fd97268",
+			"Name": "rock_40_coll",
+			"StaticFlags": 0,
+			"CollisionData": "ae09b3cc45cd03a3a2b0f6a0f07caa4e"
+		},
+		{
+			"TypeID": 3,
+			"ID": "595ac41d4944f0b1d1ecf38b72066ca5",
+			"ParentID": "44e32c8741c25b382e18fa81bc220aeb",
+			"Name": "Barrier",
+			"StaticFlags": 0
+		},
+		{
+			"TypeID": 1,
+			"ID": "8f9a45e64d305678e9b7de93daf070e8",
+			"ParentID": "595ac41d4944f0b1d1ecf38b72066ca5",
+			"Name": "Rock 1",
+			"Transform": {
+				"Translation": {
+					"X": 1941.5557861328126,
+					"Y": 301.32586669921877,
+					"Z": 1981.1558837890626
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": -0.5524844527244568,
+					"Z": 0.0,
+					"W": 0.833523154258728
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "691c67fc4fb5410abd06239d0b5ac8bc",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "9c291e4f4899dc17d8447fbcba7f8a03"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 24,
+			"ID": "c77106924c8ed3833ba09095ba98fd9e",
+			"ParentID": "8f9a45e64d305678e9b7de93daf070e8",
+			"Name": "Rock_coll",
+			"StaticFlags": 0,
+			"CollisionData": "7ed06b7d4bbfded0c82c3e9cee9b0932"
+		},
+		{
+			"TypeID": 1,
+			"ID": "e897c8c0436aeb22561741a8d644c5e6",
+			"ParentID": "595ac41d4944f0b1d1ecf38b72066ca5",
+			"Name": "Rock 0",
+			"Transform": {
+				"Translation": {
+					"X": 1620.20751953125,
+					"Y": 204.89158630371095,
+					"Z": 1981.1558837890626
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "691c67fc4fb5410abd06239d0b5ac8bc",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "9c291e4f4899dc17d8447fbcba7f8a03"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 24,
+			"ID": "6cce37d743ac733c039adb88603ad39e",
+			"ParentID": "e897c8c0436aeb22561741a8d644c5e6",
+			"Name": "Rock_coll",
+			"StaticFlags": 0,
+			"CollisionData": "7ed06b7d4bbfded0c82c3e9cee9b0932"
+		},
+		{
+			"TypeID": 1,
+			"ID": "bd221c5543c79d1f660e0fbc3ed45d95",
+			"ParentID": "595ac41d4944f0b1d1ecf38b72066ca5",
+			"Name": "Rock",
+			"Transform": {
+				"Translation": {
+					"X": 2168.90087890625,
+					"Y": 302.384033203125,
+					"Z": 1066.126220703125
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "691c67fc4fb5410abd06239d0b5ac8bc",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"TypeID": 24,
+			"ID": "e0f0e1b542a735fc365483b85f3dc94f",
+			"ParentID": "bd221c5543c79d1f660e0fbc3ed45d95",
+			"Name": "Rock_coll",
+			"StaticFlags": 0,
+			"CollisionData": "7ed06b7d4bbfded0c82c3e9cee9b0932"
+		},
+		{
+			"TypeID": 1,
+			"ID": "4142dff34ebb2b4d728fd6b541f5d867",
+			"ParentID": "595ac41d4944f0b1d1ecf38b72066ca5",
+			"Name": "rock_53",
+			"Transform": {
+				"Translation": {
+					"X": -223.62472534179688,
+					"Y": 231.72303771972657,
+					"Z": 2034.0692138671876
+				},
+				"Orientation": {
+					"X": 0.09112788736820221,
+					"Y": -0.9162188172340393,
+					"Z": 0.14723879098892213,
+					"W": -0.36133041977882388
+				},
+				"Scale": {
+					"X": 3.0234429836273195,
+					"Y": 2.7251389026641847,
+					"Z": 2.4516563415527345
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "ede37d5b44e1e833a1c742ad8c62cd16",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "875dc82043062b1a15b844ae2011dec5"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 24,
+			"ID": "39e3506a4b3828d639435aa14a9defba",
+			"ParentID": "4142dff34ebb2b4d728fd6b541f5d867",
+			"Name": "rock_39_coll",
+			"StaticFlags": 0,
+			"CollisionData": "ec0b8bef49f1fb7ed6095e9560b49145"
+		},
+		{
+			"TypeID": 1,
+			"ID": "13ca7e0e45a271e48a6287a580ac8978",
+			"ParentID": "595ac41d4944f0b1d1ecf38b72066ca5",
+			"Name": "rock_44",
+			"Transform": {
+				"Translation": {
+					"X": 70.55191040039063,
+					"Y": 73.03388977050781,
+					"Z": 2167.89208984375
+				},
+				"Orientation": {
+					"X": 0.16434168815612794,
+					"Y": -0.9347504377365112,
+					"Z": 0.054547019302845,
+					"W": 0.3102550506591797
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "ede37d5b44e1e833a1c742ad8c62cd16",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "875dc82043062b1a15b844ae2011dec5"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 24,
+			"ID": "ba96107445f756facafa3686af9dd6da",
+			"ParentID": "13ca7e0e45a271e48a6287a580ac8978",
+			"Name": "rock_39_coll",
+			"StaticFlags": 0,
+			"CollisionData": "ec0b8bef49f1fb7ed6095e9560b49145"
+		},
+		{
+			"TypeID": 1,
+			"ID": "08a466f34279710c0673da8a5dd103ff",
+			"ParentID": "595ac41d4944f0b1d1ecf38b72066ca5",
+			"Name": "rock_48",
+			"Transform": {
+				"Translation": {
+					"X": 1196.4111328125,
+					"Y": 183.88258361816407,
+					"Z": 2301.060791015625
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": 0.9177226424217224,
+					"Z": 0.0,
+					"W": -0.3972219228744507
+				},
+				"Scale": {
+					"X": 1.6568323373794556,
+					"Y": 3.616819381713867,
+					"Z": 1.3045068979263306
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "ede37d5b44e1e833a1c742ad8c62cd16",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "875dc82043062b1a15b844ae2011dec5"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 24,
+			"ID": "b8e52d904d33074bb5cc20a9767f154b",
+			"ParentID": "08a466f34279710c0673da8a5dd103ff",
+			"Name": "rock_39_coll",
+			"StaticFlags": 0,
+			"CollisionData": "ec0b8bef49f1fb7ed6095e9560b49145"
+		},
+		{
+			"TypeID": 1,
+			"ID": "33ed1b4040b9fac10dbb719a74af2665",
+			"ParentID": "595ac41d4944f0b1d1ecf38b72066ca5",
+			"Name": "rock_43",
+			"Transform": {
+				"Translation": {
+					"X": 742.707763671875,
+					"Y": 73.03388977050781,
+					"Z": 2675.695068359375
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": -0.9925029873847961,
+					"Z": 0.0,
+					"W": -0.12222028523683548
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "ede37d5b44e1e833a1c742ad8c62cd16",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "875dc82043062b1a15b844ae2011dec5"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 24,
+			"ID": "b65bfa20402215cde3778988b068c442",
+			"ParentID": "33ed1b4040b9fac10dbb719a74af2665",
+			"Name": "rock_39_coll",
+			"StaticFlags": 0,
+			"CollisionData": "ec0b8bef49f1fb7ed6095e9560b49145"
+		},
+		{
+			"TypeID": 1,
+			"ID": "80220e9b4dd3298c91201cac3249b659",
+			"ParentID": "595ac41d4944f0b1d1ecf38b72066ca5",
+			"Name": "rock_50",
+			"Transform": {
+				"Translation": {
+					"X": 1469.47607421875,
+					"Y": 73.03388977050781,
+					"Z": 2089.10986328125
+				},
+				"Orientation": {
+					"X": 0.15643449127674104,
+					"Y": 5.582238600254641e-7,
+					"Z": 5.582238600254641e-7,
+					"W": 0.9876883625984192
+				},
+				"Scale": {
+					"X": 1.88983154296875,
+					"Y": 7.910458087921143,
+					"Z": 1.0
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "ede37d5b44e1e833a1c742ad8c62cd16",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "875dc82043062b1a15b844ae2011dec5"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 24,
+			"ID": "82b18103423d19e20c289fab3d016aa3",
+			"ParentID": "80220e9b4dd3298c91201cac3249b659",
+			"Name": "rock_39_coll",
+			"StaticFlags": 0,
+			"CollisionData": "ec0b8bef49f1fb7ed6095e9560b49145"
+		},
+		{
+			"TypeID": 1,
+			"ID": "73e5c4a448aa9ca8ea50458ca7c1c68c",
+			"ParentID": "595ac41d4944f0b1d1ecf38b72066ca5",
+			"Name": "rock_42",
+			"Transform": {
+				"Translation": {
+					"X": 1469.47607421875,
+					"Y": 73.03388977050781,
+					"Z": 1941.573486328125
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": -0.9925029873847961,
+					"Z": 0.0,
+					"W": -0.12222028523683548
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "ede37d5b44e1e833a1c742ad8c62cd16",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "875dc82043062b1a15b844ae2011dec5"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 24,
+			"ID": "126d121246bd7bc9bee93596ac243058",
+			"ParentID": "73e5c4a448aa9ca8ea50458ca7c1c68c",
+			"Name": "rock_39_coll",
+			"StaticFlags": 0,
+			"CollisionData": "ec0b8bef49f1fb7ed6095e9560b49145"
+		},
+		{
+			"TypeID": 1,
+			"ID": "73b37705446db26954b85c8670fb290a",
+			"ParentID": "595ac41d4944f0b1d1ecf38b72066ca5",
+			"Name": "rock_41",
+			"Transform": {
+				"Translation": {
+					"X": 2070.85107421875,
+					"Y": 73.03388977050781,
+					"Z": 1839.3612060546876
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": -0.9329273104667664,
+					"Z": 0.0,
+					"W": 0.36006486415863039
+				},
+				"Scale": {
+					"X": 1.5,
+					"Y": 1.399999976158142,
+					"Z": 1.0
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "ede37d5b44e1e833a1c742ad8c62cd16",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "875dc82043062b1a15b844ae2011dec5"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 24,
+			"ID": "09ada6ff4def7d0b7da264b53b26ae92",
+			"ParentID": "73b37705446db26954b85c8670fb290a",
+			"Name": "rock_39_coll",
+			"StaticFlags": 0,
+			"CollisionData": "ec0b8bef49f1fb7ed6095e9560b49145"
+		},
+		{
+			"TypeID": 1,
+			"ID": "561b801e448e066f070fc09dff003506",
+			"ParentID": "595ac41d4944f0b1d1ecf38b72066ca5",
+			"Name": "rock_39",
+			"Transform": {
+				"Translation": {
+					"X": 2091.027099609375,
+					"Y": 73.03388977050781,
+					"Z": 1122.921875
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": -0.6999173760414124,
+					"Z": 0.0,
+					"W": 0.7142238020896912
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "ede37d5b44e1e833a1c742ad8c62cd16",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "875dc82043062b1a15b844ae2011dec5"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 24,
+			"ID": "19c63a5640e234ecf35b1fa8e4d2af2c",
+			"ParentID": "561b801e448e066f070fc09dff003506",
+			"Name": "rock_39_coll",
+			"StaticFlags": 0,
+			"CollisionData": "ec0b8bef49f1fb7ed6095e9560b49145"
+		},
+		{
+			"TypeID": 1,
+			"ID": "3ffea604478aa1d139e68b8fcc9b7e31",
+			"ParentID": "595ac41d4944f0b1d1ecf38b72066ca5",
+			"Name": "rock_45",
+			"Transform": {
+				"Translation": {
+					"X": 2216.393310546875,
+					"Y": 242.15187072753907,
+					"Z": 1511.8250732421876
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": 0.41428056359291079,
+					"Z": 0.0,
+					"W": 0.9101492762565613
+				},
+				"Scale": {
+					"X": 2.0,
+					"Y": 4.0,
+					"Z": 2.0
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "50573d17460b8ec3fa5b13a9eeb06523",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "b57670824ce45b272c19c197e1511d45"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 24,
+			"ID": "f63092524c476e48e3530da1668e55dc",
+			"ParentID": "3ffea604478aa1d139e68b8fcc9b7e31",
+			"Name": "rock_40_coll",
+			"StaticFlags": 0,
+			"CollisionData": "ae09b3cc45cd03a3a2b0f6a0f07caa4e"
+		},
+		{
+			"TypeID": 1,
+			"ID": "555bfc794d85679a8c3fc2a23768328b",
+			"ParentID": "595ac41d4944f0b1d1ecf38b72066ca5",
+			"Name": "rock_51",
+			"Transform": {
+				"Translation": {
+					"X": 340.91436767578127,
+					"Y": 158.66065979003907,
+					"Z": 2600.229248046875
+				},
+				"Orientation": {
+					"X": 0.15643449127674104,
+					"Y": 5.582238600254641e-7,
+					"Z": 5.582238600254641e-7,
+					"W": 0.9876883625984192
+				},
+				"Scale": {
+					"X": 2.0,
+					"Y": 10.0,
+					"Z": 2.0
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "50573d17460b8ec3fa5b13a9eeb06523",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "b57670824ce45b272c19c197e1511d45"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 24,
+			"ID": "cddb6a784e2981bd139a74a8e28c2388",
+			"ParentID": "555bfc794d85679a8c3fc2a23768328b",
+			"Name": "rock_40_coll",
+			"StaticFlags": 0,
+			"CollisionData": "ae09b3cc45cd03a3a2b0f6a0f07caa4e"
+		},
+		{
+			"TypeID": 1,
+			"ID": "58e621c9423c3baaabd56a854b0acea8",
+			"ParentID": "595ac41d4944f0b1d1ecf38b72066ca5",
+			"Name": "rock_52",
+			"Transform": {
+				"Translation": {
+					"X": 706.3416137695313,
+					"Y": 158.66065979003907,
+					"Z": 2728.65380859375
+				},
+				"Orientation": {
+					"X": 0.15643449127674104,
+					"Y": 5.582238600254641e-7,
+					"Z": 5.582238600254641e-7,
+					"W": 0.9876883625984192
+				},
+				"Scale": {
+					"X": -3.2853288650512697,
+					"Y": 1.8902121782302857,
+					"Z": 2.476687431335449
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "50573d17460b8ec3fa5b13a9eeb06523",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "b57670824ce45b272c19c197e1511d45"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 24,
+			"ID": "d13ba8384805e5791cbfeeba83152bff",
+			"ParentID": "58e621c9423c3baaabd56a854b0acea8",
+			"Name": "rock_40_coll",
+			"StaticFlags": 0,
+			"CollisionData": "ae09b3cc45cd03a3a2b0f6a0f07caa4e"
+		},
+		{
+			"TypeID": 1,
+			"ID": "d2c2363341c562f96dbf04a10cbc3ed2",
+			"ParentID": "595ac41d4944f0b1d1ecf38b72066ca5",
+			"Name": "rock_47",
+			"Transform": {
+				"Translation": {
+					"X": 706.3416137695313,
+					"Y": 158.66065979003907,
+					"Z": 2792.455810546875
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "50573d17460b8ec3fa5b13a9eeb06523",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "b57670824ce45b272c19c197e1511d45"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 24,
+			"ID": "93abdae047a75d487af9f8ad9640f963",
+			"ParentID": "d2c2363341c562f96dbf04a10cbc3ed2",
+			"Name": "rock_40_coll",
+			"StaticFlags": 0,
+			"CollisionData": "ae09b3cc45cd03a3a2b0f6a0f07caa4e"
+		},
+		{
+			"TypeID": 1,
+			"ID": "194af3a64f63dc2385e52d8b60b22168",
+			"ParentID": "595ac41d4944f0b1d1ecf38b72066ca5",
+			"Name": "rock_46",
+			"Transform": {
+				"Translation": {
+					"X": 1161.153076171875,
+					"Y": 1.424530029296875,
+					"Z": 2285.809814453125
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "50573d17460b8ec3fa5b13a9eeb06523",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "b57670824ce45b272c19c197e1511d45"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 24,
+			"ID": "51eacb73463be5f4877aa7be73013fa9",
+			"ParentID": "194af3a64f63dc2385e52d8b60b22168",
+			"Name": "rock_40_coll",
+			"StaticFlags": 0,
+			"CollisionData": "ae09b3cc45cd03a3a2b0f6a0f07caa4e"
+		},
+		{
+			"TypeID": 1,
+			"ID": "179ffca245f9d44a4003b6a4d63165ae",
+			"ParentID": "595ac41d4944f0b1d1ecf38b72066ca5",
+			"Name": "rock_54",
+			"Transform": {
+				"Translation": {
+					"X": -110.93991088867188,
+					"Y": 201.06362915039063,
+					"Z": 1645.908935546875
+				},
+				"Orientation": {
+					"X": -0.7541933655738831,
+					"Y": 0.6566524505615234,
+					"Z": -4.342184567462937e-8,
+					"W": -5.022412263855358e-9
+				},
+				"Scale": {
+					"X": 1.5,
+					"Y": 1.0,
+					"Z": 1.5
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "50573d17460b8ec3fa5b13a9eeb06523",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "b57670824ce45b272c19c197e1511d45"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 24,
+			"ID": "80099cc646483dfdd1f4db95fd923a51",
+			"ParentID": "179ffca245f9d44a4003b6a4d63165ae",
+			"Name": "rock_40_coll",
+			"StaticFlags": 0,
+			"CollisionData": "ae09b3cc45cd03a3a2b0f6a0f07caa4e"
+		},
+		{
+			"TypeID": 1,
+			"ID": "2d5a8dab42f71d611fef059cba53521b",
+			"ParentID": "595ac41d4944f0b1d1ecf38b72066ca5",
+			"Name": "rock_49",
+			"Transform": {
+				"Translation": {
+					"X": 1429.2266845703126,
+					"Y": 201.06362915039063,
+					"Z": 1871.2972412109376
+				},
+				"Orientation": {
+					"X": 0.296101838350296,
+					"Y": 0.9551563858985901,
+					"Z": -1.294302265364422e-8,
+					"W": -4.175121048888286e-8
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "50573d17460b8ec3fa5b13a9eeb06523",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "b57670824ce45b272c19c197e1511d45"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 24,
+			"ID": "2cc6699f4df11ef05562e383152249d1",
+			"ParentID": "2d5a8dab42f71d611fef059cba53521b",
+			"Name": "rock_40_coll",
+			"StaticFlags": 0,
+			"CollisionData": "ae09b3cc45cd03a3a2b0f6a0f07caa4e"
+		},
+		{
+			"TypeID": 1,
+			"ID": "61ca2a8a435681bdc130ce8945d85fff",
+			"ParentID": "595ac41d4944f0b1d1ecf38b72066ca5",
+			"Name": "rock_40",
+			"Transform": {
+				"Translation": {
+					"X": 1772.2197265625,
+					"Y": 73.87928771972656,
+					"Z": 2051.3876953125
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": 0.0,
+					"Z": 0.296101838350296,
+					"W": 0.9551563858985901
+				}
+			},
+			"StaticFlags": 0,
+			"Model": "50573d17460b8ec3fa5b13a9eeb06523",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "b57670824ce45b272c19c197e1511d45"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 24,
+			"ID": "01da8d014c44ef87527b0f9d0d97bd99",
+			"ParentID": "61ca2a8a435681bdc130ce8945d85fff",
+			"Name": "rock_40_coll",
+			"StaticFlags": 0,
+			"CollisionData": "ae09b3cc45cd03a3a2b0f6a0f07caa4e"
+		},
+		{
+			"TypeID": 3,
+			"ID": "c482f98843febaade83ef4915b752a6f",
+			"ParentID": "90f5c567491ec285641c5287c632b5cb",
+			"Name": "Temple",
+			"Transform": {
+				"Scale": {
+					"X": 10.0,
+					"Y": 10.0,
+					"Z": 10.0
+				}
+			},
+			"StaticFlags": 0
+		},
+		{
+			"TypeID": 1,
+			"ID": "33ea6fed47178a1819025b88cfdf3476",
+			"ParentID": "c482f98843febaade83ef4915b752a6f",
+			"Name": "aztec_temple",
+			"StaticFlags": 0,
+			"Model": "c9ce6c574874bfea06aa499a6fd10e6c",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "b57670824ce45b272c19c197e1511d45"
+					},
+					{
+						"Material": "9805578e4730a6bace243bb2fe0a6d92"
+					},
+					{
+						"Material": "9805578e4730a6bace243bb2fe0a6d92"
+					},
+					{
+						"Material": "b57670824ce45b272c19c197e1511d45"
+					},
+					{
+						"Material": "2ad792894e6dca674828e1965e495b88"
+					},
+					{
+						"Material": "9805578e4730a6bace243bb2fe0a6d92"
+					},
+					{
+						"Material": "fea0c0154f54379a94f1309ffeee8a60"
+					},
+					{
+						"Material": "9805578e4730a6bace243bb2fe0a6d92"
+					},
+					{
+						"Material": "efd90653436599be3cadfab9c5bb5ed2"
+					},
+					{
+						"Material": "6b739fbd4e699d155ec88b9bce71763d"
+					},
+					{
+						"Material": "df5ea554421cc54bb591f6a5595833f1"
+					},
+					{
+						"Material": "dbfc04a44815ff31446fdaaeffef4789"
+					},
+					{
+						"Material": "b506cdb64742244cca0e0ca5fbb48f8e"
+					},
+					{
+						"Material": "2ad792894e6dca674828e1965e495b88"
+					},
+					{
+						"Material": "448d79ba443d6ef12d5b27906eef18cd"
+					},
+					{
+						"Material": "9a5f939749c6da49ba61bab25061004c"
+					},
+					{
+						"Material": "2ad792894e6dca674828e1965e495b88"
+					},
+					{
+						"Material": "edf63dcb41dd09263744eab90c858027"
+					},
+					{
+						"Material": "edf63dcb41dd09263744eab90c858027"
+					},
+					{
+						"Material": "edf63dcb41dd09263744eab90c858027"
+					},
+					{
+						"Material": "edf63dcb41dd09263744eab90c858027"
+					},
+					{
+						"Material": "edf63dcb41dd09263744eab90c858027"
+					},
+					{
+						"Material": "edf63dcb41dd09263744eab90c858027"
+					},
+					{
+						"Material": "edf63dcb41dd09263744eab90c858027"
+					},
+					{
+						"Material": "edf63dcb41dd09263744eab90c858027"
+					},
+					{
+						"Material": "edf63dcb41dd09263744eab90c858027"
+					},
+					{
+						"Material": "edf63dcb41dd09263744eab90c858027"
+					},
+					{
+						"Material": "9ae7e799468f8034629d4baed4acfe6c"
+					},
+					{
+						"Material": "b506cdb64742244cca0e0ca5fbb48f8e"
+					},
+					{
+						"Material": "53a771614f4d1feb3a075b80539af692"
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 24,
+			"ID": "04e33f9e4ec1cf5bb98f8dafe60cd5ad",
+			"ParentID": "c482f98843febaade83ef4915b752a6f",
+			"Name": "MeshCollider",
+			"StaticFlags": 0,
+			"CollisionData": "40fa2de74a39440d0abf46a945685753"
+		},
+		{
+			"TypeID": 14,
+			"ID": "d151ae934c5f0d7fc1228098d6792736",
+			"ParentID": "90f5c567491ec285641c5287c632b5cb",
+			"Name": "BoxCollider 0",
+			"Transform": {
+				"Translation": {
+					"X": 7674.37255859375,
+					"Y": 834.430908203125,
+					"Z": 14.542739868164063
+				},
+				"Scale": {
+					"X": 5.0,
+					"Y": 7.5,
+					"Z": 4.5
+				}
+			},
+			"StaticFlags": 0,
+			"Scripts": [
+				{
+					"Name": "FlaxTimeNexus.Teleporter",
+					"ID": "fc39c19e4e48d4fb095096abee5e3505",
+					"V": {
+	"IsRelative": true,
+	"Target": "1ef956524289076b92cadfa155ef6cfe"
+}
+				}
+			],
+			"IsTrigger": true,
+			"Size": {
+				"X": 100.0,
+				"Y": 100.0,
+				"Z": 100.0
+			}
+		},
+		{
+			"TypeID": 1,
+			"ID": "1f8feeab4115c57f9cc0c89bd6537647",
+			"ParentID": "d151ae934c5f0d7fc1228098d6792736",
+			"Name": "Cube",
+			"Transform": {
+				"Translation": {
+					"X": -7.581836223602295,
+					"Y": 0.0,
+					"Z": 0.0
+				}
+			},
+			"StaticFlags": 0,
+			"Scripts": [
+				{
+					"Name": "FlaxTimeNexus.Source.Objects.Portal",
+					"ID": "79680e0a4960d819d340ada040854367",
+					"V": {
+	"RenderTargetMaterial": "e7a887d64406c9677470b1b9a3c9d49d",
+	"Resolution": {
+		"X": 1500.0,
+		"Y": 900.0
+	},
+	"RenderTargetCamera": "5c1a91c245ef3dd04a7584896f291283"
+}
+				}
+			],
+			"Model": "b43f0f8f4aaba3f3156896a5a22ba493",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"TypeID": 3,
+			"ID": "1ef956524289076b92cadfa155ef6cfe",
+			"ParentID": "1f8feeab4115c57f9cc0c89bd6537647",
+			"Name": "TPTarget",
+			"Transform": {
+				"Translation": {
+					"X": -917.0,
+					"Y": 0.0,
+					"Z": 0.0
+				}
+			},
+			"StaticFlags": 0
+		},
+		{
+			"TypeID": 2,
+			"ID": "5c1a91c245ef3dd04a7584896f291283",
+			"ParentID": "1ef956524289076b92cadfa155ef6cfe",
+			"Name": "Camera 1",
+			"Transform": {
+				"Orientation": {
+					"X": 0.0,
+					"Y": -0.7071068286895752,
+					"Z": 0.0,
+					"W": 0.7071067094802856
+				}
+			},
+			"StaticFlags": 0,
+			"UsePerspective": true,
+			"FOV": 60.0,
+			"Near": 2.0,
+			"Far": 10000.0
+		},
+		{
+			"TypeID": 3,
+			"ID": "1b7b85aa4301bb0b57f8a6bca2803db1",
+			"ParentID": "90f5c567491ec285641c5287c632b5cb",
+			"IsActive": false,
+			"Name": "EmptyActor",
+			"Transform": {
+				"Translation": {
+					"X": 7674.37255859375,
+					"Y": 834.430908203125,
+					"Z": 14.542739868164063
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": 0.7071068286895752,
+					"Z": 0.0,
+					"W": 0.7071068286895752
+				},
+				"Scale": {
+					"X": 5.0,
+					"Y": 7.5,
+					"Z": 4.5
+				}
+			},
+			"StaticFlags": 0,
+			"Scripts": [
+				{
+					"Name": "FlaxTimeNexus.LevelConnector",
+					"ID": "0997cdc4443b5966767a479ff782e448",
+					"V": {
+	"IsExit": false
+}
+				}
+			]
+		}
+	]
+}

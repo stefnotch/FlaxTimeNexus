@@ -72,6 +72,226 @@
 			"CustomTexture": "c54410104ff39427bc11e5bc761d66b0"
 		},
 		{
+			"TypeID": 17,
+			"ID": "a621d2c44756f6880030dba1dbea0b23",
+			"ParentID": "98e81b164499fc785678ee8383b4023e",
+			"Name": "Player",
+			"Transform": {
+				"Translation": {
+					"X": -4243.9345703125,
+					"Y": 785.21923828125,
+					"Z": -1899.4267578125
+				}
+			},
+			"Layer": 1,
+			"Tag": "Player",
+			"Scripts": [
+				{
+					"Name": "FlaxTimeNexus.FPSCamera",
+					"ID": "6bd8f5b5488dbed571da61ad37f78ae6",
+					"V": {
+	"Acceleration": 10000.0,
+	"Friction": 0.1,
+	"Speed": 700.0,
+	"SprintSpeedIncrease": 1.0,
+	"JumpForce": 500.0,
+	"Player": "a621d2c44756f6880030dba1dbea0b23",
+	"Camera": "ffd38c1a475d7c1644fef49ac1c496a0",
+	"CameraSmoothing": 20.0
+}
+				},
+				{
+					"Name": "FlaxTimeNexus.PlayerLookat",
+					"ID": "81843ed34f9be17ca6b6eda1a4056d11",
+					"V": {
+	"Camera": "ffd38c1a475d7c1644fef49ac1c496a0",
+	"MaxDistance": 3000.0
+}
+				},
+				{
+					"Name": "FlaxTimeNexus.Player",
+					"ID": "aac7050d4125c78fbe97729cebb6f5c0",
+					"V": {
+	"MaxHealth": 100.0,
+	"DefaultHealth": 100.0,
+	"HealthBar": "41dc2bd14a8cddff0138fc9adec0e8c8",
+	"Health": 100.0
+}
+				}
+			],
+			"ContactOffset": 10.0,
+			"StepOffset": 30.0,
+			"SlopeLimit": 45.0,
+			"Radius": 50.0,
+			"Height": 150.0
+		},
+		{
+			"TypeID": 2,
+			"ID": "ffd38c1a475d7c1644fef49ac1c496a0",
+			"ParentID": "a621d2c44756f6880030dba1dbea0b23",
+			"Name": "Camera",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 80.0,
+					"Z": 0.0
+				}
+			},
+			"StaticFlags": 0,
+			"Layer": 1,
+			"Tag": "Player",
+			"UsePerspective": true,
+			"FOV": 60.0,
+			"Near": 2.0,
+			"Far": 10000.0
+		},
+		{
+			"TypeID": 1,
+			"ID": "57752eca4744f05e3f8d089d74c5a31c",
+			"ParentID": "ffd38c1a475d7c1644fef49ac1c496a0",
+			"IsActive": false,
+			"Name": "Gun",
+			"Transform": {
+				"Translation": {
+					"X": 31.156957626342775,
+					"Y": -17.1380615234375,
+					"Z": 21.202392578125
+				},
+				"Orientation": {
+					"X": 0.390277624130249,
+					"Y": -0.5896474123001099,
+					"Z": 0.4867437779903412,
+					"W": 0.5129129886627197
+				},
+				"Scale": {
+					"X": 0.07999999821186066,
+					"Y": 0.07999999821186066,
+					"Z": 0.07999999821186066
+				}
+			},
+			"StaticFlags": 0,
+			"Layer": 1,
+			"Model": "d1eebe63439e18608f1efca6baee6b8c",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "b77238674121fdad3d9bd7853fcb6d0e"
+					},
+					{
+						"ShadowsMode": 1
+					},
+					{
+						"Material": "c5e085c445fe7ee3375b74a070349002",
+						"ShadowsMode": 1
+					},
+					{
+						"ShadowsMode": 1
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 3,
+			"ID": "bd01d02c4d2ebd72e497d98ab4902ce0",
+			"ParentID": "57752eca4744f05e3f8d089d74c5a31c",
+			"Name": "GunBeamStart",
+			"Transform": {
+				"Translation": {
+					"X": 493.395751953125,
+					"Y": 47.808135986328128,
+					"Z": -51.110618591308597
+				}
+			},
+			"StaticFlags": 0,
+			"Layer": 1,
+			"Scripts": [
+				{
+					"Name": "FlaxTimeNexus.TimeGun",
+					"ID": "9b38d5ea4636156d67137dbbd8af3495",
+					"V": {
+	"TimeIncrement": {
+		"Ticks": 153792001
+	},
+	"GunBeamModel": "34efdf4147961b910d6996b5b14cfbd3",
+	"FadeTime": 1.0,
+	"MaxDistance": 10000.0
+}
+				}
+			]
+		},
+		{
+			"TypeID": 1,
+			"ID": "131f4007416706f6e3747b909cef9dca",
+			"ParentID": "ffd38c1a475d7c1644fef49ac1c496a0",
+			"Name": "CursorVortex",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 0.0,
+					"Z": 35.0
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": -0.7071068286895752,
+					"Z": 0.0,
+					"W": 0.7071067094802856
+				},
+				"Scale": {
+					"X": 1.0,
+					"Y": 0.009999999776482582,
+					"Z": 0.009999999776482582
+				}
+			},
+			"Layer": 1,
+			"Model": "54a1ff4a42af9f018234f7b39b1366b3",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "9a5f939749c6da49ba61bab25061004c",
+						"ScaleInLightmap": 0.0,
+						"ShadowsMode": 0
+					}
+				]
+			}
+		},
+		{
+			"TypeID": 13,
+			"ID": "0d6fa82844f03da4651253ba198fb33b",
+			"ParentID": "a621d2c44756f6880030dba1dbea0b23",
+			"Name": "CrappyHealthBar",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 80.0,
+					"Z": 0.0
+				}
+			},
+			"StaticFlags": 0,
+			"Size": {
+				"X": 1000.0,
+				"Y": 1000.0,
+				"Z": 1000.0
+			},
+			"Priority": 0,
+			"BlendRadius": 10.0,
+			"BlendWeight": 1.0,
+			"IsBounded": true,
+			"Settings": {
+				"AO": {},
+				"Bloom": {},
+				"ToneMapping": {},
+				"ColorGrading": {},
+				"EyeAdaptation": {},
+				"CameraArtifacts": {},
+				"LensFlares": {},
+				"DepthOfField": {},
+				"SSR": {},
+				"PostFxMaterials": [
+					"41dc2bd14a8cddff0138fc9adec0e8c8"
+				]
+			}
+		},
+		{
 			"TypeID": 3,
 			"ID": "5fffebac4864e61533240daba5c9a251",
 			"ParentID": "98e81b164499fc785678ee8383b4023e",
@@ -11039,224 +11259,91 @@
 			}
 		},
 		{
-			"TypeID": 17,
-			"ID": "a621d2c44756f6880030dba1dbea0b23",
-			"ParentID": "98e81b164499fc785678ee8383b4023e",
-			"Name": "Player",
-			"Transform": {
-				"Translation": {
-					"X": 2338.19677734375,
-					"Y": 785.21923828125,
-					"Z": 110.87158203125
-				}
-			},
-			"Layer": 1,
-			"Tag": "Player",
-			"Scripts": [
-				{
-					"Name": "FlaxTimeNexus.FPSCamera",
-					"ID": "6bd8f5b5488dbed571da61ad37f78ae6",
-					"V": {
-	"Acceleration": 10000.0,
-	"Friction": 0.1,
-	"Speed": 700.0,
-	"SprintSpeedIncrease": 1.0,
-	"JumpForce": 500.0,
-	"Player": "a621d2c44756f6880030dba1dbea0b23",
-	"Camera": "ffd38c1a475d7c1644fef49ac1c496a0",
-	"CameraSmoothing": 20.0
-}
-				},
-				{
-					"Name": "FlaxTimeNexus.PlayerLookat",
-					"ID": "81843ed34f9be17ca6b6eda1a4056d11",
-					"V": {
-	"Camera": "ffd38c1a475d7c1644fef49ac1c496a0",
-	"MaxDistance": 3000.0
-}
-				},
-				{
-					"Name": "FlaxTimeNexus.Player",
-					"ID": "aac7050d4125c78fbe97729cebb6f5c0",
-					"V": {
-	"MaxHealth": 100.0,
-	"DefaultHealth": 100.0,
-	"HealthBar": "41dc2bd14a8cddff0138fc9adec0e8c8",
-	"Health": 100.0
-}
-				}
-			],
-			"ContactOffset": 10.0,
-			"StepOffset": 30.0,
-			"SlopeLimit": 45.0,
-			"Radius": 50.0,
-			"Height": 150.0
-		},
-		{
-			"TypeID": 2,
-			"ID": "ffd38c1a475d7c1644fef49ac1c496a0",
-			"ParentID": "a621d2c44756f6880030dba1dbea0b23",
-			"Name": "Camera",
-			"Transform": {
-				"Translation": {
-					"X": 0.0,
-					"Y": 80.0,
-					"Z": 0.0
-				}
-			},
-			"StaticFlags": 0,
-			"Layer": 1,
-			"Tag": "Player",
-			"UsePerspective": true,
-			"FOV": 60.0,
-			"Near": 2.0,
-			"Far": 10000.0
-		},
-		{
-			"TypeID": 1,
-			"ID": "57752eca4744f05e3f8d089d74c5a31c",
-			"ParentID": "ffd38c1a475d7c1644fef49ac1c496a0",
-			"IsActive": false,
-			"Name": "Gun",
-			"Transform": {
-				"Translation": {
-					"X": 31.156957626342775,
-					"Y": -17.1380615234375,
-					"Z": 21.202392578125
-				},
-				"Orientation": {
-					"X": 0.390277624130249,
-					"Y": -0.5896474123001099,
-					"Z": 0.4867437779903412,
-					"W": 0.5129129886627197
-				},
-				"Scale": {
-					"X": 0.07999999821186066,
-					"Y": 0.07999999821186066,
-					"Z": 0.07999999821186066
-				}
-			},
-			"StaticFlags": 0,
-			"Layer": 1,
-			"Model": "d1eebe63439e18608f1efca6baee6b8c",
-			"Buffer": {
-				"Entries": [
-					{
-						"Material": "b77238674121fdad3d9bd7853fcb6d0e"
-					},
-					{
-						"ShadowsMode": 1
-					},
-					{
-						"Material": "c5e085c445fe7ee3375b74a070349002",
-						"ShadowsMode": 1
-					},
-					{
-						"ShadowsMode": 1
-					}
-				]
-			}
-		},
-		{
 			"TypeID": 3,
-			"ID": "bd01d02c4d2ebd72e497d98ab4902ce0",
-			"ParentID": "57752eca4744f05e3f8d089d74c5a31c",
-			"Name": "GunBeamStart",
+			"ID": "a59f4dba445d05e184cd21a421488d0b",
+			"ParentID": "5fffebac4864e61533240daba5c9a251",
+			"Name": "LevelLoading",
 			"Transform": {
 				"Translation": {
-					"X": 493.395751953125,
-					"Y": 47.808135986328128,
-					"Z": -51.110618591308597
-				}
-			},
-			"StaticFlags": 0,
-			"Layer": 1,
-			"Scripts": [
-				{
-					"Name": "FlaxTimeNexus.TimeGun",
-					"ID": "9b38d5ea4636156d67137dbbd8af3495",
-					"V": {
-	"TimeIncrement": {
-		"Ticks": 153792001
-	},
-	"GunBeamModel": "34efdf4147961b910d6996b5b14cfbd3",
-	"FadeTime": 1.0,
-	"MaxDistance": 10000.0
-}
-				}
-			]
-		},
-		{
-			"TypeID": 1,
-			"ID": "131f4007416706f6e3747b909cef9dca",
-			"ParentID": "ffd38c1a475d7c1644fef49ac1c496a0",
-			"Name": "CursorVortex",
-			"Transform": {
-				"Translation": {
-					"X": 0.0,
-					"Y": 0.0,
-					"Z": 35.0
+					"X": -6143.8349609375,
+					"Y": 650.8506469726563,
+					"Z": 14.479701042175293
 				},
 				"Orientation": {
 					"X": 0.0,
 					"Y": -0.7071068286895752,
 					"Z": 0.0,
 					"W": 0.7071067094802856
-				},
-				"Scale": {
-					"X": 1.0,
-					"Y": 0.009999999776482582,
-					"Z": 0.009999999776482582
 				}
 			},
-			"Layer": 1,
-			"Model": "54a1ff4a42af9f018234f7b39b1366b3",
-			"Buffer": {
-				"Entries": [
-					{
-						"Material": "9a5f939749c6da49ba61bab25061004c",
-						"ScaleInLightmap": 0.0,
-						"ShadowsMode": 0
-					}
-				]
-			}
+			"StaticFlags": 0
 		},
 		{
-			"TypeID": 13,
-			"ID": "0d6fa82844f03da4651253ba198fb33b",
-			"ParentID": "a621d2c44756f6880030dba1dbea0b23",
-			"Name": "CrappyHealthBar",
+			"TypeID": 3,
+			"ID": "4d54a6184f67c18e75b00e82d9720fc1",
+			"ParentID": "a59f4dba445d05e184cd21a421488d0b",
+			"IsActive": false,
+			"Name": "EmptyActor",
+			"StaticFlags": 0,
+			"Scripts": [
+				{
+					"Name": "FlaxTimeNexus.LevelConnector",
+					"ID": "05bb3eff451978c4981f31a7eb805433",
+					"V": {
+	"IsExit": false,
+	"ToLoad": "/Meshes/Arno/Level 3.scene"
+}
+				}
+			]
+		},
+		{
+			"TypeID": 14,
+			"ID": "02e3bbe94a9567c220a1b0b1811874ef",
+			"ParentID": "a59f4dba445d05e184cd21a421488d0b",
+			"Name": "BoxCollider",
 			"Transform": {
 				"Translation": {
-					"X": 0.0,
-					"Y": 80.0,
-					"Z": 0.0
+					"X": -1917.6751708984376,
+					"Y": 0.0,
+					"Z": -1323.5113525390626
+				},
+				"Scale": {
+					"X": 7.0,
+					"Y": 7.0,
+					"Z": 7.0
 				}
 			},
 			"StaticFlags": 0,
+			"Scripts": [
+				{
+					"Name": "FlaxTimeNexus.TriggerEnterToggler",
+					"ID": "81f1231c4f494f18a708b086d9efbeff",
+					"V": {
+	"PlayerTrigger": true,
+	"ToActivate": "4d54a6184f67c18e75b00e82d9720fc1"
+}
+				}
+			],
+			"IsTrigger": true,
 			"Size": {
-				"X": 1000.0,
-				"Y": 1000.0,
-				"Z": 1000.0
-			},
-			"Priority": 0,
-			"BlendRadius": 10.0,
-			"BlendWeight": 1.0,
-			"IsBounded": true,
-			"Settings": {
-				"AO": {},
-				"Bloom": {},
-				"ToneMapping": {},
-				"ColorGrading": {},
-				"EyeAdaptation": {},
-				"CameraArtifacts": {},
-				"LensFlares": {},
-				"DepthOfField": {},
-				"SSR": {},
-				"PostFxMaterials": [
-					"41dc2bd14a8cddff0138fc9adec0e8c8"
-				]
+				"X": 100.0,
+				"Y": 100.0,
+				"Z": 100.0
 			}
+		},
+		{
+			"TypeID": 3,
+			"ID": "fbcc47c84755fcd2c2243790218f7fc0",
+			"ParentID": "98e81b164499fc785678ee8383b4023e",
+			"Name": "hack",
+			"StaticFlags": 0,
+			"Scripts": [
+				{
+					"Name": "FlaxTimeNexus.OnLevelLoad",
+					"ID": "364855c34b422a5d6543fb99e8f55a2a",
+					"V": {}
+				}
+			]
 		}
 	]
 }

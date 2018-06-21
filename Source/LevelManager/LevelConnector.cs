@@ -44,6 +44,12 @@ namespace FlaxTimeNexus
 
 				Content.GetAssetInfo(StringUtils.CombinePaths(Globals.ContentFolder, ToLoad), out string typeName, out Guid lvlGuid);
 
+
+				if (LevelsToLoad.ContainsKey(lvlGuid))
+				{
+					//TODO: Properly handle this case!
+					LevelsToLoad.Remove(lvlGuid);
+				}
 				LevelsToLoad.Add(lvlGuid, this);
 
 				if (SceneManager.LoadSceneAsync(lvlGuid))
