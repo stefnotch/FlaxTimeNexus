@@ -87,6 +87,7 @@ namespace FlaxTimeNexus.Source.Objects
 				task.Camera.Position = positionDelta /*+ _startTranslation*/ + task.Camera.Parent.Position; //TODO: Dafug, scene offset!!
 				task.Camera.Orientation = Camera.MainCamera.Orientation;
 				task.Camera.CustomAspectRatio = Camera.MainCamera.Viewport.AspectRatio; //TODO: Whay doe? Shouldn't they always be equal?
+																						//task.Camera.
 			}
 		}
 
@@ -123,6 +124,28 @@ namespace FlaxTimeNexus.Source.Objects
 			Destroy(ref _task);
 			Destroy(ref _output);
 			Destroy(ref _rtMaterial);
+		}
+
+		/// <summary>
+		/// http://aras-p.info/texts/obliqueortho.html
+		/// </summary>
+		/// <param name="projection">Projection matrix which will get modified</param>
+		/// <param name="cameraSpaceClipPlane">in camera space</param>
+		private void ToObliqueMatrix(ref Matrix projection, Vector4 cameraSpaceClipPlane)
+		{
+			Vector4 q = Vector4.Transform(
+				new Vector4(
+					Mathf.Sign(cameraSpaceClipPlane.X),
+					Mathf.Sign(cameraSpaceClipPlane.Y),
+					1.0f,
+					1.0f), Matrix.Invert(projection));
+
+			Vector4 c = cameraSpaceClipPlane * (2.0f / (Vector4.Dot(cameraSpaceClipPlane, q)));
+			// third row = clip plane - fourth row
+			projection[2] = c.X - projection[3];
+			projection[6] = c.Y - projection[7];
+			projection[10] = c.Z - projection[11];
+			projection[14] = c.W - projection[15];
 		}
 	}
 }
