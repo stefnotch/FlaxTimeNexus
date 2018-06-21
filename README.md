@@ -22,4 +22,5 @@ TimeNexus is a simple platformer where the player can “scroll” through tempo
 - https://github.com/stefnotch/FlaxTimeNexus/blob/arno-stuff/Release%20Documents/Test%20Report.pdf
 
 ## All-in-One
+(except the test results)
 - https://github.com/stefnotch/FlaxTimeNexus/blob/arno-stuff/Release%20Documents/Release%20Docs.pdf
