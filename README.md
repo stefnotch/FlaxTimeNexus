@@ -1,17 +1,26 @@
+### Release Documents
+
 # TimeNexus
-A prototype of a videogame where you can manipulate time!
 
-## Controls
-`WASD`: Movement  
-`Shift`: Sprint  
-`E`: Interact  
-`P`: Pause  
-`Left mouse button`: Clicking on buttons  
-`Mouse wheel`: Scrolling through time  
+## Summary
 
+TimeNexus is a simple platformer where the player can “scroll” through temporal states of some objects in order to solve puzzles.
 
-## [License](./LICENSE)
-https://github.com/stefnotch/FlaxTimeNexus/blob/master/LICENSE
+## Features & Issues
+- https://github.com/stefnotch/FlaxTimeNexus/blob/arno-stuff/Release%20Documents/Features%20and%20Issues.pdf
 
-## [Credits](./Content/Credits.md)
-https://github.com/stefnotch/FlaxTimeNexus/blob/master/Content/Credits.md
+## Change Log-v1
+- See [Features & Issues](https://github.com/stefnotch/FlaxTimeNexus/blob/arno-stuff/Release%20Documents/Features%20and%20Issues.pdf) above
+
+## Manual
+- https://github.com/stefnotch/FlaxTimeNexus/blob/arno-stuff/Release%20Documents/Manual.pdf
+
+## License & Credits
+- https://github.com/stefnotch/FlaxTimeNexus/blob/arno-stuff/Release%20Documents/License%20and%20Credits.pdf
+
+## Test Results
+- https://github.com/stefnotch/FlaxTimeNexus/blob/arno-stuff/Release%20Documents/Test%20Report.pdf
+
+## All-in-One
+(except the test results)
+- https://github.com/stefnotch/FlaxTimeNexus/blob/arno-stuff/Release%20Documents/Release%20Docs.pdf
