@@ -81,7 +81,7 @@ namespace FlaxTimeNexus
 			Vector3 angleOffsets = _edgeTilt.GetAngles() * 0.0f;
 			_smoothEdgeTilt = Vector3.SmoothStep(_smoothEdgeTilt, angleOffsets, _edgeTiltSmoothing * Time.UnscaledDeltaTime);
 			Player.LocalOrientation = Quaternion.Lerp(Player.LocalOrientation, Quaternion.Euler(0, _yaw, 0), camFactor);
-			Camera.LocalOrientation = Quaternion.Lerp(Camera.LocalOrientation, Quaternion.Euler(_pitch - angleOffsets.X, 0, angleOffsets.Z), camFactor);
+			Camera.LocalOrientation = Quaternion.Lerp(Camera.LocalOrientation, Quaternion.Euler(_pitch - angleOffsets.Z, 0, -angleOffsets.X), camFactor);
 
 			// Direction
 			var velocity = new Vector3(HorizontalAxis.Value, 0.0f, VerticalAxis.Value);

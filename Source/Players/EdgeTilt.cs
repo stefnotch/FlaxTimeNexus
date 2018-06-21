@@ -1,16 +1,11 @@
 ﻿using FlaxEngine;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace FlaxTimeNexus
 {
 	public class EdgeTilt
 	{
 		private const int RayCount = 16;
-		private readonly float _radius = 100.0f;
+		private readonly float _radius = 150.0f;
 		private readonly Vector3[] _offsets = new Vector3[RayCount];
 		private readonly CharacterController _player;
 		private readonly Vector3 _feetOffset;
@@ -60,7 +55,7 @@ namespace FlaxTimeNexus
 
 			}
 
-			return averageDirection / _radius * 0f;
+			return averageDirection / _radius;
 		}
 	}
 }

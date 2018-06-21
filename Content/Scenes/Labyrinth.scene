@@ -744,7 +744,6 @@
 			"TypeID": 1,
 			"ID": "2c7a8b184fd56906f526c18656b3bc45",
 			"ParentID": "49ae50454439e62b7a0448ac6e7ada9e",
-			"IsActive": false,
 			"Name": "maze 0",
 			"Transform": {
 				"Translation": {
