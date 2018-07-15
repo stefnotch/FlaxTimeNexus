@@ -1,7 +1,7 @@
 {
 	"ID": "35fd20cd4497ea1b18cafcae1c3524ef",
 	"TypeName": "FlaxEngine.SceneAsset",
-	"EngineBuild": 6159,
+	"EngineBuild": 6162,
 	"Data": [
 		{
 			"TypeID": 9,
@@ -6703,7 +6703,6 @@
 }
 				}
 			],
-			"ContactOffset": 10.0,
 			"StepOffset": 30.0,
 			"SlopeLimit": 45.0,
 			"Radius": 50.0,
@@ -6951,7 +6950,7 @@
 			"Name": "MainMenu",
 			"Transform": {
 				"Translation": {
-					"X": 0.0,
+					"X": 1.7293701171875,
 					"Y": 232.05299377441407,
 					"Z": -2978.30517578125
 				}

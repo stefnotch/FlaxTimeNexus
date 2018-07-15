@@ -1,21 +1,14 @@
 {
 	"ID": "98e81b164499fc785678ee8383b4023e",
 	"TypeName": "FlaxEngine.SceneAsset",
-	"EngineBuild": 6159,
+	"EngineBuild": 6163,
 	"Data": [
 		{
 			"TypeID": 9,
 			"ID": "98e81b164499fc785678ee8383b4023e",
 			"ParentID": "00000000000000000000000000000000",
 			"Name": "Scene",
-			"LightmapSettings": {
-				"GlobalObjectsScale": 0.5,
-				"ChartsPadding": 3,
-				"AtlasSize": 1024,
-				"BounceCount": 1,
-				"UseGeometryWithNoMaterials": false,
-				"Quality": 10
-			}
+			"LightmapSettings": {}
 		},
 		{
 			"TypeID": 10,
@@ -11086,7 +11079,6 @@
 }
 				}
 			],
-			"ContactOffset": 10.0,
 			"StepOffset": 30.0,
 			"SlopeLimit": 45.0,
 			"Radius": 50.0,

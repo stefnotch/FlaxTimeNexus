@@ -64,9 +64,9 @@ namespace FlaxTimeNexus.Source.Objects
 
 			_task.Begin += RenderTaskBegin;
 			_task.Order = -100;
-			_task.Camera = RenderTargetCamera;
+			//_task.Camera = RenderTargetCamera;
 			_task.Output = _output;
-
+			_task.View.CopyFrom(RenderTargetCamera);
 
 			if (RenderTargetMaterial && _rtMaterial == null)
 			{
@@ -84,10 +84,13 @@ namespace FlaxTimeNexus.Source.Objects
 			if (Camera.MainCamera != null && Camera.MainCamera != task.Camera)
 			{
 				Vector3 positionDelta = (Camera.MainCamera.Position - this.Actor.Position);
-				task.Camera.Position = positionDelta /*+ _startTranslation*/ + task.Camera.Parent.Position; //TODO: Dafug, scene offset!!
-				task.Camera.Orientation = Camera.MainCamera.Orientation;
-				task.Camera.CustomAspectRatio = Camera.MainCamera.Viewport.AspectRatio; //TODO: Whay doe? Shouldn't they always be equal?
-																						//task.Camera.
+				//task.View.View = Camera.MainCamera.View;
+				//ToObliqueMatrix(ref )
+				//task.View.Projection = 
+
+				//task.Camera.Position = positionDelta /*+ _startTranslation*/ + task.Camera.Parent.Position; //TODO: Dafug, scene offset!!
+				//task.Camera.Orientation = Camera.MainCamera.Orientation;
+				//task.Camera.CustomAspectRatio = Camera.MainCamera.Viewport.AspectRatio; //TODO: Whay doe? Shouldn't they always be equal?
 			}
 		}
 

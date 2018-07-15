@@ -143,7 +143,6 @@ namespace FlaxTimeNexus
 
 			// Move
 			Player.Move(velocity * Time.DeltaTime);
-			Player.Velocity = velocity;
 		}
 	}
 }

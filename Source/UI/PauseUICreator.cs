@@ -11,14 +11,11 @@ namespace FlaxTimeNexus.Source.UI
 	public class PauseUICreator : UICreator
 	{
 		public Pauser Pauser;
-
 		public Player Player;
+		public FontReference Font;
 
 		public override ContainerControl CreateUI(Vector2 size)
 		{
-			var fontAsset = Content.LoadInternal<FontAsset>("Editor/Segoe Media Center Regular");
-			var largerFont = fontAsset.CreateFont(30);
-			
 			ContainerControl uiRoot = new ContainerControl
 			{
 				BackgroundColor = Color.White,
@@ -35,7 +32,7 @@ namespace FlaxTimeNexus.Source.UI
 			{
 				Text = "Resume",
 				BackgroundColor = Color.Gray,
-				Font = largerFont
+				Font = Font
 			};
 			resumeButton.Clicked += () =>
 			{
@@ -51,7 +48,7 @@ namespace FlaxTimeNexus.Source.UI
 			{
 				Text = "Save",
 				BackgroundColor = Color.Gray,
-				Font = largerFont
+				Font = Font
 			};
 			saveButton.Clicked += () => Player?.Save();
 			buttonContainer.AddChild(saveButton);
@@ -61,7 +58,7 @@ namespace FlaxTimeNexus.Source.UI
 			{
 				Text = "Load",
 				BackgroundColor = Color.Gray,
-				Font = largerFont
+				Font = Font
 			};
 			loadButton.Clicked += () =>
 			{
@@ -75,7 +72,7 @@ namespace FlaxTimeNexus.Source.UI
 			{
 				Text = "Settings",
 				BackgroundColor = Color.Gray,
-				Font = largerFont
+				Font = Font
 			};
 			settingsButton.Clicked += () =>
 			{
@@ -88,7 +85,7 @@ namespace FlaxTimeNexus.Source.UI
 			{
 				Text = "Exit",
 				BackgroundColor = Color.Gray,
-				Font = largerFont
+				Font = Font
 			};
 			exitButton.Clicked += () =>
 			{

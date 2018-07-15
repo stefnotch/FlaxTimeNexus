@@ -217,7 +217,7 @@ namespace FlaxTimeNexus
 			float width = MainRenderTask.Instance.Buffers.Size.X;
 			float height = MainRenderTask.Instance.Buffers.Size.Y;
 			float aspect = width / height;
-			Matrix.PerspectiveFovLH(camera.FieldOfView * Mathf.DegreesToRadians, aspect, camera.NearPlane, camera.FarPlane, out result);
+			Matrix.PerspectiveFov(camera.FieldOfView * Mathf.DegreesToRadians, aspect, camera.NearPlane, camera.FarPlane, out result);
 		}
 
 		/// <summary>
@@ -232,7 +232,7 @@ namespace FlaxTimeNexus
 			Vector3 target = position + direction;
 			Vector3 right = Vector3.Normalize(Vector3.Cross(Vector3.Up, direction));
 			Vector3 up = Vector3.Normalize(Vector3.Cross(direction, right));
-			Matrix.LookAtLH(ref position, ref target, ref up, out result);
+			Matrix.LookAt(ref position, ref target, ref up, out result);
 		}
 
 		/*private Ray ConvertMouseToRay(Vector2 mouse, Camera camera)

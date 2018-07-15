@@ -18,7 +18,7 @@ namespace FlaxTimeNexus
 			Vector3 velocityIncrement = Vector3.Transform(LocalDirection, Actor.Orientation) * Strength / Time.DrawFPS;
 			if (other is CharacterController player)
 			{
-				player.Velocity += velocityIncrement * 10f;
+				player.Move(player.Velocity + velocityIncrement * 10f);
 			}
 			else
 			{

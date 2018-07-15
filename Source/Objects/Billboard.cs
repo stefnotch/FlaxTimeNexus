@@ -9,12 +9,12 @@ namespace FlaxTimeNexus
 		private Vector3 _up = Vector3.Up;
 		private void OnEnable()
 		{
-			this.Actor.Orientation = Quaternion.BillboardLH(this.Actor.Position, Camera.MainCamera.Position, _up, Camera.MainCamera.Direction);
+			this.Actor.Orientation = Quaternion.Billboard(this.Actor.Position, Camera.MainCamera.Position, _up, Camera.MainCamera.Direction);
 		}
 
 		private void Update()
 		{
-			this.Actor.Orientation = Quaternion.BillboardLH(this.Actor.Position, Camera.MainCamera.Position, _up, Camera.MainCamera.Direction);
+			this.Actor.Orientation = Quaternion.Billboard(this.Actor.Position, Camera.MainCamera.Position, _up, Camera.MainCamera.Direction);
 		}
 	}
 }
