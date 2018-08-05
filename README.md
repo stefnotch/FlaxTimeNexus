@@ -1,5 +1,7 @@
 # TimeNexus
 A prototype of a videogame where you can manipulate time!
+## Low quality, outdated video
+https://drive.google.com/file/d/1kjhU2ZaxfEJxLzQtW605iPX2Knp-ZL2t/preview
 
 ## Controls
 `WASD`: Movement  
