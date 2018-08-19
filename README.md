@@ -16,4 +16,4 @@ https://drive.google.com/file/d/1kjhU2ZaxfEJxLzQtW605iPX2Knp-ZL2t/preview
 [MIT](https://github.com/stefnotch/FlaxTimeNexus/blob/master/LICENSE)
 
 ## Credits
-[Credits.md](](./Content/Credits.md)
+[Credits.md](./Content/Credits.md)
