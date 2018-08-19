@@ -13,7 +13,7 @@ https://drive.google.com/file/d/1kjhU2ZaxfEJxLzQtW605iPX2Knp-ZL2t/preview
 
 
 ## [License](./LICENSE)
-https://github.com/stefnotch/FlaxTimeNexus/blob/master/LICENSE
+[MIT](https://github.com/stefnotch/FlaxTimeNexus/blob/master/LICENSE)
 
 ## [Credits](./Content/Credits.md)
 https://github.com/stefnotch/FlaxTimeNexus/blob/master/Content/Credits.md
