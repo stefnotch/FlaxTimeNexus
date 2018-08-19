@@ -12,8 +12,8 @@ https://drive.google.com/file/d/1kjhU2ZaxfEJxLzQtW605iPX2Knp-ZL2t/preview
 `Mouse wheel`: Scrolling through time  
 
 
-## [License](./LICENSE)
+## License
 [MIT](https://github.com/stefnotch/FlaxTimeNexus/blob/master/LICENSE)
 
-## [Credits](./Content/Credits.md)
-https://github.com/stefnotch/FlaxTimeNexus/blob/master/Content/Credits.md
+## Credits
+[Credits.md](](./Content/Credits.md)
